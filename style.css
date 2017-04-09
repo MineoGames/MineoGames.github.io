@@ -1,0 +1,11 @@
+body {
+	background-color: #6697bf;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+	font-size: 7em;
+}
