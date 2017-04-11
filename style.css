@@ -1,11 +1,43 @@
-body {
-	background-color: #6697bf;
+body,
+html {
+    color: #fff;
+    font-weight: 700;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    overflow: hidden;
+}
+
+.top {
+    background: #DD3142;
+    width: 100%;
+    float: left;
+    height: 50vh;
+    display: table;
+}
+
+.overlay {
+	position: absolute;
+	width: 45%;
+	height: 0;
+	right: 0;
+	top: 50vh;
+	border-top: 22vh solid #DD3142;
+	border-left: 22vh solid transparent;
+}
+
+.bottom {
+    background: #008CB7;
+    width: 100%;
+    float: left;
+    height: 50vh;
+    display: table;
+}
+
+.top .content, .bottom .content {
+    padding: 0 4%;
+    display: table-cell;
+  	vertical-align: middle;
 }
 
 h1 {
-	text-align: center;
-	text-transform: uppercase;
-	font-family: Verdana, Geneva, sans-serif;
-	color: white;
-	font-size: 7em;
+    font-size: 60px;
 }
