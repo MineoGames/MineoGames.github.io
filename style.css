@@ -4,6 +4,8 @@ html {
     font-weight: 700;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .top {
