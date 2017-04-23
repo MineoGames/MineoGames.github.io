@@ -4,9 +4,10 @@
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include nav.html %}
     {% include header.html %}
-    {% include about.html %}
-    {% include download.html %}
-    {% include contact.html %}
+    {% for p in site.pages_list %}
+      {% assign path = p[1] | append: '.html' %}
+      {% include {{ path }} %}
+    {% endfor %}
     {% include map.html %}
     {% include footer.html %}
     {% include js.html %}

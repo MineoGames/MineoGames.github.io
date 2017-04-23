@@ -19,6 +19,11 @@ social:
   - title: facebook
     url:
 
+pages_list:
+  About: 'about'
+  Download: 'download'
+  Contact: 'contact'
+
 # Build settings
 markdown: kramdown
 permalink: pretty
