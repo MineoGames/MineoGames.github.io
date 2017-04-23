@@ -21,8 +21,11 @@ social:
 
 pages_list:
   About: 'about'
+  Blog: 'last-blog-post'
   Download: 'download'
   Contact: 'contact'
+
+last_post_words: 100
 
 # Build settings
 markdown: kramdown
