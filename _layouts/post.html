@@ -7,17 +7,7 @@
     <section id="post" class="container content-section text-center">
     <h1><strong>{{ page.title }}</strong></h1>
     <h4>
-        <strong>{{ page.date | date_to_string }}</strong>
-        <small>
-            . category:
-            <a class="category" href="{{site.baseurl}}/categories/{{page.category | downcase}}.html">
-                {{ page.category }}
-            </a>.
-            <br />
-            {% for tag in page.tags %}
-            <a class="tag" href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
-            {% endfor %}
-        </small>
+        <strong>Le {{ page.date | date: "%m/%d/%Y" }}</strong>
     </h4>
 
     <section class="text-justify">
