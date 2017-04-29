@@ -23,8 +23,14 @@ social:
 pages_list:
   About: 'about'
   Blog: 'last-blog-post'
-  Download: 'download'
+  Nos jeux: 'games'
   Contact: 'contact'
+
+games:
+  - name: Unwelcome
+    img: dummy1.png
+  - name: Dung Beetle
+    img: dummy2.png
 
 last_post_words: 100
 

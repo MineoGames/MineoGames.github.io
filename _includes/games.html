@@ -1,0 +1,8 @@
+<section id="games" class="content-section text-center">
+    <h2>Nos jeux</h2>
+    {% for game in site.games %}
+    <div class="game-banner" style="background-image: url(/img/{{ game.img }})">
+        <h3>{{ game.name }}</h3>
+    </div>
+    {% endfor %}
+</section>
