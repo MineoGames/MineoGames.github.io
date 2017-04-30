@@ -27,10 +27,12 @@ pages_list:
   Contact: 'contact'
 
 games:
-  - name: Unwelcome
-    img: dummy1.png
   - name: Dung Beetle
     img: dummy2.png
+    page: /games/unwelcome/
+  - name: Unwelcome
+    img: dummy1.png
+    page:
 
 last_post_words: 100
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{% include nav.html %}
+
+<section class="container content-section text-center">
+    <div class="game-banner" style="background-image: url(/img/{{ page.img }})">
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    <section class="text-justify">
+        {{ page.content | markdownify }}
+    </section>
+
+    {% if page.iframe %}
+    <section>
+        <h2 class="text-justify">Téléchargement</h2>
+        <iframe src="{{ page.iframe }}" frameborder="0" width="500" height="245"></iframe>
+    </section>
+    {% endif %}
+
+</section>
+
+{% include footer.html %}
+{% include js.html %}
+
+</body>
+</html>
