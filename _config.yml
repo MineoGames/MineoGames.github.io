@@ -29,7 +29,7 @@ pages_list:
 games:
   - name: Dung Beetle
     img: dummy2.png
-    page: /games/unwelcome/
+    page: /games/dung-beetle/
   - name: Unwelcome
     img: dummy1.png
     page:
