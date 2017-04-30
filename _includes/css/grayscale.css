@@ -264,6 +264,10 @@ a:focus {
     -o-background-size: cover;
 }
 
+#game-detail > .game-banner {
+    margin-bottom: 20px;
+}
+
 @media(min-width:767px) {
     .content-section {
         padding-top: 200px;
