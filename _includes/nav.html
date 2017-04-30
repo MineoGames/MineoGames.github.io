@@ -5,9 +5,15 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
+                {% if page.section-type == "index" %}
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <i class="fa fa-play-circle"></i>  <span class="light">Mineo</span> Games
                 </a>
+                {% else %}
+                <a class="navbar-brand" href="{{ site.baseurl }}/">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Mineo</span> Games
+                </a>
+                {% endif %}
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
