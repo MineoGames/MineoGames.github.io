@@ -23,7 +23,7 @@ social:
 pages_list:
   About: 'about'
   Blog: 'last-blog-post'
-  Nos jeux: 'games'
+  Our games: 'games'
   Contact: 'contact'
 
 games:
