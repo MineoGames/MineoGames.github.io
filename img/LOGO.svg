@@ -3,20 +3,53 @@
 <svg version="1.1"
 	 id="svg3680" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" inkscape:version="0.92.1 r15371" sodipodi:docname="LOGO MINEO GAMES 2.svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="306 221.2 410 336.4"
-	 style="enable-background:new 306 221.2 410 336.4;" xml:space="preserve">
+	 style="enable-background:new 306 221.2 410 336.4;" xml:space="preserve" >
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
+<defs>
+	<style type="text/css">@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');</style>
+  <style type="text/css">
+    /* latin-ext */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v5/qx1LSqts-NtiKcLw4N03IO87R-l0-Xx_7cYc0ZX1ifE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v5/qx1LSqts-NtiKcLw4N03IEd0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+    font-family: 'Kaushan Script';
+        src: url('/assets/fonts/kaushan-script/56c4d12b0afa2064249f258f2d8f6171/51d11a72b39f33f909abddc723d66f03/KaushanScriptRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+ /* The following rules are deprecated. */ 
+
+@font-face {
+    font-family: 'Kaushan Script';
+        src: url('/assets/fonts/kaushan-script/56c4d12b0afa2064249f258f2d8f6171/51d11a72b39f33f909abddc723d66f03/KaushanScriptRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+  </style>
+</defs>
 <style type="text/css">
 	.st0{fill:#232323;}
 	.st1{fill:none;stroke:#232323;stroke-width:1.5;stroke-miterlimit:10;}
 	.st2{fill:#FFFFFF;}
 	.st3{fill:#008CB7;}
-	.st4{font-family: 'Kaushan Script', cursive;}
+	.st4{font-family:'Kaushan Script';}
 	.st5{font-size:90px;}
 	.st6{fill:#D82740;}
-	@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 </style>
-<defs>
-  <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);</style>
-</defs>
 <sodipodi:namedview  inkscape:cy="327.34327" guidetolerance="10" gridtolerance="10" showgrid="false" inkscape:cx="304.99279" id="namedview3682" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" inkscape:zoom="1.9044743" objecttolerance="10" inkscape:pageshadow="2" inkscape:pageopacity="0" inkscape:current-layer="svg3680" inkscape:window-maximized="1" inkscape:window-height="1001" inkscape:window-width="1920" inkscape:window-y="-9" inkscape:window-x="-9">
 	</sodipodi:namedview>
 <g id="path3758" inkscape:connector-curvature="0">
