@@ -2,13 +2,29 @@
 layout: game
 title: Dung Beetle
 iframe: https://widgets.gamejolt.com/package/v1?key=o4DzCpmp
-img: dummy1.png
+img: dungbeetle.png
 ---
 
 ## Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et mollis massa. Nam ornare ligula nec ultrices faucibus. Duis ac accumsan massa. Sed ornare, ante ut convallis faucibus, nibh augue pulvinar est, non efficitur sem arcu a augue. Ut mattis, turpis id egestas efficitur, sapien ex ullamcorper neque, nec fermentum sem nibh ac lectus. In varius mi non risus accumsan, vel sodales orci mollis. Integer eleifend eleifend nibh egestas suscipit. Sed purus leo, vulputate ac dolor eu, sodales molestie ante. Nullam rhoncus libero interdum pretium mattis. Integer id est lectus. Etiam bibendum convallis erat eu mattis.
+Dung Beetle is a 3D game where you control a beetle that puts all its efforts into bringing his ball of dung home.
+
+Let yourself dive into this small world. Discover that from this point of view, every day is a challenge.
 
 ## Comment jouer ?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et mollis massa. Nam ornare ligula nec ultrices faucibus. Duis ac accumsan massa. Sed ornare, ante ut convallis faucibus, nibh augue pulvinar est, non efficitur sem arcu a augue. Ut mattis, turpis id egestas efficitur, sapien ex ullamcorper neque, nec fermentum sem nibh ac lectus. In varius mi non risus accumsan, vel sodales orci mollis. Integer eleifend eleifend nibh egestas suscipit. Sed purus leo, vulputate ac dolor eu, sodales molestie ante. Nullam rhoncus libero interdum pretium mattis. Integer id est lectus. Etiam bibendum convallis erat eu mattis.
+Move your beetle and walk through the ball of dung to push it.
+You can play either with a gamepad or mouse & keyboard. The gamepad is advised for a better experience.
+
+Gamepad controls:
+-Left analog to move
+-Right analog to look around
+
+Keyboard controls:
+-Move the mouse to look around
+-Z/W/Up arrow to move forward
+-S/Down arrow to move downward
+-Q/A/Keft arrow to move left
+-D/Right arrow to move right
+
+Be sure to use the mouse/right analog to orient the beetle well.
