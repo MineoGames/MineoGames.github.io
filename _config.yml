@@ -28,10 +28,10 @@ pages_list:
 
 games:
   - name: Dung Beetle
-    img: dummy2.png
+    img: dungbeetle.png
     page: /games/dung-beetle/
   - name: Unwelcome
-    img: dummy1.png
+    img: unwelcome.png
     page:
 
 last_post_words: 100
