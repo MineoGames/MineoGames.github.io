@@ -61,3 +61,4 @@ Exemple :
 ```
 ![Texte alternatif](/img/dungbeetle/post_img1.png "Texte infobulle")
 ```
+Taille d'image conseillé : 1140*618px
