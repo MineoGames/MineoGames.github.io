@@ -50,3 +50,14 @@ img: game.png
 3. Rédiger la fiche de présentation en suivant la syntaxe [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 4. Modifier le fichier _config.yml, au niveau de la clé ``game``, pour l'entrée qui a été ajoutée précédemment, compléter la clé ``page`` par ``/games/nom-du-fichier`` où ``nom-du-fichier`` est le nom du fichier qui a été choisi à l'étape 1, sans le ``.md``
 5. Commit & push, patienter quelques secondes et la nouvelle page est disponible et la bannière de la page d'accueil est cliquable !
+
+## Info pratiques éditeur [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+1. Afin de créer un lien vers une page internet, écriver le texte entre crochet puis le lien suivi par le lien entre parenthèses
+Exemple : 
+```
+[Page de blog](http://www.mineogames.com/blog/)
+```
+2. Afin d'insérer une image, ajouter la dans le dossier img/sous-dossier puis appelez la via le code suivant :
+```
+![Texte alternatif](/img/dungbeetle/post_img1.png "Texte infobulle")
+```
