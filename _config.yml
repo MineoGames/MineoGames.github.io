@@ -22,8 +22,8 @@ social:
 
 pages_list:
   About: 'about'
-  Blog: 'last-blog-post'
   Our games: 'games'
+  Blog: 'last-blog-post'
   Contact: 'contact'
 
 games:
