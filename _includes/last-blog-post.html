@@ -10,7 +10,7 @@
             </h4>
 
             <section class="text-justify">
-                {{ post.content | strip_html | markdownify | truncatewords: site.last_post_words }}
+                {{ post.content | markdownify | truncatewords: site.last_post_words }}
             </section>
 
             <h4><a href="{{site.baseurl}}/blog/">See other posts</a></h4>
