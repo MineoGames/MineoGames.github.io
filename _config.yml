@@ -40,5 +40,9 @@ last_post_words: 100
 markdown: kramdown
 permalink: pretty
 
+# https
+url: https://www.mineogames.com   # with the https protocol
+enforce_ssl: www.mineogames.com   # without any protocol
+
 gems:
   - jekyll-sitemap
