@@ -1,7 +1,8 @@
 # Site settings
 title: Mineo Games – Official Website - Indie Game Studio
 email: contact@mineogames.com
-url: http://www.mineogames.com
+url: https://www.mineogames.com
+enforce_ssl: mineogames.com
 description: Welcome to the official Mineo Games website. We are a French Indie Studio, discover our games here! The studio is currently working on Unwelcome, a survival game.
 keywords: Mineo Games, Mineo, mineo games, Dung Beetle, dung beetle, gamejolt, unwelcome, Unwelcome, mineogames
 
@@ -39,10 +40,6 @@ last_post_words: 100
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-# https
-url: https://www.mineogames.com   # with the https protocol
-enforce_ssl: www.mineogames.com   # without any protocol
 
 gems:
   - jekyll-sitemap
