@@ -55,7 +55,7 @@ img: game.png
 1. Afin de créer un lien vers une page internet, écriver le texte entre crochet puis le lien suivi par le lien entre parenthèses
 Exemple : 
 ```
-[Page de blog](http://www.mineogames.com/blog/)
+[Page de blog](https://www.mineogames.com/blog/)
 ```
 2. Afin d'insérer une image, ajouter la dans le dossier img/sous-dossier puis appelez la via le code suivant :
 ```
