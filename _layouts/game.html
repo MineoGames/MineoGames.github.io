@@ -22,8 +22,18 @@
 
 </section>
 
+{% include carousel.html %}
+
 {% include footer.html %}
 {% include js.html %}
+<script type="text/javascript">
+    $(function () {
+        var carousel = $('#carousel');
+        if (typeof carousel !== 'undefined') {
+            $('#hidden-carousel').appendTo(carousel).show();
+        }
+    });
+</script>
 
 </body>
 </html>

@@ -6,3 +6,9 @@
 {
 font-family: 'Kaushan Script', cursive;
 }
+
+#carousel
+{
+    height: auto;
+    overflow: auto;
+}
