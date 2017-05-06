@@ -12,3 +12,7 @@ font-family: 'Kaushan Script', cursive;
     height: auto;
     overflow: auto;
 }
+
+intro .intro-body .brand-heading {
+ height: 450px;
+}
