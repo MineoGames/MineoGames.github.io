@@ -6,6 +6,12 @@ enforce_ssl: mineogames.com
 description: Welcome to the official Mineo Games website. We are a French Indie Studio, discover our games here! The studio is currently working on Unwelcome, a survival game.
 keywords: Mineo Games, Mineo, mineo games, Dung Beetle, dung beetle, gamejolt, unwelcome, Unwelcome, mineogames
 
+t:
+  fr:
+    description: Bienvenue sur le site officiel de Mineo Games. We are a French Indie Studio, discover our games here! The studio is currently working on Unwelcome, a survival game.
+  en:
+    description: Welcome to the official Mineo Games website. We are a French Indie Studio, discover our games here! The studio is currently working on Unwelcome, a survival game.
+
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
@@ -21,19 +27,37 @@ social:
   - title: facebook
     url: https://www.facebook.com/MineoGames/
 
+home:
+  en: '/accueil/'
+  fr: '/accueil/'
+
 pages_list:
-  About: 'about'
-  Our games: 'games'
-  Blog: 'last-blog-post'
-  Contact: 'contact'
+  en:
+    link: '/index/'
+    pages:
+      About: 'about'
+      Our games: 'games'
+      Blog: 'last-blog-post'
+      Contact: 'contact'
+  fr:
+    link: '/accueil/'
+    pages:
+      A propos: 'about'
+      Nos jeux: 'games'
+      Journal: 'last-blog-post'
+      Contact: 'contact'
 
 games:
   - name: Dung Beetle
     img: dungbeetle.png
-    page: /games/dung-beetle/
+    page:
+      en: '/games/dung-beetle/'
+      fr: '/games/dung-beetle-fr/'
   - name: Unwelcome
     img: unwelcome.png
     page:
+      en:
+      fr:
 
 last_post_words: 100
 

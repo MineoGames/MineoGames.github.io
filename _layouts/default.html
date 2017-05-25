@@ -4,8 +4,8 @@
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include nav.html %}
     {% include header.html %}
-    {% for p in site.pages_list %}
-      {% assign path = p[1] | append: '.html' %}
+    {% for p in site.pages_list[page.lang].pages %}
+      {% assign path = page.lang | append: '/' | append:  p[1] | append: '.html' %}
       {% include {{ path }} %}
     {% endfor %}
     {% include footer.html %}

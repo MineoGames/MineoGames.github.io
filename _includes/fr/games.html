@@ -1,0 +1,14 @@
+<section id="games" class="content-section text-center">
+    <h2>Nos jeux</h2>
+    {% for game in site.games %}
+    {% if game.page[page.lang] %}
+    <a style="display:block" href="{{ site.baseurl }}{{ game.page[page.lang] }}">
+        {% endif %}
+        <div class="game-banner" style="background-image: url(/img/{{ game.img }})">
+            <h3>{{ game.name }}</h3>
+        </div>
+        {% if game.page[page.lang] %}
+    </a>
+    {% endif %}
+    {% endfor %}
+</section>

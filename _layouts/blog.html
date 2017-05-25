@@ -9,7 +9,8 @@
         <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
             {{ page.content | markdownify }}
             <div>
-                {% for post in site.posts %}
+                {% assign posts=site.posts | where:"lang", page.lang %}
+                {% for post in posts %}
                   {% include post-list.html%}
                 {% endfor %}
             </div>

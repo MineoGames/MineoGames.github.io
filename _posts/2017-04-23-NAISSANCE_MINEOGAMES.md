@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mineo Games birth
-lang: en
+title: Naissance de Mineo games
+lang: fr
 ref: mineo-games-birth
 ---
 
