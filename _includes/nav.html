@@ -14,7 +14,7 @@
                     <img src="{{site.baseurl}}/img/icon.png" style="height: 16px; width: 18px; display: inline">  <span class="light">Mineo</span> Games
                 </a>
                 {% endif %}
-                <div class="collapse navbar-collapse navbar-left">
+                <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
                     {% for post in posts %}
