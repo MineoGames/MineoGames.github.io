@@ -5,6 +5,6 @@ lang: fr
 ref: mineo-games-birth
 ---
 
-The Mineo Games official website is now live ! The adventure begins :)
+Le site officiel de Mineo Games est en ligne ! L'aventure commence :)
 
-Please stay tuned to get news about our incoming games.
+Consultez régulièrement le blog afin de connaître toutes les nouveautés sur nos jeux.
