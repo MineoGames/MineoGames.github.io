@@ -49,7 +49,7 @@
                     <!-- Blog, Post, Tag and Error pages -->
                     {% for p in site.pages_list[page.lang].pages %}
                     <li>
-                        <a class="page-scroll" href="{{site.pages_list[page.lang].link}}/#{{ p[1] }}"> {{p[0]}} </a>
+                        <a class="page-scroll" href="{{site.pages_list[page.lang].link}}#{{ p[1] }}"> {{p[0]}} </a>
                     </li>
                     {% endfor %}
                     {% endif %}

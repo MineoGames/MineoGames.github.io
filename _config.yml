@@ -28,19 +28,19 @@ social:
     url: https://www.facebook.com/MineoGames/
 
 home:
-  en: '/accueil/'
-  fr: '/accueil/'
+  en: '/accueil'
+  fr: '/accueil'
 
 pages_list:
   en:
-    link: '/index/'
+    link: '/index'
     pages:
       About: 'about'
       Our games: 'games'
       Blog: 'last-blog-post'
       Contact: 'contact'
   fr:
-    link: '/accueil/'
+    link: '/accueil'
     pages:
       A propos: 'about'
       Nos jeux: 'games'
