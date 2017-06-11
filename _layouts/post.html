@@ -14,6 +14,12 @@
         {{ page.content | markdownify }}
     </section>
 
+        {% if page.lang == 'en' %}
+        <a href="{{site.baseurl}}/blog/">See other posts</a>
+        {% elsif page.lang == 'fr' %}
+        <a href="{{site.baseurl}}/journal/">Voir les autres posts</a>
+        {% endif %}
+
     </section>
 
     {% include footer.html %}
