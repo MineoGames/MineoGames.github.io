@@ -7,7 +7,7 @@
             {% assign post = site.posts | where:"lang", page.lang %}
             {% assign post = post.first %}
             <h4><strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-                <strong> - Le {{ post.date | date: "%m/%d/%Y" }} </strong>
+                <strong> - The {{ post.date | date: "%m/%d/%Y" }} </strong>
             </h4>
 
             <section class="text-justify">
