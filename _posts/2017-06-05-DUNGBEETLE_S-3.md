@@ -1,0 +1,14 @@
+---
+layout: post
+title: DUNG BEETLE S-3
+lang: en
+ref: dungbeetle_s-3
+---
+
+W-3 before the official release of Dung Beetle!
+
+One of the news features : completely remade animations.
+
+![new animation](/img/dungbeetle/animation.gif "Dung Beetle gif")
+
+Access the game page for [more info](http://www.mineogames.com/games/dung-beetle/)
