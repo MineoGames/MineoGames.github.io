@@ -26,6 +26,7 @@ Le saviez-vous ? Le bousier pousse son butin avec ses pattes arrières!
 ### Contrôles Gamepad:
 - Analog de gauche pour se déplacer
 - Analog de droite pour observer et orienter le bousier
+- Start pour passer les cinématiques
 
 ### Contrôles Souris/clavier:
 - Bouger la souris pour observer et orienter le bousier
@@ -33,5 +34,6 @@ Le saviez-vous ? Le bousier pousse son butin avec ses pattes arrières!
 - S/Fleche bas pour reculer (marche avant)
 - Q/A/Fleche gauche pour se déplacer à gauche
 - D/Fleche droite pour se déplacer à droite
+- Espace pour passer les cinématiques
 
 N'oubliez pas d'utiliser la souris/ l'analog droit pour orienter correctement le bousier.
