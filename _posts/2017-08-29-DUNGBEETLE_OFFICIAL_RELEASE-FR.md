@@ -11,4 +11,4 @@ Découvrez la beauté de la nature et la vie trépidante du scarabé bousier.
 
 ![Dung Beetle Poster](/img/dungbeetle/img1.png "Dung Beetle poster")
 
-Access the game page for [more info](https://www.mineogames.com/games/dung-beetle-fr/)
+Accédez à la page du jeu pour [plus d'infos](https://www.mineogames.com/games/dung-beetle-fr/)
