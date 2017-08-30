@@ -18,8 +18,8 @@ font-family: 'Kaushan Script', cursive;
 
 /* Main carousel style */
 .carousel {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: auto;
 }
 
 /* Indicators list style */
