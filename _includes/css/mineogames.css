@@ -29,6 +29,17 @@ font-family: 'Kaushan Script', cursive;
     margin-left: 5px;
     width: 100%;
 }
+
+@media(max-width:767px) {
+    .article-slide .carousel-indicators {
+        bottom: -200px;
+    }
+
+    .carousel-inner {
+        margin-bottom: 200px;
+    }
+}
+
 /* Indicators list style */
 .article-slide .carousel-indicators li {
     border: medium none;
