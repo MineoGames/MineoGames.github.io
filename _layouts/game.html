@@ -41,7 +41,7 @@
             } );
             tallest = Math.max.apply( null, heights ); //cache largest value
             items.css( 'min-height', tallest + 'px' );
-            if ($('.article-slide .carousel-indicators').css('bottom') !== 0) {
+            if ($('.article-slide .carousel-indicators').css('bottom') !== '0px') {
                 $('.article-slide .carousel-indicators').css('bottom', -tallest);
                 $('.carousel-inner').css('margin-bottom', tallest);
             }
