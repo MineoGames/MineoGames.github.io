@@ -25,6 +25,7 @@ Let yourself dive into this small world. Discover that from this point of view, 
 
 <div id="carousel"></div>
 
+
 ## How to play ?
 
 Move your beetle and walk through the ball of dung to push it.

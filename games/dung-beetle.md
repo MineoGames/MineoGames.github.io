@@ -25,7 +25,8 @@ Dung Beetle is a 3D game that we first developed in 3 days for the [Ludum Dare](
 You control a beetle that puts all its efforts into bringing home its ball of dung.
 Let yourself dive into this small world. Discover that from this point of view, every day is a challenge.
 
-![dung beetle](/img/dungbeetle/img1.png "Dung Beetle")
+<div id="carousel"></div>
+
 
 ## How to play ?
 

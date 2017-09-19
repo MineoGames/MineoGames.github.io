@@ -25,7 +25,7 @@ Dung Beetle est un jeu 3D que nous avons tout d'abord développé en 3 jours pou
 Dans ce jeu vous contrôlez un scarabé bouser qui se démène pour ramener sa balle de bouse dans son terrier.
 Plongez dans ce très petit univers. Découvrez que ce point de vue, la vie du bousier est un challenge perpétuel.
 
-![dung beetle](/img/dungbeetle/img1.png "Dung Beetle")
+<div id="carousel"></div>
 
 ## Comment jouer ?
 
