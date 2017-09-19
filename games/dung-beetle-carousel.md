@@ -4,7 +4,7 @@ title: Dung Beetle
 iframe: https://widgets.gamejolt.com/package/v1?key=iaWzXaGs
 img: dungbeetle.png
 carousel:
-- dungbeetle/poster_DungBeetle.png
+- dungbeetle/img1.png
 - dungbeetle/screen1.png
 - dungbeetle/screen2.png
 - dungbeetle/screen3.png
