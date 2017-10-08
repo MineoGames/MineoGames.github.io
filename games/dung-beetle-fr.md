@@ -32,7 +32,7 @@ Plongez dans ce très petit univers. Découvrez que ce point de vue, la vie du b
 Déplacer votre bousier vers la balle de bouser pour la pousser jusque dans votre terrier en évitant les pièges.
 Vous pouvez jouer soit au gamepad soit à la souris et au clavier. Le gamepad est conseillé pour une meilleure expérience.
 
-Le saviez-vous ? Le bousier pousse son butin avec ses pattes arrières!
+<i>Le saviez-vous ? Le bousier pousse son butin avec ses pattes arrières!</i>
 
 ### Contrôles Gamepad:
 - Analog de gauche pour se déplacer

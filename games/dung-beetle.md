@@ -33,7 +33,7 @@ Let yourself dive into this small world. Discover that from this point of view, 
 Move your beetle and walk through the ball of dung to push it.
 You can play either with a gamepad or mouse & keyboard. The gamepad is advised for a better experience.
 
-Did you know it ? The Dung Beetle uses its bakc paws to push its booty!
+<i> Did you know it ? The Dung Beetle uses its back paws to push its booty!</i>
 
 ### Gamepad controls:
 - Left analog to move
