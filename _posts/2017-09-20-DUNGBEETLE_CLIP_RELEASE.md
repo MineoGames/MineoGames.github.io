@@ -7,7 +7,7 @@ ref: dungbeetle_clip_release
 
 BREAKING NEWS! The musical clip of our video game DUNG BEETLE is released!
 
-Play Dung Beetle here at the price you want, (even free  ðŸ˜‰ ) https://gamejolt.com/games/DungBeetle/251581
+Play Dung Beetle here at the price you want, (even free  😉) <a href="https://gamejolt.com/games/DungBeetle/251581" target="_blank"> Clic to access the Gamejolt page</a>
 
 Be sure to suscribe to the youtube channel to dont miss the next videos
 

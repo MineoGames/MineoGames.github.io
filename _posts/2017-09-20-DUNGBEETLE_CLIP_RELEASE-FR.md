@@ -7,7 +7,7 @@ ref: dungbeetle_clip_release
 
 BREAKING NEWS ! Le clip de notre jeu vidéo DUNG BEETLE est sorti !
 
-Jouez à DUNG BEETLE ici au prix que vous voulez, (même gratuit 😉) https://gamejolt.com/games/DungBeetle/251581
+Jouez à DUNG BEETLE ici au prix que vous voulez, (même gratuit 😉) <a href="https://gamejolt.com/games/DungBeetle/251581" target="_blank"> Cliquez pour accéder à la page Gamejolt</a>
 
 Abonnez-vous à la chaîne YouTube pour ne pas manquer les prochaines vidéos.
 
