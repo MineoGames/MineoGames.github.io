@@ -30,14 +30,9 @@ font-family: 'Kaushan Script', cursive;
     width: 100%;
 }
 
-@media(max-width:767px) {
-    .article-slide .carousel-indicators {
-        bottom: -200px;
-    }
-
-    .carousel-inner {
-        margin-bottom: 200px;
-    }
+.carousel-indicators {
+    position: relative;
+    margin-top: 10px;
 }
 
 /* Indicators list style */

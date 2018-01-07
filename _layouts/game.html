@@ -27,34 +27,6 @@
 {% include footer.html %}
 {% include js.html %}
 <script type="text/javascript">
-    function carouselNormalization() {
-        var items = $('#carousel-example-generic').find('.item'), //grab all slides
-            heights = [], //create empty array to store height values
-            tallest; //create variable to make note of the tallest slide
-
-        if( ! items.length )
-            return;
-
-        function normalizeHeights() {
-            items.each( function() { //add heights to array
-                heights.push( $(this).height() );
-            } );
-            tallest = Math.max.apply( null, heights ); //cache largest value
-            items.css( 'min-height', tallest + 'px' );
-            if ($('.article-slide .carousel-indicators').css('bottom') !== '0px') {
-                $('.article-slide .carousel-indicators').css('bottom', -tallest);
-                $('.carousel-inner').css('margin-bottom', tallest);
-            }
-        }
-        normalizeHeights();
-
-        $( window ).on( 'resize orientationchange', function () {
-            tallest = 0, heights.length = 0; //reset vars
-            items.css( 'min-height', '0' ); //reset min-height
-            normalizeHeights(); //run it again
-        } );
-    }
-
     $(function () {
         var carousel = $('#carousel');
         if (typeof carousel !== 'undefined') {
@@ -64,7 +36,6 @@
         $('.carousel').carousel({
             interval: 5000
         });
-        carouselNormalization();
     });
 </script>
 
