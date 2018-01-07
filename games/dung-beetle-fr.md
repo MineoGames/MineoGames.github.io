@@ -6,7 +6,7 @@ img: dungbeetle.png
 lang: fr
 ref: dung-beetle
 carousel:
-- dungbeetle/img1.png
+- dungbeetle/poster_DungBeetle.png
 - dungbeetle/screen1.png
 - dungbeetle/screen2.png
 - dungbeetle/screen3.png
