@@ -55,11 +55,6 @@ games:
     page:
       en: '/games/dung-beetle/'
       fr: '/games/dung-beetle-fr/'
-  - name: Unwelcome
-    img: unwelcome.png
-    page:
-      en:
-      fr:
 
 last_post_words: 100
 
