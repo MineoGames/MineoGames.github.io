@@ -20,7 +20,7 @@ carousel:
 
 ## Description
 
-Dung Beetle is a 3D game that we first developed in 3 days for the [Ludum Dare](http://ldjam.com/) 38(a famous game jam). 
+Dung Beetle is a 3D game (non VR) that we first developed in 3 days for the [Ludum Dare](http://ldjam.com/) 38(a famous game jam). 
 
 You control a beetle that puts all its efforts into bringing home its ball of dung.
 Let yourself dive into this small world. Discover that from this point of view, every day is a challenge.

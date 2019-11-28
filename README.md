@@ -19,7 +19,7 @@ A noter qu'il est possible de réaliser ces opérations directement depuis l'int
 
 ## Comment ajouter un jeu ?
 ### Sur la page d'accueil
-1. Ajouter au repository l'image qui sera utilisée comme bannière dans le dossier img/. Les dimensions à respecter sont ``1850 × 200``
+1. Remplacer l'image img/intro-bg.jpg dans le repository par l'image qui sera utilisée comme bannière. Les dimensions à respecter sont ``1850 × 200``
 2. Modifier le fichier _config.yml
 3. Sous la clé ``game`` ajouter une nouvelle entrée avec les informations suivantes, en remplaçant ```Nom du jeu``` par le nom du jeu (qui sera affiché sur la bannière) et ``game.png`` par le nom du fichier qui a été ajouté à l'étape 1
 
@@ -62,3 +62,8 @@ Exemple :
 ![Texte alternatif](/img/dungbeetle/post_img1.png "Texte infobulle")
 ```
 Taille d'image conseillé : 1140*618px
+
+3. Pour intégrer une vidéo youtube, il faut d'abord enregistrer un screenshot sous imgur (en faison ouvrir l'image dans un autre onglet pour récupérer le lien)
+```
+[![UNBOXING OCULUS START](https://i.imgur.com/5a6QUsl.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
+```
