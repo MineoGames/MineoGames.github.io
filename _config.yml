@@ -28,7 +28,8 @@ social:
     url: https://twitter.com/MineoGames/
   - title: facebook
     url: https://www.facebook.com/MineoGames/
-
+  - title: discord
+    url: https://discord.gg/dquReyq
 home:
   en: '/accueil'
   fr: '/accueil'
