@@ -51,6 +51,11 @@ pages_list:
       Contact: 'contact'
 
 games:
+  - name: Nest Guard
+    img: nestguard.png
+    page:
+      en: '/games/nest-guard/'
+      fr: '/games/nest-guard-fr/'
   - name: Dung Beetle (Non VR)
     img: dungbeetle.png
     page:
