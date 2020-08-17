@@ -49,3 +49,8 @@ You can play either with a gamepad or mouse & keyboard. The gamepad is advised f
 - Espace to skip cinematics
 
 Be sure to use the mouse/right analog to properly orient the beetle.
+
+### Youtuber's review
+Thank you [돼지저금통](https://www.youtube.com/watch?v=IOgFvfAP0vA), [You Big Nonce](https://www.youtube.com/watch?v=v0ZF_StPIds&t=126s) for your video! 
+
+[![Dung Beetle gameplay](https://img.youtube.com/vi/IOgFvfAP0vA/0.jpg)](https://www.youtube.com/watch?v=IOgFvfAP0vA)

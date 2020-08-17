@@ -48,3 +48,8 @@ Vous pouvez jouer soit au gamepad soit à la souris et au clavier. Le gamepad es
 - Espace pour passer les cinématiques
 
 N'oubliez pas d'utiliser la souris/ l'analog droit pour orienter correctement le bousier.
+
+### Youtuber's review
+Merci [돼지저금통](https://www.youtube.com/watch?v=IOgFvfAP0vA), [You Big Nonce](https://www.youtube.com/watch?v=v0ZF_StPIds&t=126s) pour ta vidéo ! 
+
+[![Dung Beetle gameplay](https://img.youtube.com/vi/IOgFvfAP0vA/0.jpg)](https://www.youtube.com/watch?v=IOgFvfAP0vA)
