@@ -1,5 +1,5 @@
 Repository du site mineogames.com
-==================================
+=================================
 
 ## Comment créer un article de blog ?
 1. Dans le dossier _posts, créer un nouveau fichier sur le modèle suivant ``YYY-MM-DD-Nom-du-post.md``, par exemple ``2017-04-23-Creation-du-site.md``
