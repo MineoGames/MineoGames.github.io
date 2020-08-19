@@ -71,4 +71,3 @@ ou bien utilisé la vignette auto générée
 ```
 [![Dung Beetle gameplay](https://img.youtube.com/vi/IOgFvfAP0vA/0.jpg)](https://www.youtube.com/watch?v=IOgFvfAP0vA)
 ```
-
