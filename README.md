@@ -67,3 +67,8 @@ Taille d'image conseillé : 1140*618px
 ```
 [![UNBOXING OCULUS START](https://i.imgur.com/5a6QUsl.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
 ```
+ou bien utilisé la vignette auto générée
+```
+[![Dung Beetle gameplay](https://img.youtube.com/vi/IOgFvfAP0vA/0.jpg)](https://www.youtube.com/watch?v=IOgFvfAP0vA)
+```
+
