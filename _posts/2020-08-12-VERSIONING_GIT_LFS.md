@@ -18,7 +18,7 @@ The problem we would like to address today is the repository size. The git repo 
 The Git platforms (Github, Bitbucket) provide for free 1GB of Git Lfs, which wont be enough. So we have to host the LFS files ourselves. It could be done on a local server, but the cloud is not too expensive today and it will avoid space and backup questions.
 I found a guide made by Allan Edwardes to [host GIT LFS files on Amazon Web Service S3](https://alanedwardes.com/blog/posts/serverless-git-lfs-for-game-dev). I adapted his solution to host the files on OVH Object Storage instead ([a french provider that I trust more](https://www.ovh.com/world/)). 
 
-It is a Dotnet Core application that you can find here : [https://github.com/MineoGames/Estranged.Lfs](https://github.com/MineoGames/Estranged.Lfs). 
+It is a Dotnet Core application that you can find here: [https://github.com/MineoGames/Estranged.Lfs](https://github.com/MineoGames/Estranged.Lfs). 
 
 ## How does it work
 The git repository is configured to send LFS files to GIT LFS SERVER that handles the logic and then send the data on OVH Object Storage.
@@ -28,7 +28,7 @@ The git repository is configured to send LFS files to GIT LFS SERVER that handle
 
 The lfs server can be an application on your pc/ a server or it can be serverless with [AWS Lambda](https://aws.amazon.com/fr/lambda/). 
 
-This guide will show how to build the stack. Of course at the end, the developers will just have to clone the repo and push normally : it will be transparent to them! 
+This guide will show how to build the stack. Of course at the end, the developers will just have to clone the repo and push normally: it will be transparent to them! 
 
 ## How to build the stack
 
@@ -38,7 +38,7 @@ This will include the process of creating accounts and getting credentials, etc.
 
 **Follow the [guide]( https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_S3_API/) whithout forgetting to do the requirements.**
 Be careful, if you use AWS CLI V2, a workaround described [here](https://github.com/wbingli/awscli-plugin-endpoint/issues/15) is needed for the plugin *awscli_plugin_endpoint* to work.
-Be sure that you can use the API for both AWS and OVH using profiles. Your .aws files should look like this :
+Be sure that you can use the API for both AWS and OVH using profiles. Your .aws files should look like this:
 
 *.aws/config*
 
@@ -90,7 +90,7 @@ You have now to choose if you want to host the server on your Pc/ a server or if
 	
 ### Local Git Lfs Server
 
-To achieve this, you have to use the AspNet version of the solution : *hosting\Estranged.Lfs.Hosting.AspNet*.
+To achieve this, you have to use the AspNet version of the solution: *hosting\Estranged.Lfs.Hosting.AspNet*.
 
 1. Edit this line of *Startup.cs* to suit to your environment (using _aws_access_key_id_ and _aws_secret_access_key_ of the .aws/credential file > ovh profile)
 
@@ -106,7 +106,7 @@ To achieve this, you have to use the AspNet version of the solution : *hosting\E
 4. This is a console application that is listening for HTTP LFS requests on `https://localhost:5001`
 
     <img src="https://user-images.githubusercontent.com/2952456/89800695-6739ab80-db2f-11ea-8641-0eab8c501381.png" alt="console app" style="width:80rem;"/>
-5. In your game project, create the *.lfsconfig* file to send request to the console app
+5. In your game project root, create the *.lfsconfig* file to send request to the console app
 	```
 	[lfs]
 	url = https://localhost:5001/
@@ -123,7 +123,7 @@ To achieve this, you have to use the AspNet version of the solution : *hosting\E
 - **A prerequisite is to [install the dotnet-lambda global tool from AWS](https://github.com/aws/aws-extensions-for-dotnet-cli).**
 - **A prerequisite is to have created a S3 bucket to host the lambda function elements (stack modele, code build).**
 
-To achieve this, you have to use the Lambda version of the solution : *hosting\Estranged.Lfs.Hosting.Lambda*.
+To achieve this, you have to use the Lambda version of the solution: *hosting\Estranged.Lfs.Hosting.Lambda*.
 
 1. Clone [https://github.com/MineoGames/Estranged.Lfs](https://github.com/MineoGames/Estranged.Lfs) on your PC
 2. Edit *Estranged.Lfs\hosting\Estranged.Lfs.Hosting.Lambda\aws-lambda-tools-defaults.json*	 to fill the variables
@@ -140,20 +140,25 @@ To achieve this, you have to use the Lambda version of the solution : *hosting\E
 	AWS_STACK_NAME | Name of the Cloudformation stack | LfsProject
 	AWS_SHARED_BETWEEN_STACK_S3_NAME  | Name of the S3 bucket that will hold code and stack template version uploaded | shared-lambda 
 
+	<br>
 3. Open dev console and go to hosting/Lambda
 
 	<img src="https://imgur.com/nfpGXSK.png" alt="Dev console access" style="width:45rem;"/>
 	<img src="https://imgur.com/nbTMeny.png" alt="Dev console" style="width:45rem;"/>
 
 4.  Run the following command to create the CloudFormation stack, by choosing same value as before for the LFS credentials
+
 	``dotnet lambda deploy-serverless StackName --template-parameters GitLfsUsername=LfsUser;GitLfsPassword=Tezfz5615xqezef -t modele.yaml  ``
+	
 	<img src="https://imgur.com/qZ4ONtf.png" alt="Create Cloudformation stack" style="max-width:80rem;"/>
 
 5. Run the following command to upload the code into AWS Lambda Function
+
 	``dotnet lambda deploy-function``
+	
 	<img src="https://imgur.com/hCZDZ58.png" alt="Create Cloudformation stack" style="max-width:80rem;"/>
 
-6. Create *.lfsconfig* at the root of your game repository and connect it to the lambda function (endpoint found in 4. ) :
+6. Create *.lfsconfig* at the root of your game repository and connect it to the lambda function (endpoint found in 4. ):
 	```
 	[lfs]
 	url = https://9w45qpo957.execute-api.eu-west-1.amazonaws.com/lfs
