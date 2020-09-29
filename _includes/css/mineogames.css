@@ -81,3 +81,11 @@ th, td {
   padding: 1rem;
   text-align: left;
 }
+
+.mt-3{
+	margin-top:3rem;
+}
+
+.mb-0{
+	margin-bottom: 0;
+}
