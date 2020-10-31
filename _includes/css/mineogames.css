@@ -1,10 +1,22 @@
 /*
  * Custom css of the Mineo Games site.
  */
- 
-.kaushan
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-font
 {
-font-family: 'Kaushan Script', cursive;
+font-family: 'Staatliches', cursive;
+}
+
+h1{
+	font-family: 'Staatliches', cursive;
+	font-size: 3.7rem;
+}
+
+h2{
+	font-size: 2.5rem;
 }
 
 #carousel
@@ -88,4 +100,29 @@ th, td {
 
 .mb-0{
 	margin-bottom: 0;
+}
+
+.biglist li{
+	list-style-type: none;
+	font-weight: bold;
+	    display: block;
+    font-size: 2.5rem;
+	font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Main line*/ 
+
+.navbar-brand>img{
+	height: 2.5rem;
+    width: 2.5rem;
+    display: inline;
+    margin: 0rem 0.5rem 0.4rem 0rem;
+}
+
+#nav-logo{
+	padding: 1.2rem 2rem 0rem 1rem;
 }

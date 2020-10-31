@@ -3,18 +3,18 @@
 <section id="last-blog-post" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-            <h2>Dernier post de blog</h2>
+            <h1>Dernier post de blog</h1>
             {% assign post = site.posts | where:"lang", page.lang %}
             {% assign post = post.first %}
-            <h4><strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-                <strong> - Le {{ post.date | date: "%m/%d/%Y" }} </strong>
-            </h4>
+            <h2><strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
+                <strong> - {{ post.date | date: "%m/%d/%Y" }} </strong>
+            </h2>
 
             <section class="text-justify">
                 {{ post.content | markdownify | truncatewords: site.last_post_words }}
             </section>
 
-            <h4><a href="{{site.baseurl}}/journal/">Voir les autres posts</a></h4>
+            <h2><a href="{{site.baseurl}}/journal/">Voir les autres posts</a></h2>
 
         </div>
     </div>

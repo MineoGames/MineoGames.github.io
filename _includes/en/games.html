@@ -1,11 +1,11 @@
 <section id="games" class="content-section text-center">
-    <h2>Our games</h2>
+    <h1>Our games</h1>
     {% for game in site.games %}
     {% if game.page[page.lang] %}
     <a style="display:block" href="{{ site.baseurl }}{{ game.page[page.lang] }}">
     {% endif %}
     <div class="game-banner" style="background-image: url(/img/{{ game.img }})">
-        <h3>{{ game.name }}</h3>
+        <h2>{{ game.name }}</h2>
     </div>
     {% if game.page[page.lang] %}
     </a>
