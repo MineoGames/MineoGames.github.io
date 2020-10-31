@@ -102,6 +102,10 @@ th, td {
 	margin-bottom: 0;
 }
 
+.biglist{
+	padding-inline-start: 0;
+}
+	
 .biglist li{
 	list-style-type: none;
 	font-weight: bold;
