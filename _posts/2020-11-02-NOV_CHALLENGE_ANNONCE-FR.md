@@ -2,7 +2,7 @@
 layout: post
 title: 1 JEU VR PAR SEMAINE - CHALLENGE NOVEMBRE
 lang: fr
-ref: oculus_start_unboxing
+ref: november_challenge
 ---
 
 En ces temps difficiles et ce second confinement, Mineo Games fait de son mieux pour vous distraire et vous faire garder le sourire.

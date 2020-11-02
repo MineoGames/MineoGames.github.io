@@ -2,7 +2,7 @@
 layout: post
 title: ONE VR GAME A WEEK - NOVEMBER CHALLENGE
 lang: en
-ref: oculus_start_unboxing
+ref: november_challenge
 ---
 
 During these hard times, Mineo Games does it's best to keep you happy.
