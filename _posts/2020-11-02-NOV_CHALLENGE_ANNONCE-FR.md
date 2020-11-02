@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UNBOXING OCULUS START
+title: 1 JEU VR PAR SEMAINE - CHALLENGE NOVEMBRE
 lang: fr
 ref: oculus_start_unboxing
 ---
