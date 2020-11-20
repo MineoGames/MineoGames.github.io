@@ -54,6 +54,11 @@ pages_list:
       Contact: 'contact'
 
 games:
+  - name: Vermin Exterminator
+    img: vermin-exterminator.png
+    page:
+      en: '/games/vermin-exterminator/'
+      fr: '/games/vermin-exterminator-fr/'
   - name: Nest Guard
     img: nestguard.png
     page:
