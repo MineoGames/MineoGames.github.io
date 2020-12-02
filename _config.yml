@@ -25,17 +25,17 @@ footer: Mineo Games
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-   - title: discord
+  - title: discord
     url: https://discord.gg/dquReyq
-   - title: twitter
+  - title: twitter
     url: https://twitter.com/MineoGames/
-   - title: instagram
+  - title: instagram
     url: https://www.instagram.com/mineogames/  
-   - title: youtube
+  - title: youtube
     url: https://www.youtube.com/channel/UCYCHRUq1q1SUe04sH7QSPyQ
-   - title: facebook
+  - title: facebook
     url: https://www.facebook.com/MineoGames/
-   - title: patreon
+  - title: patreon
     url: https://www.patreon.com/MineoGames
 
 home:
