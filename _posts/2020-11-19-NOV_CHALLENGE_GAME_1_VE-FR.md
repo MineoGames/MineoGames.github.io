@@ -9,7 +9,7 @@ ref: nov_challenge_game_1
 
 ## Découvrez VERMIN EXTERMINATOR, le premier jeu sorti dans le cadre du VR November Challenge.
 
-Bien qu'ayant dépassé le délai d'une semaine, c'est avec fierté que l'on annonce la sortie d'un jeu de VR complet. Et deveniez quoi ? C'est le meilleur que Mineo Games ait jamais réalisé. 
+Bien qu'ayant dépassé le délai d'une semaine, c'est avec fierté que j'annonce la sortie d'un jeu VR complet. Et devinez quoi ? C'est le meilleur que Mineo Games ait jamais réalisé. 
 
 Accédez à la page du jeu pour [plus d'informations](/games/vermin-exterminator-fr/)
 
