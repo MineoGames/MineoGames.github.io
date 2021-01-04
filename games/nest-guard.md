@@ -49,7 +49,7 @@ Play as a super intelligent dino that will do anything possible to protect its e
 	
 ## Release information	
 	
-The game will be released on Steam in 2020 and should be compatible with all Steam VR headsets (tested with Oculus Rifts S).
+The game should be released on Steam in 2021 and will be compatible with all Steam VR headsets (tested with Oculus Rifts S).
 
 An early prototype is available on Itch.Io.
 

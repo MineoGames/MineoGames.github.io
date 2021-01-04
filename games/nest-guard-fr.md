@@ -47,7 +47,7 @@ Jouez le rôle d'un dinosaure super intelligent qui fera tout ce qui est en son 
 	
 ## Information de sortie
 	
-Le jeu sortira sur Steam en 2020 et devrait être compatible avec tous les casques Steam VR (testé avec Oculus Rifts S).
+Le jeu devrait sortir sur Steam en 2021 et sera compatible avec tous les casques Steam VR (testé avec Oculus Rifts S).
 
 Un premier prototype est disponible sur Itch.Io.
 

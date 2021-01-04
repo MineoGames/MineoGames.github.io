@@ -5,9 +5,9 @@ lang: fr
 ref: nov_challenge_game_1
 ---
 
-[![VERMIN EXTERMINATOR](/img/vermin-exterminator-fr/screen1.png)](/games/vermin-exterminator/ "Accéder à la page du jeu") 
+[![VERMIN EXTERMINATOR](/img/vermin-exterminator/screen1.png)](/games/vermin-exterminator-fr/ "Accéder à la page du jeu") 
 
-## Découvrez VERMIN EXTERMINATOR, le premier jeu sorti dans le cadre du VR November Challenge.
+## Découvrez VERMIN EXTERMINATOR, le jeu sorti dans le cadre du VR November Challenge.
 
 Bien qu'ayant dépassé le délai d'une semaine, c'est avec fierté que j'annonce la sortie d'un jeu VR complet. Et devinez quoi ? C'est le meilleur que Mineo Games ait jamais réalisé. 
 
