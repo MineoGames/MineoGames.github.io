@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UNBOXING NEW MICROPHONES
+title: UNBOXING NOUVEAUX MICROPHONES
 lang: fr
 ref: mics_unboxing
 ---
