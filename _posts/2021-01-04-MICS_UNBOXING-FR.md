@@ -11,7 +11,7 @@ Aujourd'hui, je vais faire un unboxing de mes nouveaux setup pour le vlog et l'e
 
 Ensuite, nous ferons quelques tests pour voir la qualité des différents micros.
 
-**Abonnez-vous à la chaîne YouTube pour ne pas manquer les prochaines vidéos.**
+**Abonne-toi à la chaîne YouTube pour ne pas manquer les prochaines vidéos 😉.**
 
 [![UNBOXING NOUVEAUX MICROPHONES](https://imgur.com/VPbPoh2.png)](https://www.patreon.com/posts/45278643 "UNBOXING NOUVEAUX MICROPHONES")
 

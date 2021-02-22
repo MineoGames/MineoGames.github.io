@@ -74,7 +74,7 @@ Right stick allow to snap turn(the angle can be modified in gameplay settings)
 	
 ## Release information	
 	
-Coming soon (at the price you want) on : **[Itch.io](https://mineogames.itch.io/)**
+Coming soon on : **[Itch.io](https://mineogames.itch.io/)**
 
 Will be available for PC VR (Oculus, Vive, Valve Index, WMR) but should be compatible with all Steam VR headsets.
 

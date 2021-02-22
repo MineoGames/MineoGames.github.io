@@ -74,7 +74,7 @@ Le stick droit permet de tourner rapidement sur soi-même (l'angle peut être mo
 	
 ## Informations de sortie	
 	
-Bientôt disponible (au prix de votre choix) sur : **[Itch.io](https://mineogames.itch.io/)**
+Bientôt disponible sur : **[Itch.io](https://mineogames.itch.io/)**
 
 Sera disponible sur PC VR (Oculus, Vive, Valve Index, WMR) mais devrait être compatible avec tous les casques Steam VR.
 

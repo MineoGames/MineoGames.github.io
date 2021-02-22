@@ -11,6 +11,6 @@ Today I will do an unboxing of my new setups for both vlog and voice/sound recor
 
 Then we will make some tests to see the quality of different mics.
 
-**Be sure to subscribe to the youtube channel to dont miss the next videos.**
+**Be sure to subscribe to the youtube channel so you don't miss the next videos 😉.**
 
 [![UNBOXING NEW MICROPHONES](https://imgur.com/VPbPoh2.png)](https://www.patreon.com/posts/45278643 "UUNBOXING NEW MICROPHONES")
