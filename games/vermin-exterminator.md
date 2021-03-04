@@ -15,6 +15,8 @@ carousel:
 - vermin-exterminator/screen7.png
 ---
 
+*This game is still in development.*
+
 ## Trailer
 
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")

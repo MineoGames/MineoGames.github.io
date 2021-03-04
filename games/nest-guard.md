@@ -14,6 +14,8 @@ carousel:
 - nestguard/screen6.png
 ---
 
+*This game is still in development.*
+
 ## Description
 
 Nest Guard is a sentinel VR game taking place in prehistoric era.

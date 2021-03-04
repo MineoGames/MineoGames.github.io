@@ -19,6 +19,38 @@ h2{
 	font-size: 2.5rem;
 }
 
+label{
+    padding: 1rem;
+}
+
+/*
+ * Sign up form BEGIN.
+ */
+div.signup-form  h2 {
+    color: #d62841;
+}
+
+div.signup-form  strong {
+    font-size: 2rem;
+    color: #d62841;
+}
+
+div.signup-form  label {
+    font-size:1.5rem;
+}
+
+div.signup-form  input#mc-embedded-subscribe {
+    background-color: #d62841;
+    font-size:1.7rem;
+}
+
+div.signup-form  input#mc-embedded-subscribe:hover {
+    background-color: #1495bc;
+}
+/*
+ * Sign up form END.
+ */
+
 #carousel
 {
     overflow: auto;

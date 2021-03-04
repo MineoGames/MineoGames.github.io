@@ -14,6 +14,7 @@ carousel:
 - nestguard/screen6.png
 ---
 
+_Ce jeu est en cours de développement._
 
 ## Description
 
