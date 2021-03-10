@@ -10,7 +10,12 @@
     </div>
 
     <section class="text-justify">
-        {{ page.content | markdownify }}
+        {% capture content_include %} 
+            {% if page.contentfile %}
+                {% include {{ page.contentfile }} %}
+            {% endif %}
+        {% endcapture %}
+        {{ content_include | markdownify }}
     </section>
 
     {% if page.iframe %}
