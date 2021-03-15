@@ -10,3 +10,7 @@ Mineo Games is now part of the Oculus Start Program, as a partner developer! Dis
 Be sure to subscribe to the youtube channel to dont miss the next videos.
 
 [![UNBOXING OCULUS START](https://i.imgur.com/5a6QUsl.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
+
+Subscribe to the newsletter to receive monthly news from the studio.
+
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}

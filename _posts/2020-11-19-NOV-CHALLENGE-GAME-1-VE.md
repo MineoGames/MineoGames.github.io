@@ -14,3 +14,5 @@ Although having exceeded the one week deadline, we proudly announce the release 
 [Check the game page](/games/vermin-exterminator/)
 
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
+
+[Click here](https://mailchi.mp/7e794e83d387/nabq2mz4a8 "NOVEMBER CHALLENGE") to see the whole challenge.

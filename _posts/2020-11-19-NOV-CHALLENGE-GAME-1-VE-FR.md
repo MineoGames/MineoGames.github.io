@@ -11,6 +11,8 @@ ref: nov_challenge_game_1
 
 Bien qu'ayant dépassé le délai d'une semaine, c'est avec fierté que j'annonce la sortie d'un jeu VR complet. Et devinez quoi ? C'est le meilleur que Mineo Games ait jamais réalisé. 
 
-Accédez à la page du jeu pour [plus d'informations](/games/vermin-exterminator-fr/)
+Accéde à la page du jeu pour [plus d'informations](/games/vermin-exterminator-fr/)
 
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
+
+[Clique ici](https://mailchi.mp/7e794e83d387/nabq2mz4a8 "CHALLENGE NOVEMBRE")  pour voir l'ensemble du déroulement du challenge.

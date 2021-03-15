@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  {% include head.html %}
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     {% include nav.html %}
 
     <section id="post" class="container content-section text-center">
-    <h1><strong>{{ page.title }}</strong></h1>
-    <h4>
+      <h1><strong>{{ page.title }}</strong></h1>
+      <h2>
         <strong>Le {{ page.date | date: "%m/%d/%Y" }}</strong>
-    </h4>
+      </h2>
 
-    <section class="text-justify">
-        {{ page.content | markdownify }}
+      <section class="text-justify">{{ page.content | markdownify }}</section>
+
+      {% if page.lang == 'en' %}
+      <h2 class="mt-3"><a href="{{site.baseurl}}/blog/">See other posts</a></h2>
+      {% elsif page.lang == 'fr' %}
+      <h2 class="mt-3"><a href="{{site.baseurl}}/journal/">Voir les autres posts</a></h2>
+      {% endif %}
     </section>
 
-        {% if page.lang == 'en' %}
-        <a href="{{site.baseurl}}/blog/">See other posts</a>
-        {% elsif page.lang == 'fr' %}
-        <a href="{{site.baseurl}}/journal/">Voir les autres posts</a>
-        {% endif %}
-
-    </section>
-
-    {% include footer.html %}
-    {% include js.html %}
-
-    </body>
+    {% include footer.html %} {% include js.html %}
+  </body>
 </html>

@@ -12,3 +12,6 @@ One of the news features : completely remade animations.
 ![new animation](/img/dungbeetle/animation.gif "Dung Beetle gif")
 
 Access the game page for [more info](http://www.mineogames.com/games/dung-beetle/)
+
+Be informed regularly of all the news about our games.
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}

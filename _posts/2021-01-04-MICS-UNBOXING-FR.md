@@ -15,3 +15,7 @@ Ensuite, nous ferons quelques tests pour voir la qualité des différents micros
 
 [![UNBOXING NOUVEAUX MICROPHONES](https://imgur.com/VPbPoh2.png)](https://www.patreon.com/posts/45278643 "UNBOXING NOUVEAUX MICROPHONES")
 
+__Inscrivez-vous à la newsletter pour recevoir les dernières nouveautés du studio.__
+
+{% include fr/subscribe-form.html title="Inscription à la newsletter" %}
+

@@ -16,3 +16,6 @@ Announcing that we are currently developing a VR action game : **NEST GUARD**.
 Access the game page for [more info](/games/nest-guard/)
 
 ![nestguard](/img/nestguard/screen1.png "Nest Guard screenshot")
+
+Be informed regularly of all the news about our games.
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}
