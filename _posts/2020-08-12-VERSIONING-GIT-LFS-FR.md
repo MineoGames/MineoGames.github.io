@@ -187,6 +187,16 @@ Changer les variables d'environnement de la lambda function:
 
 <img src="https://imgur.com/fDkzqtw.png" alt="var" style="max-width:80rem;"/>
 
+
+# EDIT : Créer un plan de sauvegarde
+
+Je recommande fortement de prévoir un backup de vos données, car même le cloud peut tomber en panne. 
+
+Pour cela, créez des conteneurs d' Object Stockage dans d'autres datacenters. 
+Suivez [cette méthode](https://docs.ovh.com/gb/en/public-cloud/sync-object-containers/) pour synchroniser vos conteneurs.
+
+*NB:* L'article n'est pas à jour : maintenant nous n'avons plus besoin de préciser le numéro de la région.
+
 # Mot de la fin
 Nous avons maintenant une solution long-terme facile à mettre en place qui permet d'utiliser Git sans se soucier de la limite de taille.
 Cela serait plus facile si nous pouvions avoir des fonctions Lambda dans OVH pour unifier la pile. 

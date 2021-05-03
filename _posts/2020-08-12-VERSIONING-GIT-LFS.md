@@ -187,6 +187,15 @@ Change lambda function env variables:
 
 <img src="https://imgur.com/fDkzqtw.png" alt="var" style="max-width:80rem;"/>
 
+# EDIT : Create a back-up plan
+
+I strongly recommend to make some backup of your data, even the cloud can get down.
+
+Create some object storage containers in other datacenters. 
+Follow [this method](https://docs.ovh.com/gb/en/public-cloud/sync-object-containers/) to synchronize your containes.
+
+*NB:* The article is not up to date: now we don't need to precise the number of the region anymore.
+
 # End word
 We have now an easy long-term solution that allows use to use git without worrying about size limit.
 It would be easier if we could have Lambda functions in OVH to unify the stack. 
