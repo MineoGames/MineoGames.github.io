@@ -6,6 +6,7 @@ lang: en
 ref: shark-hunt
 contentfile: en/shark-hunt-content.md
 carousel:
+- shark-hunt/screen0.png
 - shark-hunt/screen1.png
 - shark-hunt/screen2.png
 - shark-hunt/screen3.png
