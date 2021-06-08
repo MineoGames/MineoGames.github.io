@@ -1,14 +1,15 @@
 
-*This game is still in development.*
+*This game is in alpha phase. Play early!*
 
 ## Trailer
 
-*Coming soon...*
+Here is a video in wich I tell the story of Shark Hunt with some gameplay in the background.
+[![Shark Hunt - The Power Of Sound Design](https://i.imgur.com/4tmRNXQ.png)](https://youtu.be/WXxsMa61-Zs)
 
 ## Description
-In Shark Hunt, You are a treasure hunter that is looking for the rarest submarine perls in the world to make a fortune. 
+In Shark Hunt, You are a treasure hunter that is looking for the rarest submarine pearls in the world to make a fortune. 
 
-But there is a rumour that there are dangerous sharks in the area. You better be discreet or you will risk your life in an epic fight. **Who’s the best between the man and the beast ?** 
+But there is a rumor that there are dangerous sharks in the area. You better be discreet or you will risk your life in an epic fight. **Who’s the best between the man and the beast?** 
 
 Train in the swimming pool then dive into the mysterious ocean, discover more tools and more challenges across the levels. 
 
