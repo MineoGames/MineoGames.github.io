@@ -3,8 +3,7 @@
 
 ## Trailer
 
-Here is a video in wich I tell the story of Shark Hunt with some gameplay in the background.
-[![Shark Hunt - The Power Of Sound Design](https://i.imgur.com/4tmRNXQ.png)](https://youtu.be/WXxsMa61-Zs)
+[![Shark Hunt - Reveal Trailer](https://i.imgur.com/EOlaCy0.png)](https://youtu.be/1kWwF1yRNHA)
 
 ## Description
 In Shark Hunt, You are a treasure hunter that is looking for the rarest submarine pearls in the world to make a fortune. 

@@ -3,8 +3,7 @@ _Ce jeu est en phase Alpha. Jouez dès maintenant._
 
 ## Trailer
 
-Voici une vidéo dans laquelle je raconte l'histoire de Shark Hunt avec du gameplay en arrière-plan.
-[![Shark Hunt - The Power Of Sound Design](https://i.imgur.com/4tmRNXQ.png)](https://youtu.be/WXxsMa61-Zs)
+[![Shark Hunt - Reveal Trailer](https://i.imgur.com/EOlaCy0.png)](https://youtu.be/1kWwF1yRNHA)
 
 ## Description
 
