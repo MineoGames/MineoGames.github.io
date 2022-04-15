@@ -3,7 +3,7 @@
 
 ## Trailer
 
-[![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/l0Rtz4T.png)](https://youtu.be/x3VzVCAwRqw "Watch on Youtube")
+[![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/wKLnBa7.png)](https://youtu.be/x3VzVCAwRqw "Watch on Youtube")
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png) ](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
 
 ## Awards

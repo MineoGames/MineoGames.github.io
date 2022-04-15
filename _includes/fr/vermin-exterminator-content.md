@@ -3,7 +3,7 @@ _Ce jeu est en cours de développement._
 
 ## Trailer
 
-[![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/l0Rtz4T.png)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
+[![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/wKLnBa7.png)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Regarder sur Youtube")
 
 ## Récompenses
@@ -47,7 +47,7 @@ Mouvement de téléportation :
     - Vous pouvez modifier la rotation et le type de mouvement dans le menu du jeu.
     - Vous pouvez ajuster les niveaux sonores dans le menu du jeu.
 	- Vous pouvez ajuster les graphiques dans le menu du jeu.
-	
+
 - Second bouton gauche pour réinitialiser l'orientation
 	- L'environnement s'adapte à la taille du joueur lors de la réinitialisation de l'orientation
 	
