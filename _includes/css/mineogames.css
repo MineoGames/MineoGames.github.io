@@ -165,3 +165,8 @@ th, td {
 #nav-logo{
 	padding: 1.2rem 2rem 0rem 1rem;
 }
+
+/* GAMES */
+
+/* Vermin Exterminator */
+img[alt="GDWC 2021 finalist"] { width: 200px; margin-left: auto; margin-right:auto; display: block;}

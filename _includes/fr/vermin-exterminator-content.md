@@ -3,7 +3,14 @@ _Ce jeu est en cours de développement._
 
 ## Trailer
 
+[![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/l0Rtz4T.png)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Regarder sur Youtube")
+
+## Récompenses
+
+
+Vermin Exterminator a terminé dans les 5 premiers finalistes parmis 100 candidatures au meilleur prototype de jeu VR à l'édition 2021 du Game Development World Championship !
+![GDWC 2021 finalist](/img/vermin-exterminator/GDWC_2021-Finalist_Badges-White-500x500-VR_Proto.png "Finaliste GDWC 2021")
 
 ## Description
 
@@ -33,16 +40,16 @@ Mouvement de téléportation :
 - Fonctionne avec le stick de gauche et de droite
 
 - Grip pour interagir avec le gantelet / ouvrir les portes
-- Trigger pour tirer
+- Trigger pour tirer / cliqué sur l'élément pointé avec le laser rouge
 
-- Second bouton gauche pour ouvrir le menu
+- Second bouton droit pour ouvrir le menu
 	- Vous pouvez trouver/modifier les commandes dans le menu du jeu. 
     - Vous pouvez modifier la rotation et le type de mouvement dans le menu du jeu.
     - Vous pouvez ajuster les niveaux sonores dans le menu du jeu.
 	- Vous pouvez ajuster les graphiques dans le menu du jeu.
-- Les premiers boutons gauche et droit sont utilisés pour sélectionner l'élément pointé avec le laser rouge
-- Bouton système de gauche pour réinitialiser l'orientation
-	- L'environnement s'adapte à la taille du lecteur lors de la réinitialisation de l'orientation
+	
+- Second bouton gauche pour réinitialiser l'orientation
+	- L'environnement s'adapte à la taille du joueur lors de la réinitialisation de l'orientation
 	
 ## Information de Release
 	

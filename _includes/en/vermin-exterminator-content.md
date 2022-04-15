@@ -3,7 +3,14 @@
 
 ## Trailer
 
-[![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
+[![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/l0Rtz4T.png)](https://youtu.be/x3VzVCAwRqw "Watch on Youtube")
+[![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png) ](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
+
+## Awards
+
+
+Vermin Exterminator finished in the top 5 finalists among 100 entries for the best VR game prototype at the 2021 Game Development World Championship!
+![GDWC 2021 finalist](/img/vermin-exterminator/GDWC_2021-Finalist_Badges-White-500x500-VR_Proto.png "GDWC 2021 finalist")
 
 ## Description
 
@@ -33,15 +40,14 @@ Teleport movement:
 - Works on left and right stick
 
 - Grip to interact with gauntlet / open doors
-- Trigger to fire
+- Trigger to fire/click when pointing button with laser
 
 - Left hand second button to open menu
 	- You can find/edit the controls in the in-game menu. 
     - You can edit snap turn rotation and movement type in the in-game menu.
     - You can ajust sound levels in the in-game menu.
 	- You can ajust graphics in the in-game menu.
-- Left and Right first button are use to select item pointed with red laser
-- Left hand system button to reset orientation
+- Left hand second button to reset orientation
 	- The environment adapts to the player size when resetting orientation
 
 	

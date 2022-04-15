@@ -87,6 +87,11 @@ Exemple :
 ```
 Taille d'image conseillé : 1140*618px
 
+Si besoin de changer la taille ou disposition, appliquer un style via le fichier mineogames.css.
+```
+img[alt="GDWC 2021 finalist"] { width: 200px; margin-left: auto; margin-right:auto; display: block;}
+```
+
 3. Pour intégrer une vidéo youtube, il faut d'abord enregistrer un screenshot sous imgur (en faison ouvrir l'image dans un autre onglet pour récupérer le lien)
 ```
 [![UNBOXING OCULUS START](https://i.imgur.com/5a6QUsl.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
