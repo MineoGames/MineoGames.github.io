@@ -15,19 +15,19 @@ Nous avons travaillé pour rendre le jeu plus immersif en ajoutant de nouveaux s
 
 Regardez la nouvelle vidéo de gameplay de Vermin Exterminator :
 
-[![VERMIN EXTERMINATOR GAMEPLAY VIDEO](https://imgur.com/AaG8lFF)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
+[![VERMIN EXTERMINATOR GAMEPLAY VIDEO](https://imgur.com/AaG8lFF.png)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
 
 Le jury a apprécié notre jeu car il nous a sélectionnés pour faire partie du TOP 5 des finalistes. Nous étions à la fois surpris et fiers 🙀😚
 
 Revivez l'annonce d'être finaliste et l'histoire de la création du jeu :
 
-[![GDWC FINALIST ANNOUNCEMENT & ORIGINS](https://imgur.com/vZmkJJh)](https://youtu.be/HdGMOCwV5UY "Regarder sur Youtube")
+[![GDWC FINALIST ANNOUNCEMENT & ORIGINS](https://imgur.com/vZmkJJh.png)](https://youtu.be/HdGMOCwV5UY "Regarder sur Youtube")
 
 La révélation lors de la remise de prix virtuelle a été un moment intense.🤪
 
 Revivez l'announce des gagnants sur Twitch :
 
-[![GDWC WINNER ANNOUNCEMENT](https://imgur.com/sPqDBol)](https://www.twitch.tv/videos/1429441547?t=02h32m55s "Regarder sur Twitch")
+[![GDWC WINNER ANNOUNCEMENT](https://imgur.com/sPqDBol.png)](https://www.twitch.tv/videos/1429441547?t=02h32m55s "Regarder sur Twitch")
 
 Même si nous n'avons pas remporté la première place, ce fut une expérience incroyable!😛
 
