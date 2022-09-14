@@ -13,25 +13,25 @@ Nous avons présenté Vermin Exterminator dans la catégorie **Meilleur Prototyp
 
 Nous avons travaillé pour rendre le jeu plus immersif en ajoutant de nouveaux skins d'ennemis et des effets d'armes.🐀🐍🕷🦟🔥
 
-Regardez la nouvelle vidéo de gameplay de Vermin Exterminator :
+**Regardez la nouvelle vidéo de gameplay de Vermin Exterminator :**
 
 [![VERMIN EXTERMINATOR GAMEPLAY VIDEO](https://imgur.com/AaG8lFF.png)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
 
 Le jury a apprécié notre jeu car il nous a sélectionnés pour faire partie du TOP 5 des finalistes. Nous étions à la fois surpris et fiers 🙀😚
 
-Revivez l'annonce d'être finaliste et l'histoire de la création du jeu :
+**Revivez l'annonce d'être finaliste et l'histoire de la création du jeu :**
 
 [![GDWC FINALIST ANNOUNCEMENT & ORIGINS](https://imgur.com/vZmkJJh.png)](https://youtu.be/HdGMOCwV5UY "Regarder sur Youtube")
 
 La révélation lors de la remise de prix virtuelle a été un moment intense.🤪
 
-Revivez l'announce des gagnants sur Twitch :
+**Revivez l'announce des gagnants sur Twitch :**
 
 [![GDWC WINNER ANNOUNCEMENT](https://imgur.com/sPqDBol.png)](https://www.twitch.tv/videos/1429441547?t=02h32m55s "Regarder sur Twitch")
 
 Même si nous n'avons pas remporté la première place, ce fut une expérience incroyable!😛
 
-<a href="https://thegdwc.com/pages/game.php?game_guid=dc2987b6-f099-421d-936a-7919a3c7161b"> <img src="https://imgur.com/23HGk35.png" alt="GDWC 2021 cadeaux" width="30%" class="center"/> </a>
+<a href="https://thegdwc.com/pages/game.php?game_guid=dc2987b6-f099-421d-936a-7919a3c7161b"> <img src="https://imgur.com/23HGk35.png" alt="GDWC 2021 cadeaux" style="width: 30%" class="center"/> </a>
 
 **Inscrivez-vous à la newsletter pour recevoir des histoires comme celle-ci directement dans votre boîte mail.**
 
