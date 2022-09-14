@@ -31,7 +31,7 @@ Revivez l'announce des gagnants sur Twitch :
 
 Même si nous n'avons pas remporté la première place, ce fut une expérience incroyable!😛
 
-<a> <img src="https://imgur.com/23HGk35" alt="GDWC 2021 cadeaux" /> </a>
+<a href="https://thegdwc.com/pages/game.php?game_guid=dc2987b6-f099-421d-936a-7919a3c7161b"> <img src="https://imgur.com/23HGk35.png" alt="GDWC 2021 cadeaux" width="30%" class="center"/> </a>
 
 **Inscrivez-vous à la newsletter pour recevoir des histoires comme celle-ci directement dans votre boîte mail.**
 
