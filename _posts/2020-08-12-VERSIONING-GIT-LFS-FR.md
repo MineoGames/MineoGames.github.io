@@ -204,6 +204,6 @@ Cela serait plus facile si nous pouvions avoir des fonctions Lambda dans OVH pou
 Cela m'a pris un certain temps pour le faire fonctionner, alors j'ai voulu le partager. J'espère que cela vous aidera. 
 Si vous avez des questions, vous pouvez me contacter sur Discord ou d'autres réseaux sociaux. Bon développement !
 
-__Envie de ne pas rater les prochains blog techniques ? On vous tiendra au courant.__
+__Envie de ne pas rater les prochains blog techniques ? On vous tiendra au courant. 💌__
 
 {% include fr/subscribe-form.html title="Inscription à la newsletter" %}

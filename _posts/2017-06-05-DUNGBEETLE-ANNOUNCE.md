@@ -11,3 +11,7 @@ We were ranked 413 over 1840 !
 Access the game page for [more info](http://www.mineogames.com/games/dung-beetle/)
 
 ![dung beetle](/img/dungbeetle/post_img1.png "Dung Beetle screenshot")
+
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
+
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}

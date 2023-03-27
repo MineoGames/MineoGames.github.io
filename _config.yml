@@ -46,39 +46,29 @@ pages_list:
   en:
     link: '/index'
     pages:
-      About: 'about'
       Our games: 'games'
       Blog: 'last-blog-post'
+      About: 'about'
       Contact: 'contact'
   fr:
     link: '/accueil'
     pages:
-      A propos: 'about'
       Nos jeux: 'games'
       Blog: 'last-blog-post'
+      A propos: 'about'
       Contact: 'contact'
 
 games:
-  - name: Shark Hunt
-    img: shark-hunt.png
-    page:
-      en: '/games/shark-hunt/'
-      fr: '/games/shark-hunt-fr/'
   - name: Vermin Exterminator
     img: vermin-exterminator.png
     page:
       en: '/games/vermin-exterminator/'
       fr: '/games/vermin-exterminator-fr/'
-  - name: Nest Guard
-    img: nestguard.png
+  - name: Shark Hunt
+    img: shark-hunt.png
     page:
-      en: '/games/nest-guard/'
-      fr: '/games/nest-guard-fr/'
-  - name: Dung Beetle (Non VR)
-    img: dungbeetle.png
-    page:
-      en: '/games/dung-beetle/'
-      fr: '/games/dung-beetle-fr/'
+      en: '/games/shark-hunt/'
+      fr: '/games/shark-hunt-fr/'
 
 last_post_words: 100
 

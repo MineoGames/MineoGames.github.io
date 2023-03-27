@@ -203,6 +203,6 @@ It would be easier if we could have Lambda functions in OVH to unify the stack.
 It took me some time to have this working so I wanted to share it. Hope that this will help you. 
 If you have questions, you can contact me on Discord or other social media. Happy coding !
 
-__Don't want to miss the next tech blog? We'll keep you posted.__
+__Don't want to miss the next tech blog? We'll keep you posted. 💌__
 
 {% include en/subscribe-form.html title="Subscribe to the newsletter" %}

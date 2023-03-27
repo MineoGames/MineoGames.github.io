@@ -16,3 +16,7 @@ Be sure to suscribe to the youtube channel to dont miss the next videos
 alt="DUNG BEETLE CLIP" width="240" height="180" border="10" /></a>
 
 Access the game page for [more info](https://www.mineogames.com/games/dung-beetle/)
+
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
+
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}

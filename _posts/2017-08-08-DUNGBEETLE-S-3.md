@@ -13,5 +13,7 @@ One of the news features : completely remade animations.
 
 Access the game page for [more info](http://www.mineogames.com/games/dung-beetle/)
 
-Be informed regularly of all the news about our games.
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
+
 {% include en/subscribe-form.html title="Subscribe to the newsletter" %}
+

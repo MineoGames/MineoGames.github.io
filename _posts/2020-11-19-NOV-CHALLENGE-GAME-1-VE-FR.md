@@ -16,3 +16,7 @@ Accéde à la page du jeu pour [plus d'informations](/games/vermin-exterminator-
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
 
 [Clique ici](https://mailchi.mp/7e794e83d387/nabq2mz4a8 "CHALLENGE NOVEMBRE")  pour voir l'ensemble du déroulement du challenge.
+
+**Inscrivez-vous à la newsletter pour recevoir des informations comme celle-ci directement dans votre boîte mail. 💌**
+
+{% include fr/subscribe-form.html title="Inscription à la newsletter" %}

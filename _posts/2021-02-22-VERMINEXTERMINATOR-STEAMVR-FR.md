@@ -26,3 +26,7 @@ En plus de cela, il y a eu tout un tas d'améliorations et de corrections de bug
 [Cliquez ici pour jouer](https://mineogames.itch.io/vermin-exterminator)
 
  <b> N'hésite pas à nous faire des retours sur le jeu, nous cherchons constamment à nous améliorer</b>.
+
+ **Inscrivez-vous à la newsletter pour recevoir des informations comme celle-ci directement dans votre boîte mail. 💌**
+
+{% include fr/subscribe-form.html title="Inscription à la newsletter" %}

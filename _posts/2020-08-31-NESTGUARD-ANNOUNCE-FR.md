@@ -17,6 +17,6 @@ Accédez à la page du jeu pour [plus d'informations](/games/nest-guard-fr/)
 
 ![nestguard](/img/nestguard/screen1.png "Capture d'écran de Nest Guard")
 
-Soyez informé régulièrement de toutes les nouveautés sur nos jeux.
+**Soyez informé régulièrement de toutes les nouveautés sur nos jeux. 💌**
 
 {% include fr/subscribe-form.html title="Inscription à la newsletter" %}

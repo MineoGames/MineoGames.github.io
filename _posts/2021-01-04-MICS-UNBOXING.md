@@ -16,6 +16,6 @@ Then we will make some tests to see the quality of different mics.
 [![UNBOXING NEW MICROPHONES](https://imgur.com/VPbPoh2.png)](https://www.patreon.com/posts/45278643 "UUNBOXING NEW MICROPHONES")
 
 
-__Subscribe to the newsletter to receive monthly news from the studio.__
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
 
 {% include en/subscribe-form.html title="Subscribe to the newsletter" %}

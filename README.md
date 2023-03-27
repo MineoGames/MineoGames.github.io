@@ -24,7 +24,7 @@ A noter qu'il est possible de réaliser ces opérations directement depuis l'int
 
 ## Comment ajouter un réseau social
 Modifier le fichier _config.yml, sous la balise ``social:``, ajouter l'encart suivant en remplaçant :
-- ``Nom du reseau`` par le nom du réseau. ** Attention celui-ci doit correspondre au nom de l'icône pour s"afficher correctement dans le bouton.**
+- ``Nom du reseau`` par le nom du réseau. **Attention celui-ci doit correspondre au nom de l'icône pour s"afficher correctement dans le bouton.**
 - ``Url du Reseau`` par l'url permettant d'accéder à la page Mineo Games du réseau.
 
 - title: Nom du reseau

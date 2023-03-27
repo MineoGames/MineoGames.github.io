@@ -17,3 +17,7 @@ Vous recevrez chaque semaine une nouvelle version avec les dernières fonctionna
 Nous avons à cœur de prendre en compte les désirs des joueurs. Et nous sommes heureux que vous nous aidiez à construire le meilleur jeu VR possible !
 
 [MORE INFO HERE](/games/shark-hunt-fr/)
+
+**Inscrivez-vous à la newsletter pour recevoir des informations comme celle-ci directement dans votre boîte mail. 💌**
+
+{% include fr/subscribe-form.html title="Inscription à la newsletter" %}

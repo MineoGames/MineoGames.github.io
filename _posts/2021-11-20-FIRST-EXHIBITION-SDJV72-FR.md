@@ -62,6 +62,6 @@ Tout était nouveau pour moi car c'était mon premier salon en tant qu'exposant.
 
 Dans l'ensemble, cette première exposition a permis à Mineo Games de passer un cap 🚀. **Un succès qui motive à continuer avec passion !** 🤩
 
-**Inscrivez-vous à la newsletter pour recevoir des histoires comme celle-ci directement dans votre boîte mail.**
+**Inscrivez-vous à la newsletter pour recevoir des histoires comme celle-ci directement dans votre boîte mail. 💌**
 
 {% include fr/subscribe-form.html title="Inscription à la newsletter" %}

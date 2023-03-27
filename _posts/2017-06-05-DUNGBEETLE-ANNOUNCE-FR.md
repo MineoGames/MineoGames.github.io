@@ -11,3 +11,7 @@ Nous avons terminé 413 sur 1840 !
 Rendez vous sur la page du jeu pour [plus d'info](http://www.mineogames.com/games/dung-beetle/)
 
 ![dung beetle](/img/dungbeetle/post_img1.png "Dung Beetle screenshot")
+
+**Inscrivez-vous à la newsletter pour recevoir des informations comme celle-ci directement dans votre boîte mail. 💌**
+
+{% include fr/subscribe-form.html title="Inscription à la newsletter" %}

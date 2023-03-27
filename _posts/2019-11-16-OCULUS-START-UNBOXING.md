@@ -11,6 +11,6 @@ Be sure to subscribe to the youtube channel to dont miss the next videos.
 
 [![UNBOXING OCULUS START](https://i.imgur.com/5a6QUsl.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
 
-Subscribe to the newsletter to receive monthly news from the studio.
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
 
 {% include en/subscribe-form.html title="Subscribe to the newsletter" %}

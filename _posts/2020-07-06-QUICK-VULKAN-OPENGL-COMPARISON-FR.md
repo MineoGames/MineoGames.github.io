@@ -50,6 +50,6 @@ A la suite de cette première comparaison, <b> Vulkan remporte le match de perfo
 
 Bien sûr, ce n'est pas complet, mais c'est un début. Par exemple, il serait intéressant de reproduire le test dans une situation plus stressante (nombreux objets, lumières, particules...)
 
-__Envie de ne pas rater les prochains blog techniques ? On vous tiendra au courant.__
+__Envie de ne pas rater les prochains blog techniques ? On vous tiendra au courant. 💌__
 
 {% include fr/subscribe-form.html title="Inscription à la newsletter" %}

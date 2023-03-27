@@ -62,6 +62,6 @@ Mainly everything was new for me as it was my first exhibition as an exhibitor. 
 
 Overall, this first exhibition has resulted in a step up for Mineo Games 🚀. **A success that motivates to continue with passion!** 🤩
 
-**Subscribe to the newsletter to receive news like this directly at home.**
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
 
 {% include en/subscribe-form.html title="Subscribe to the newsletter" %}

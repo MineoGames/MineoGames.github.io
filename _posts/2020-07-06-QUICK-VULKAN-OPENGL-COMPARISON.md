@@ -50,6 +50,6 @@ As a result of this first comparison, <b> Vulkan wins the preformance match</b>.
 
 Of course, this is not complete, but it's a start. For example, it would be interesting to reproduce the test in a more stressful situtation (many objets, lights, particles...)
 
-__Don't want to miss the next tech blog? We'll keep you posted.__
+__Don't want to miss the next tech blog? We'll keep you posted. 💌__
 
 {% include en/subscribe-form.html title="Subscribe to the newsletter" %}

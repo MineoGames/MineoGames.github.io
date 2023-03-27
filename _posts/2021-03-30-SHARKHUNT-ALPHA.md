@@ -17,3 +17,7 @@ You'll receive a new version with last features each week and will be able to gi
 We have at heart to take players desires into account. And we are glad that you help us build the best VR game possible!
 
 [MORE INFO HERE](/games/shark-hunt/)
+
+**Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
+
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}
