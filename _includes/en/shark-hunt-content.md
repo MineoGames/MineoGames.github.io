@@ -1,5 +1,5 @@
 
-*This game is in alpha phase. Play early!*
+*We made a prototype version of the game, accessible only by Patreon members*
 
 ## Trailer
 
@@ -63,10 +63,15 @@ Right stick allow to snap turn(the angle can be modified in gameplay settings)
 	
 ## Release information	
 
-Will be available for PC VR (Oculus, Vive, Valve Index, WMR) but should be compatible with all Steam VR headsets.
+It is a PC VR game based on OpenXR (Oculus, Vive, Valve Index, WMR).
 
-**The game is currently in Alpha phase**. Sign up to participate: test for free and give feedback.
+**The game development is currently in pause. The latest build is only accessible to  Patreon members**. 
 
-{% include en/subscribe-form.html title="Subscribe to the alpha of Shark Hunt" %}
+<a href="https://www.patreon.com/posts/download-shark-80658816?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" class="patreon-button">Access download on Patreon</a>
+
+
+Sign up to the newsletter to be informed about this game's evolution.
+
+{% include en/subscribe-form.html title="Subscribe to the newsletter" %}
 
 _>> Join the Discord for latest news_

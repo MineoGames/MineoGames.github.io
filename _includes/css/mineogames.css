@@ -173,6 +173,41 @@ td {
   padding: 1.2rem 2rem 0rem 1rem;
 }
 
+/* button */
+.button {
+  background-color: #1c87c9;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a.patreon-button {
+  border-radius: 5px;
+  background-color: #efefef;
+  color: #ff424d;
+  min-height: 42px;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+a.patreon-button svg {
+  max-height: 12px;
+  fill: #ff424d;
+}
+a.patreon-button:active,
+a.patreon-button:active:focus,
+a.patreon-button:hover {
+  background-color: #e13d47;
+  color: white;
+}
+
 /* GAMES */
 
 /* Vermin Exterminator */

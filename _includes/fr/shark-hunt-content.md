@@ -1,5 +1,5 @@
 
-_Ce jeu est en phase Alpha. Jouez dès maintenant._
+_Nous avons réalisé une version prototype du jeu, accessible uniquement par nos membres Patreon._
 
 ## Trailer
 
@@ -63,10 +63,14 @@ Le stick droit permet de tourner rapidement sur soi-même (l'angle peut être mo
 
 ## Informations de sortie
 
-Shark Hunt sera disponible sur PC VR une version SteamVR (compatible avec tous les casques Steam VR) et une version Oculus native.
+Shark Hunt est un jeu PC VR basé sur OpenXR avec tous les casques compatibles (Oculus, Vive, Valve Index, WMR).
 
-**Le jeu est actuellement en phase Alpha**. Inscrivez vous pour participer : testez gratuitement et faites des retours.
+**Le développement du jeu est actuellement en pause. La dernière version est accessible uniquement aux membres Patreon.**
 
-{% include fr/subscribe-form.html title="Inscription à l'alpha de Shark Hunt" %}
+<a href="https://www.patreon.com/posts/download-shark-80658816?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" class="patreon-button">Accéder au télécharchement sur Patreon</a>
+
+Inscrivez-vous à la newsletter pour être informé de l'évolution de ce jeu.
+
+{% include fr/subscribe-form.html title="Inscription à la newsletter" %}
 
 _>> Join the Discord for latest news_
