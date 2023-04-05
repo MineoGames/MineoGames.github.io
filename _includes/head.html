@@ -1,14 +1,4 @@
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EFDT8X3MH0"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-EFDT8X3MH0');
-	</script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -27,23 +17,50 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/all.min.css" | prepend: site.baseurl }}">
-	<script defer src="{{ "/css/font-awesome/js/all.min.js" | prepend: site.baseurl }}"></script>
+	<script  data-cookie-consent="strictly-necessary" defer src="{{ "/css/font-awesome/js/all.min.js" | prepend: site.baseurl }}"></script>
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!-- Police du logo -->
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
+    <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false});
+    });
+    </script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Mailchimp popup -->
 
-	<!-- Mail Chimp begin -->
-	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ba845a58e9756f53027feeec5/f75c541f7b7529df2fe937dd4.js");</script>
-    <!-- Mail Chimp end -->
-	
+        <!-- Mail Chimp begin -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
+        <script type="text/plain" data-cookie-consent="strictly-necessary" id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ba845a58e9756f53027feeec5/f75c541f7b7529df2fe937dd4.js");</script>
+        <!-- Mail Chimp end -->
+    <!-- end of Mailchimp popup-->
+
+    <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
+    <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+
+    <!-- Cookie consent dialog -->
+    <div class="cookie-consent">
+        <p>This website uses cookies to ensure you get the best experience on our website.
+        <button type="button" class="button" id="cookie-consent-btn">Got it!</button>
+        <button type="button" class="button"  id="open_preferences_center">Update my preferences</button></p>
+    </div>
+      
+      <script>
+        // Check if user has already consented to cookies
+        if (localStorage.getItem('cookieConsent') === 'true') {
+          document.querySelector('.cookie-consent').style.display = 'none';
+        }
+      
+        // When user clicks "Got it!" button, save consent to local storage and hide the dialog
+        document.querySelectorAll('#cookie-consent-btn, #open_preferences_center').addEventListener('click', function() {
+          localStorage.setItem('cookieConsent', 'true');
+          document.querySelector('.cookie-consent').style.display = 'none';
+        });
+      </script>
+      
+
 </head>
