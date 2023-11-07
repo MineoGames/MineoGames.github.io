@@ -257,6 +257,19 @@ a.patreon-button:hover {
   visibility: hidden;
 }
 
+.left-align{
+  text-align: left;
+}
+
+.center-align{
+  text-align: center;
+}
+
+.right-align{
+  text-align: right;
+}
+
+
 /* GAMES */
 
 /* Vermin Exterminator */
@@ -266,4 +279,3 @@ img[alt="GDWC 2021 finalist"] {
   margin-right: auto;
   display: block;
 }  
-
