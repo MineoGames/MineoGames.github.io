@@ -1,7 +1,7 @@
 
 *This game is still in development.*
 
-## Trailer
+## Trailer & Gameplay Videos
 
 [![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/wKLnBa7.png)](https://youtu.be/x3VzVCAwRqw "Watch on Youtube")
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png) ](https://youtu.be/sX_KhqiLSnk "Watch on Youtube")
@@ -9,52 +9,58 @@
 ## Awards
 
 
-Vermin Exterminator finished in the top 5 finalists among 100 entries for the best VR game prototype at the 2021 Game Development World Championship!
+**Vermin Exterminator** finished in the top 5 finalists (among 100 entries) for the best VR game prototype at the 2021 _Game Development World Championship_!
 ![GDWC 2021 finalist](/img/vermin-exterminator/GDWC_2021-Finalist_Badges-White-500x500-VR_Proto.png "GDWC 2021 finalist")
 
 ## Description
 
-In Vermin Exterminator, you are an agent in an extermination agency. You will have to deal with the worst pests in town! Fortunately you have an amazing powerful gauntlet to help you.  
+In Vermin Exterminator, step into a not-so-distant future where climate change drives desperate animals into urban areas. The worst part? They appear to be evolving in abnormal ways. As an elite exterminator agent, your duty is to face a variety of evolved vermin, including insects, spiders, rodents, and snakes.
 
-Each kind of vermins is sensible to only one kind of weapon. Along the levels you will face new kinds of enemies and earn new weapons. 
+Experience true VR innovation as you manipulate your gauntlet to switch weapons and interact with your surroundings in immersive ways. Open drawers, move objects and use items as melee weapons to seek out vermin, adding an extra layer of excitement to your missions.
 
-You have little time to carry out the operation. Search the house and eliminate all the vermins before the time ends. **Who will be the fastest Vermin Exterminator?**
+In HQ, equip yourself with a diverse arsenal of powerful weapons and tools to make the most of your high-end gauntlet before you embark on your missions.
 
-The game is built from the bottom-up for VR. Really manipulate your gauntlet to switch and load weapons. Enjoy the breathtaking house and office environments. 
+Venture into breathtaking house and office environments and immerse yourself in a narrative-driven experience. Investigate the phenomenon threatening the city, unlocking new enemies, weapons, tools, and locations as you progress through the story. Inhabitants need you: take on secondary challenge-driven missions to earn money and upgrade your arsenal.
 
-To succeed, you need to be quick at finding the enemies and make an efficient use of your gauntlet! Listen carefully and switch weapon at the right time (manage you power)! Of course if you are not affraid to see what's behind the door...
+#### Are you ready to save the city from these disgusting threats?
 
-####  Are you ready to face your fears? Get Badass.
 <div id="carousel"></div>
 
+<br/>
 ## Controls
 
-You have the choice between two movement modes : Teleportation or Smooth movement. Smooth movement is advised for a better immersion but people sensible to motion sickness may prefer teleport. Change this option in gameplay menu.
+You have the choice between two movement modes: Teleportation or Smooth movement. Smooth movement is advised for a better immersion but people sensible to motion sickness may prefer Teleportation. Change this option in the _Gameplay_ menu.
 
-Standard movement:
+**Standard movement**
 - Left analog to move
 - Right analog to snap turn (the angle can be modified in gameplay settings)
 
-Teleport movement:
-- Click on stick and orient with stick, aim with you hand, release to teleport
-- Works on left and right stick
+<br/>
+**Teleport movement**
+- Orient the facing rotation with the left stick, aim for the destination with your hand, and release to teleport
+- Rotate on place with the right stick
+- If Left-handed menu option is active, the sides are switched
 
+<br/>
+**Other controls**
 - Grip to interact with gauntlet / open doors
 - Trigger to fire/click when pointing button with laser
 
-- Left hand second button to open menu
-	- You can find/edit the controls in the in-game menu. 
+- Right-hand second button to open menu
     - You can edit snap turn rotation and movement type in the in-game menu.
-    - You can ajust sound levels in the in-game menu.
-	- You can ajust graphics in the in-game menu.
-- Left hand second button to reset orientation
-	- The environment adapts to the player size when resetting orientation
+    - You can adjust sound levels in the in-game menu.
+	- You can adjust graphics in the in-game menu.
+- Left-hand second button to reset orientation
+	- Depending of option active in gameplay menu, the player size is adjusted 
 
-	
+<br/>	
 ## Release information	
 	
-Available on : Itch.IO
-Available for PC VR (Oculus, Vive, Valve Index, WMR) but should be compatible with all Steam VR headsets.
+Available on: [Itch.io](https://mineogames.itch.io/vermin-exterminator)
+
+Available for **PC VR** (headsets compatible with OpenXR).
+
+Use your native OpenXR (e.g. Oculus) for better performance.
 
 
-_>> Join the Discord for latest news_
+_>> Join the [Discord](https://discord.gg/dquReyq) for the latest news_

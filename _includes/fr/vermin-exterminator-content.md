@@ -1,7 +1,7 @@
 
 _Ce jeu est en cours de développement._
 
-## Trailer
+## Trailers & Vidéos de Gameplay
 
 [![VERMIN EXTERMINATOR GAMEPLAY](https://imgur.com/wKLnBa7.png)](https://youtu.be/x3VzVCAwRqw "Regarder sur Youtube")
 [![VERMIN EXTERMINATOR TRAILER](https://imgur.com/QvmPcRD.png)](https://youtu.be/sX_KhqiLSnk "Regarder sur Youtube")
@@ -9,52 +9,61 @@ _Ce jeu est en cours de développement._
 ## Récompenses
 
 
-Vermin Exterminator a terminé dans les 5 premiers finalistes parmis 100 candidatures au meilleur prototype de jeu VR à l'édition 2021 du Game Development World Championship !
+**Vermin Exterminator** a terminé dans les 5 premiers finalistes (parmis 100 candidatures) au titre du meilleur prototype de jeu VR à l'édition 2021 du _Game Development World Championship_ !
 ![GDWC 2021 finalist](/img/vermin-exterminator/GDWC_2021-Finalist_Badges-White-500x500-VR_Proto.png "Finaliste GDWC 2021")
 
 ## Description
 
-Dans Vermin Exterminator, vous êtes un agent d'une agence d'extermination. Vous aurez à faire face aux pires nuisibles de la ville ! Heureusement que vous êtes dotés d'un gant High tech surpuissant.  
+Dans Vermin Exterminator, plongez dans un futur proche où le changement climatique forces des animaux désespérés à se réfugier dans les zones urbaines. Le pire ? Ils semblent évoluer de façon anormale. En tant qu'agent d'extermination d'élite, votre devoir est d'affronter une variété de vermines évoluées, y compris des insectes, des araignées, des rongeurs et des serpents.
 
-Chaque type de vermine n'est sensible qu'à un seul type d'arme. Au fil des niveaux, vous affronterez de nouveaux types d'ennemis et gagnerez de nouvelles armes. 
+Faites l'expérience d'une véritable innovation VR en manipulant votre gantelet pour changer d'arme et interagir avec votre environnement de manière immersive. Ouvrez des tiroirs, déplacez des objets et utilisez des objets comme armes de mêlée pour chasser les vermines, ce qui ajoutera une couche supplémentaire d'excitation à vos missions.
 
-Vous n'avez que peu de temps pour mener à bien l'intervention. Fouillez la maison et éliminez toutes les vermines avant que la maison soit dévastée. Qui sera l'agent *Vermin Exterminator* le plus rapide ?
+Dans votre QG, équipez-vous d'un arsenal varié d'armes et d'outils puissants pour tirer le meilleur parti de votre gantelet high tech avant de vous lancer dans vos missions.
 
-Le jeu a été créé spécialement pour la VR. Manipulez vraiment votre gantelet pour changer et charger les armes. Évoluer dans des environnements magnifiques et inquiétants. 
+Aventurez-vous dans des maisons et des bureaux à couper le souffle et plongez-vous dans une expérience narrative. Enquêtez sur les phénomènes qui menacent la ville et débloquez de nouveaux ennemis, armes, outils et lieux au fur et à mesure que vous progressez dans l'histoire. Les habitants ont besoin de vous: participez à des missions secondaires pour gagner de l'argent et améliorer votre arsenal.
 
-Pour réussir, vous devez être rapide pour dénicher les ennemis et utiliser efficacement votre gantelet ! Soyez à l'écoute, changez d'arme au bon moment (gérez votre puissance) ! Bien sûr, si vous n'avez pas peur de découvrir ce qu'il y a derrière la porte...
+#### Êtes-vous prêt à sauver la ville de ces menaces répugnantes ?
 
-####  Êtes-vous prêt à affronter votre peur ? Soyez Badass.
 <div id="carousel"></div>
+
+<br/>
 
 ## Contrôles
 
-Vous avez le choix entre deux modes de déplacement : Téléportation ou Standard. Le mouvement standard est conseillé pour une meilleure immersion mais les personnes sensibles au motion sickness préféreront la téléportation. Modifiez cette option dans le menu de jeu.
+Vous avez le choix entre deux modes de déplacement : **Téléportation** ou **Standard**. Le mouvement Standard est conseillé pour une meilleure immersion mais les personnes sensibles au motion sickness préféreront la Téléportation. Modifiez cette option dans le menu _Gameplay_ de jeu.
 
-Mouvement standard :
+**Mouvement standard**
 - Analogique gauche pour se déplacer
 - Analogique droite pour tourner sur soi-même (l'angle peut être modifié dans les paramètres de jeu)
 
-Mouvement de téléportation :
+<br/>
+
+**Mouvement de téléportation**
 - Cliquer sur le stick puis choisir l'orientation, viser l'emplacement avec la main, relâcher pour se téléporter
 - Fonctionne avec le stick de gauche et de droite
+
+<br/>
+**Autres contrôles**
 
 - Grip pour interagir avec le gantelet / ouvrir les portes
 - Trigger pour tirer / cliqué sur l'élément pointé avec le laser rouge
 
 - Second bouton droit pour ouvrir le menu
-	- Vous pouvez trouver/modifier les commandes dans le menu du jeu. 
     - Vous pouvez modifier la rotation et le type de mouvement dans le menu du jeu.
     - Vous pouvez ajuster les niveaux sonores dans le menu du jeu.
 	- Vous pouvez ajuster les graphiques dans le menu du jeu.
 
 - Second bouton gauche pour réinitialiser l'orientation
-	- L'environnement s'adapte à la taille du joueur lors de la réinitialisation de l'orientation
-	
+	- En fonction de l'option active dans le menu _Gameplay_, la taille du joueur est ajustée.
+
+<br/>
+
 ## Information de Release
 	
-Disponible sur Itch.IO au prix de votre choix
-Disponible sur PC VR (Oculus, Vive, Valve Index, WMR) et devrait être compatible avec tous les casques Steam VR.
+Disponible sur [Itch.io](https://mineogames.itch.io/vermin-exterminator).
 
+Disponible sur PC VR (casques compatibles OpenXR).
 
-_>> Rejoins le Discord pour les dernières actualités_
+Utilisez votre OpenXR natif (par exemple, Oculus) pour de meilleures performances.
+
+_>> Rejoins le [Discord](https://discord.gg/dquReyq) pour les dernières actualités_
