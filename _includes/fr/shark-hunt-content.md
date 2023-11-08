@@ -14,9 +14,10 @@ _Le développement est actuellement en pause. Vous pouvez jouer à la version pr
 <br/>
 
 
-## Trailer
+## Trailer et vidéos
 
 [![Shark Hunt - Reveal Trailer](https://i.imgur.com/EOlaCy0.png)](https://youtu.be/1kWwF1yRNHA)
+[![Marcus joue à Shark Hunt](https://i.imgur.com/IrZPjGL.jpeg)](https://youtu.be/iq_W01TK744)
 
 ## Description
 

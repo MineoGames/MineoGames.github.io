@@ -12,9 +12,11 @@
 </div>
 <br/>
 
-## Trailer
+## Trailer & videos
 
 [![Shark Hunt - Reveal Trailer](https://i.imgur.com/EOlaCy0.png)](https://youtu.be/1kWwF1yRNHA)
+
+[![Marcus playing Shark Hunt](https://i.imgur.com/IrZPjGL.jpeg)](https://youtu.be/iq_W01TK744?si=3GaXOJyI4EADsG0F)
 
 ## Description
 In Shark Hunt, You are a treasure hunter who is looking for the rarest submarine pearls in the world to make a fortune. 
