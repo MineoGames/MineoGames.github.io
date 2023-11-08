@@ -37,4 +37,4 @@ Le jeu devrait sortir sur Steam en 2021 et sera compatible avec tous les casques
 
 Un premier prototype est disponible sur Itch.Io.
 
-_>> N'oublie pas de rejoindre le Discord pour être au courant des dernières nouveautés_
+_>> N'oublie pas de rejoindre le [Discord](https://discord.gg/dquReyq) pour être au courant des dernières nouveautés_

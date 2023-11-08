@@ -35,4 +35,4 @@ The game should be released on Steam in 2021 and will be compatible with all Ste
 
 An early prototype is available on Itch.Io.
 
-_> Join the Discord for latest news_
+_> Join the [Discord](https://discord.gg/dquReyq) for latest news_

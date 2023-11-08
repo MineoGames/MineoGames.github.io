@@ -1,5 +1,18 @@
 
-_Nous avons réalisé une version prototype du jeu, accessible uniquement par nos membres Patreon._
+_Le développement est actuellement en pause. Vous pouvez jouer à la version prototype du jeu (accessible gratuitement pour nos membres Patreon)._
+
+<div class="center-align">
+	<a
+				type="button"
+				name="download-sharkhunt"
+				id="download-sharkhunt"
+				class="button"
+				href="https://www.patreon.com/MineoGames/shop/54926"
+			>Télécharger sur Patréon
+	</a>
+</div>
+<br/>
+
 
 ## Trailer
 
@@ -65,12 +78,25 @@ Le stick droit permet de tourner rapidement sur soi-même (l'angle peut être mo
 
 Shark Hunt est un jeu PC VR basé sur OpenXR avec tous les casques compatibles (Oculus, Vive, Valve Index, WMR).
 
-**Le développement du jeu est actuellement en pause. La dernière version est accessible uniquement aux membres Patreon.**
+La Langue utilisée dans le jeu est l'anglais.
 
-<a href="https://www.patreon.com/posts/download-shark-80658816?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" class="patreon-button">Accéder au télécharchement sur Patreon</a>
+**Le développement du jeu est actuellement en pause. Vous pouvez jouer à la dernière version du prototye (accessible gratuitement pour les membres Patréon).**
+
+<div class="center-align">
+	<a
+				type="button"
+				name="download-sharkhunt"
+				id="download-sharkhunt"
+				class="button"
+				href="https://www.patreon.com/MineoGames/shop/54926"
+			>Télécharger sur Patréon
+	</a>
+</div>
+
+<br/>
 
 Inscrivez-vous à la newsletter pour être informé de l'évolution de ce jeu.
 
 {% include fr/subscribe-form.html title="Inscription à la newsletter" %}
 
-_>> Join the Discord for latest news_
+_>> Join the [Discord](https://discord.gg/dquReyq) for latest news_
