@@ -7,17 +7,19 @@
     <section id="post" class="container content-section text-center">
       <h1><strong>{{ page.title }}</strong></h1>
       <h2>
-        <strong>Le {{ page.date | date: "%m/%d/%Y" }}</strong>
+        <strong>📅{{ page.date | date: "%m/%d/%Y" }}</strong>
       </h2>
 
       <section class="text-justify">{{ page.content | markdownify }}</section>
-
+      <br/>
+      <a href="#" class="page-scroll" style="font-size: 5rem;">⬆️</a>
       {% if page.lang == 'en' %}
-      <h2 class="mt-3"><a href="{{site.baseurl}}/blog/">See other posts</a></h2>
+      <h2 class="mt-3"><a href="{{site.baseurl}}/blog/">⤴️See other posts</a></h2>
       {% elsif page.lang == 'fr' %}
-      <h2 class="mt-3"><a href="{{site.baseurl}}/journal/">Voir les autres posts</a></h2>
+      <h2 class="mt-3"><a href="{{site.baseurl}}/journal/">⤴️Voir les autres posts</a></h2>
       {% endif %}
     </section>
+
 
     {% include footer.html %} {% include js.html %}
   </body>

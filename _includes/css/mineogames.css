@@ -18,6 +18,10 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 2.3rem;
+}
+
 label {
   padding: 1rem;
 }
@@ -305,4 +309,7 @@ img.large{
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+section#post>h1{
+  text-align: left;
 }

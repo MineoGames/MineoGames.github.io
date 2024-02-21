@@ -10,28 +10,39 @@ ref: notion-make-windmill-tmetric
 
 * [Introduction](#introduction)
 * [Old Workflows](#old-workflows)
-* [Goodbye ClickUp, Hello Notion](#goodbye-clickup-hello-notion)
-* [Centralize Data with Windmill.dev](#centralize-data-with-windmilldev)
-* [Managing Time with TMetric](#managing-time-with-tmetric)
-* [Automations with Make](#automations-with-make)
+* [Goodbye **ClickUp**, Hello **Notion**](#goodbye-clickup-hello-notion)
+* [Centralize Data with **Windmill.dev**](#centralize-data-with-windmilldev)
+* [Managing Time with **TMetric**](#managing-time-with-tmetric)
+* [Automations with **Make**](#automations-with-make)
 * [Conclusion](#conclusion)
 * [Useful Links](#useful-links)
 
 <!-- table-of-contests -->
+<br/>
 
 ## Introduction {#introduction}
+
+
+🛸 Project management is an important element, and not even a video game studio can be exempt from it. It's complicated enough as it is, so if we could use a unique tool on a daily basis, it would be easier.    
+
+Find out how I optimized task tracking without spending a penny more. Or how I went from **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** and **[Harvest](http://try.hrv.st/3-126651)** to simply **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** and **[TMetric](https://tmetric.com)**. And finally, what role automation can play with tools such as **[Make](https://www.make.com/en/register?pc=mineogames)** or **[Windmill.dev](https://windmill.dev)**. Interested in learning more about it? Let's dive right in!
+
 
 <img src="https://i.imgur.com/4BYy8DL.png" alt="Task preview before/after on Notion and ClickUp"  class="medium"/>
 
 _An example of task previews before and after using both Notion and ClickUp._
 
-🛸 Join me on this exciting journey where I share my personal experience managing projects without spending any extra money. By combining **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[Windmill.dev](https://windmill.dev)**, **[TMetric](https://tmetric.com)**, and **[Make](https://www.make.com/en/register?pc=mineogames)**, I found an ingenious way to replace ClickUp and Harvest. Interested in learning more about it? Let's dive right in!
-
 ---
 
 ## Old Workflows {#old-workflows}
 
-Before finding my current setup, I used **[ClickUp](http://clickup.com/teams/project-management)** (**paid plan**) for task management, **[Harvest](http://try.hrv.st/3-126651)** (**free plan**) for time tracking, and **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** only for documentation and note taking (**free plan**). Although these tools worked reasonably well together, switching between different apps was cumbersome, and some limitations were apparent even within ClickUp's paid small team plan. As a result, I looked for a more flexible, versatile, and integrated solution tailored to my needs.
+Before finding my current setup, I used **[ClickUp](http://clickup.com/teams/project-management)** (**paid plan**) for task management, **[Harvest](http://try.hrv.st/3-126651)** (**free plan**) for time tracking, and **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** only for documentation and note taking (**free plan**). 
+
+Although these tools worked reasonably well together, switching between different apps was cumbersome, and some limitations were apparent even within **ClickUp**'s paid small team plan. 
+
+<img src="https://media1.tenor.com/m/IQ6Z-aPhr1wAAAAd/date-everywhere-data.gif" alt="Data everywhere"  class="small"/>
+
+As a result, I looked for a more flexible, versatile, and integrated solution tailored to my needs.
 
 ---
 
@@ -43,37 +54,45 @@ Before finding my current setup, I used **[ClickUp](http://clickup.com/teams/pro
 
 _The migration process in action: different paths are taken depending on whether or not the tasks already exist, preventing duplicates._
 
-By consolidating everything into one platform, I saved myself from having multiple windows open at once. Additionally, customizing my databases in **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** allowed me to replicate many features present in **[ClickUp](http://clickup.com/teams/project-management)** while also introducing new capabilities. To create my space in Notion, I followed the PARA method, which organizes content by dividing them into Projects, Areas, Resources, and Archives. You can find various free templates online too. Then, I added formulas to display the data according to my preferences and created views essential to my daily routine.
+Thanks to **Notion**'s **customization** of databases, I was able not only to replicate many features present in **ClickUp**, but to go even further by interconnecting tasks with documentation, dashboards etc.
+
+To build my space in Notion, I followed the P.A.R.A. method, which organizes content by dividing them into:
+* 🚧**Projects**: projects respond to a 🏆**Goal**, itself segmented into 📍**Milestones**. 
+* 🎨**Areas**: the various major areas in which we operate
+* 📁**Resources**: specialized sub-sections of a domain
+* 📁**Resources**: specialized sub-sections of a domain
+* 🪔**Archives**: so that completed elements do not pollute but can be consulted. 
+
+<img src="https://i.imgur.com/x61V3xL.png" alt="Area example"  class="small"/>
+
+_💡You can find various **Notion** templates online too._
+
+By consolidating everything into one platform, I saved myself from having multiple software opened at once. Then, I added formulas to display the data according to my preferences and created views essential to my daily routine.
 
 <img src="https://i.imgur.com/MuBPJsX.png" alt="Calender Task View"  class="medium"/>
 
+_Calendar view._
+
 <img src="https://i.imgur.com/iuvPOTc.png" alt="Timeline Task View"  class="medium"/>
+
+_Gantt chart view with dependencies._
 
 <img src="https://i.imgur.com/6NdZy1P.png" alt="Board Task View"  class="medium"/>
 
----
-
-## Centralize Data with Windmill.dev {#centralize-data-with-windmilldev}
-
-⚙️ During my search for automation solutions, I discovered **[Windmill.dev](https://windmill.dev)**, a fantastic alternative to **[Make](https://www.make.com/en/register?pc=mineogames)** specifically designed for developers. With its ability to call APIs directly, manipulate data using **[TypeScript](https://www.typescriptlang.org/)**, show log outputs, and self-host for unrestricted usage, **[Windmill.dev](https://windmill.dev)** goes beyond standard connectors.
-
-Thanks to **[Windmill.dev](https://windmill.dev)**, I connected **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** and **[TMetric](https://tmetric.com)** to store all tracked data directly inside **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**.
-
-<img src="https://i.imgur.com/s0YTioq.png" alt="Data flow with Windmill.dev"  class="small"/>
-
-_This flow takes a specific date input; otherwise, it defaults to yesterday's tasks. The duration is then added to the respective Notion task._
+_Kanban view with columns according to progress._
 
 ---
 
 ## Managing Time with TMetric {#managing-time-with-tmetric}
 
-⏱️ Since native time tracking isn't available in **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, I tried several options and ultimately decided upon **[TMetric](https://tmetric.com)**. Its browser extension makes it easy to record time spent on each task straight from the **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** interface.
+⏱️ Since native time tracking isn't available in **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, I tried several options and ultimately decided upon **[TMetric](https://tmetric.com)**. Its [browser extension](https://tmetric.com/help/apps/browser-extension/how-to-install-browser-extension) makes it easy to record time spent on each task straight from the **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** interface.
 
 <img src="https://i.imgur.com/1T31Buq.png" alt="Tracking time with TMetric"  class="medium"/>
 
 _Time tracking becomes effortless when there is a button readily accessible on the Notion page._
 
 ---
+
 
 ## Automations with Make {#automations-with-make}
 
@@ -84,6 +103,21 @@ Here's an example of an automation I made: whenever a new task gets created in *
 <img src="https://i.imgur.com/WNBXMnc.png" alt="Example illustration of making an automation with Make"  class="medium"/>
 
 _Two separate branches handle cases involving child tasks differently than standalone ones._
+
+
+---
+
+## Centralize Data with Windmill.dev {#centralize-data-with-windmilldev}
+
+⚙️ During my search for automation solutions, I discovered **[Windmill.dev](https://windmill.dev)**, a fantastic alternative to **[Make](https://www.make.com/en/register?pc=mineogames)** specifically designed for developers. With its ability to call APIs directly, manipulate data using **[TypeScript](https://www.typescriptlang.org/)**, show log outputs, and self-host for unrestricted usage, **[Windmill.dev](https://windmill.dev)** goes beyond standard connectors.
+
+<img src="https://media0.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Développeur faisant de l'automatisation"  class="small"/>
+
+Thanks to **[Windmill.dev](https://windmill.dev)**, I connected **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** and **[TMetric](https://tmetric.com)** to store all tracked data directly inside **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**.
+
+<img src="https://i.imgur.com/s0YTioq.png" alt="Data flow with Windmill.dev"  class="small"/>
+
+_This flow takes a specific date input; otherwise, it defaults to yesterday's tasks. The duration is then added to the respective Notion task (so I could exploit it)._
 
 ---
 
