@@ -286,3 +286,23 @@ img[alt="GDWC 2021 finalist"] {
   margin-right: auto;
   display: block;
 }  
+
+/* BLOG */
+img.small{
+  max-width:25em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+img.medium{
+  max-width:50em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+img.large{
+  max-width:75em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
