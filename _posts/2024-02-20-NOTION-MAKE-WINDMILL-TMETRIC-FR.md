@@ -29,7 +29,6 @@ Découvrez comment j'ai optimisé le suivi des tâches sans abonnement à un log
 Ou encore comment je suis passé de **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** et **[Harvest](http://try.hrv.st/3-126651)** à simplement **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**  et **[TMetric](https://tmetric.com)**. Et enfin quel rôle peut avoir l'automatisation avec des outils comme **[Make](https://www.make.com/en/register?pc=mineogames)** ou **[Windmill.dev](https://windmill.dev)**. Curieux de connaître les détails ? Allons-y !
 
 
-
 <img src="https://i.imgur.com/4BYy8DL.png" alt="Un aperçu avant/après d'une tâche"  class="medium"/>
 
 _Un aperçu avant/après d'une tâche dans Notion et ClickUp._

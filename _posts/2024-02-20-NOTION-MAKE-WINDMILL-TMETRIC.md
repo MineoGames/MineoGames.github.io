@@ -22,7 +22,6 @@ ref: notion-make-windmill-tmetric
 
 ## Introduction {#introduction}
 
-
 🛸 Project management is an important element, and not even a video game studio can be exempt from it. It's complicated enough as it is, so if we could use a unique tool on a daily basis, it would be easier.    
 
 Find out how I optimized task tracking without spending a penny more. Or how I went from **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** and **[Harvest](http://try.hrv.st/3-126651)** to simply **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** and **[TMetric](https://tmetric.com)**. And finally, what role automation can play with tools such as **[Make](https://www.make.com/en/register?pc=mineogames)** or **[Windmill.dev](https://windmill.dev)**. Interested in learning more about it? Let's dive right in!
