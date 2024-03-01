@@ -2,7 +2,7 @@
 layout: post
 title: "How I Stopped Paying for ClickUp and Managed My Projects in Notion—For Free 😊"
 description: "Let's see how to manage everything in Notion for free, with the leverage of automation. No more switching software for documentation, task management and time tracking."
-keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,project,management,project management,google calendar,home,agenda,software,program,tool,app,hack,best tool,best,free,cheap,migrate,migration,how to,which,easy,no cost, centralize,low cost,optimization,scenario,flow,mineo games,workflow,organize,team collaboration,gantt,kanban,agile,customizable,smartsheet,free-trial,per-month,sync,streamline,deadline,prioritize,cloud-based,mobile apps,seamlessly,keep track,time-tracking,dashboard,workflows,due dates,meeting,wrike,zapier,spreasheet,database"
+keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,project,management,project management,google calendar,home,agenda,software,program,tool,app,hack,best tool,best,free,cheap,migrate,migration,how to,which,easy,no cost, centralize,low cost,optimization,scenario,flow,mineo games,workflow,organize,team collaboration,gantt,kanban,agile,customizable,smartsheet,free-trial,per-month,sync,streamline,deadline,prioritize,cloud-based,mobile apps,seamlessly,keep track,time-tracking,dashboard,workflows,due dates,meeting,wrike,zapier,spreasheet,database,notion vs clickup,harvest vs tmetric,vs,top,compare,charts,zoho,automate,to track,microsoft,intuitive,collaborate,workload"
 lang: en
 ref: notion-make-windmill-tmetric
 ---
