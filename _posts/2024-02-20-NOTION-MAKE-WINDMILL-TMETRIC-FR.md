@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "Comment j'ai pu stopper mon abonnement <strong>Clickup</strong> pour gérer mes projets dans <strong>Notion</strong>, gratuitement 😊"
+title: "Comment j'ai pu stopper mon abonnement Clickup pour gérer mes projets dans Notion, gratuitement 😊"
+description: "Voyons comment TOUT gérer dans Notion gratuitement, grâce à l'automatisation. Plus besoin de changer de logiciel pour la documentation, la gestion des tâches et le suivi du temps."
+keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,projet,management,gestion de projet,google calendar,home,agenda,software,logiciel,centralisé,centraliser,centralisation,programme,tool,app,hack,meilleur outil,meilleur site,ultime,free,cheap,migrate,migration,comment,lequel,choisie,facile,gratuit,zéro,euro,pas cher,trop cher,optimisation,scénario,flow,mineo games,workflow,flux de travail,organiser,collaboration d'équipe,team,travail,work,gantt,kanban,agile,customisable,smartsheet,free-trial,per-month,sync,streamline,échéance,prioriser,cloud,mobile apps,facilement,tracer,trace,tracabilité,time-tracking,tableau de bord,dashboard,workflows,dates,meeting,réunion,wrike,zapier,spreasheet,database,table, base de données,tableau"
 lang: fr
 ref: notion-make-windmill-tmetric
 ---
@@ -20,6 +22,11 @@ ref: notion-make-windmill-tmetric
 
 <!-- table-des-matieres -->
 <br/>
+
+ 🎥 Vous préférez le format vidéo? Vivez mon retour d'expérience sur Youtube:
+
+
+[![VIDEO](https://i.imgur.com/i8GGx42.jpeg)](https://youtu.be/SIRQza-bCKw "Regarder sur Youtube")
 
 ## Introduction {#introduction}
 
@@ -67,7 +74,7 @@ Pour construire mon espace Notion, je me suis inspiré de la méthode P.A.R.A. q
 <img src="https://i.imgur.com/x61V3xL.png" alt="Area example"  class="small"/>
 
 
-_💡Vous pourrez même trouver des templates **Notion** sur le net._
+_💡Vous pourrez même trouver des templates **Notion** implémentant cette méthode sur le net._
 
 J'ai agrémenter les bases avec des formules qui affichent les données comme cela me convient. Enfin j'ai créé les différente vues qui me sont utiles.
 

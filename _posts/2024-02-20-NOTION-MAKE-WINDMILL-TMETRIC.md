@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "How I Stopped Paying for <strong>ClickUp</strong> and Managed My Projects in <strong>Notion</strong>—For Free 😊"
+title: "How I Stopped Paying for ClickUp and Managed My Projects in Notion—For Free 😊"
+description: "Let's see how to manage everything in Notion for free, with the leverage of automation. No more switching software for documentation, task management and time tracking."
+keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,project,management,project management,google calendar,home,agenda,software,program,tool,app,hack,best tool,best,free,cheap,migrate,migration,how to,which,easy,no cost, centralize,low cost,optimization,scenario,flow,mineo games,workflow,organize,team collaboration,gantt,kanban,agile,customizable,smartsheet,free-trial,per-month,sync,streamline,deadline,prioritize,cloud-based,mobile apps,seamlessly,keep track,time-tracking,dashboard,workflows,due dates,meeting,wrike,zapier,spreasheet,database"
 lang: en
 ref: notion-make-windmill-tmetric
 ---
@@ -19,6 +21,11 @@ ref: notion-make-windmill-tmetric
 
 <!-- table-of-contests -->
 <br/>
+
+ 🎥 Prefer the video format? Watch my feedback on Youtube:
+
+
+[![VIDEO](https://i.imgur.com/i8GGx42.jpeg)](https://youtu.be/SIRQza-bCKw "Watch on Youtube")
 
 ## Introduction {#introduction}
 
@@ -64,7 +71,7 @@ To build my space in Notion, I followed the P.A.R.A. method, which organizes con
 
 <img src="https://i.imgur.com/x61V3xL.png" alt="Area example"  class="small"/>
 
-_💡You can find various **Notion** templates online too._
+_💡You can find various **Notion** templates implementing this method online too._
 
 By consolidating everything into one platform, I saved myself from having multiple software opened at once. Then, I added formulas to display the data according to my preferences and created views essential to my daily routine.
 
