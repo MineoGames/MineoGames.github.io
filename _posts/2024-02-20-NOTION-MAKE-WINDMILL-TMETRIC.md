@@ -2,7 +2,7 @@
 layout: post
 title: "How I Stopped Paying for ClickUp and Managed My Projects in Notion—For Free 😊"
 description: "Let's see how to manage everything in Notion for free, with the leverage of automation. No more switching software for documentation, task management and time tracking."
-keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,project,management,project management,google calendar,home,agenda,software,program,tool,app,hack,best tool,best,free,cheap,migrate,migration,how to,which,easy,no cost, centralize,low cost,optimization,scenario,flow,mineo games,workflow,organize,team collaboration,gantt,kanban,agile,customizable,smartsheet,free-trial,per-month,sync,streamline,deadline,prioritize,cloud-based,mobile apps,seamlessly,keep track,time-tracking,dashboard,workflows,due dates,meeting,wrike,zapier,spreasheet,database,notion vs clickup,harvest vs tmetric,vs,top,compare,charts,zoho,automate,to track,microsoft,intuitive,collaborate,workload"
+keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,project,management,project management,google calendar,home,agenda,software,program,tool,app,hack,best tool,best,free,cheap,migrate,migration,how to,which,easy,no cost, centralize,low cost,optimization,scenario,flow,mineo games,workflow,organize,team collaboration,gantt,kanban,agile,customizable,smartsheet,free-trial,per-month,sync,streamline,deadline,prioritize,cloud-based,mobile apps,seamlessly,keep track,time-tracking,dashboard,workflows,due dates,meeting,wrike,zapier,spreasheet,database,notion vs clickup,harvest vs tmetric,vs,top,compare,charts,zoho,automate,to track,microsoft,intuitive,collaborate,workload,competitor"
 lang: en
 ref: notion-make-windmill-tmetric
 ---
@@ -31,7 +31,7 @@ ref: notion-make-windmill-tmetric
 
 🛸 Project management is an important element, and not even a video game studio can be exempt from it. It's complicated enough as it is, so if we could use a unique tool on a daily basis, it would be easier.    
 
-Find out how I optimized task tracking without spending a penny more. Or how I went from **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** and **[Harvest](http://try.hrv.st/3-126651)** to simply **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** and **[TMetric](https://tmetric.com)**. And finally, what role automation can play with tools such as **[Make](https://www.make.com/en/register?pc=mineogames)** or **[Windmill.dev](https://windmill.dev)**. Interested in learning more about it? Let's dive right in!
+Find out how I optimized task tracking without spending a penny more. Or how I went from **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** and **[Harvest](http://try.hrv.st/3-126651)** to simply **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** and **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)**. And finally, what role automation can play with tools such as **[Make](https://www.make.com/en/register?pc=mineogames)** or **[Windmill.dev](https://windmill.dev)**. Interested in learning more about it? Let's dive right in!
 
 
 <img src="https://i.imgur.com/4BYy8DL.png" alt="Task preview before/after on Notion and ClickUp"  class="medium"/>
@@ -91,7 +91,7 @@ _Kanban view with columns according to progress._
 
 ## Managing Time with TMetric {#managing-time-with-tmetric}
 
-⏱️ Since native time tracking isn't available in **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, I tried several options and ultimately decided upon **[TMetric](https://tmetric.com)**. Its [browser extension](https://tmetric.com/help/apps/browser-extension/how-to-install-browser-extension) makes it easy to record time spent on each task straight from the **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** interface.
+⏱️ Since native time tracking isn't available in **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, I tried several options and ultimately decided upon **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)**. Its [browser extension](https://tmetric.com/help/apps/browser-extension/how-to-install-browser-extension) makes it easy to record time spent on each task straight from the **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** interface.
 
 <img src="https://i.imgur.com/1T31Buq.png" alt="Tracking time with TMetric"  class="medium"/>
 
@@ -129,7 +129,7 @@ _This flow takes a specific date input; otherwise, it defaults to yesterday's ta
 
 ## Conclusion {#conclusion}
 
-🌟 Combining **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[Windmill.dev](https://windmill.dev)**, and **[TMetric](https://tmetric.com)** led me to cancel my subscription with **[Clickup](http://clickup.com/teams/project-management)** and gain greater flexibility and control over my data.
+🌟 Combining **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[Windmill.dev](https://windmill.dev)**, and **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)** led me to cancel my subscription with **[Clickup](http://clickup.com/teams/project-management)** and gain greater flexibility and control over my data.
 
 🟣 Ask any questions, give any feedback or simply say hi on our Discord 👇.
 
@@ -142,7 +142,7 @@ _This flow takes a specific date input; otherwise, it defaults to yesterday's ta
 ## Useful Links {#useful-links}
 
 * <a href="https://affiliate.notion.so/ooivbv8j8mmc">Notion</a>
-* <a href="https://tmetric.com">TMetric</a>
+* <a href="https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200">TMetric</a>
 * <a href="https://www.make.com/en/register?pc=mineogames">Make</a>
 * <a href="https://windmill.dev">Windmill.dev</a>
 * <a href="http://clickup.com/teams/project-management">ClickUp</a>

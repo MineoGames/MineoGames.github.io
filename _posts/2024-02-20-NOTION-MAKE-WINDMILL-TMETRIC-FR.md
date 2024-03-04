@@ -2,7 +2,7 @@
 layout: post
 title: "Comment j'ai pu stopper mon abonnement Clickup pour gérer mes projets dans Notion, gratuitement 😊"
 description: "Voyons comment TOUT gérer dans Notion gratuitement, grâce à l'automatisation. Plus besoin de changer de logiciel pour la documentation, la gestion des tâches et le suivi du temps."
-keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,projet,management,gestion de projet,google calendar,home,agenda,software,logiciel,centralisé,centraliser,centralisation,programme,tool,app,hack,meilleur outil,meilleur site,ultime,free,cheap,migrate,migration,comment,lequel,choisie,facile,gratuit,zéro,euro,pas cher,trop cher,optimisation,scénario,flow,mineo games,workflow,flux de travail,organiser,collaboration d'équipe,team,travail,work,gantt,kanban,agile,customisable,smartsheet,free-trial,per-month,sync,streamline,échéance,prioriser,cloud,mobile apps,facilement,tracer,trace,tracabilité,time-tracking,tableau de bord,dashboard,workflows,dates,meeting,réunion,wrike,zapier,spreasheet,database,table, base de données,tableau,notion vs clickup,vs,harvest vs tmetric,top,compare,comparatif,graphique,zoho,automatiser,collaborer,intuitif"
+keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,projet,management,gestion de projet,google calendar,home,agenda,software,logiciel,centralisé,centraliser,centralisation,programme,tool,app,hack,meilleur outil,meilleur site,ultime,free,cheap,migrate,migration,comment,lequel,choisie,facile,gratuit,zéro,euro,pas cher,trop cher,optimisation,scénario,flow,mineo games,workflow,flux de travail,organiser,collaboration d'équipe,team,travail,work,gantt,kanban,agile,customisable,smartsheet,free-trial,per-month,sync,streamline,échéance,prioriser,cloud,mobile apps,facilement,tracer,trace,tracabilité,time-tracking,tableau de bord,dashboard,workflows,dates,meeting,réunion,wrike,zapier,spreasheet,database,table, base de données,tableau,notion vs clickup,vs,harvest vs tmetric,top,compare,comparatif,graphique,zoho,automatiser,collaborer,intuitif,compétiteur,compétition"
 lang: fr
 ref: notion-make-windmill-tmetric
 ---
@@ -33,7 +33,7 @@ ref: notion-make-windmill-tmetric
 🚀 La gestion de projet est un élément important, et même un studio de jeux vidéo ne peut pas y déroger. C'est déjà assez compliqué comme ça, alors si on pouvait tout centraliser dans un seul outil au quotidien, ce serait plus simple. 
 
 Découvrez comment j'ai optimisé le suivi des tâches sans abonnement à un logiciel payant. 
-Ou encore comment je suis passé de **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** et **[Harvest](http://try.hrv.st/3-126651)** à simplement **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**  et **[TMetric](https://tmetric.com)**. Et enfin quel rôle peut avoir l'automatisation avec des outils comme **[Make](https://www.make.com/en/register?pc=mineogames)** ou **[Windmill.dev](https://windmill.dev)**. Curieux de connaître les détails ? Allons-y !
+Ou encore comment je suis passé de **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[ClickUp](http://clickup.com/teams/project-management)** et **[Harvest](http://try.hrv.st/3-126651)** à simplement **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**  et **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)**. Et enfin quel rôle peut avoir l'automatisation avec des outils comme **[Make](https://www.make.com/en/register?pc=mineogames)** ou **[Windmill.dev](https://windmill.dev)**. Curieux de connaître les détails ? Allons-y !
 
 
 <img src="https://i.imgur.com/4BYy8DL.png" alt="Un aperçu avant/après d'une tâche"  class="medium"/>
@@ -94,7 +94,7 @@ _Vue Kanban avec les colonnes en fonction de l'état d'avancement._
 
 ## **Gérer le temps avec TMetric** {#gerer-le-temps-avec-tmetric}
 
-⏱️ Pour combler l'absence de suivi temporel dans **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, j'ai testé plusieurs outils et j'ai finalement jeté mon dévolu sur **[TMetric](https://tmetric.com)**. Son [extension navigateur](https://tmetric.com/help/apps/browser-extension/how-to-install-browser-extension) permet d'enregistrer facilement le temps passé sur chaque tâche directement sur la page **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**.
+⏱️ Pour combler l'absence de suivi temporel dans **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, j'ai testé plusieurs outils et j'ai finalement jeté mon dévolu sur **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)**. Son [extension navigateur](https://tmetric.com/help/apps/browser-extension/how-to-install-browser-extension) permet d'enregistrer facilement le temps passé sur chaque tâche directement sur la page **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**.
 
 <img src="https://i.imgur.com/1T31Buq.png" alt="Tracker le temps avec TMetric"  class="medium"/>
 
@@ -120,7 +120,7 @@ _Il y a une route différente si la tâche possède une tâche parente ou pas._
 
 <img src="https://media0.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Développeur faisant de l'automatisation"  class="small"/>
 
-Grâce à **[Windmill.dev](https://windmill.dev)**, j'ai pu connecter **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** avec **[TMetric](https://tmetric.com)** pour rapatrier les données de tracking afin qu'elles soient hébergées dans **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**.
+Grâce à **[Windmill.dev](https://windmill.dev)**, j'ai pu connecter **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)** avec **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)** pour rapatrier les données de tracking afin qu'elles soient hébergées dans **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**.
 
 <img src="https://i.imgur.com/s0YTioq.png" alt="Flux de données avec Windmill.dev"  class="small"/>
 
@@ -131,7 +131,7 @@ _Le flux prend en entrée une date précise ; sinon, il prend automatiquement le
 
 ## Conclusion {#conclusion}
 
-🌟 En combinant **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[Make](https://www.make.com/en/register?pc=mineogames)**/**[Windmill.dev](https://windmill.dev)** et **[TMetric](https://tmetric.com)**, j'ai réussi à arrêter mon abonnement **[Clickup](http://clickup.com/teams/project-management)** et à gagner en flexibilité et en contrôle sur mes données. 
+🌟 En combinant **[Notion](https://affiliate.notion.so/ooivbv8j8mmc)**, **[Make](https://www.make.com/en/register?pc=mineogames)**/**[Windmill.dev](https://windmill.dev)** et **[TMetric](https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200)**, j'ai réussi à arrêter mon abonnement **[Clickup](http://clickup.com/teams/project-management)** et à gagner en flexibilité et en contrôle sur mes données. 
 
 🟣 Posez vos questions, donnez votre avis ou faite simplement un coucou sur notre **Discord** 👇.
 
@@ -144,7 +144,7 @@ _Le flux prend en entrée une date précise ; sinon, il prend automatiquement le
 ## Liens utiles {#liens-utiles}
 
 * <a href="https://affiliate.notion.so/ooivbv8j8mmc">Notion</a>
-* <a href="https://tmetric.com">TMetric</a>
+* <a href="https://secure.2checkout.com/affiliate.php?ACCOUNT=INDEVART&AFFILIATE=217200&PATH=https%3A%2F%2Ftmetric.com%2F%3FAFFILIATE%3D217200">TMetric</a>
 * <a href="https://www.make.com/en/register?pc=mineogames">Make</a>
 * <a href="https://windmill.dev">Windmill.dev</a>
 * <a href="http://clickup.com/teams/project-management">ClickUp</a>
