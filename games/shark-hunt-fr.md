@@ -1,6 +1,7 @@
 ---
 layout: game
 title: Shark Hunt
+category: Action Game
 img: shark-hunt.png
 lang: fr
 ref: shark-hunt

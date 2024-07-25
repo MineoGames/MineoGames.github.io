@@ -1,6 +1,7 @@
 ---
 layout: game
 title: Vermin Exterminator
+category: Action Game, Simulation Game
 iframe: https://itch.io/embed/822005
 img: vermin-exterminator.png
 lang: fr
