@@ -1,5 +1,10 @@
 # Site settings
 title: Mineo Games – Official Website
+lang: 
+  fr:
+    fr
+  en:
+    en
 email: contact@mineogames.com
 url: https://www.mineogames.com
 enforce_ssl: mineogames.com
