@@ -9,7 +9,7 @@ ref: ocr-greenshot
 
 ## Introduction
 
-OCR, or Optical Character Recognition is a technology that enables the conversion of scanned, handwritten or printed text into digital format. OCR has numerous benefits, especially when it comes to productivity. By using OCR, you can save a lot of time by eliminating the need for manual data entry. In this blog post, we will discuss the importance of OCR for productivity and how how adding OCR to Greenshot can help you save time.
+OCR, or Optical Character Recognition is a technology that enables the conversion of scanned, handwritten or printed text into digital format. OCR has numerous benefits, especially when it comes to productivity. By using OCR, you can save a lot of time by eliminating the need for manual data entry. In this blog post, we will discuss the importance of OCR for productivity and how adding OCR to Greenshot can help you save time.
 
 ## OCR and Productivity
 
