@@ -9,7 +9,7 @@
 
 
 **Vermin Exterminator** finished in the top 5 finalists (among 100 entries) for the best VR game prototype at the 2021 _Game Development World Championship_!
-![GDWC 2021 finalist](/img/vermin-exterminator/GDWC_2021-Finalist_Badges-White-500x500-VR_Proto.png "GDWC 2021 finalist")
+[![GDWC 2021 finalist](/img/vermin-exterminator/GDWC_2021-Finalist_Badges-White-500x500-VR_Proto.png "GDWC 2021 finalist")](https://thegdwc.com/pages/game.php?game_guid=dc2987b6-f099-421d-936a-7919a3c7161b "GDWC 2021 finalist")
 
 ## Description
 
