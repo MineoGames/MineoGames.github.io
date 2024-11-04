@@ -257,7 +257,8 @@ a:focus {
     padding-top: 100px;
 }
 
-.game-banner {
+.game-banner,
+.product-banner {
     width: 100%;
     padding: 130px 0;
     color: #fff;
@@ -267,6 +268,11 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.game-banner > h2,
+.product-banner > h2{
+    margin: 0;
 }
 
 #game-detail > .game-banner {

@@ -52,6 +52,7 @@ pages_list:
     link: '/index'
     pages:
       Our games: 'games'
+      Our products: 'products'
       Blog: 'last-blog-post'
       About: 'about'
       Contact: 'contact'
@@ -59,6 +60,7 @@ pages_list:
     link: '/accueil'
     pages:
       Nos jeux: 'games'
+      Nos produits: 'products'
       Blog: 'last-blog-post'
       A propos: 'about'
       Contact: 'contact'
@@ -74,6 +76,13 @@ games:
     page:
       en: '/games/shark-hunt/'
       fr: '/games/shark-hunt-fr/'
+      
+products:
+  - name: Ultimate Notion Template for Video Games Studios 
+    img: ultimate-template-video-games-studios.png
+    page:
+      en: 'https://mineogames.gumroad.com/l/elslm'
+      fr: 'https://mineogames.gumroad.com/l/elslm'
 
 last_post_words: 100
 

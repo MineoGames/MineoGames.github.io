@@ -1,0 +1,14 @@
+<section id="products" class="content-section text-center">
+    <h1>Nos produits</h1>
+    {% for product in site.products %}
+    {% if product.page[page.lang] %}
+    <a style="display:block" href="{{ site.baseurl }}{{ product.page[page.lang] }}">
+        {% endif %}
+        <div class="product-banner" style="background-image: url(/img/{{ product.img }})">
+            <h2>{{ product.name }}</h2>
+        </div>
+        {% if product.page[page.lang] %}
+    </a>
+    {% endif %}
+    {% endfor %}
+</section>
