@@ -234,7 +234,6 @@ The audience waited. The tension was unbearable.
 There was **only one PC left** in the team that hadn’t been tested yet.
 
 This was it. **Our last shot.**
-
 We plugged in the USB, booted up the game, and hit **"Play."**
 
 🔥 **BAM. IT WORKED.**✨ 

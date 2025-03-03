@@ -23,7 +23,7 @@ ref: ggj2025-furotako
 * <a href="#day-2--the-final-stretch--the-disaster" class="page-scroll">⏳ Jour 2 – Dernier Sprint & Catastrophe</a>  
   * <a href="#last-minute-additions--the-final-push" class="page-scroll">Derniers Ajouts & Rush de Fin</a>  
   * <a href="#then-disaster-struck" class="page-scroll">Puis… C’est Le Drame</a>  
-  * <a href="#game-jam-fail-what-to-do-when-your-game-wont-launch" class="page-scroll">Game Jam Fail : Quand Ton Jeu Ne Veut Pas Se Lancer</a>  
+  * <a href="#game-jam-fail-what-to-do-when-your-game-wont-launch" class="page-scroll">Échec de la Game Jam : Que faire lorsque son jeu ne se lance pas ? </a>  
 * <a href="#brainstorming--game-concept" class="page-scroll">🚀 Verdict & Leçons Apprises</a>  
 * <a href="#join-the-adventure" class="page-scroll"> 🔥 Rejoignez l'Aventure</a>  
 * <a href="#faq" class="page-scroll">❓ FAQ</a> 
@@ -225,29 +225,41 @@ Nous avons essayé **tout ce qu’on pouvait** :
 * ✔️ **Modifier les paramètres d’Unreal & réexporter.** → Toujours CRASH.  
 </div>
 
-Finalement, une version a fonctionné sur mon PC, mais il n’était **pas assez puissant**.
+**Finalement**, une version a fonctionné sur mon PC. Pas terrible niveau puissance, mais au moins nous avions une version jouable.
 
-Nous avons tenté un autre PC – **CRASH en plein écran devant tout le public**.  
+### Échec de la Game Jam : Que faire lorsque son jeu ne se lance pas ? {#game-jam-fail-what-to-do-when-your-game-wont-launch}
+
+Nous sommes montés sur scène. **J'ai remercié tout le monde au micro** (Atlangames, l'École de Design, mon équipe), partagé entre un mélange d'épuisement et de fierté.
+
+<img src="/img/blog/Furotako_Talking.webp" alt="Présentation Finale" class="small"/>
+
+Est venu le moment de lancer le jeu devant toute la salle.
+
+💥 **Écran noir. Fatal Error.**
+
+<img src="/img/blog/Furotako_CrashAudience.webp" alt="Crash in front of the audience" class="medium"/>
+Le Silence 😨.
+
+Nous avons tenté un autre PC – **CRASH en plein sur l'écran géant**.  
+
+Le public attend. La tension est insoutenable.
 
 Dernière chance… **un dernier PC** que nous n’avions pas encore testé.  
 Nous avons branché la clé USB, lancé le jeu, et **cliqué sur "Play".**  
 
 🔥 **BAM. Ça Marche.** 🎮✨
 
-<img src="/img/blog/Furotako_OfficialDemo.gif" alt="On l'a fait !" class="medium"/>
-
-### **La Présentation Devant le Public**  
-
-L’instant magique. Le **public a adoré** :  
+L’instant magique. Encore plus avec les réactions du **public qui a adoré** :  
 
 <div class="bullet-none" markdown="1">
-* 🎉 Réactions à chaque saut sur le fil du rasoir.  
+* 🎉 Sursaut à chaque rebond sur le fil du rasoir.  
 * 🦆 **Fou rire collectif** en voyant le Canard Policier.  
-* 😱 Frissons quand Furotako a failli tomber dans le siphon.  
+* 😱 Effroi quand Furotako est tombé dans le siphon.  
 </div>
 
 C’était un **véritable ascenseur émotionnel**, mais on l’a fait. **Furotako était vivant.** 🐙🚀
 
+<img src="/img/blog/Furotako_OfficialDemo.gif" alt="On l'a fait !" class="medium"/>
 ---
 
 ## **🚀 Verdict & Leçons Apprises** {#brainstorming--game-concept}
