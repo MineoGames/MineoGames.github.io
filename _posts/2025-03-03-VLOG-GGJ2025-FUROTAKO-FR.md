@@ -6,6 +6,16 @@ keywords: "game jam, global game jam, expérience game jam, développement de je
 lang: fr
 ref: ggj2025-furotako
 ---
+## 🎥 Découvrez l'Expérience Complète ! {#introduction}  
+
+**Voyez comment nous avons créé un jeu en seulement 48 heures !** De l'idée initiale à la panique finale, **regardez le [vlog ici](https://www.youtube.com/watch?v=Sb4inVisw9I)**  
+
+[![Vlog de la GGJ2025](https://i.imgur.com/uFDjv9Z.png)](https://www.youtube.com/watch?v=Sb4inVisw9I "Regarder sur Youtube")
+
+
+Plongeons dans **48 heures de créativité, de caféine et de chaos !** Restez jusqu'au bout pour ne pas rater les **moments les plus stressants** auxquels nous avons été confrontés 😨.  
+
+---
 <!-- table-of-contests -->
 
 ## Table des Matières  
@@ -28,16 +38,6 @@ ref: ggj2025-furotako
 * <a href="#join-the-adventure" class="page-scroll"> 🔥 Rejoignez l'Aventure</a>  
 * <a href="#faq" class="page-scroll">❓ FAQ</a> 
 
----
-<br/>
-## 🎥 Découvrez l'Expérience Complète ! {#introduction}  
-
-**Voyez comment nous avons créé un jeu en seulement 48 heures !** De l'idée initiale à la panique finale, **regardez le [vlog ici](https://www.youtube.com/watch?v=Sb4inVisw9I)**  
-
-[![Vlog de la GGJ2025](https://i.imgur.com/uFDjv9Z.png)](https://www.youtube.com/watch?v=Sb4inVisw9I "Regarder sur Youtube")
-
-
-Plongeons dans **48 heures de créativité, de caféine et de chaos !** Restez jusqu'au bout pour ne pas rater les **moments les plus stressants** auxquels nous avons été confrontés 😨.  
 
 ---
 ## **🛠 Jour 0 - Arrivée & Formation de l’Équipe** {#day-0--arrival--team-formation}

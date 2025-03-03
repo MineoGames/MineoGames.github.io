@@ -5,6 +5,15 @@ description: "We made a game in 48 hours at the Global Game Jam! From brainstorm
 keywords: "game jam, global game jam, game jam experience, game development, 48 hour game jam, game jam challenge, game jam survival, game jam fail, indie game dev, indie game development, unreal engine game, game jam disaster, game jam 2025, game development challenge, how to make a game in 48 hours, making a game from scratch, game jam project, best game jam tips, game jam tutorial, game jam workflow, game jam organization, game jam tools, game jam collaboration, team-based game jam, game jam stress, game jam debugging, game jam panic, game jam last-minute fix, game jam programming, game jam best practices, game jam mistakes, game jam crisis management, furotako, furotako game, game jam post-mortem, game jam recap, game jam level design, game jam AI, game jam sound design, game jam unity, game jam unreal engine, game jam coding, game jam design, game jam planning, game jam storytelling, game jam game design, game jam development tools, game jam preparation, game jam assets, game jam 3D modeling, game jam 2D art, game jam UI design, game jam UX, game jam animation, game jam workflow management, game jam productivity, game jam time management, game jam optimization, game jam testing, game jam quality assurance, game jam publishing, game jam marketing, game jam portfolio, game jam experience blog, game jam tips and tricks, how to win a game jam, how to finish a game jam, game jam success, game jam teamwork, game jam remote collaboration, game jam technical challenges, game jam live presentation, game jam public showcase, game jam prototype, game jam concept phase, game jam brainstorming, game jam ideas, game jam creative process, game jam scope management, game jam polish, game jam completion, game jam milestones, game jam best workflows, game jam hacks, game jam programming languages, game jam debugging process, game jam final build, game jam unity tips, game jam unreal tips, game jam game mechanics, game jam physics, game jam particle effects, game jam music composition, game jam audio design, game jam last-minute problems, game jam panic mode, game jam presentation, game jam showreel, game jam cinematic, game jam challenges, best game jam engines, game jam game loop, game jam game structure, game jam coding crash course, game jam post-mortem analysis, best game jam practices, indie game jam, game jam inspiration, game jam livestream, game jam documentary, game jam youtube video, game jam tutorial video, game jam explained, game jam strategy, game jam beginners, game jam advanced, game jam workflow tools, game jam crisis handling, game jam tech stack, unreal engine game jam, unreal engine 5 game jam, UE5 game jam, game jam tips for beginners, game jam pros and cons, game jam experience reflection, game jam lessons learned, game jam preparation guide, game jam must-have tools, best game jam projects, best game jam engines, game jam lessons, how to prepare for a game jam, game jam teamwork strategies, how to make a successful game jam game, how to organize a game jam team, best game jam software, how to finish a game jam game, how to manage stress in a game jam, game jam project management, game jam productivity tips, game jam planning template, game jam time tracking, game jam Notion template, ultimate game jam guide, how to avoid game jam burnout, surviving a game jam, best practices for game jams, ultimate game jam workflow, game jam post-jam polish, game jam project post-mortem, global game jam review, game jam workflow organization, game jam agile management, game jam sprint planning, game jam bug fixing, game jam teamwork efficiency, game jam task management, game jam solo developer, game jam team dynamics, game jam industry tips, game jam collaboration workflow, game jam stress management, game jam first-timers, game jam hacks and tips, game jam advice for developers, notion, unreal engine 5, UE5, Unreal, Unity, Maya, Houdini, SourceTree, Git, Github, Ludum Dare"
 lang: en
 ref: ggj2025-furotako
+--- 
+## 🎥 Watch the Full Experience! {#watch-the-full-experience}
+
+**Want to see how we built a game in just 48 hours?** From concept to last-minute disaster, **watch the [vlog here](https://www.youtube.com/watch?v=Sb4inVisw9I)**.
+
+[![Vlog of GGJ2025](https://i.imgur.com/uFDjv9Z.png)](https://www.youtube.com/watch?v=Sb4inVisw9I "Watch on Youtube")
+
+Let's break down these two days of pure **creativity**, **caffeine** and **chaos!** Bear with us to witness the final **nerve-wracking moments** 😨.
+
 ---
 <!-- table-of-contents -->
 
@@ -30,14 +39,6 @@ ref: ggj2025-furotako
 <!-- table-of-contents -->
 
 <br/>
-## 🎥 Watch the Full Experience! {#watch-the-full-experience}
-
-**Want to see how we built a game in just** **48 hours?** **From concept to** **last-minute disaster,** **watch the [vlog here](https://www.youtube.com/watch?v=Sb4inVisw9I)**.
-
-[![Vlog of GGJ2025](https://i.imgur.com/uFDjv9Z.png)](https://www.youtube.com/watch?v=Sb4inVisw9I "Watch on Youtube")
-
-Let's break down these two days of pure **creativity**, **caffeine** and **chaos!** Bear with us to witness the final **nerve-wracking moments** 😨.
-
 ---
 
 ## 🛠 **Day 0 – Arrival & Team Formation** {#day-0--arrival--team-formation}
