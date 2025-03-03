@@ -100,3 +100,10 @@ ou bien utilisé la vignette auto générée
 ```
 [![Dung Beetle gameplay](https://img.youtube.com/vi/IOgFvfAP0vA/0.jpg)](https://www.youtube.com/watch?v=IOgFvfAP0vA)
 ```
+
+4. Pour utiliser des emoji à la place des bullets point pour les listes
+<div class="bullet-none" markdown="1">
+* ✅ List 1 
+* ✅ *List 2*
+* ✅ **List 3** 
+</div>

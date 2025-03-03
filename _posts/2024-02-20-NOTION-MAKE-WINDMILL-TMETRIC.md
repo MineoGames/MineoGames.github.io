@@ -6,20 +6,20 @@ keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,int
 lang: en
 ref: notion-make-windmill-tmetric
 ---
-<!-- table-of-contests -->
+<!-- table-of-contents -->
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [Old Workflows](#old-workflows)
-* [Goodbye **ClickUp**, Hello **Notion**](#goodbye-clickup-hello-notion)
-* [Centralize Data with **Windmill.dev**](#centralize-data-with-windmilldev)
-* [Managing Time with **TMetric**](#managing-time-with-tmetric)
-* [Automations with **Make**](#automations-with-make)
-* [Conclusion](#conclusion)
-* [Useful Links](#useful-links)
+* <a href="#introduction" class="page-scroll">Introduction</a>
+* <a href="#old-workflows" class="page-scroll">Old Workflows</a>
+* <a href="#goodbye-clickup-hello-notion" class="page-scroll">Goodbye **ClickUp**, Hello **Notion**</a>
+* <a href="#centralize-data-with-windmilldev" class="page-scroll">Centralize Data with **Windmill.dev**</a>
+* <a href="#managing-time-with-tmetric" class="page-scroll">Managing Time with **TMetric**</a>
+* <a href="#automations-with-make" class="page-scroll">Automations with **Make**</a>
+* <a href="#conclusion" class="page-scroll">Conclusion</a>
+* <a href="#useful-links" class="page-scroll">Useful Links</a>
 
-<!-- table-of-contests -->
+<!-- table-of-contents -->
 <br/>
 
  🎥 Prefer the video format? Watch my feedback on Youtube:

@@ -108,6 +108,9 @@ div.signup-form input#mc-embedded-subscribe:hover {
 }
 
 /* List */
+ul {
+  margin-bottom: 2rem;
+}
 
 li {
   font-size: 1.8rem;
@@ -115,6 +118,10 @@ li {
 
 .navbar-nav li {
   font-size: 1.5rem;
+}
+
+.bullet-none li {
+  list-style-type: none;
 }
 
 /* Table*/
@@ -134,12 +141,22 @@ td {
 .mt-2 {
   margin-top: 2rem;
 }
+.mh-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mt-3 {
   margin-top: 3rem;
 }
 
 .mb-0 {
   margin-bottom: 0;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
 }
 
 .biglist {
