@@ -78,11 +78,16 @@ games:
       fr: '/games/shark-hunt-fr/'
       
 products:
+  - name: Tiny GameDev Organizer
+    img: tiny-template-video-games-studios.png
+    page:
+      en: 'https://www.notion.com/templates/tiny-gamedev-organizer'
+      fr: 'https://www.notion.com/templates/tiny-gamedev-organizer'
   - name: Ultimate GameDev Organizer
     img: ultimate-template-video-games-studios.png
     page:
-      en: 'https://mineogames.gumroad.com/l/elslm'
-      fr: 'https://mineogames.gumroad.com/l/elslm'
+      en: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
+      fr: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
 
 last_post_words: 100
 
