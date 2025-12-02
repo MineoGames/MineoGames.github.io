@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {% include nav.html %}
-    {% include header.html %}
-    {% for p in site.pages_list[page.lang].pages %}
-      {% assign path = page.lang | append: '/' | append:  p[1] | append: '.html' %}
-      {% include {{ path }} %}
-    {% endfor %}
-    {% include footer.html %}
-    {% include js.html %}
+  {% include head.html %}
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    {% include nav.html %} {% include header.html %} {% for p in
+    site.pages_list[page.lang].pages %} {% assign path = page.lang | append: '/'
+    | append: p[1] | append: '.html' %} {% include {{ path }} %} {% endfor %} {%
+    include cookie-consent.html %} {% include footer.html %} {% include js.html
+    %}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -18,5 +15,5 @@
         "url": "https://www.mineogames.com/"
       }
     </script>
-    </body>
+  </body>
 </html>

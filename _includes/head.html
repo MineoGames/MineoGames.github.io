@@ -1,84 +1,64 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta http-equiv="content-language" content="{{ page.lang }}">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-	  <meta name="creator" content="{{ site.organization }}">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
-    <link rel="apple-touch-icon" href="{{ site.baseurl}}/apple-touch-icon.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta http-equiv="content-language" content="{{ page.lang }}">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="creator" content="{{ site.organization }}">
 
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+  <!-- CSP: updated to include needed hosts and elements. -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self' data:;
+  img-src 'self' data: https://i.imgur.com https://cdn-images.mailchimp.com;
+  font-src 'self' https://fonts.gstatic.com data:;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn-images.mailchimp.com;
+  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn-images.mailchimp.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com;
+  script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com;
+  connect-src 'self';
+  frame-src https://*.mailchimp.com;
+">
 
-    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
-    <link rel="preload" fetchpriority="high" as="image" href="img/intro-bg.jpg" type="image/jpeg">
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ site.baseurl}}/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+
+  <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet.-->
+  <link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="{{ "/resources/font-awesome/css/all.min.css" | prepend: site.baseurl }}">
+  <script data-cookie-consent="strictly-necessary" defer src="{{ "/resources/font-awesome/js/all.min.js" | prepend: site.baseurl }}"></script>
 
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/resources/font-awesome/css/all.min.css" | prepend: site.baseurl }}">
-	  <script data-cookie-consent="strictly-necessary" defer src="{{ "/resources/font-awesome/js/all.min.js" | prepend: site.baseurl }}"></script>
-    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <!-- Police du logo -->
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <!-- CookieConsent (https) -->
+  <script type="text/javascript" defer src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
 
-    <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-    <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-    <script type="text/javascript" charset="UTF-8">
-    document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({"notice_banner_type":"none","consent_type":"none","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary","tracking"],"notice_banner_reject_button_hide":true,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false});
-    });
-    </script>
+  <!-- Mailchimp -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
+  <script defer src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-    <!-- Mailchimp popup -->
+  <!-- External JS initializers -->
+  <script defer src="{{ '/js/cookieconsent-init.js' | prepend: site.baseurl }}"></script>
+  <script defer src="{{ '/js/cookie-ui.js' | prepend: site.baseurl }}"></script>
+  <script data-cookie-consent="tracking" defer src="{{ '/js/clarity-loader.js' | prepend: site.baseurl }}"></script>
 
-        <!-- Mail Chimp begin -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
-        <script type="text/plain" data-cookie-consent="strictly-necessary" id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ba845a58e9756f53027feeec5/f75c541f7b7529df2fe937dd4.js");</script>
-        <!-- Mail Chimp end -->
-    <!-- end of Mailchimp popup-->
-
-    <!-- Clarity -->
-    <script type="text/javascript" data-cookie-consent="tracking">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "on936bbctp");
+  <!-- Mailchimp placeholder (type="text/plain") for consent manager -->
+  <script type="text/plain" data-cookie-consent="strictly-necessary" id="mcjs">
+    !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","//chimpstatic.com/mcjs-connected/js/users/ba845a58e9756f53027feeec5/f75c541f7b7529df2fe937dd4.js");
   </script>
-    <!-- End Clarity -->
-
-
-    <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
-    <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-
-    <!-- Cookie consent dialog -->
-    <div class="cookie-consent">
-        <p>This website uses cookies to ensure you get the best experience on our website.
-        <button type="button" class="button" id="cookie-consent-btn">Got it!</button>
-        <button type="button" class="button"  id="open_preferences_center">Update my preferences</button></p>
-    </div>
-      
-      <script>
-        // Check if user has already consented to cookies
-        if (localStorage.getItem('cookieConsent') === 'true') {
-          document.querySelector('.cookie-consent').style.display = 'none';
-        }
-        // When user clicks on "Got it!" or update preferences button, save consent to local storage and hide the dialog
-        let cookieButtons = document.querySelectorAll('#cookie-consent-btn, #open_preferences_center');
-        cookieButtons.forEach(box => {
-        box.addEventListener('click', function() {
-          localStorage.setItem('cookieConsent', 'true');
-          document.querySelector('.cookie-consent').style.display = 'none';
-        });
-        });
-      </script>
 </head>
