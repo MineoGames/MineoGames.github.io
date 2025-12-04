@@ -13,13 +13,13 @@
   <!-- CSP: updated to include needed hosts and elements. -->
   <meta http-equiv="Content-Security-Policy" content="
   default-src 'self' data:;
-  img-src 'self' data: https://i.imgur.com https://cdn-images.mailchimp.com;
+  img-src 'self' data: https://i.imgur.com https://*.mailchimp.com https://www.google.fr https://stats.g.doubleclick.net https://digitalasset.intuit.com  https://mcusercontent.com;
   font-src 'self' https://fonts.gstatic.com data:;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn-images.mailchimp.com;
-  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn-images.mailchimp.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.mailchimp.com;
+  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.mailchimp.com ;
   script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com;
-  script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com;
-  connect-src 'self';
+  script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com https://*.clarity.ms https://www.googletagmanager.com https://*.mailchimp.com https://mc.us19.list-manage.com;
+  connect-src 'self' https://stats.g.doubleclick.net https://*.clarity.ms;
   frame-src https://*.mailchimp.com;
 ">
 
@@ -35,10 +35,10 @@
   <link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">
 
   <!-- Fonts -->
-  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-  <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
   <!-- Font Awesome-->
   <link rel="stylesheet" href="{{ "/resources/font-awesome/css/all.min.css" | prepend: site.baseurl }}">
@@ -49,7 +49,7 @@
   <script type="text/javascript" defer src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
 
   <!-- Mailchimp -->
-  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
+  <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
   <script defer src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
   <!-- External JS initializers -->
