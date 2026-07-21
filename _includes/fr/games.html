@@ -2,11 +2,12 @@
     <h1>Nos jeux</h1>
     {% for game in site.games %}
     {% if game.page[page.lang] %}
-    <a style="display:block" href="{{ site.baseurl }}{{ game.page[page.lang] }}">
+    <a class="game-banner-link" href="{{ site.baseurl }}{{ game.page[page.lang] }}">
         {% endif %}
-        <div class="game-banner" style="background-image: url(/img/{{ game.img }})">
+        <article class="game-banner">
+            <img class="game-banner__image" src="{{ site.baseurl }}/img/{{ game.img }}" loading="lazy" decoding="async" alt="">
             <h2>{{ game.name }}</h2>
-        </div>
+        </article>
         {% if game.page[page.lang] %}
     </a>
     {% endif %}

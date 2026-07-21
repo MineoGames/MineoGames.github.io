@@ -59,7 +59,8 @@ div.signup-form input#mc-embedded-subscribe:hover {
 }
 
 .intro .intro-body .brand-heading {
-  height: 350px;
+  width: min(350px, 78vw);
+  height: auto;
 }
 
 /* Main carousel style */

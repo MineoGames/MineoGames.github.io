@@ -1,0 +1,32 @@
+name: Tiny GameDev Organizer
+purchase_url: https://tinyurl.com/tgo-website
+cta_label: Get TGO Dashboard
+purchase_note: $11 - one-time payment - lifetime access
+social_proof:
+  - text: Used by 260+ game devs
+  - text: 4.9/5 rating on Notion Marketplace
+    rating: true
+callouts:
+  - text: Gamified progress = serious motivation.
+    avatar: /img/tgo/avatar-1.png
+    position: left-top
+  - text: I finally stopped procrastinating - and started progressing.
+    avatar: /img/tgo/avatar-2.png
+    position: left-bottom
+  - text: Fully customizable. Seamlessly automated.
+    avatar: /img/tgo/avatar-3.png
+    position: right-top
+  - text: A real productivity boost, from day one.
+    avatar: /img/tgo/avatar-4.png
+    position: right-bottom
+faq:
+  - question: What is TGO?
+    answer: TGO is a comprehensive Notion dashboard designed for indie game developers. It brings planning, tasks, notes, and project tracking into one focused workspace, so you can spend less time managing tools and more time creating your game.
+  - question: How much does TGO cost?
+    answer: TGO costs $11 as a one-time purchase. It includes the complete dashboard and lifetime access, with no subscription.
+  - question: How do I start?
+    answer: Purchase TGO, then duplicate the template into your Notion workspace. Follow the guided first steps inside the dashboard to add your game design document and create your first task.
+  - question: Can I use TGO with the Notion free plan?
+    answer: Yes. TGO is a paid template, but it works with Notion's free plan. Only native Notion automations may require a paid Notion plan to be set up.
+  - question: Can I collaborate with others?
+    answer: Yes. TGO works for solo developers and small teams. Invite collaborators to your Notion workspace to share ideas, assign tasks, and track progress together.

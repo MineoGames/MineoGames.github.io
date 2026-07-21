@@ -79,12 +79,36 @@ games:
       
 products:
   - name: Tiny GameDev Organizer
-    img: tiny-template-video-games-studios.png
+    slug: tgo
+    img: products/tgo-home-banner-v2.webp
+    img_width: 2172
+    img_height: 724
+    eyebrow:
+      en: Focused Notion workspace
+      fr: Workspace Notion essentiel
+    description:
+      en: Plan and track your indie game in one place.
+      fr: Planifiez et suivez votre jeu indépendant au même endroit.
+    cta:
+      en: Explore TGO
+      fr: Découvrir TGO
     page:
-      en: 'https://www.notion.com/templates/tiny-gamedev-organizer'
-      fr: 'https://www.notion.com/templates/tiny-gamedev-organizer'
+      en: '/tgo/'
+      fr: '/tgo/'
   - name: Ultimate GameDev Organizer
-    img: ultimate-template-video-games-studios.png
+    slug: ugo
+    img: products/ugo-home-banner-v2.webp
+    img_width: 2172
+    img_height: 724
+    eyebrow:
+      en: Complete production system
+      fr: Système de production complet
+    description:
+      en: Scale ambitious game projects with a complete command center.
+      fr: Pilotez vos projets ambitieux depuis un centre de contrôle complet.
+    cta:
+      en: Discover UGO
+      fr: Découvrir UGO
     page:
       en: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
       fr: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
@@ -97,3 +121,11 @@ permalink: pretty
 
 gems:
   - jekyll-sitemap
+
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - data_analysis.ipynb
+  - img/Adobe Premiere Pro Auto-Save
+  - img/GifSizeMaker_1.prproj
+  - src

@@ -98,6 +98,6 @@ La Langue utilisée dans le jeu est l'anglais.
 
 Inscrivez-vous à la newsletter pour être informé de l'évolution de ce jeu.
 
-{% include fr/subscribe-form.html title="Inscription à la newsletter" %}
+{% include subscribe-form.html locale="fr" title="Inscription à la newsletter" %}
 
 _>> Join the [Discord](https://discord.gg/dquReyq) for latest news_

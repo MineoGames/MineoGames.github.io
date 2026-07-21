@@ -96,6 +96,6 @@ The Language used in the game is english.
 
 Sign up to the newsletter to be informed about this game's evolution.
 
-{% include en/subscribe-form.html title="Subscribe to the newsletter" %}
+{% include subscribe-form.html locale="en" title="Subscribe to the newsletter" %}
 
 _>> Join the [Discord](https://discord.gg/dquReyq) for latest news_

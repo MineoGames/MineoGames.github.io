@@ -1,4 +1,5 @@
- <!-- jQuery Version 1.11.0 -->
+{% unless page.minimal_scripts %}
+    <!-- jQuery Version 1.11.0 -->
     <script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -9,6 +10,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
+{% endunless %}
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?G-EFDT8X3MH0" data-cookie-consent="tracking"></script>
@@ -20,3 +22,31 @@
       gtag('config', 'G-EFDT8X3MH0');
     </script>
 
+{% if page.brevo_form %}
+<!-- Brevo form runtime -->
+<script>
+  {% if page.lang == "fr" %}
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un indicatif pays.';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations fournies ne sont pas valides. Vérifiez le format du champ.";
+  window.REQUIRED_ERROR_MESSAGE = "Ce champ ne peut pas être vide.";
+  window.GENERIC_INVALID_MESSAGE = "Les informations fournies ne sont pas valides. Vérifiez le format du champ.";
+  {% else %}
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  {% endif %}
+  window.LOCALE = '{{ page.lang | default: "en" }}';
+  window.translation = {
+    common: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected'
+    }
+  };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script defer src="https://www.google.com/recaptcha/api.js?render={{ site.data.newsletter.recaptcha_site_key }}&amp;hl={{ page.lang | default: 'en' }}"></script>
+{% endif %}

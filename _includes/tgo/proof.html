@@ -1,0 +1,8 @@
+<div class="tgo-proof{% if include.modifier %} {{ include.modifier }}{% endif %}" aria-label="TGO social proof">
+  {% for proof in site.data.tgo.social_proof %}
+  <span class="ds-badge">
+    {% if proof.rating %}<span class="tgo-proof__stars" aria-hidden="true">★★★★★</span>{% endif %}
+    {{ proof.text }}
+  </span>
+  {% endfor %}
+</div>

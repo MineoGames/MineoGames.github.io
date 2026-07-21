@@ -3,24 +3,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta http-equiv="content-language" content="{{ page.lang }}">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="website">
+  {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
   <meta name="creator" content="{{ site.organization }}">
 
   <!-- CSP: updated to include needed hosts and elements. -->
   <meta http-equiv="Content-Security-Policy" content="
   default-src 'self' data:;
-  img-src 'self' data: https://mineogames.github.io https://s3.amazonaws.com https://i.imgur.com https://imgur.com/ https://user-images.githubusercontent.com/ https://*.mailchimp.com https://www.google.fr https://stats.g.doubleclick.net https://digitalasset.intuit.com  https://mcusercontent.com;
-  font-src 'self' https://fonts.gstatic.com data:;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.mailchimp.com;
-  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.mailchimp.com ;
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com;
-  script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://s3.amazonaws.com https://chimpstatic.com https://*.clarity.ms https://www.googletagmanager.com https://*.mailchimp.com https://mc.us19.list-manage.com;
-  connect-src 'self' https://stats.g.doubleclick.net https://*.clarity.ms;
-  frame-src https://*.mailchimp.com;
+  img-src 'self' data: https://mineogames.github.io https://s3.amazonaws.com https://i.imgur.com https://imgur.com/ https://user-images.githubusercontent.com/ https://www.google.fr https://www.google.com https://www.gstatic.com https://stats.g.doubleclick.net https://digitalasset.intuit.com https://mcusercontent.com;
+  font-src 'self' https://fonts.gstatic.com https://assets.brevo.com data:;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://sibforms.com;
+  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://sibforms.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.freeprivacypolicy.com https://sibforms.com https://www.google.com https://www.gstatic.com;
+  script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://*.clarity.ms https://www.googletagmanager.com https://sibforms.com https://www.google.com https://www.gstatic.com;
+  connect-src 'self' https://stats.g.doubleclick.net https://*.clarity.ms https://*.sibforms.com https://www.google.com https://www.gstatic.com;
+  frame-src https://www.google.com https://recaptcha.google.com;
+  form-action 'self' https://*.sibforms.com;
 ">
 
 
@@ -29,36 +32,37 @@
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="apple-touch-icon" href="{{ site.baseurl}}/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+  {% if page.brevo_form %}
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  {% endif %}
+  <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}{% if page.asset_version %}?v={{ page.asset_version }}{% endif %}">
+  {% if page.stylesheet %}<link rel="stylesheet" href="{{ page.stylesheet | relative_url }}{% if page.asset_version %}?v={{ page.asset_version }}{% endif %}">{% endif %}
 
   <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet.-->
-  <link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">
+  {% unless page.disable_default_preload %}<link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">{% endunless %}
+  {% if page.preload_font %}<link rel="preload" href="{{ page.preload_font | relative_url }}" as="font" type="font/ttf" crossorigin>{% endif %}
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% unless page.minimal_fonts %}
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  {% endunless %}
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
   <!-- Font Awesome-->
+  {% unless page.minimal_icons %}
   <link rel="stylesheet" href="{{ "/resources/font-awesome/css/all.min.css" | prepend: site.baseurl }}">
   <script data-cookie-consent="strictly-necessary" defer src="{{ "/resources/font-awesome/js/all.min.js" | prepend: site.baseurl }}"></script>
+  {% endunless %}
 
 
   <!-- CookieConsent (https) -->
   <script type="text/javascript" defer src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-
-  <!-- Mailchimp -->
-  <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
-  <script defer src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
   <!-- External JS initializers -->
   <script defer src="{{ '/js/cookieconsent-init.js' | prepend: site.baseurl }}"></script>
   <script defer src="{{ '/js/cookie-ui.js' | prepend: site.baseurl }}"></script>
   <script data-cookie-consent="tracking" defer src="{{ '/js/clarity-loader.js' | prepend: site.baseurl }}"></script>
 
-  <!-- Mailchimp Signup popup / banner -->
-  <!-- <script type="text/plain" data-cookie-consent="strictly-necessary" id="mcjs">
-    !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https//chimpstatic.com/mcjs-connected/js/users/ba845a58e9756f53027feeec5/f75c541f7b7529df2fe937dd4.js");
-  </script> -->
 </head>

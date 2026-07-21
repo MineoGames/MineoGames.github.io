@@ -5,6 +5,7 @@ category: Action Game
 img: shark-hunt.png
 lang: fr
 ref: shark-hunt
+brevo_form: true
 contentfile: fr/shark-hunt-content.md
 carousel:
   - shark-hunt/screen0.png
