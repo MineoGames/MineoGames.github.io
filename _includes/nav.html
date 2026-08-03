@@ -1,59 +1,86 @@
- <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-navigation" aria-controls="site-navigation" aria-expanded="false" aria-label="{% if page.lang == 'fr' %}Ouvrir le menu{% else %}Open navigation{% endif %}">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                {% if page.section-type == "index" %}
-                <a id="nav-logo" class="navbar-brand page-scroll logo-font" href="#page-top">
-                    <img src="{{site.baseurl}}/img/icon.png" alt=""> <span class="light"> Mineo Games </span>
-                </a>
-                {% else %}
-                <a id="nav-logo" class="navbar-brand logo-font" href="{{ site.baseurl }}{{ site.pages_list[page.lang].link }}">
-                    {% if page.ref == 'tgo' %}
-                    <img class="tgo-nav-logo" src="{{ site.baseurl }}/img/LOGO-horizontal.svg" alt="Mineo Games">
-                    {% else %}
-                    <img src="{{site.baseurl}}/img/icon.png" alt=""> <span class="light">Mineo Games</span>
-                    {% endif %}
-                </a>
-                {% endif %}
-                <div class="navbar-brand navbar-locale">
-                {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-                {% for post in posts %}
-                <a href="{{ post.url }}">{{ post.lang }}</a>
-                {% endfor %}
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button
+				type="button"
+				class="navbar-toggle"
+				data-toggle="collapse"
+				data-target="#site-navigation"
+				aria-controls="site-navigation"
+				aria-expanded="false"
+				aria-label="{% if page.lang == 'fr' %}Ouvrir le menu{% else %}Open navigation{% endif %}"
+			>
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+			{% if page.section-type == "index" %}
+			<a
+				id="nav-logo"
+				class="navbar-brand page-scroll logo-font"
+				href="#page-top"
+			>
+				<img
+					class="nav-brand-logo"
+					src="{{ site.baseurl }}/img/LOGO-horizontal.svg"
+					width="1521"
+					height="339"
+					alt="Mineo Games"
+				/>
+			</a>
+			{% else %}
+			<a
+				id="nav-logo"
+				class="navbar-brand logo-font"
+				href="{{ site.baseurl }}{{ site.pages_list[page.lang].link }}"
+			>
+				<img
+					class="nav-brand-logo{% if page.ref == 'tgo' %} tgo-nav-logo{% endif %}"
+					src="{{ site.baseurl }}/img/LOGO-horizontal.svg"
+					width="1521"
+					height="339"
+					alt="Mineo Games"
+				/>
+			</a>
+			{% endif %}
+			<div class="navbar-brand navbar-locale">
+				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %} {%
+				for post in posts %}
+				<a href="{{ post.url }}">{{ post.lang }}</a>
+				{% endfor %} {% assign pages=site.pages | where:"ref", page.ref | sort:
+				'lang' %} {% for page in pages %}
+				<a href="{{ page.url }}">{{ page.lang }}</a>
+				{% endfor %}
+			</div>
+		</div>
 
-                {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-                {% for page in pages %}
-                <a href="{{ page.url }}">{{ page.lang }}</a>
-                {% endfor %}
-                </div>
-            </div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div
+			id="site-navigation"
+			class="collapse navbar-collapse navbar-right navbar-main-collapse"
+		>
+			<ul class="nav navbar-nav">
+				{% if page.section-type == "index" %}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="site-navigation" class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    {% if page.section-type == "index" %}
-
-                    <!-- Scroll to section for each page in index -->
-                    {% for p in site.pages_list[page.lang].pages %}
-                    <li>
-                        <a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
-                    </li>
-                    {% endfor %}
-
-                    {% else %}
-                    <!-- Blog, Post, Tag and Error pages -->
-                    {% for p in site.pages_list[page.lang].pages %}
-                    <li>
-                        <a class="page-scroll" href="{{site.pages_list[page.lang].link}}#{{ p[1] }}"> {{p[0]}} </a>
-                    </li>
-                    {% endfor %}
-                    {% endif %}
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+				<!-- Scroll to section for each page in index -->
+				{% for p in site.pages_list[page.lang].pages %}
+				<li>
+					<a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
+				</li>
+				{% endfor %} {% else %}
+				<!-- Blog, Post, Tag and Error pages -->
+				{% for p in site.pages_list[page.lang].pages %}
+				<li>
+					<a
+						class="page-scroll"
+						href="{{site.pages_list[page.lang].link}}#{{ p[1] }}"
+					>
+						{{p[0]}}
+					</a>
+				</li>
+				{% endfor %} {% endif %}
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container -->
+</nav>

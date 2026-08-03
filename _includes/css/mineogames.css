@@ -191,8 +191,37 @@ td {
   margin: 0rem 0.5rem 0.4rem 0rem;
 }
 
+/* Horizontal logo already carries the wordmark. Driven by height; width follows
+   the SVG ratio. */
+.navbar-brand > img.nav-brand-logo {
+  width: auto;
+  height: 3.4rem;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* Bootstrap pulls the header (below 768px) and the brand (above) 15px left, to be
+   cancelled by padding the brand carries by default. We drop that padding for the
+   logo, so cancel the pulls instead and let the container padding do the aligning.
+   Vertical padding used to be asymmetric (12px top, 0 bottom), which pushed the
+   logo down; centre it instead. */
+.navbar > .container .navbar-header {
+  margin-inline: 0;
+}
+
 #nav-logo {
-  padding: 1.2rem 2rem 0rem 1rem;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  margin-left: 0;
+  padding: 0 2rem 0 0;
+}
+
+/* The burger is 40px tall with 8px block margins, stretching the header to 56px
+   while the brand stays 50px and sits at the top. Even them out so both centre on
+   the same row. */
+.navbar-toggle {
+  margin-block: 5px;
 }
 
 /* button */

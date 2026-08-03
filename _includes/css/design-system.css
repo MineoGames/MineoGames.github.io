@@ -1,7 +1,5 @@
-/* 1rem = 10px. Reprend explicitement le html{font-size:10px} que posait Bootstrap 3
-   et dont dépend tout le CSS écrit en rem de ce projet. Exprimé en pourcentage pour
-   respecter un réglage de taille de police modifié par l'utilisateur, ce que la
-   valeur en dur de Bootstrap ignorait. Ce fichier est inclus après Bootstrap. */
+/* 1rem = 10px. Was implicitly set by Bootstrap 3; declared here so the rem-based
+   CSS no longer depends on it. */
 html {
   font-size: 62.5%;
 }
@@ -15,17 +13,13 @@ html {
   --mg-color-brand: #ff384b;
   --mg-color-action: #2f80ed;
   --mg-color-focus: #ffffff;
-  /* Palette du site historique. Source de vérité : _config.yml > color.
-     Exposée ici pour que tout le CSS consomme des tokens plutôt que du Liquid. */
+  /* Legacy palette. Source of truth: _config.yml > color. */
   --mg-color-canvas-legacy: {{ site.color.primary-dark }};
   --mg-color-link: {{ site.color.links }};
   --mg-font-display: "Staatliches", "Arial Narrow", sans-serif;
   --mg-font-body: "Montserrat", Arial, sans-serif;
-  /* Échelle typographique fluide.
-     Les bornes basses valent pour ~375px de large, les bornes hautes pour ~1440px.
-     16 et 18 correspondent aux variables Figma Text Regular / Text Medium.
-     ATTENTION : ici 1rem = 10px (voir la règle html plus bas), mais dans une media
-     query rem vaut 16px — c'est une règle CSS, pas une incohérence du fichier. */
+  /* Fluid type scale, bounds sized for 375px and 1440px viewports.
+     16/18 match the Figma Text Regular / Text Medium variables. */
   --mg-text-xs: 1.2rem;
   --mg-text-sm: 1.4rem;
   --mg-text-md: 1.6rem;
@@ -48,10 +42,7 @@ html {
   --mg-radius-sm: 4px;
   --mg-radius-md: 8px;
   --mg-shadow-card: 0 16px 36px rgba(0, 0, 0, 0.28);
-  /* Largeurs et rythme vertical. 1280 et 768 viennent des variables Figma
-     Container/container-large et Max Width/max-width-large ; la borne haute de
-     --mg-section-gap reprend Section Padding/padding-section-large (112).
-     --mg-gutter est une marge PAR CÔTÉ. */
+  /* 1280 / 768 / 112 come from Figma variables. --mg-gutter is per side. */
   --mg-content-width: 1280px;
   --mg-measure: 768px;
   --mg-gutter: clamp(1.5rem, 0.2rem + 3.5vw, 6.4rem);
@@ -85,14 +76,10 @@ html {
   clip-path: polygon(0 0, calc(100% - var(--mg-frame-cut)) 0, 100% var(--mg-frame-cut), 100% 100%, 0 100%);
 }
 
-/* CONTRAT : ce composant demande TROIS couches de peinture — la surface au coin
-   coupé, plus deux accents d'angle — pour seulement deux pseudo-éléments. Les deux
-   pseudos sont pris par les angles, la surface reste donc portée par l'élément.
-   Si un thème a besoin d'ombres ou d'enfants débordant du coin coupé, il doit
-   neutraliser le clip-path ici et peindre la surface dans un enfant dédié en
-   position absolue (voir .tgo-frame__surface dans tgo-style.css) : un clip-path
-   porté par le conteneur rognerait aussi les enfants et les ombres.
-   Ce n'est pas un contournement, c'est la seule sortie à deux pseudo-éléments. */
+/* Three paint layers (cut-corner surface + two corner accents) for two pseudo
+   elements, so the surface stays on the element itself. A theme needing shadows
+   or children past the cut must null the clip-path and paint the surface in a
+   dedicated child — see .tgo-frame__surface. */
 .ds-frame {
   position: relative;
   border: 1px solid var(--mg-frame-border);
@@ -225,9 +212,8 @@ html {
   color: var(--mg-color-text-muted);
 }
 
-/* Second segment de la rampe display. La plage mobile/tablette et la plage desktop
-   ne progressent pas à la même vitesse (41→83 puis 83→130) : une seule interpolation
-   linéaire donnerait un titre trop gros autour de 800px. */
+/* Second display ramp segment: mobile and desktop slopes differ (41→83, then
+   83→130), so a single interpolation would oversize the title around 800px. */
 @media (min-width: 60rem) {
   :root {
     --mg-text-display: clamp(8.3rem, -1.1rem + 9.79vw, 13rem);

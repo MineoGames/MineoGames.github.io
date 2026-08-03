@@ -372,7 +372,7 @@ a:focus {
 }
 
 .product-banner--ugo {
-    /* Accent propre au produit UGO, pas une couleur du système. */
+    /* Product-specific accent, not a system colour. */
     --product-accent: #3e82fc;
 }
 

@@ -19,7 +19,11 @@ body.tgo {
   --mg-frame-border: #171b24;
   --mg-frame-accent: var(--mg-color-brand);
   --mg-frame-cut: 4.6rem;
-  /* Le panneau FAQ déborde volontairement du conteneur standard. */
+  /* Corner brackets overhang the frame by this much. Any section whose frame
+     touches the <main> edge must reserve it as padding, or main{overflow:hidden}
+     clips the bracket. */
+  --tgo-frame-overhang: 1.2rem;
+  /* FAQ panel intentionally exceeds the standard container. */
   --tgo-faq-width: 138rem;
   --tgo-panel-border: #171b24;
   --tgo-text-soft: #e5e5e5;
@@ -79,14 +83,14 @@ body.tgo > footer {
 }
 
 .tgo .ds-frame::before {
-  top: -1.2rem;
-  left: -1.2rem;
+  top: calc(-1 * var(--tgo-frame-overhang));
+  left: calc(-1 * var(--tgo-frame-overhang));
   transform: rotate(180deg);
 }
 
 .tgo .ds-frame::after {
-  right: -1.2rem;
-  bottom: -1.2rem;
+  right: calc(-1 * var(--tgo-frame-overhang));
+  bottom: calc(-1 * var(--tgo-frame-overhang));
 }
 
 .tgo .tgo-section--faq > .ds-container {
@@ -110,10 +114,12 @@ body.tgo > footer {
   width: min(calc(100% - 4rem), 117rem);
 }
 
+/* Margin resets: see the #nav-logo block in mineogames.css. */
 .tgo #nav-logo {
   display: flex;
   align-items: center;
   height: 4rem;
+  margin-left: 0;
   padding: 0 1.5rem 0 0;
   line-height: 4rem;
 }
@@ -125,9 +131,11 @@ body.tgo > footer {
   vertical-align: middle;
 }
 
+/* Driven by height so the logo can never overflow the navbar row. The SVG carries
+   ~28% of vertical padding of its own, so it can fill the row height. */
 .tgo #nav-logo .tgo-nav-logo {
-  width: 13.3rem;
-  height: auto;
+  width: auto;
+  height: 4rem;
 }
 
 .tgo .navbar-locale {
@@ -182,7 +190,9 @@ body.tgo > footer {
   min-height: 145rem;
   padding: 24rem 0 7rem;
   place-items: start center;
-  background-image: radial-gradient(ellipse 48rem 36rem at 94% 52%, rgba(47, 110, 229, 0.14) 0%, rgba(47, 72, 255, 0.06) 42%, transparent 74%), radial-gradient(ellipse 34rem 28rem at 4% 86%, rgba(47, 110, 229, 0.08) 0%, rgba(47, 72, 255, 0.03) 44%, transparent 74%);
+  /* Painted inside the hero box, so anything past it is hard-clipped. Radii are
+     fixed rem, so a % position eventually falls outside: anchor from the edges. */
+  background-image: radial-gradient(ellipse 48rem 36rem at 94% 52%, rgba(47, 110, 229, 0.14) 0%, rgba(47, 72, 255, 0.06) 42%, rgba(47, 72, 255, 0) 74%), radial-gradient(ellipse 34rem 28rem at 4% calc(100% - 30rem), rgba(47, 110, 229, 0.08) 0%, rgba(47, 72, 255, 0.03) 44%, rgba(47, 72, 255, 0) 74%);
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -323,10 +333,11 @@ body.tgo > footer {
   content: "\21B3";
 }
 
-/* Le rythme vertical reste asymétrique — c'est voulu par la composition — mais il
-   est désormais exprimé en proportion de --mg-section-gap, donc fluide. */
+/* Asymmetric by design, expressed as a proportion of the token to stay fluid.
+   Overview is the first section in <main>: its frame touches the edge, so it
+   must leave room for the corner bracket overhang. */
 .tgo .tgo-section--overview {
-  padding-block: 0 calc(var(--mg-section-gap) * 0.8);
+  padding-block: var(--tgo-frame-overhang) calc(var(--mg-section-gap) * 0.8);
 }
 
 .tgo .tgo-section--features {
@@ -947,8 +958,8 @@ body.tgo > footer {
   }
 
   .tgo #nav-logo .tgo-nav-logo {
-    width: 11.4rem;
-    height: auto;
+    width: auto;
+    height: 3.6rem;
   }
 
   .tgo .navbar-locale {
