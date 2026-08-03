@@ -1,3 +1,11 @@
+/* 1rem = 10px. Reprend explicitement le html{font-size:10px} que posait Bootstrap 3
+   et dont dépend tout le CSS écrit en rem de ce projet. Exprimé en pourcentage pour
+   respecter un réglage de taille de police modifié par l'utilisateur, ce que la
+   valeur en dur de Bootstrap ignorait. Ce fichier est inclus après Bootstrap. */
+html {
+  font-size: 62.5%;
+}
+
 :root {
   --mg-color-canvas: #0c1118;
   --mg-color-surface: #171b24;
@@ -7,8 +15,28 @@
   --mg-color-brand: #ff384b;
   --mg-color-action: #2f80ed;
   --mg-color-focus: #ffffff;
+  /* Palette du site historique. Source de vérité : _config.yml > color.
+     Exposée ici pour que tout le CSS consomme des tokens plutôt que du Liquid. */
+  --mg-color-canvas-legacy: {{ site.color.primary-dark }};
+  --mg-color-link: {{ site.color.links }};
   --mg-font-display: "Staatliches", "Arial Narrow", sans-serif;
   --mg-font-body: "Montserrat", Arial, sans-serif;
+  /* Échelle typographique fluide.
+     Les bornes basses valent pour ~375px de large, les bornes hautes pour ~1440px.
+     16 et 18 correspondent aux variables Figma Text Regular / Text Medium.
+     ATTENTION : ici 1rem = 10px (voir la règle html plus bas), mais dans une media
+     query rem vaut 16px — c'est une règle CSS, pas une incohérence du fichier. */
+  --mg-text-xs: 1.2rem;
+  --mg-text-sm: 1.4rem;
+  --mg-text-md: 1.6rem;
+  --mg-text-lg: 1.8rem;
+  --mg-text-xl: clamp(1.8rem, 1.73rem + 0.19vw, 2rem);
+  --mg-text-2xl: clamp(1.8rem, 1.55rem + 0.67vw, 2.5rem);
+  --mg-text-3xl: clamp(1.8rem, 1.3rem + 1.33vw, 3.2rem);
+  --mg-text-4xl: clamp(2.4rem, 1.83rem + 1.52vw, 4rem);
+  --mg-text-display: clamp(4.1rem, 1.41rem + 7.18vw, 8.3rem);
+  --mg-leading-tight: 1.15;
+  --mg-leading-body: 1.5;
   --mg-space-1: 4px;
   --mg-space-2: 8px;
   --mg-space-3: 12px;
@@ -20,7 +48,14 @@
   --mg-radius-sm: 4px;
   --mg-radius-md: 8px;
   --mg-shadow-card: 0 16px 36px rgba(0, 0, 0, 0.28);
-  --mg-content-width: 1200px;
+  /* Largeurs et rythme vertical. 1280 et 768 viennent des variables Figma
+     Container/container-large et Max Width/max-width-large ; la borne haute de
+     --mg-section-gap reprend Section Padding/padding-section-large (112).
+     --mg-gutter est une marge PAR CÔTÉ. */
+  --mg-content-width: 1280px;
+  --mg-measure: 768px;
+  --mg-gutter: clamp(1.5rem, 0.2rem + 3.5vw, 6.4rem);
+  --mg-section-gap: clamp(4rem, 1.6rem + 6.7vw, 11.2rem);
   --mg-control-height: 48px;
   --mg-transition-fast: 150ms ease;
   --mg-frame-background: var(--mg-color-surface);
@@ -30,12 +65,12 @@
 }
 
 .ds-container {
-  width: min(var(--mg-content-width), calc(100% - 2 * var(--mg-space-5)));
+  width: min(var(--mg-content-width), calc(100% - 2 * var(--mg-gutter)));
   margin-inline: auto;
 }
 
 .ds-section {
-  padding-block: var(--mg-space-8);
+  padding-block: var(--mg-section-gap);
 }
 
 .ds-card {
@@ -50,6 +85,14 @@
   clip-path: polygon(0 0, calc(100% - var(--mg-frame-cut)) 0, 100% var(--mg-frame-cut), 100% 100%, 0 100%);
 }
 
+/* CONTRAT : ce composant demande TROIS couches de peinture — la surface au coin
+   coupé, plus deux accents d'angle — pour seulement deux pseudo-éléments. Les deux
+   pseudos sont pris par les angles, la surface reste donc portée par l'élément.
+   Si un thème a besoin d'ombres ou d'enfants débordant du coin coupé, il doit
+   neutraliser le clip-path ici et peindre la surface dans un enfant dédié en
+   position absolue (voir .tgo-frame__surface dans tgo-style.css) : un clip-path
+   porté par le conteneur rognerait aussi les enfants et les ombres.
+   Ce n'est pas un contournement, c'est la seule sortie à deux pseudo-éléments. */
 .ds-frame {
   position: relative;
   border: 1px solid var(--mg-frame-border);
@@ -90,6 +133,7 @@
   border: 1px solid transparent;
   border-radius: var(--mg-radius-md);
   font-family: var(--mg-font-body);
+  font-size: var(--mg-text-xl);
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -121,7 +165,7 @@
   margin: 0 0 var(--mg-space-3);
   color: var(--mg-color-text-muted);
   font-family: var(--mg-font-body);
-  font-size: 0.875rem;
+  font-size: var(--mg-text-sm);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -140,7 +184,7 @@
   border-radius: var(--mg-radius-md);
   background: var(--mg-color-surface);
   color: var(--mg-color-text);
-  font-size: 0.8125rem;
+  font-size: var(--mg-text-xs);
   font-weight: 700;
 }
 
@@ -181,9 +225,12 @@
   color: var(--mg-color-text-muted);
 }
 
-@media (max-width: 48rem) {
-  .ds-section {
-    padding-block: var(--mg-space-7);
+/* Second segment de la rampe display. La plage mobile/tablette et la plage desktop
+   ne progressent pas à la même vitesse (41→83 puis 83→130) : une seule interpolation
+   linéaire donnerait un titre trop gros autour de 800px. */
+@media (min-width: 60rem) {
+  :root {
+    --mg-text-display: clamp(8.3rem, -1.1rem + 9.79vw, 13rem);
   }
 }
 

@@ -19,12 +19,9 @@ body.tgo {
   --mg-frame-border: #171b24;
   --mg-frame-accent: var(--mg-color-brand);
   --mg-frame-cut: 4.6rem;
-  --tgo-content-width: 124rem;
-  --tgo-wide-width: 141rem;
-  --tgo-page-gutter: 12rem;
-  --tgo-faq-gutter: 10rem;
+  /* Le panneau FAQ déborde volontairement du conteneur standard. */
+  --tgo-faq-width: 138rem;
   --tgo-panel-border: #171b24;
-  --tgo-panel-background: rgba(12, 17, 24, 0.82);
   --tgo-text-soft: #e5e5e5;
   position: relative;
   isolation: isolate;
@@ -53,10 +50,6 @@ body.tgo > main,
 body.tgo > footer {
   position: relative;
   z-index: 1;
-}
-
-.tgo .ds-container {
-  width: min(calc(100% - var(--tgo-page-gutter)), var(--tgo-content-width));
 }
 
 .tgo .ds-frame {
@@ -97,7 +90,7 @@ body.tgo > footer {
 }
 
 .tgo .tgo-section--faq > .ds-container {
-  width: min(calc(100% - var(--tgo-faq-gutter)), var(--tgo-wide-width));
+  width: min(calc(100% - 2 * var(--mg-gutter)), var(--tgo-faq-width));
 }
 
 .tgo .navbar {
@@ -142,7 +135,7 @@ body.tgo > footer {
   padding: 1.2rem 1rem;
   color: var(--mg-color-text-muted);
   font-family: var(--mg-font-body);
-  font-size: 1.2rem;
+  font-size: var(--mg-text-xs);
   font-weight: 600 !important;
   line-height: 1.6rem;
   text-transform: uppercase;
@@ -157,7 +150,7 @@ body.tgo > footer {
   padding: 1.3rem 1.35rem;
   color: var(--mg-color-text-muted);
   font-family: var(--mg-font-body);
-  font-size: 1.2rem;
+  font-size: var(--mg-text-xs);
   font-weight: 600;
   line-height: 1.4rem;
   letter-spacing: 0;
@@ -195,7 +188,7 @@ body.tgo > footer {
 }
 
 .tgo-hero__content {
-  max-width: 110rem;
+  max-width: 97.7rem;
   margin-inline: auto;
 }
 
@@ -203,7 +196,7 @@ body.tgo > footer {
   margin-bottom: 2.6rem;
   color: var(--tgo-text-soft);
   font-family: var(--mg-font-body);
-  font-size: 3.2rem;
+  font-size: var(--mg-text-3xl);
   font-style: normal;
   font-synthesis: none;
   font-weight: 500;
@@ -228,7 +221,7 @@ body.tgo > footer {
   background: rgba(12, 17, 24, 0.84);
   box-shadow: 0 0.45rem 0.6rem rgba(0, 0, 0, 0.3);
   color: var(--tgo-text-soft);
-  font-size: 1.6rem;
+  font-size: var(--mg-text-md);
   font-weight: 500;
 }
 
@@ -249,7 +242,7 @@ body.tgo > footer {
 }
 
 .tgo-hero__title {
-  font-size: 13rem;
+  font-size: var(--mg-text-display);
   line-height: 0.88;
   text-shadow: 0 -0.5rem 3.5rem rgba(21, 46, 255, 0.2);
 }
@@ -277,7 +270,7 @@ body.tgo > footer {
   max-width: 82rem;
   margin: 5rem auto 0;
   color: #d9d9d9;
-  font-size: 1.8rem;
+  font-size: var(--mg-text-lg);
   line-height: 1.45;
 }
 
@@ -311,7 +304,7 @@ body.tgo > footer {
   border-radius: 0;
   background: var(--mg-color-action);
   box-shadow: 0 0.75rem 1.4rem rgba(69, 128, 246, 0.2);
-  font-size: 2rem;
+  font-size: var(--mg-text-xl);
 }
 
 .tgo .ds-button:hover,
@@ -322,7 +315,7 @@ body.tgo > footer {
 .tgo-cta__hint {
   margin: 1.4rem 0 0;
   color: rgba(229, 229, 229, 0.78);
-  font-size: 1.5rem;
+  font-size: var(--mg-text-sm);
 }
 
 .tgo-cta__hint::before {
@@ -330,24 +323,22 @@ body.tgo > footer {
   content: "\21B3";
 }
 
-.tgo .ds-section {
-  padding-block: 12rem;
-}
-
+/* Le rythme vertical reste asymétrique — c'est voulu par la composition — mais il
+   est désormais exprimé en proportion de --mg-section-gap, donc fluide. */
 .tgo .tgo-section--overview {
-  padding-block: 0 9rem;
+  padding-block: 0 calc(var(--mg-section-gap) * 0.8);
 }
 
 .tgo .tgo-section--features {
-  padding-block: 10rem 20rem;
+  padding-block: calc(var(--mg-section-gap) * 0.9) calc(var(--mg-section-gap) * 1.8);
 }
 
 .tgo .tgo-section--profile {
-  padding-block: 0 8rem;
+  padding-block: 0 calc(var(--mg-section-gap) * 0.7);
 }
 
 .tgo .tgo-section--faq {
-  padding-block: 0 6rem;
+  padding-block: 0 calc(var(--mg-section-gap) * 0.55);
 }
 
 .tgo-split,
@@ -366,7 +357,7 @@ body.tgo > footer {
 
 .tgo-copy-card h2 {
   font-family: var(--mg-font-body);
-  font-size: 4rem;
+  font-size: var(--mg-text-4xl);
   font-weight: 750;
   line-height: 1.12;
   text-transform: none;
@@ -379,13 +370,13 @@ body.tgo > footer {
 
 .tgo-copy-card > p {
   margin: 2.4rem 0 0;
-  font-size: 1.7rem;
+  font-size: var(--mg-text-md);
   line-height: 1.55;
 }
 
 .tgo-copy-card > .tgo-copy-card__intro {
   margin-top: 6rem;
-  font-size: 1.6rem;
+  font-size: var(--mg-text-md);
 }
 
 .tgo-list {
@@ -394,7 +385,7 @@ body.tgo > footer {
   margin: 3rem 0 0;
   padding: 0;
   color: #eff2f3;
-  font-size: 1.6rem;
+  font-size: var(--mg-text-md);
   line-height: 1.5;
   list-style: none;
 }
@@ -443,7 +434,7 @@ body.tgo > footer {
 
 .tgo-section__title {
   font-family: var(--mg-font-body);
-  font-size: 4rem;
+  font-size: var(--mg-text-4xl);
   font-weight: 750;
   letter-spacing: 0;
   line-height: 1.08;
@@ -501,7 +492,7 @@ body.tgo > footer {
   min-height: 5.4rem;
   margin: 0;
   font-family: var(--mg-font-body);
-  font-size: 2rem;
+  font-size: var(--mg-text-xl);
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.35;
@@ -511,7 +502,7 @@ body.tgo > footer {
 .tgo-feature p {
   margin: 1.5rem 0 0;
   color: var(--mg-color-text-muted);
-  font-size: 1.5rem;
+  font-size: var(--mg-text-md);
   line-height: 1.55;
 }
 
@@ -575,7 +566,7 @@ body.tgo > footer {
   margin: 0 0 2.5rem;
   color: var(--mg-color-text);
   font-family: var(--mg-font-body);
-  font-size: 2.5rem;
+  font-size: var(--mg-text-2xl);
   letter-spacing: 0;
   text-transform: none;
 }
@@ -588,12 +579,12 @@ body.tgo > footer {
   max-width: 55rem;
   margin: 1.6rem 0;
   color: var(--mg-color-text-muted);
-  font-size: 1.6rem;
+  font-size: var(--mg-text-md);
   line-height: 1.75;
 }
 
 .tgo .tgo-section--conversion {
-  padding-top: 6rem;
+  padding-top: calc(var(--mg-section-gap) * 0.55);
   padding-bottom: 0;
   text-align: center;
 }
@@ -645,7 +636,7 @@ body.tgo > footer {
   border: 1px solid var(--tgo-panel-border);
   background: rgba(12, 17, 24, 0.94);
   color: var(--tgo-text-soft);
-  font-size: 1.9rem;
+  font-size: var(--mg-text-md);
   line-height: 1.4;
   text-align: left;
 }
@@ -706,15 +697,15 @@ body.tgo > footer {
 
 .tgo-faq__heading .tgo-section__title {
   color: var(--mg-color-action);
-  font-size: 3.2rem;
+  font-size: var(--mg-text-3xl);
   text-align: left;
 }
 
 .tgo-faq__heading .tgo-section__intro {
-  max-width: 90rem;
+  max-width: 83.2rem;
   margin-inline: 0;
   text-align: left;
-  font-size: 1.7rem;
+  font-size: var(--mg-text-md);
 }
 
 .tgo-faq__accordion {
@@ -730,7 +721,7 @@ body.tgo > footer {
 .tgo .ds-accordion__trigger {
   padding: 2rem 0;
   border-bottom: 0;
-  font-size: 1.65rem;
+  font-size: var(--mg-text-md);
   text-align: left;
 }
 
@@ -741,12 +732,12 @@ body.tgo > footer {
 .tgo .ds-accordion__panel {
   padding: 0 5rem 1.8rem 0;
   border-bottom: 1px solid #262d39;
-  font-size: 1.5rem;
+  font-size: var(--mg-text-md);
   line-height: 1.55;
 }
 
 .tgo .ds-accordion__panel p {
-  max-width: 85rem;
+  max-width: var(--mg-measure);
   margin: 0;
 }
 
@@ -796,7 +787,7 @@ body.tgo > footer {
   background: rgba(12, 17, 24, 0.82);
   color: var(--mg-color-text-muted);
   font-family: var(--mg-font-body);
-  font-size: 1.1rem;
+  font-size: var(--mg-text-xs);
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -816,7 +807,7 @@ body.tgo > footer {
   margin-top: 2rem;
   color: var(--mg-color-text-muted);
   font-family: var(--mg-font-body);
-  font-size: 1.2rem;
+  font-size: var(--mg-text-xs);
   line-height: 1.5;
 }
 
@@ -826,7 +817,7 @@ body.tgo > footer {
   border-top: 1px solid rgba(229, 229, 229, 0.16);
   background: rgba(3, 5, 9, 0.96);
   font-family: var(--mg-font-body);
-  font-size: 1.2rem;
+  font-size: var(--mg-text-xs);
 }
 
 .tgo .cookie-consent p {
@@ -843,7 +834,7 @@ body.tgo > footer {
   margin: 0;
   padding: 0.7rem 1.1rem;
   border-radius: 0;
-  font-size: 1.2rem;
+  font-size: var(--mg-text-xs);
   line-height: 1.5;
 }
 
@@ -854,35 +845,9 @@ body.tgo > footer {
 }
 
 @media (max-width: 72rem) {
-  body.tgo {
-    --tgo-page-gutter: 6rem;
-    --tgo-faq-gutter: 6rem;
-  }
-
   .tgo-hero {
     min-height: 112rem;
     padding-top: 18rem;
-  }
-
-  .tgo-hero__title {
-    font-size: 10rem;
-  }
-
-  .tgo .tgo-section--overview {
-    padding-block: 0 10rem;
-  }
-
-  .tgo .tgo-section--features {
-    padding-block: 12rem 18rem;
-  }
-
-  .tgo .tgo-section--profile,
-  .tgo .tgo-section--faq {
-    padding-block: 0 10rem;
-  }
-
-  .tgo .tgo-section--conversion {
-    padding-block: 5rem 0;
   }
 
   .tgo-split {
@@ -912,10 +877,6 @@ body.tgo > footer {
     justify-self: center;
   }
 
-  .tgo-copy-card h2 {
-    font-size: 3.2rem;
-  }
-
   .tgo-profile {
     padding-inline: 4rem;
   }
@@ -936,7 +897,6 @@ body.tgo > footer {
 
   .tgo-character__callout {
     width: 27rem;
-    font-size: 1.4rem;
   }
 
   .tgo-character__callout--left-top,
@@ -956,30 +916,16 @@ body.tgo > footer {
     padding-top: 15rem;
   }
 
-  .tgo-hero__title {
-    font-size: 8.3rem;
-  }
-
   .tgo-profile__image {
     width: min(100%, 32rem);
   }
 
-  .tgo-profile__card p {
-    font-size: 1.5rem;
-  }
-
   .tgo-character__callout {
     width: 24rem;
-    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 48rem) {
-  body.tgo {
-    --tgo-page-gutter: 3rem;
-    --tgo-faq-gutter: 3rem;
-  }
-
   .tgo .navbar {
     min-height: 5.6rem;
     padding: 0.8rem 0;
@@ -1049,7 +995,6 @@ body.tgo > footer {
   .tgo .navbar-nav > li > a {
     min-height: 4.4rem;
     padding: 1.5rem 1rem;
-    font-size: 1.3rem;
   }
 
   .tgo footer {
@@ -1083,13 +1028,11 @@ body.tgo > footer {
   }
 
   .tgo-hero__title {
-    font-size: 5.2rem;
     line-height: 0.9;
   }
 
   .tgo .ds-eyebrow {
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
   }
 
   .tgo-proof {
@@ -1100,13 +1043,13 @@ body.tgo > footer {
   .tgo .ds-badge {
     min-height: 3rem;
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    font-size: var(--mg-text-xs);
   }
 
   .tgo-hero__subtitle {
     max-width: 35rem;
     margin-top: 2.5rem;
-    font-size: 1.6rem;
+    font-size: var(--mg-text-md);
   }
 
   .tgo-cta {
@@ -1118,22 +1061,7 @@ body.tgo > footer {
     min-width: 0;
     min-height: 5rem;
     padding-inline: 1.5rem;
-    font-size: 1.6rem;
-  }
-
-  .tgo-cta__hint {
-    font-size: 1.4rem;
-  }
-
-  .tgo .tgo-section--overview,
-  .tgo .tgo-section--features,
-  .tgo .tgo-section--profile,
-  .tgo .tgo-section--faq {
-    padding-block: 5rem;
-  }
-
-  .tgo .tgo-section--conversion {
-    padding-block: 4rem 0;
+    font-size: var(--mg-text-md);
   }
 
   .tgo-split {
@@ -1141,26 +1069,12 @@ body.tgo > footer {
     padding: 3rem 2rem;
   }
 
-  .tgo-copy-card h2 {
-    font-size: 2.5rem;
-  }
-
-  .tgo-copy-card > p {
-    font-size: 1.6rem;
-  }
-
   .tgo-copy-card > .tgo-copy-card__intro {
     margin-top: 3.5rem;
-    font-size: 1.5rem;
   }
 
   .tgo-list {
     gap: 1.2rem;
-    font-size: 1.6rem;
-  }
-
-  .tgo-section__title {
-    font-size: 2.8rem;
   }
 
   .tgo-features {
@@ -1188,10 +1102,6 @@ body.tgo > footer {
     top: -5rem;
     width: 10rem;
     height: 10rem;
-  }
-
-  .tgo-feature p {
-    font-size: 1.6rem;
   }
 
   .tgo-profile__title {
@@ -1222,14 +1132,6 @@ body.tgo > footer {
     grid-row: 1;
     margin-left: 0;
     padding: 1rem 0 4rem;
-  }
-
-  .tgo-profile__card h3 {
-    font-size: 1.8rem;
-  }
-
-  .tgo-profile__card p {
-    font-size: 1.6rem;
   }
 
   .tgo-chevrons {
@@ -1266,7 +1168,6 @@ body.tgo > footer {
     width: calc(100% - 4rem);
     margin-inline: auto;
     transform: none;
-    font-size: 1.6rem;
     text-align: center;
   }
 
@@ -1287,10 +1188,6 @@ body.tgo > footer {
     text-align: left;
   }
 
-  .tgo-faq__heading .tgo-section__intro {
-    font-size: 1.6rem;
-  }
-
   .tgo-faq__accordion {
     margin-top: 3rem;
   }
@@ -1298,12 +1195,10 @@ body.tgo > footer {
   .tgo .ds-accordion__trigger {
     gap: 1rem;
     padding: 2rem 0;
-    font-size: 1.6rem;
   }
 
   .tgo .ds-accordion__panel {
     padding-right: 1rem;
-    font-size: 1.6rem;
   }
 }
 
@@ -1312,16 +1207,8 @@ body.tgo > footer {
     --mg-frame-cut: 2rem;
   }
 
-  .tgo-hero__title {
-    font-size: 4.1rem;
-  }
-
   .tgo-hero__lead {
     font-size: 0.5em;
-  }
-
-  .tgo-section__title {
-    font-size: 2.4rem;
   }
 
   .tgo-proof {

@@ -11,15 +11,15 @@ body {
 
 h1 {
   font-family: "Staatliches", cursive;
-  font-size: 3.7rem;
+  font-size: var(--mg-text-4xl);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: var(--mg-text-3xl);
 }
 
 h3 {
-  font-size: 2.3rem;
+  font-size: var(--mg-text-2xl);
 }
 
 label {
@@ -114,11 +114,11 @@ ul {
 }
 
 li {
-  font-size: 1.8rem;
+  font-size: var(--mg-text-lg);
 }
 
 .navbar-nav li {
-  font-size: 1.5rem;
+  font-size: var(--mg-text-sm);
 }
 
 .bullet-none li {
@@ -168,7 +168,7 @@ td {
   list-style-type: none;
   font-weight: bold;
   display: block;
-  font-size: 2.5rem;
+  font-size: var(--mg-text-2xl);
   font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
   margin-block-start: 1em;
   margin-block-end: 1em;
