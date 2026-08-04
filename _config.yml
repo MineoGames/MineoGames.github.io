@@ -93,8 +93,8 @@ products:
       en: Explore TGO
       fr: Découvrir TGO
     page:
-      en: '/tgo/'
-      fr: '/tgo-fr/'
+      en: '/products/tgo/'
+      fr: '/products/tgo-fr/'
   - name: Ultimate GameDev Organizer
     slug: ugo
     img: products/ugo-home-banner-v2.webp
