@@ -1,5 +1,6 @@
-<div class="tgo-proof{% if include.modifier %} {{ include.modifier }}{% endif %}" aria-label="TGO social proof">
-  {% for proof in site.data.tgo.social_proof %}
+{% assign proof_lang = page.lang | default: 'en' %}{% assign proofs = site.data.tgo[proof_lang] %}
+<div class="tgo-proof{% if include.modifier %} {{ include.modifier }}{% endif %}" aria-label="{{ proofs.social_proof_label | default: 'Social proof' }}">
+  {% for proof in proofs.social_proof %}
   <span class="ds-badge">
     {% if proof.rating %}<span class="tgo-proof__stars" aria-hidden="true">★★★★★</span>{% endif %}
     {{ proof.text }}

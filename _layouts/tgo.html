@@ -2,6 +2,9 @@
 <html lang="{{ page.lang | default: 'en' }}">
   {% include head.html %}
 
+  {% assign lang = page.lang | default: 'en' %}
+  {% assign t = site.data.tgo[lang] %}
+
   <body id="page-top" class="tgo">
     {% include nav.html %}
 
@@ -10,13 +13,13 @@
         <p class="ds-eyebrow">{{ site.data.tgo.name }}</p>
         {% include tgo/proof.html %}
         <h1 class="tgo-hero__title">
-          <span class="tgo-hero__lead">Still losing hours trying</span>
-          <span class="tgo-hero__accent">to manage your<br>game project?</span>
+          <span class="tgo-hero__lead">{{ t.hero_lead }}</span>
+          <span class="tgo-hero__accent">{{ t.hero_accent }}</span>
         </h1>
         <p class="tgo-hero__subtitle">
-          <strong>TGO is a Notion template</strong>
-          <span>that lets you launch, plan, and track your game development effortlessly on one page.</span>
-          <em>Get rid of chaos in minutes.</em>
+          <strong>{{ t.hero_subtitle_strong }}</strong>
+          <span>{{ t.hero_subtitle_text }}</span>
+          <em>{{ t.hero_subtitle_em }}</em>
         </p>
         {% include tgo/cta.html %}
       </div>
@@ -27,66 +30,51 @@
         <div class="ds-container ds-frame tgo-split">
           <div class="tgo-frame__surface" aria-hidden="true"></div>
           <div class="tgo-copy-card">
-            <h2>Unlock your <span class="tgo-copy-card__accent">GameDev Potential</span></h2>
-            <p><strong>Aren't you sick of wasting time</strong> hunting files, juggling tools, and losing track of what matters most?</p>
-            <p class="tgo-copy-card__intro">Here's how to centralize everything in Notion without spending days setting it up:</p>
+            <h2>{{ t.overview_title }} <span class="tgo-copy-card__accent">{{ t.overview_title_accent }}</span></h2>
+            <p>{{ t.overview_lead }}</p>
+            <p class="tgo-copy-card__intro">{{ t.overview_intro }}</p>
             <ul class="tgo-list">
-              <li><strong>Say goodbye to messy docs and scattered ideas:</strong> get a working GDD in one click.</li>
-              <li><strong>Reclaim 5h+ a week</strong> and spend more time making progress.</li>
-              <li><strong>Discover the tiny habit that keeps your team aligned</strong> (even if no one checks Discord/Slack).</li>
-              <li><strong>Get so much clarity</strong> that your next steps will appear crystal clear.</li>
-              <li><strong>Find every single task, note, file, or link</strong> without digging.</li>
+              {% for point in t.overview_points %}
+              <li>{{ point }}</li>
+              {% endfor %}
             </ul>
           </div>
           <figure class="tgo-media">
-            <img src="{{ '/img/tgo/Dashboard.png' | relative_url }}?v={{ page.asset_version }}" width="469" height="569" loading="lazy" decoding="async" alt="Tiny GameDev Organizer Notion dashboard showing team information, notes, tasks, priorities, and calendar views">
+            <img src="{{ '/img/tgo/Dashboard.png' | relative_url }}?v={{ page.asset_version }}" width="469" height="569" loading="lazy" decoding="async" alt="{{ t.dashboard_alt }}">
           </figure>
         </div>
       </section>
 
       <section class="ds-section tgo-section--features">
         <div class="ds-container">
-          <h2 class="tgo-section__title">Discover the Power of TGO features</h2>
+          <h2 class="tgo-section__title">{{ t.features_title }}</h2>
           <div class="tgo-features">
+            {% for feature in t.features %}
             <article class="tgo-feature">
-              <img class="tgo-feature__icon" src="{{ '/img/tgo/feature-templates.png' | relative_url }}" width="540" height="540" loading="lazy" decoding="async" alt="">
+              <img class="tgo-feature__icon" src="{{ feature.icon | relative_url }}" width="{{ feature.width }}" height="{{ feature.height }}" loading="lazy" decoding="async" alt="">
               <div class="ds-card ds-card--angular tgo-feature__surface">
-                <h3>Built-in Templates for Seamless Development</h3>
-                <p>Utilize ready-to-fill entries like <strong>GDD, bug reports, and more.</strong> <strong>Team members</strong> can share their contact details, skills, and presence.</p>
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.text }}</p>
               </div>
             </article>
-            <article class="tgo-feature">
-              <img class="tgo-feature__icon" src="{{ '/img/tgo/feature-views.png' | relative_url }}" width="440" height="410" loading="lazy" decoding="async" alt="">
-              <div class="ds-card ds-card--angular tgo-feature__surface">
-                <h3>Smart Views for Enhanced Project Management</h3>
-                <p>Visualize your progress with <strong>priority lists, Kanban boards, calendars, and Gantt timelines.</strong></p>
-              </div>
-            </article>
-            <article class="tgo-feature">
-              <img class="tgo-feature__icon" src="{{ '/img/tgo/feature-automation.png' | relative_url }}" width="393" height="331" loading="lazy" decoding="async" alt="">
-              <div class="ds-card ds-card--angular tgo-feature__surface">
-                <h3>Archive System and Automations</h3>
-                <p>Hide no more relevant data in another page <strong>without deleting it.</strong> <strong>TGO handles sub-items for you.</strong></p>
-              </div>
-            </article>
+            {% endfor %}
           </div>
         </div>
       </section>
 
       <section class="ds-section tgo-section--profile">
         <div class="ds-container">
-          <h2 class="tgo-section__title tgo-profile__title">Made by a Game Developer,<br>for Game Developers</h2>
+          <h2 class="tgo-section__title tgo-profile__title">{{ t.profile_title }}</h2>
           <div class="ds-frame tgo-profile">
             <div class="tgo-frame__surface tgo-profile__surface" aria-hidden="true"></div>
             <div class="tgo-profile__image">
-              <img src="{{ '/img/tgo/portrait-cutout.png' | relative_url }}?v={{ page.asset_version }}" width="1536" height="2048" loading="lazy" decoding="async" alt="Guillaume, creator of Tiny GameDev Organizer">
+              <img src="{{ '/img/tgo/portrait-cutout.png' | relative_url }}?v={{ page.asset_version }}" width="1536" height="2048" loading="lazy" decoding="async" alt="{{ t.profile_alt }}">
             </div>
             <div class="tgo-profile__card">
-              <h3>Hey, I'm Guillaume,<br><span>indie dev &amp; IT engineer</span></h3>
-              <p>I created this template because I was tired of wasting time chasing files, setting up tools, or waiting on teammates to send over basic info.</p>
-              <p>Every hour spent on setup or hunting data is one less hour building the actual game, right?</p>
-              <p>This is the system I wish I had when I was starting: it lets you skip the headache and get straight to creating.</p>
-              <p>I hope TGO will help you just as it has for hundreds of game creators already.</p>
+              <h3>{{ t.profile_name }}<br><span>{{ t.profile_role }}</span></h3>
+              {% for paragraph in t.profile_paragraphs %}
+              <p>{{ paragraph }}</p>
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -101,7 +89,7 @@
           {% include tgo/proof.html modifier="tgo-proof--conversion" %}
           <div class="tgo-character">
             <img src="{{ '/img/tgo/Character.png' | relative_url }}?v={{ page.asset_version }}" width="563" height="979" loading="lazy" decoding="async" alt="">
-            {% for callout in site.data.tgo.callouts %}
+            {% for callout in t.callouts %}
             <div class="tgo-character__callout tgo-character__callout--{{ callout.position }}">
               <img src="{{ callout.avatar | relative_url }}" width="168" height="168" loading="lazy" decoding="async" alt="">
               <p>&ldquo;{{ callout.text }}&rdquo;</p>
@@ -116,11 +104,11 @@
           <div class="ds-frame tgo-faq">
             <div class="tgo-frame__surface" aria-hidden="true"></div>
             <div class="tgo-faq__heading">
-              <h2 class="tgo-section__title">FAQs</h2>
-              <p class="tgo-section__intro ds-muted">Here are some common questions about using TGO effectively for your game development projects.</p>
+              <h2 class="tgo-section__title">{{ t.faq_title }}</h2>
+              <p class="tgo-section__intro ds-muted">{{ t.faq_intro }}</p>
             </div>
             <div class="ds-accordion tgo-faq__accordion" data-accordion>
-              {% for item in site.data.tgo.faq %}
+              {% for item in t.faq %}
               <h3 class="ds-accordion__heading">
                 <button class="ds-accordion__trigger" id="tgo-faq-trigger-{{ forloop.index }}" type="button" aria-expanded="false" aria-controls="tgo-faq-{{ forloop.index }}">
                   <span>{{ item.question }}</span>

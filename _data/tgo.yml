@@ -1,32 +1,175 @@
+# Copy for the /tgo/ landing page, keyed by locale.
+# The layout reads site.data.tgo[page.lang]; anything outside those two blocks is
+# shared. Keep HTML to inline tags only (strong, span, br) — block structure lives
+# in _layouts/tgo.html.
+
 name: Tiny GameDev Organizer
 purchase_url: https://tinyurl.com/tgo-website
-cta_label: Get TGO Dashboard
-purchase_note: $11 - one-time payment - lifetime access
-social_proof:
-  - text: Used by 260+ game devs
-  - text: 4.9/5 rating on Notion Marketplace
-    rating: true
-callouts:
-  - text: Gamified progress = serious motivation.
-    avatar: /img/tgo/avatar-1.png
-    position: left-top
-  - text: I finally stopped procrastinating - and started progressing.
-    avatar: /img/tgo/avatar-2.png
-    position: left-bottom
-  - text: Fully customizable. Seamlessly automated.
-    avatar: /img/tgo/avatar-3.png
-    position: right-top
-  - text: A real productivity boost, from day one.
-    avatar: /img/tgo/avatar-4.png
-    position: right-bottom
-faq:
-  - question: What is TGO?
-    answer: TGO is a comprehensive Notion dashboard designed for indie game developers. It brings planning, tasks, notes, and project tracking into one focused workspace, so you can spend less time managing tools and more time creating your game.
-  - question: How much does TGO cost?
-    answer: TGO costs $11 as a one-time purchase. It includes the complete dashboard and lifetime access, with no subscription.
-  - question: How do I start?
-    answer: Purchase TGO, then duplicate the template into your Notion workspace. Follow the guided first steps inside the dashboard to add your game design document and create your first task.
-  - question: Can I use TGO with the Notion free plan?
-    answer: Yes. TGO is a paid template, but it works with Notion's free plan. Only native Notion automations may require a paid Notion plan to be set up.
-  - question: Can I collaborate with others?
-    answer: Yes. TGO works for solo developers and small teams. Invite collaborators to your Notion workspace to share ideas, assign tasks, and track progress together.
+
+en:
+  cta_label: Get TGO Dashboard
+  social_proof_label: TGO social proof
+  purchase_note: $11 - one-time payment - lifetime access
+
+  hero_lead: Still losing hours trying
+  hero_accent: to manage your<br>game project?
+  hero_subtitle_strong: TGO is a Notion template
+  hero_subtitle_text: that lets you launch, plan, and track your game development effortlessly on one page.
+  hero_subtitle_em: Get rid of chaos in minutes.
+
+  social_proof:
+    - text: Used by 260+ game devs
+    - text: 4.9/5 rating on Notion Marketplace
+      rating: true
+
+  overview_title: Unlock your
+  overview_title_accent: GameDev Potential
+  overview_lead: <strong>Aren't you sick of wasting time</strong> hunting files, juggling tools, and losing track of what matters most?
+  overview_intro: "Here's how to centralize everything in Notion without spending days setting it up:"
+  overview_points:
+    - "<strong>Say goodbye to messy docs and scattered ideas:</strong> get a working GDD in one click."
+    - <strong>Reclaim 5h+ a week</strong> and spend more time making progress.
+    - <strong>Discover the tiny habit that keeps your team aligned</strong> (even if no one checks Discord/Slack).
+    - <strong>Get so much clarity</strong> that your next steps will appear crystal clear.
+    - <strong>Find every single task, note, file, or link</strong> without digging.
+  dashboard_alt: Tiny GameDev Organizer Notion dashboard showing team information, notes, tasks, priorities, and calendar views
+
+  features_title: Discover the Power of TGO features
+  features:
+    - icon: /img/tgo/feature-templates.png
+      width: 540
+      height: 540
+      title: Built-in Templates for Seamless Development
+      text: Utilize ready-to-fill entries like <strong>GDD, bug reports, and more.</strong> <strong>Team members</strong> can share their contact details, skills, and presence.
+    - icon: /img/tgo/feature-views.png
+      width: 440
+      height: 410
+      title: Smart Views for Enhanced Project Management
+      text: Visualize your progress with <strong>priority lists, Kanban boards, calendars, and Gantt timelines.</strong>
+    - icon: /img/tgo/feature-automation.png
+      width: 393
+      height: 331
+      title: Archive System and Automations
+      text: Hide no more relevant data in another page <strong>without deleting it.</strong> <strong>TGO handles sub-items for you.</strong>
+
+  profile_title: Made by a Game Developer,<br>for Game Developers
+  profile_alt: Guillaume, creator of Tiny GameDev Organizer
+  profile_name: Hey, I'm Guillaume,
+  profile_role: indie dev &amp; IT engineer
+  profile_paragraphs:
+    - I created this template because I was tired of wasting time chasing files, setting up tools, or waiting on teammates to send over basic info.
+    - Every hour spent on setup or hunting data is one less hour building the actual game, right?
+    - "This is the system I wish I had when I was starting: it lets you skip the headache and get straight to creating."
+    - I hope TGO will help you just as it has for hundreds of game creators already.
+
+  callouts:
+    - text: Gamified progress = serious motivation.
+      avatar: /img/tgo/avatar-1.png
+      position: left-top
+    - text: I finally stopped procrastinating - and started progressing.
+      avatar: /img/tgo/avatar-2.png
+      position: left-bottom
+    - text: Fully customizable. Seamlessly automated.
+      avatar: /img/tgo/avatar-3.png
+      position: right-top
+    - text: A real productivity boost, from day one.
+      avatar: /img/tgo/avatar-4.png
+      position: right-bottom
+
+  faq_title: FAQs
+  faq_intro: Here are some common questions about using TGO effectively for your game development projects.
+  faq:
+    - question: What is TGO?
+      answer: TGO is a comprehensive Notion dashboard designed for indie game developers. It brings planning, tasks, notes, and project tracking into one focused workspace, so you can spend less time managing tools and more time creating your game.
+    - question: How much does TGO cost?
+      answer: TGO costs $11 as a one-time purchase. It includes the complete dashboard and lifetime access, with no subscription.
+    - question: How do I start?
+      answer: Purchase TGO, then duplicate the template into your Notion workspace. Follow the guided first steps inside the dashboard to add your game design document and create your first task.
+    - question: Can I use TGO with the Notion free plan?
+      answer: Yes. TGO is a paid template, but it works with Notion's free plan. Only native Notion automations may require a paid Notion plan to be set up.
+    - question: Can I collaborate with others?
+      answer: Yes. TGO works for solo developers and small teams. Invite collaborators to your Notion workspace to share ideas, assign tasks, and track progress together.
+
+fr:
+  cta_label: Obtenir le dashboard TGO
+  social_proof_label: Preuves sociales TGO
+  purchase_note: 11 $ - paiement unique - accès à vie
+
+  hero_lead: Vous perdez encore des heures à
+  hero_accent: gérer votre<br>projet de jeu ?
+  hero_subtitle_strong: TGO est un template Notion
+  hero_subtitle_text: qui vous permet de lancer, planifier et suivre le développement de votre jeu sans effort, sur une seule page.
+  hero_subtitle_em: Fini le chaos, en quelques minutes.
+
+  social_proof:
+    - text: Utilisé par plus de 260 développeurs
+    - text: 4,9/5 sur le Notion Marketplace
+      rating: true
+
+  overview_title: Libérez votre
+  overview_title_accent: potentiel de GameDev
+  overview_lead: <strong>Marre de perdre du temps</strong> à chercher vos fichiers, jongler entre les outils et perdre de vue l'essentiel ?
+  overview_intro: "Voici comment tout centraliser dans Notion sans y passer des jours :"
+  overview_points:
+    - "<strong>Fini les docs en désordre et les idées éparpillées :</strong> un GDD opérationnel en un clic."
+    - <strong>Récupérez 5 h et plus par semaine</strong> pour avancer vraiment.
+    - <strong>Découvrez la petite habitude qui garde votre équipe alignée</strong> (même si personne ne lit Discord ou Slack).
+    - <strong>Gagnez assez de clarté</strong> pour que vos prochaines étapes deviennent évidentes.
+    - <strong>Retrouvez chaque tâche, note, fichier ou lien</strong> sans avoir à fouiller.
+  dashboard_alt: Dashboard Notion Tiny GameDev Organizer montrant les informations d'équipe, les notes, les tâches, les priorités et les vues calendrier
+
+  features_title: Découvrez la puissance de TGO
+  features:
+    - icon: /img/tgo/feature-templates.png
+      width: 540
+      height: 540
+      title: Des modèles intégrés pour développer sans friction
+      text: "Des fiches prêtes à remplir : <strong>GDD, rapports de bugs et bien d'autres.</strong> <strong>Vos coéquipiers</strong> y renseignent leurs coordonnées, compétences et disponibilités."
+    - icon: /img/tgo/feature-views.png
+      width: 440
+      height: 410
+      title: Des vues intelligentes pour piloter votre projet
+      text: Suivez votre progression avec des <strong>listes de priorités, tableaux Kanban, calendriers et diagrammes de Gantt.</strong>
+    - icon: /img/tgo/feature-automation.png
+      width: 393
+      height: 331
+      title: Archivage et automatisations
+      text: Rangez ce qui n'est plus d'actualité <strong>sans rien supprimer.</strong> <strong>TGO gère les sous-éléments pour vous.</strong>
+
+  profile_title: Créé par un développeur de jeux,<br>pour les développeurs de jeux
+  profile_alt: Guillaume, créateur de Tiny GameDev Organizer
+  profile_name: Bonjour, moi c'est Guillaume,
+  profile_role: dev indé &amp; ingénieur informatique
+  profile_paragraphs:
+    - J'ai créé ce template parce que j'en avais assez de courir après les fichiers, de configurer des outils et d'attendre que mes coéquipiers m'envoient les informations de base.
+    - Chaque heure passée à configurer ou à chercher une information est une heure de moins à construire le jeu, non ?
+    - "C'est le système que j'aurais aimé avoir à mes débuts : il vous épargne la prise de tête et vous ramène directement à la création."
+    - J'espère que TGO vous aidera autant qu'il a déjà aidé des centaines de créateurs de jeux.
+
+  callouts:
+    - text: Une progression gamifiée = une vraie motivation.
+      avatar: /img/tgo/avatar-1.png
+      position: left-top
+    - text: J'ai enfin arrêté de procrastiner - et commencé à avancer.
+      avatar: /img/tgo/avatar-2.png
+      position: left-bottom
+    - text: Entièrement personnalisable. Automatisé sans effort.
+      avatar: /img/tgo/avatar-3.png
+      position: right-top
+    - text: Un vrai gain de productivité, dès le premier jour.
+      avatar: /img/tgo/avatar-4.png
+      position: right-bottom
+
+  faq_title: FAQ
+  faq_intro: Les questions les plus fréquentes sur l'utilisation de TGO dans vos projets de jeu.
+  faq:
+    - question: Qu'est-ce que TGO ?
+      answer: TGO est un dashboard Notion complet conçu pour les développeurs de jeux indépendants. Il réunit la planification, les tâches, les notes et le suivi de projet dans un seul espace de travail, pour passer moins de temps à gérer des outils et plus de temps à créer votre jeu.
+    - question: Combien coûte TGO ?
+      answer: TGO coûte 11 $ en paiement unique. Le dashboard complet et l'accès à vie sont inclus, sans abonnement.
+    - question: Comment démarrer ?
+      answer: Achetez TGO, puis dupliquez le template dans votre espace Notion. Suivez les premières étapes guidées dans le dashboard pour ajouter votre game design document et créer votre première tâche.
+    - question: Puis-je utiliser TGO avec le plan gratuit de Notion ?
+      answer: Oui. TGO est un template payant, mais il fonctionne avec le plan gratuit de Notion. Seules les automatisations natives de Notion peuvent nécessiter un plan payant pour être configurées.
+    - question: Puis-je collaborer avec d'autres personnes ?
+      answer: Oui. TGO convient aux développeurs solo comme aux petites équipes. Invitez vos collaborateurs dans votre espace Notion pour partager des idées, assigner des tâches et suivre l'avancement ensemble.
