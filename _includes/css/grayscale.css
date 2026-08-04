@@ -4,12 +4,17 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* Legacy theme. Overrides the design system defaults for every page except /tgo/,
+   which carries its own body.tgo block. Colours come from _config.yml > color. */
 body {
+    --mg-color-canvas: {{ site.color.primary-dark }};
+    --mg-color-text: #fff;
+    --mg-color-border: rgba(255, 255, 255, 0.3);
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: var(--mg-color-canvas-legacy);
+    color: var(--mg-color-text);
+    background-color: var(--mg-color-canvas);
 }
 
 html {
@@ -63,10 +68,10 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid var(--mg-color-border);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: var(--mg-color-canvas-legacy);
+    background-color: var(--mg-color-canvas);
 }
 
 .navbar-custom .navbar-brand {
@@ -80,7 +85,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: var(--mg-color-text);
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -94,7 +99,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: var(--mg-color-text);
 }
 
 .navbar-custom .nav li.active {
@@ -128,11 +133,11 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: var(--mg-color-canvas-legacy);
+        background-color: var(--mg-color-canvas);
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid var(--mg-color-border);
     }
 }
 
@@ -142,9 +147,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: var(--mg-color-text);
     background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: var(--mg-color-canvas-legacy);
+    background-color: var(--mg-color-canvas);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -184,10 +189,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid var(--mg-color-text);
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: var(--mg-color-text);
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -197,7 +202,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: var(--mg-color-text);
     background: rgba(255,255,255,.1);
 }
 
@@ -253,17 +258,18 @@ a:focus {
     }
 }
 
+/* Was a hard 100px/200px step at 767px; now scales with the section rhythm. */
 .content-section {
-    padding-top: 100px;
+    padding-top: calc(var(--mg-section-gap) * 1.8);
 }
 
 .game-banner,
 .product-banner {
     width: 100%;
     padding: 130px 0;
-    color: #fff;
+    color: var(--mg-color-text);
     background: no-repeat center center scroll;
-    background-color: var(--mg-color-canvas-legacy);
+    background-color: var(--mg-color-canvas);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -297,7 +303,7 @@ a:focus {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: var(--mg-color-canvas-legacy);
+    background: var(--mg-color-canvas);
 }
 
 #games .game-banner::before {
@@ -407,7 +413,7 @@ a:focus {
 
 .product-banner__content {
     width: min(44%, 620px);
-    color: #fff;
+    color: var(--mg-color-text);
 }
 
 .product-banner__eyebrow {
@@ -423,7 +429,7 @@ a:focus {
 
 .product-banner .product-banner__content h2 {
     margin: 0;
-    color: #fff;
+    color: var(--mg-color-text);
     font-size: clamp(30px, 3.2vw, 54px);
     line-height: 1.05;
     letter-spacing: 0;
@@ -446,7 +452,7 @@ a:focus {
     margin-top: 22px;
     padding-bottom: var(--mg-space-1);
     border-bottom: 2px solid var(--product-accent);
-    color: #fff;
+    color: var(--mg-color-text);
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -524,12 +530,6 @@ a:focus {
     margin-bottom: 20px;
 }
 
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 200px;
-    }
-}
-
 .btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -549,7 +549,7 @@ a:focus {
 .btn-default:focus {
     border: 1px solid var(--mg-color-link);
     outline: 0;
-    color: var(--mg-color-canvas-legacy);
+    color: var(--mg-color-canvas);
     background-color: var(--mg-color-link);
 }
 

@@ -226,8 +226,8 @@ td {
 
 /* button */
 .button {
-  background-color: #1c87c9;
-  border-radius: 5px;
+  background-color: var(--mg-color-action);
+  border-radius: var(--mg-radius-sm);
   border: none;
   color: white;
   padding: 20px 34px;
@@ -238,16 +238,16 @@ td {
   margin: 4px 2px;
   cursor: pointer;
 }
+/* Hover used to flip blue to red and grow the padding, shifting layout. */
 .button:hover {
-  background-color: #ff424d;
-  border-radius: 8px;
-  padding: 20px 36px;
+  background-color: var(--mg-color-action-hover);
   color: white;
 }
 
 
+/* Patreon's own brand colours — deliberately outside the design system. */
 a.patreon-button {
-  border-radius: 5px;
+  border-radius: var(--mg-radius-sm);
   background-color: #efefef;
   color: #ff424d;
   min-height: 42px;

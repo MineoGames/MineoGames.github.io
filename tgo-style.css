@@ -14,6 +14,7 @@ body.tgo {
   --mg-color-border: #252d39;
   --mg-color-brand: #ff384b;
   --mg-color-action: #2f6ee5;
+  --mg-color-action-hover: #1f57c6;
   --mg-font-body: "TGO Manrope", Arial, sans-serif;
   --mg-frame-background: rgba(12, 17, 24, 0.82);
   --mg-frame-border: #171b24;
@@ -25,7 +26,7 @@ body.tgo {
   --tgo-frame-overhang: 1.2rem;
   /* FAQ panel intentionally exceeds the standard container. */
   --tgo-faq-width: 138rem;
-  --tgo-panel-border: #171b24;
+  --tgo-panel-border: var(--mg-frame-border);
   --tgo-text-soft: #e5e5e5;
   position: relative;
   isolation: isolate;
@@ -279,7 +280,7 @@ body.tgo > footer {
 .tgo-hero__subtitle {
   max-width: 82rem;
   margin: 5rem auto 0;
-  color: #d9d9d9;
+  color: var(--tgo-text-soft);
   font-size: var(--mg-text-lg);
   line-height: 1.45;
 }
@@ -319,7 +320,7 @@ body.tgo > footer {
 
 .tgo .ds-button:hover,
 .tgo .ds-button:focus-visible {
-  background: #1f57c6;
+  background: var(--mg-color-action-hover);
 }
 
 .tgo-cta__hint {
@@ -395,7 +396,7 @@ body.tgo > footer {
   gap: 1.8rem;
   margin: 3rem 0 0;
   padding: 0;
-  color: #eff2f3;
+  color: var(--mg-color-text);
   font-size: var(--mg-text-md);
   line-height: 1.5;
   list-style: none;
@@ -723,7 +724,7 @@ body.tgo > footer {
   overflow: visible;
   margin-top: 7.5rem;
   border: 0;
-  border-top: 1px solid #262d39;
+  border-top: 1px solid var(--mg-color-border);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -737,12 +738,12 @@ body.tgo > footer {
 }
 
 .tgo .ds-accordion__trigger[aria-expanded="false"] {
-  border-bottom: 1px solid #262d39;
+  border-bottom: 1px solid var(--mg-color-border);
 }
 
 .tgo .ds-accordion__panel {
   padding: 0 5rem 1.8rem 0;
-  border-bottom: 1px solid #262d39;
+  border-bottom: 1px solid var(--mg-color-border);
   font-size: var(--mg-text-md);
   line-height: 1.55;
 }

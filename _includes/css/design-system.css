@@ -12,9 +12,9 @@ html {
   --mg-color-border: #303846;
   --mg-color-brand: #ff384b;
   --mg-color-action: #2f80ed;
+  --mg-color-action-hover: #1768d7;
   --mg-color-focus: #ffffff;
   /* Legacy palette. Source of truth: _config.yml > color. */
-  --mg-color-canvas-legacy: {{ site.color.primary-dark }};
   --mg-color-link: {{ site.color.links }};
   --mg-font-display: "Staatliches", "Arial Narrow", sans-serif;
   --mg-font-body: "Montserrat", Arial, sans-serif;
@@ -134,7 +134,7 @@ html {
 
 .ds-button--primary:hover,
 .ds-button--primary:focus-visible {
-  background: #1768d7;
+  background: var(--mg-color-action-hover);
   color: #ffffff;
 }
 
