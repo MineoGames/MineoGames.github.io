@@ -78,7 +78,7 @@ div.signup-form label {
 }
 /* Indicators images style */
 .article-slide .carousel-indicators img {
-  border: 2px solid #ffffff;
+  border: 2px solid var(--mg-color-text);
   float: left;
   height: 54px;
   left: 0;
@@ -107,18 +107,28 @@ li {
   list-style-type: none;
 }
 
-/* Table*/
+/* Table. Borders used to be solid white, which read as a harsh grid. */
 
-table,
-th,
-td {
-  border: 1px solid white;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 var(--mg-space-5);
 }
 
 th,
 td {
-  padding: 1rem;
+  padding: var(--mg-space-3);
+  border: 1px solid var(--mg-color-border);
   text-align: left;
+  vertical-align: top;
+}
+
+th {
+  font-family: var(--mg-font-body);
+  font-size: var(--mg-text-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .mt-2 {
@@ -227,70 +237,81 @@ td {
 }
 
 
-/* Patreon's own brand colours — deliberately outside the design system. */
+/* Patreon's own brand red, kept deliberately. The light grey block it sat on
+   read as foreign on a dark page, so the button is outlined instead and fills
+   on hover. */
 a.patreon-button {
-  border-radius: var(--mg-radius-sm);
-  background-color: #efefef;
-  color: #ff424d;
-  min-height: 42px;
-  border: none;
+  --patreon-brand: #ff424d;
   display: grid;
+  min-height: 42px;
+  border: 1px solid var(--patreon-brand);
+  border-radius: var(--mg-radius-sm);
+  background-color: transparent;
+  color: var(--patreon-brand);
   place-items: center;
+  transition: background-color var(--mg-transition-fast), color var(--mg-transition-fast);
 }
+
 a.patreon-button svg {
   max-height: 12px;
-  fill: #ff424d;
+  fill: currentColor;
 }
 a.patreon-button:active,
 a.patreon-button:active:focus,
 a.patreon-button:hover {
-  background-color: #e13d47;
-  color: white;
-}  
+  background-color: var(--patreon-brand);
+  color: var(--mg-color-canvas);
+}
 
-/* Cookie consent */
+/* Cookie consent. Layout promoted from the TGO treatment, which was the only
+   place the bar wrapped cleanly on narrow screens. */
 .cookie-consent {
   position: fixed;
+  z-index: 1100;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  font-size: 14px;
+  padding: var(--mg-space-3) var(--mg-space-5);
+  border-top: 1px solid var(--mg-color-border);
+  background-color: var(--mg-color-canvas);
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-sm);
   text-align: center;
 }
 
 .cookie-consent p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--mg-space-2);
   margin: 0;
-  padding: 5px 0;
+  padding: 0;
 }
 
 .cookie-consent #cookie-consent-btn {
-  padding: 5px 10px;
+  padding: var(--mg-space-2) var(--mg-space-3);
 }
 
-.cookie-consent #cookie-consent-btn:hover {
-
-}
-
+/* Secondary action: outlined rather than a white block on a dark bar. */
 .cookie-consent #open_preferences_center {
-  padding: 5px 10px;
-  background-color: #fff;
-  color: #333;
-  border: none;
-  border-radius: 3px;
+  padding: var(--mg-space-2) var(--mg-space-3);
+  border: 1px solid var(--mg-color-border);
+  border-radius: var(--mg-radius-sm);
+  background-color: transparent;
+  color: var(--mg-color-text);
   cursor: pointer;
+  transition: background-color var(--mg-transition-fast);
 }
 
 .cookie-consent #open_preferences_center:hover {
-  background-color: #ddd;
+  background-color: var(--mg-color-border);
 }
 
-/* Cookie Preferences */
+/* Save button inside the third-party cookie preferences modal. */
 .cc-cp-foot-save {
-  background-color: #e13d47 !important ;
-  color:white !important;
+  background-color: var(--mg-color-brand) !important;
+  color: #fff !important;
 }
 
 .freeprivacypolicy-com---nb {

@@ -790,22 +790,14 @@ body.tgo > footer {
   line-height: 1.5;
 }
 
+/* Layout now comes from the base component; only the translucent surface and the
+   smaller type are TGO-specific. */
 .tgo .cookie-consent {
-  z-index: 1100;
   padding: 1rem 2rem;
   border-top: 1px solid rgba(229, 229, 229, 0.16);
   background: rgba(3, 5, 9, 0.96);
   font-family: var(--mg-font-body);
   font-size: var(--mg-text-xs);
-}
-
-.tgo .cookie-consent p {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-  padding: 0;
 }
 
 .tgo .cookie-consent .button {
