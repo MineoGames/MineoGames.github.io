@@ -392,41 +392,8 @@ body.tgo > footer {
 }
 
 .tgo-list {
-  display: grid;
   gap: 1.8rem;
   margin: 3rem 0 0;
-  padding: 0;
-  color: var(--mg-color-text);
-  font-size: var(--mg-text-md);
-  line-height: 1.5;
-  list-style: none;
-}
-
-.tgo-list li {
-  position: relative;
-  padding-left: 3.8rem;
-}
-
-.tgo-list li::before {
-  position: absolute;
-  top: 0.1rem;
-  left: 0;
-  width: 2rem;
-  height: 2rem;
-  background: var(--mg-color-action);
-  content: "";
-}
-
-.tgo-list li::after {
-  position: absolute;
-  top: 0.35rem;
-  left: 0.68rem;
-  width: 0.55rem;
-  height: 1rem;
-  border-right: 0.22rem solid #07101f;
-  border-bottom: 0.22rem solid #07101f;
-  content: "";
-  transform: rotate(42deg);
 }
 
 .tgo-media {

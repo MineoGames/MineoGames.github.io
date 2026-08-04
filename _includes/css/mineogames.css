@@ -26,33 +26,15 @@ label {
   padding: 1rem;
 }
 
-/*
- * Sign up form BEGIN.
- */
+/* Newsletter form. The #mc-embedded-subscribe and strong rules were left over
+   from Mailchimp and matched nothing since the move to Brevo. */
 div.signup-form h2 {
-  color: #d62841;
-}
-
-div.signup-form strong {
-  font-size: 2rem;
-  color: #d62841;
+  color: var(--mg-color-brand);
 }
 
 div.signup-form label {
-  font-size: 1.5rem;
+  font-size: var(--mg-text-sm);
 }
-
-div.signup-form input#mc-embedded-subscribe {
-  background-color: #d62841;
-  font-size: 1.7rem;
-}
-
-div.signup-form input#mc-embedded-subscribe:hover {
-  background-color: #1495bc;
-}
-/*
- * Sign up form END.
- */
 
 #carousel {
   overflow: auto;
@@ -104,7 +86,7 @@ div.signup-form input#mc-embedded-subscribe:hover {
 }
 /* Indicators active image style */
 .article-slide .carousel-indicators .active img {
-  border: 2px solid #428bca;
+  border: 2px solid var(--mg-color-action);
   opacity: 0.7;
 }
 

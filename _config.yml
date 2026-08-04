@@ -16,9 +16,11 @@ t:
   fr:
     description: 'Bienvenue sur le site officiel de Mineo Games. <br/> Studio de jeux vidéos en Réalité Virtuelle indépendant.'
     download: Téléchargement
+    scroll_to_games: Voir nos jeux
   en:
     description: 'Welcome to the official Mineo Games website. <br/> Indie Virtual Reality Studio.'
     download: Download
+    scroll_to_games: See our games
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -114,6 +116,14 @@ products:
       fr: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
 
 last_post_words: 100
+
+# Cache-busting suffix on style.css and images. Bump this one value on every
+# CSS or asset change, otherwise visitors keep the previous file forever.
+defaults:
+  - scope:
+      path: ""
+    values:
+      asset_version: 20260804-1
 
 # Build settings
 markdown: kramdown

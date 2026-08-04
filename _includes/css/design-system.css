@@ -16,6 +16,7 @@ html {
   --mg-color-focus: #ffffff;
   /* Legacy palette. Source of truth: _config.yml > color. */
   --mg-color-link: {{ site.color.links }};
+  --mg-color-link-hover: #11505d;
   --mg-font-display: "Staatliches", "Arial Narrow", sans-serif;
   --mg-font-body: "Montserrat", Arial, sans-serif;
   /* Fluid type scale, bounds sized for 375px and 1440px viewports.
@@ -49,6 +50,8 @@ html {
   --mg-section-gap: clamp(4rem, 1.6rem + 6.7vw, 11.2rem);
   --mg-control-height: 48px;
   --mg-transition-fast: 150ms ease;
+  --mg-transition-base: 300ms ease;
+  --mg-transition-slow: 500ms ease;
   --mg-frame-background: var(--mg-color-surface);
   --mg-frame-border: var(--mg-color-border);
   --mg-frame-accent: var(--mg-color-brand);
@@ -162,6 +165,82 @@ html {
   color: var(--mg-color-text-muted);
 }
 
+/* Checklist. The marker is drawn in CSS so it needs no icon font. */
+.ds-list {
+  display: grid;
+  gap: var(--mg-space-4);
+  margin: 0;
+  padding: 0;
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-md);
+  line-height: var(--mg-leading-body);
+  list-style: none;
+}
+
+.ds-list li {
+  position: relative;
+  padding-left: 3.8rem;
+}
+
+.ds-list li::before {
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--mg-color-action);
+  content: "";
+}
+
+.ds-list li::after {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.68rem;
+  width: 0.55rem;
+  height: 1rem;
+  border-right: 0.22rem solid var(--mg-color-canvas);
+  border-bottom: 0.22rem solid var(--mg-color-canvas);
+  content: "";
+  transform: rotate(42deg);
+}
+
+/* Scroll affordance. Two CSS chevrons — no icon font, no border radius. */
+.ds-scroll-hint {
+  display: inline-grid;
+  justify-items: center;
+  gap: 0.4rem;
+  padding: var(--mg-space-3) var(--mg-space-5);
+  color: var(--mg-color-text);
+}
+
+.ds-scroll-hint:hover,
+.ds-scroll-hint:focus-visible {
+  color: var(--mg-color-brand);
+}
+
+.ds-scroll-hint:focus-visible {
+  outline: 3px solid var(--mg-color-focus);
+  outline-offset: 3px;
+}
+
+.ds-scroll-hint__chevron {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-right: 0.3rem solid currentColor;
+  border-bottom: 0.3rem solid currentColor;
+  transform: rotate(45deg);
+  transition: transform var(--mg-transition-base);
+}
+
+.ds-scroll-hint__chevron + .ds-scroll-hint__chevron {
+  margin-top: -1.2rem;
+}
+
+.ds-scroll-hint:hover .ds-scroll-hint__chevron {
+  transform: rotate(45deg) translate(0.3rem, 0.3rem);
+}
+
 .ds-badge {
   display: inline-flex;
   align-items: center;
@@ -221,7 +300,8 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ds-button {
+  .ds-button,
+  .ds-scroll-hint__chevron {
     transition: none;
   }
 }
