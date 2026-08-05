@@ -134,36 +134,16 @@ body.tgo > footer {
   height: 4rem;
 }
 
+/* Nav typography, link sizing and hover now come from .navbar-custom. Only the
+   locale switcher's own box is left. */
 .tgo .navbar-locale {
   height: 4rem;
   padding: 1.2rem 1rem;
-  color: var(--mg-color-text-muted);
-  font-family: var(--mg-font-body);
-  font-size: var(--mg-text-xs);
-  font-weight: 600 !important;
   line-height: 1.6rem;
-  text-transform: uppercase;
 }
 
 .tgo .navbar-locale a {
   color: inherit;
-}
-
-.tgo .navbar-nav > li > a {
-  min-height: 4rem;
-  padding: 1.3rem 1.35rem;
-  color: var(--mg-color-text-muted);
-  font-family: var(--mg-font-body);
-  font-size: var(--mg-text-xs);
-  font-weight: 600;
-  line-height: 1.4rem;
-  letter-spacing: 0;
-}
-
-.tgo .navbar-custom .nav li a:hover,
-.tgo .navbar-custom .nav li a:focus {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--mg-color-text);
 }
 
 .tgo .navbar-toggle {
@@ -242,7 +222,7 @@ body.tgo > footer {
   margin: 0;
   color: var(--mg-color-text);
   font-family: var(--mg-font-display);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -449,15 +429,17 @@ body.tgo > footer {
   box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.28), 6rem 5rem 11rem -8rem rgba(255, 36, 66, 0.18);
 }
 
+/* Sized by height, not by a square box. The icons are 1.00, 1.07 and 1.19 in
+   ratio, so a square box plus object-fit letterboxed the widest one down to
+   109px tall against 130px for the first — it read as undersized. */
 .tgo-feature__icon {
   position: absolute;
   z-index: 2;
   top: -6.5rem;
   left: 50%;
   display: block;
-  width: 13rem;
+  width: auto;
   height: 13rem;
-  object-fit: contain;
   filter: drop-shadow(0 0 1.8rem rgba(255, 56, 75, 0.3)) drop-shadow(0 0 1.2rem rgba(47, 110, 229, 0.24));
   transform: translateX(-50%);
 }
@@ -1044,7 +1026,7 @@ body.tgo > footer {
 
   .tgo-feature__icon {
     top: -5rem;
-    width: 10rem;
+    width: auto;
     height: 10rem;
   }
 
