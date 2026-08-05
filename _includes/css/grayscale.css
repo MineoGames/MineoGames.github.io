@@ -22,9 +22,6 @@ html {
     height: 100%;
 }
 
-/* Good Pro is an extra condensed face: it closes up and loses legibility in bold
-   at small sizes. Regular is the default; heavy weight is reserved for the large
-   display type below. */
 h1,
 h2,
 h3,
@@ -34,7 +31,7 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: var(--mg-font-heading);
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -82,7 +79,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -372,14 +369,16 @@ a:focus {
     color: var(--mg-color-text);
 }
 
+/* Micro label in caps. The condensed heading face closes up at this size, so
+   small uppercase labels use the body face and lean on tracking instead. */
 .product-banner__eyebrow {
     margin: 0 0 var(--mg-space-3);
     color: var(--product-accent);
-    font-family: var(--mg-font-heading);
+    font-family: var(--mg-font-body);
     font-size: clamp(12px, 1vw, 15px);
     font-weight: 700;
     line-height: 1.4;
-    letter-spacing: 0;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
@@ -396,7 +395,7 @@ a:focus {
     max-width: 520px;
     margin: 18px 0 0;
     color: rgba(255, 255, 255, 0.82);
-    font-family: var(--mg-font-heading);
+    font-family: var(--mg-font-body);
     font-size: clamp(14px, 1.2vw, 18px);
     line-height: 1.55;
 }
@@ -409,7 +408,7 @@ a:focus {
     padding-bottom: var(--mg-space-1);
     border-bottom: 2px solid var(--product-accent);
     color: var(--mg-color-text);
-    font-family: var(--mg-font-heading);
+    font-family: var(--mg-font-body);
     font-size: 14px;
     font-weight: 700;
     line-height: 1.4;

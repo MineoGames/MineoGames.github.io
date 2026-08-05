@@ -12,7 +12,6 @@ body {
 h1 {
   font-family: var(--mg-font-display);
   font-size: var(--mg-text-4xl);
-  font-weight: 700;
 }
 
 h2 {
@@ -159,6 +158,7 @@ th {
 
 .biglist li {
   list-style-type: none;
+  font-weight: bold;
   display: block;
   font-size: var(--mg-text-2xl);
   font-family: var(--mg-font-heading);
