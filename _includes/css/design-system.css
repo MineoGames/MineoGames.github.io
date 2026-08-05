@@ -26,10 +26,11 @@ html {
   /* Legacy palette. Source of truth: _config.yml > color. */
   --mg-color-link: {{ site.color.links }};
   --mg-color-link-hover: #11505d;
-  /* Body is Manrope site-wide. Headings are meant to be Good Pro; until that font
-     file lands in resources/font they fall through to Montserrat. */
-  --mg-font-display: "Staatliches", "Arial Narrow", sans-serif;
-  --mg-font-heading: "Good Pro", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Body is self-hosted Manrope. Headings and display are Good Pro, served from
+     Adobe Fonts — set adobe_fonts_kit in _config.yml. Until the kit is set, the
+     stacks fall through to the previous faces rather than to a system default. */
+  --mg-font-display: "good-pro", "Good Pro", "Staatliches", "Arial Narrow", sans-serif;
+  --mg-font-heading: "good-pro", "Good Pro", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mg-font-body: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Fluid type scale, bounds sized for 375px and 1440px viewports.
      16/18 match the Figma Text Regular / Text Medium variables. */

@@ -16,9 +16,9 @@
   <meta http-equiv="Content-Security-Policy" content="
   default-src 'self' data:;
   img-src 'self' data: https://mineogames.github.io https://s3.amazonaws.com https://i.imgur.com https://imgur.com/ https://user-images.githubusercontent.com/ https://www.google.fr https://www.google.com https://www.gstatic.com https://stats.g.doubleclick.net https://digitalasset.intuit.com https://mcusercontent.com;
-  font-src 'self' https://fonts.gstatic.com https://assets.brevo.com data:;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://sibforms.com;
-  style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://sibforms.com;
+  font-src 'self' https://use.typekit.net https://p.typekit.net https://fonts.gstatic.com https://assets.brevo.com data:;
+  style-src 'self' 'unsafe-inline' https://use.typekit.net https://fonts.googleapis.com https://sibforms.com;
+  style-src-elem 'self' 'unsafe-inline' https://use.typekit.net https://fonts.googleapis.com https://sibforms.com;
   script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.freeprivacypolicy.com https://sibforms.com https://www.google.com https://www.gstatic.com;
   script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://*.clarity.ms https://www.googletagmanager.com https://sibforms.com https://www.google.com https://www.gstatic.com;
   connect-src 'self' https://stats.g.doubleclick.net https://*.clarity.ms https://*.sibforms.com https://www.google.com https://www.gstatic.com;
@@ -42,7 +42,13 @@
   {% unless page.disable_default_preload %}<link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">{% endunless %}
   <link rel="preload" href="{{ page.preload_font | default: '/resources/font/Manrope-VariableFont_wght.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
 
-  <!-- Fonts -->
+  <!-- Fonts. Body is self-hosted Manrope. Headings and display want Good Pro, served
+       from Adobe Fonts; set adobe_fonts_kit in _config.yml to enable it. Until then the
+       stacks fall through to Montserrat and Staatliches, which is why both stay here. -->
+  {% if site.adobe_fonts_kit != "" %}
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/{{ site.adobe_fonts_kit }}.css">
+  {% endif %}
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   {% unless page.minimal_fonts %}
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">

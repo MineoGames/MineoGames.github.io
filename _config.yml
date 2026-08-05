@@ -125,6 +125,10 @@ defaults:
     values:
       asset_version: 20260804-1
 
+# Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
+# font stacks fall back to Montserrat and Staatliches.
+adobe_fonts_kit: ""
+
 # Build settings
 markdown: kramdown
 permalink: pretty
