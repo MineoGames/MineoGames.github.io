@@ -2,15 +2,15 @@
  * Custom css of the Mineo Games site.
  */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--mg-font-body);
 }
 
 .logo-font {
-  font-family: "Staatliches", cursive;
+  font-family: var(--mg-font-display);
 }
 
 h1 {
-  font-family: "Staatliches", cursive;
+  font-family: var(--mg-font-display);
   font-size: var(--mg-text-4xl);
 }
 
@@ -161,7 +161,7 @@ th {
   font-weight: bold;
   display: block;
   font-size: var(--mg-text-2xl);
-  font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+  font-family: var(--mg-font-heading);
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;

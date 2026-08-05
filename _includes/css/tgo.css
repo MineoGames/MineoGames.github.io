@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "TGO Manrope";
-  src: url("resources/font/Manrope-VariableFont_wght.ttf") format("truetype");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 200 800;
-}
-
 body.tgo {
   --mg-color-canvas: #030509;
   --mg-color-surface: #0c1118;
@@ -15,7 +7,7 @@ body.tgo {
   --mg-color-brand: #ff384b;
   --mg-color-action: #2f6ee5;
   --mg-color-action-hover: #1f57c6;
-  --mg-font-body: "TGO Manrope", Arial, sans-serif;
+  --mg-font-heading: var(--mg-font-body);
   --mg-frame-background: rgba(12, 17, 24, 0.82);
   --mg-frame-border: #171b24;
   --mg-frame-accent: var(--mg-color-brand);

@@ -1,3 +1,12 @@
+/* Self-hosted, variable weight. Path is relative to /style.css, served from root. */
+@font-face {
+  font-family: "Manrope";
+  src: url("resources/font/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200 800;
+}
+
 /* 1rem = 10px. Was implicitly set by Bootstrap 3; declared here so the rem-based
    CSS no longer depends on it. */
 html {
@@ -17,8 +26,11 @@ html {
   /* Legacy palette. Source of truth: _config.yml > color. */
   --mg-color-link: {{ site.color.links }};
   --mg-color-link-hover: #11505d;
+  /* Body is Manrope site-wide. Headings are meant to be Good Pro; until that font
+     file lands in resources/font they fall through to Montserrat. */
   --mg-font-display: "Staatliches", "Arial Narrow", sans-serif;
-  --mg-font-body: "Montserrat", Arial, sans-serif;
+  --mg-font-heading: "Good Pro", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mg-font-body: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Fluid type scale, bounds sized for 375px and 1440px viewports.
      16/18 match the Figma Text Regular / Text Medium variables. */
   --mg-text-xs: 1.2rem;
