@@ -59,8 +59,8 @@ html {
   --mg-space-6: 32px;
   --mg-space-7: 48px;
   --mg-space-8: 72px;
-  --mg-radius-sm: 4px;
-  --mg-radius-md: 8px;
+  --mg-radius-sm: 0px;
+  --mg-radius-md: 0px;
   --mg-shadow-card: 0 16px 36px rgba(0, 0, 0, 0.28);
   /* 1280 / 768 / 112 come from Figma variables. --mg-gutter is per side. */
   --mg-content-width: 1280px;
@@ -241,8 +241,8 @@ html {
 .ds-list li::after,
 .ds-check::after {
   position: absolute;
-  top: 0.35rem;
-  left: 0.68rem;
+  top: 0rem;
+  left: 0.25rem;
   width: 0.55rem;
   height: 1rem;
   border-right: 0.22rem solid var(--mg-color-canvas);
