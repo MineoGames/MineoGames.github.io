@@ -268,19 +268,12 @@ body.tgo > footer {
   text-align: center;
 }
 
+/* Shape, colour and glow now come from the base component. Only the CTA's
+   generous footprint is page-specific. */
 .tgo .ds-button {
   min-width: 39rem;
   min-height: 7.2rem;
   padding-inline: 3rem;
-  border-radius: 0;
-  background: var(--mg-color-action);
-  box-shadow: 0 0.75rem 1.4rem rgba(69, 128, 246, 0.2);
-  font-size: var(--mg-text-xl);
-}
-
-.tgo .ds-button:hover,
-.tgo .ds-button:focus-visible {
-  background: var(--mg-color-action-hover);
 }
 
 .tgo-cta__hint {
@@ -535,7 +528,7 @@ body.tgo > footer {
   margin: 0 auto 5.7rem;
 }
 
-.tgo-chevrons img {
+.tgo-chevrons svg {
   display: block;
   width: 100%;
   height: auto;

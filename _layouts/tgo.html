@@ -83,7 +83,7 @@
       <section class="ds-section tgo-section--conversion">
         <div class="ds-container">
           <div class="tgo-chevrons" aria-hidden="true">
-            <img src="{{ '/img/tgo/Chevrons.png' | relative_url }}?v={{ page.asset_version }}" width="98" height="99" loading="lazy" decoding="async" alt="">
+            {% include icon-chevrons.html %}
           </div>
           {% include tgo/cta.html %}
           {% include tgo/proof.html modifier="tgo-proof--conversion" %}

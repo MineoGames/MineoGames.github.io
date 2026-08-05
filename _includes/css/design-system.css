@@ -140,7 +140,9 @@ html {
   min-height: var(--mg-control-height);
   padding: var(--mg-space-3) var(--mg-space-5);
   border: 1px solid transparent;
-  border-radius: var(--mg-radius-md);
+  /* Square, like the TGO CTA and the footer buttons. The art direction has no
+     rounded controls; --mg-radius-* is for surfaces. */
+  border-radius: 0;
   font-family: var(--mg-font-body);
   font-size: var(--mg-text-xl);
   font-weight: 700;
@@ -152,6 +154,7 @@ html {
 .ds-button--primary {
   background: var(--mg-color-action);
   color: #ffffff;
+  box-shadow: 0 0.75rem 1.4rem rgba(69, 128, 246, 0.2);
 }
 
 .ds-button--primary:hover,

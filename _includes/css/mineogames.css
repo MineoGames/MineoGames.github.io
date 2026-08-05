@@ -218,24 +218,39 @@ th {
   margin-block: 0;
 }
 
-/* button */
+/* Legacy button class, still on the game pages. Same shape as .ds-button--primary
+   so the two never sit side by side looking like different systems. */
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--mg-control-height);
+  margin: var(--mg-space-1) 0;
+  padding: var(--mg-space-3) var(--mg-space-5);
+  border: 1px solid transparent;
+  border-radius: 0;
   background-color: var(--mg-color-action);
-  border-radius: var(--mg-radius-sm);
-  border: none;
-  color: white;
-  padding: 20px 34px;
+  box-shadow: 0 0.75rem 1.4rem rgba(69, 128, 246, 0.2);
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--mg-font-body);
+  font-size: var(--mg-text-xl);
+  font-weight: 700;
+  line-height: 1.2;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
+  transition: background-color var(--mg-transition-fast);
 }
 /* Hover used to flip blue to red and grow the padding, shifting layout. */
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--mg-color-action-hover);
-  color: white;
+  color: #fff;
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--mg-color-focus);
+  outline-offset: 3px;
 }
 
 
@@ -266,15 +281,18 @@ th {
   padding: 0;
 }
 
-.cookie-consent #cookie-consent-btn {
+/* The bar is a compact strip; it opts out of the full button footprint. */
+.cookie-consent .button {
+  min-height: 0;
+  margin: 0;
   padding: var(--mg-space-2) var(--mg-space-3);
+  box-shadow: none;
+  font-size: var(--mg-text-sm);
 }
 
 /* Secondary action: outlined rather than a white block on a dark bar. */
 .cookie-consent #open_preferences_center {
-  padding: var(--mg-space-2) var(--mg-space-3);
   border: 1px solid var(--mg-color-border);
-  border-radius: var(--mg-radius-sm);
   background-color: transparent;
   color: var(--mg-color-text);
   cursor: pointer;
