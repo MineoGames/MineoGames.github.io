@@ -23,8 +23,10 @@ html {
   --mg-color-action: #2f80ed;
   --mg-color-action-hover: #5b9cf5;
   --mg-color-focus: #ffffff;
+
   /* Translucent surface for bars that float over content (navbar, cookie bar). */
   --mg-surface-overlay: rgba(0, 0, 0, 0.9);
+
   /* Legacy palette. Source of truth: _config.yml > color. */
   /* Links are the action colour — one blue for the whole site. The old teal came
      from _config.yml, a second source of truth that drifted off-identity.
@@ -32,12 +34,14 @@ html {
      sat at 2.3:1, well under AA. */
   --mg-color-link: var(--mg-color-action);
   --mg-color-link-hover: #6ba5f2;
+
   /* Body is self-hosted Manrope. Headings and display are Good Pro, served from
      Adobe Fonts — set adobe_fonts_kit in _config.yml. Until the kit is set, the
      stacks fall through to the previous faces rather than to a system default. */
   --mg-font-display: "ff-good-web-pro-extra-conden", "Staatliches", "Arial Narrow", sans-serif;
   --mg-font-heading: "ff-good-web-pro-extra-conden", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mg-font-body: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   /* Fluid type scale, bounds sized for 375px and 1440px viewports.
      16/18 match the Figma Text Regular / Text Medium variables. */
   --mg-text-xs: 1.2rem;
@@ -49,8 +53,10 @@ html {
   --mg-text-3xl: clamp(1.8rem, 1.3rem + 1.33vw, 3.2rem);
   --mg-text-4xl: clamp(2.4rem, 1.83rem + 1.52vw, 4rem);
   --mg-text-display: clamp(4.1rem, 1.41rem + 7.18vw, 8.3rem);
+
   --mg-leading-tight: 1.15;
   --mg-leading-body: 1.5;
+
   --mg-space-1: 4px;
   --mg-space-2: 8px;
   --mg-space-3: 12px;
@@ -59,22 +65,37 @@ html {
   --mg-space-6: 32px;
   --mg-space-7: 48px;
   --mg-space-8: 72px;
+
   --mg-radius-sm: 0px;
   --mg-radius-md: 0px;
   --mg-shadow-card: 0 16px 36px rgba(0, 0, 0, 0.28);
+
   /* 1280 / 768 / 112 come from Figma variables. --mg-gutter is per side. */
   --mg-content-width: 1280px;
   --mg-measure: 768px;
   --mg-gutter: clamp(1.5rem, 0.2rem + 3.5vw, 6.4rem);
   --mg-section-gap: clamp(4rem, 1.6rem + 6.7vw, 11.2rem);
   --mg-control-height: 48px;
+
   --mg-transition-fast: 150ms ease;
   --mg-transition-base: 300ms ease;
   --mg-transition-slow: 500ms ease;
+
   --mg-frame-background: var(--mg-color-surface);
   --mg-frame-border: var(--mg-color-border);
   --mg-frame-accent: var(--mg-color-brand);
   --mg-frame-cut: 18px;
+
+  /* Checkbox marker. --mg-check-size is the single knob: the box, the tick and
+     the text indent all derive from it, so a context only overrides that one.
+     The tick is a clip-path on a box-sized layer, so it stays centred inside the
+     square whatever the number of text lines, and its colour stays a token. */
+  --mg-check-size: 2rem;
+  --mg-check-gap: 1.8rem;
+  --mg-check-radius: var(--mg-radius-sm);
+  --mg-check-box: var(--mg-color-action);
+  --mg-check-tick-color: var(--mg-color-canvas);
+  --mg-check-shape: polygon(43% 64%, 15% 36%, 8% 43%, 43% 78%, 92% 29%, 85% 22%);
 }
 
 .ds-container {
@@ -223,54 +244,72 @@ html {
 
 .ds-list li {
   position: relative;
-  padding-left: 3.8rem;
+  /* Indent derives from the marker, so resizing the box never desyncs the text. */
+  padding-inline-start: calc(var(--mg-check-size) + var(--mg-check-gap));
+  /* Fallback for browsers without the lh unit; overridden just below. */
+  --mg-check-top: 0.2rem;
+}
+
+/* Centres the marker on the first text line, recomputed from the actual line
+   box, so changing the font size needs no manual offset. */
+@supports (inset-block-start: 1lh) {
+  .ds-list li {
+    --mg-check-top: calc((1lh - var(--mg-check-size)) / 2);
+  }
+}
+
+/* Box and tick share one geometry, so the tick can never drift off the box. */
+.ds-list li::before,
+.ds-list li::after {
+  position: absolute;
+  box-sizing: border-box;
+  inset-block-start: var(--mg-check-top);
+  inset-inline-start: 0;
+  inline-size: var(--mg-check-size);
+  block-size: var(--mg-check-size);
+  content: "";
 }
 
 .ds-list li::before {
-  position: absolute;
-  top: 0.1rem;
-  left: 0;
-  width: 2rem;
-  height: 2rem;
-  background: var(--mg-color-action);
-  content: "";
+  border-radius: var(--mg-check-radius);
+  background: var(--mg-check-box);
 }
 
 /* Check mark, drawn in CSS so it needs no icon font. The .ds-list marker and the
-   .ds-check control share this one definition. */
+   .ds-check control share this one shape. Percentages are resolved against the
+   box above, so it scales and stays centred with no magic offsets. */
 .ds-list li::after,
 .ds-check::after {
-  position: absolute;
-  top: 0rem;
-  left: 0.25rem;
-  width: 0.55rem;
-  height: 1rem;
-  border-right: 0.22rem solid var(--mg-color-canvas);
-  border-bottom: 0.22rem solid var(--mg-color-canvas);
+  background-color: var(--mg-check-tick-color);
+  clip-path: var(--mg-check-shape);
   content: "";
-  transform: rotate(42deg);
 }
 
 /* Same marker as a control: empty until its input is checked. Sits next to an
    input the markup keeps to the left, so :checked drives it. */
 .ds-check {
   position: relative;
+  box-sizing: border-box;
   flex: 0 0 auto;
-  width: 2rem;
-  height: 2rem;
+  width: var(--mg-check-size);
+  height: var(--mg-check-size);
   margin: 0;
   border: 1px solid var(--mg-color-border);
+  border-radius: var(--mg-check-radius);
   background: transparent;
   transition: background-color var(--mg-transition-fast), border-color var(--mg-transition-fast);
 }
 
+/* Here the control itself is the box, so the tick simply fills it. */
 .ds-check::after {
+  position: absolute;
+  inset: 0;
   display: none;
 }
 
 :checked + .ds-check {
-  border-color: var(--mg-color-action);
-  background: var(--mg-color-action);
+  border-color: var(--mg-check-box);
+  background: var(--mg-check-box);
 }
 
 :checked + .ds-check::after {
@@ -302,11 +341,14 @@ html {
 }
 
 /* The double chevron from the art direction, inlined so currentColor drives it
-   and the hover keeps animating the colour. Ratio is the artwork's own 98:99. */
+   and the hover keeps animating the colour. Ratio is the artwork's own 98:99.
+   aspect-ratio reserves the height up front, so the icon cannot render at full
+   viewport size while the stylesheet is still loading. */
 .ds-scroll-hint__icon {
   display: block;
   width: 4.8rem;
   height: auto;
+  aspect-ratio: 98 / 99;
   transition: transform var(--mg-transition-base);
 }
 

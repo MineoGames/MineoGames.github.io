@@ -1,146 +1,249 @@
-{% assign newsletter_locale = include.locale | default: page.lang | default: "en" %}
-{% if newsletter_locale == "fr" %}
-  {% assign newsletter_title = "Newsletter Mineo Games" %}
-  {% assign newsletter_intro = "Recevez nos actualités XR et suivez les découvertes et productions de notre aventure indépendante." %}
-  {% assign newsletter_privacy = "Votre vie privée est notre priorité. Vous pouvez vous désinscrire à tout moment." %}
-  {% assign email_label = "Adresse e-mail" %}
-  {% assign email_help = "Saisissez l'adresse e-mail sur laquelle vous souhaitez recevoir la newsletter." %}
-  {% assign firstname_label = "Prénom" %}
-  {% assign lastname_label = "Nom" %}
-  {% assign lastname_help = "Facultatif" %}
-  {% assign interests_label = "Centres d'intérêt" %}
-  {% assign newsletter_interest = "Newsletter" %}
-  {% assign gaming_interest = "Jeux vidéo" %}
-  {% assign gamedev_interest = "Développement de jeux et productivité" %}
-  {% assign submit_label = "S'inscrire" %}
-  {% assign error_message = "Votre inscription n'a pas pu être enregistrée. Veuillez réessayer." %}
-  {% assign success_message = "Votre inscription a bien été enregistrée." %}
-{% else %}
-  {% assign newsletter_title = "Mineo Games Newsletter" %}
-  {% assign newsletter_intro = "Get XR insights and follow the discoveries and productions from our indie journey." %}
-  {% assign newsletter_privacy = "Your privacy is our priority. You can unsubscribe at any time." %}
-  {% assign email_label = "Email address" %}
-  {% assign email_help = "Enter the email address where you would like to receive the newsletter." %}
-  {% assign firstname_label = "First name" %}
-  {% assign lastname_label = "Last name" %}
-  {% assign lastname_help = "Optional" %}
-  {% assign interests_label = "Interests" %}
-  {% assign newsletter_interest = "Newsletter" %}
-  {% assign gaming_interest = "Gaming" %}
-  {% assign gamedev_interest = "Game development and productivity" %}
-  {% assign submit_label = "Subscribe" %}
-  {% assign error_message = "Your subscription could not be saved. Please try again." %}
-  {% assign success_message = "Your subscription has been successful." %}
-{% endif %}
+{% assign newsletter_locale = include.locale | default: page.lang | default:
+"en" %} {% if newsletter_locale == "fr" %} {% assign newsletter_title =
+"Newsletter Mineo Games" %} {% assign newsletter_intro = "Recevez nos actualités
+XR et suivez les découvertes et productions de notre aventure indépendante." %}
+{% assign newsletter_privacy = "Votre vie privée est notre priorité. Vous pouvez
+vous désinscrire à tout moment." %} {% assign email_label = "Adresse e-mail" %}
+{% assign email_help = "Saisissez l'adresse e-mail sur laquelle vous souhaitez
+recevoir la newsletter." %} {% assign firstname_label = "Prénom" %} {% assign
+lastname_label = "Nom" %} {% assign lastname_help = "Facultatif" %} {% assign
+interests_label = "Centres d'intérêt" %} {% assign newsletter_interest =
+"Newsletter" %} {% assign gaming_interest = "Jeux vidéo" %} {% assign
+gamedev_interest = "Développement de jeux et productivité" %} {% assign
+submit_label = "S'inscrire" %} {% assign error_message = "Votre inscription n'a
+pas pu être enregistrée. Veuillez réessayer." %} {% assign success_message =
+"Votre inscription a bien été enregistrée." %} {% else %} {% assign
+newsletter_title = "Mineo Games Newsletter" %} {% assign newsletter_intro = "Get
+XR insights and follow the discoveries and productions from our indie journey."
+%} {% assign newsletter_privacy = "Your privacy is our priority. You can
+unsubscribe at any time." %} {% assign email_label = "Email address" %} {%
+assign email_help = "Enter the email address where you would like to receive the
+newsletter." %} {% assign firstname_label = "First name" %} {% assign
+lastname_label = "Last name" %} {% assign lastname_help = "Optional" %} {%
+assign interests_label = "Interests" %} {% assign newsletter_interest =
+"Newsletter" %} {% assign gaming_interest = "Gaming" %} {% assign
+gamedev_interest = "Game development and productivity" %} {% assign submit_label
+= "Subscribe" %} {% assign error_message = "Your subscription could not be
+saved. Please try again." %} {% assign success_message = "Your subscription has
+been successful." %} {% endif %}
 
 <div class="row signup-form">
-  <div class="sib-form mg-newsletter">
-    <div id="sib-form-container" class="sib-form-container">
-      {% comment %}
-      Brevo's runtime is what hides these panels and shows the relevant one after
-      a submission. Without it — on the 44 blog posts — both rendered permanently.
-      {% endcomment %}
-      {% if page.brevo_form %}
-      <div id="error-message" class="sib-form-message-panel mg-newsletter__message mg-newsletter__message--error" role="alert">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <span class="sib-form-message-panel__inner-text">{{ error_message }}</span>
-        </div>
-      </div>
+	<div class="sib-form mg-newsletter">
+		<div id="sib-form-container" class="sib-form-container">
+			{% comment %} Brevo's runtime is what hides these panels and shows the
+			relevant one after a submission. Without it — on the 44 blog posts — both
+			rendered permanently. {% endcomment %} {% if page.brevo_form %}
+			<div
+				id="error-message"
+				class="sib-form-message-panel mg-newsletter__message mg-newsletter__message--error"
+				role="alert"
+			>
+				<div
+					class="sib-form-message-panel__text sib-form-message-panel__text--center"
+				>
+					<span class="sib-form-message-panel__inner-text"
+						>{{ error_message }}</span
+					>
+				</div>
+			</div>
 
-      <div id="success-message" class="sib-form-message-panel mg-newsletter__message mg-newsletter__message--success" role="status">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <span class="sib-form-message-panel__inner-text">{{ success_message }}</span>
-        </div>
-      </div>
-      {% endif %}
+			<div
+				id="success-message"
+				class="sib-form-message-panel mg-newsletter__message mg-newsletter__message--success"
+				role="status"
+			>
+				<div
+					class="sib-form-message-panel__text sib-form-message-panel__text--center"
+				>
+					<span class="sib-form-message-panel__inner-text"
+						>{{ success_message }}</span
+					>
+				</div>
+			</div>
+			{% endif %}
 
-      <div id="sib-container" class="sib-container--large sib-container--vertical mg-newsletter__panel">
-        <form id="sib-form" method="post" action="{{ site.data.newsletter.action_url }}" data-type="subscription">
-          <div class="sib-form-block mg-newsletter__header">
-            <h2>{{ include.title | default: newsletter_title }}</h2>
-            <p>{{ newsletter_intro }}</p>
-            <p class="mg-newsletter__privacy">{{ newsletter_privacy }}</p>
-          </div>
+			<div
+				id="sib-container"
+				class="sib-container--large sib-container--vertical mg-newsletter__panel"
+			>
+				<form
+					id="sib-form"
+					method="post"
+					action="{{ site.data.newsletter.action_url }}"
+					data-type="subscription"
+				>
+					<div class="sib-form-block mg-newsletter__header">
+						<h2>{{ include.title | default: newsletter_title }}</h2>
+						<p>{{ newsletter_intro }}</p>
+						<p class="mg-newsletter__privacy">{{ newsletter_privacy }}</p>
+					</div>
 
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <label class="entry__label" for="EMAIL" data-required="*">{{ email_label }}</label>
-                <div class="entry__field">
-                  <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" data-required="true" required>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-              <p class="entry__specification">{{ email_help }}</p>
-            </div>
-          </div>
+					<div class="sib-input sib-form-block">
+						<div class="form__entry entry_block">
+							<div class="form__label-row">
+								<label class="entry__label" for="EMAIL" data-required="*"
+									>{{ email_label }}</label
+								>
+								<div class="entry__field">
+									<input
+										class="input"
+										type="email"
+										id="EMAIL"
+										name="EMAIL"
+										autocomplete="email"
+										data-required="true"
+										required
+									/>
+								</div>
+							</div>
+							<label class="entry__error entry__error--primary"></label>
+							<p class="entry__specification">{{ email_help }}</p>
+						</div>
+					</div>
 
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <label class="entry__label" for="FIRSTNAME" data-required="*">{{ firstname_label }}</label>
-                <div class="entry__field">
-                  <input class="input" maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="given-name" data-required="true" required>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-            </div>
-          </div>
+					<div class="sib-input sib-form-block">
+						<div class="form__entry entry_block">
+							<div class="form__label-row">
+								<label class="entry__label" for="FIRSTNAME" data-required="*"
+									>{{ firstname_label }}</label
+								>
+								<div class="entry__field">
+									<input
+										class="input"
+										maxlength="200"
+										type="text"
+										id="FIRSTNAME"
+										name="FIRSTNAME"
+										autocomplete="given-name"
+										data-required="true"
+										required
+									/>
+								</div>
+							</div>
+							<label class="entry__error entry__error--primary"></label>
+						</div>
+					</div>
 
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <label class="entry__label" for="LASTNAME">{{ lastname_label }}</label>
-                <div class="entry__field">
-                  <input class="input" maxlength="200" type="text" id="LASTNAME" name="LASTNAME" autocomplete="family-name">
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-              <p class="entry__specification">{{ lastname_help }}</p>
-            </div>
-          </div>
+					<div class="sib-input sib-form-block">
+						<div class="form__entry entry_block">
+							<div class="form__label-row">
+								<label class="entry__label" for="LASTNAME"
+									>{{ lastname_label }}</label
+								>
+								<div class="entry__field">
+									<input
+										class="input"
+										maxlength="200"
+										type="text"
+										id="LASTNAME"
+										name="LASTNAME"
+										autocomplete="family-name"
+									/>
+								</div>
+							</div>
+							<label class="entry__error entry__error--primary"></label>
+							<p class="entry__specification">{{ lastname_help }}</p>
+						</div>
+					</div>
 
-          <div class="sib-checkbox-group sib-form-block" data-required="true">
-            <div class="form__entry entry_mcq">
-              <div class="form__label-row">
-                <p class="entry__label" data-required="*">{{ interests_label }}</p>
-                <div class="mg-newsletter__choices">
-                  <label class="checkbox__label">
-                    <input type="checkbox" class="input_replaced" name="INTERESTS[]" data-value="Newsletter" value="Newsletter" data-required="true" checked>
-                    <span class="checkbox checkbox_tick_positive ds-check" aria-hidden="true"></span>
-                    <span>{{ newsletter_interest }}</span>
-                  </label>
-                  <label class="checkbox__label">
-                    <input type="checkbox" class="input_replaced" name="INTERESTS[]" data-value="Gaming" value="Gaming" data-required="true">
-                    <span class="checkbox checkbox_tick_positive ds-check" aria-hidden="true"></span>
-                    <span>{{ gaming_interest }}</span>
-                  </label>
-                  <label class="checkbox__label">
-                    <input type="checkbox" class="input_replaced" name="INTERESTS[]" data-value="Game Development &amp; Productivity" value="Game Development &amp; Productivity" data-required="true">
-                    <span class="checkbox checkbox_tick_positive ds-check" aria-hidden="true"></span>
-                    <span>{{ gamedev_interest }}</span>
-                  </label>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-            </div>
-          </div>
+					<div class="sib-checkbox-group sib-form-block" data-required="true">
+						<div class="form__entry entry_mcq">
+							<div class="form__label-row">
+								<p class="entry__label" data-required="*">
+									{{ interests_label }}
+								</p>
+								<div class="mg-newsletter__choices">
+									<label class="checkbox__label">
+										<input
+											type="checkbox"
+											class="input_replaced"
+											name="INTERESTS[]"
+											data-value="Newsletter"
+											value="Newsletter"
+											data-required="true"
+											checked
+										/>
+										<span
+											class="checkbox checkbox_tick_positive ds-check"
+											aria-hidden="true"
+										></span>
+										<span>{{ newsletter_interest }}</span>
+									</label>
+									<label class="checkbox__label">
+										<input
+											type="checkbox"
+											class="input_replaced"
+											name="INTERESTS[]"
+											data-value="Gaming"
+											value="Gaming"
+											data-required="true"
+											checked
+										/>
+										<span
+											class="checkbox checkbox_tick_positive ds-check"
+											aria-hidden="true"
+										></span>
+										<span>{{ gaming_interest }}</span>
+									</label>
+									<label class="checkbox__label">
+										<input
+											type="checkbox"
+											class="input_replaced"
+											name="INTERESTS[]"
+											data-value="Game Development &amp; Productivity"
+											value="Game Development &amp; Productivity"
+											data-required="true"
+											checked
+										/>
+										<span
+											class="checkbox checkbox_tick_positive ds-check"
+											aria-hidden="true"
+										></span>
+										<span>{{ gamedev_interest }}</span>
+									</label>
+								</div>
+							</div>
+							<label class="entry__error entry__error--primary"></label>
+						</div>
+					</div>
 
-          <div class="g-recaptcha-v3" data-sitekey="{{ site.data.newsletter.recaptcha_site_key }}" aria-hidden="true"></div>
+					<div
+						class="g-recaptcha-v3"
+						data-sitekey="{{ site.data.newsletter.recaptcha_site_key }}"
+						aria-hidden="true"
+					></div>
 
-          <div class="sib-form-block mg-newsletter__actions">
-            <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
-              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true">
-                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
-              </svg>
-              {{ submit_label }}
-            </button>
-          </div>
+					<div class="sib-form-block mg-newsletter__actions">
+						<button
+							class="sib-form-block__button sib-form-block__button-with-loader"
+							form="sib-form"
+							type="submit"
+						>
+							<svg
+								class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+								viewBox="0 0 512 512"
+								aria-hidden="true"
+							>
+								<path
+									d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+								/>
+							</svg>
+							{{ submit_label }}
+						</button>
+					</div>
 
-          <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <input type="hidden" name="locale" value="{{ newsletter_locale }}">
-        </form>
-      </div>
-    </div>
-  </div>
+					<input
+						type="text"
+						name="email_address_check"
+						value=""
+						class="input--hidden"
+						tabindex="-1"
+						autocomplete="off"
+						aria-hidden="true"
+					/>
+					<input type="hidden" name="locale" value="{{ newsletter_locale }}" />
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
