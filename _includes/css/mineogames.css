@@ -237,31 +237,6 @@ th {
 }
 
 
-/* Patreon's own brand red, kept deliberately. The light grey block it sat on
-   read as foreign on a dark page, so the button is outlined instead and fills
-   on hover. */
-a.patreon-button {
-  --patreon-brand: #ff424d;
-  display: grid;
-  min-height: 42px;
-  border: 1px solid var(--patreon-brand);
-  border-radius: var(--mg-radius-sm);
-  background-color: transparent;
-  color: var(--patreon-brand);
-  place-items: center;
-  transition: background-color var(--mg-transition-fast), color var(--mg-transition-fast);
-}
-
-a.patreon-button svg {
-  max-height: 12px;
-  fill: currentColor;
-}
-a.patreon-button:active,
-a.patreon-button:active:focus,
-a.patreon-button:hover {
-  background-color: var(--patreon-brand);
-  color: var(--mg-color-canvas);
-}
 
 /* Cookie consent. Layout promoted from the TGO treatment, which was the only
    place the bar wrapped cleanly on narrow screens. */
