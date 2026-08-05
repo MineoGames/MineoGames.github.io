@@ -14,8 +14,10 @@
                 {{ post.content | markdownify | truncatewords: site.last_post_words }}
             </section>
 			
-			<h2><a href="{{site.baseurl}}{{post.url}}">⤵️See full post</a></h2>
-            <h2><a href="{{site.baseurl}}/blog/">⤴️See other posts</a></h2>
+            <p class="ds-button-row mt-3">
+                <a class="ds-button ds-button--primary" href="{{site.baseurl}}{{post.url}}">See full post</a>
+                <a class="ds-button ds-button--secondary" href="{{site.baseurl}}/blog/">See other posts</a>
+            </p>
 
         </div>
     </div>

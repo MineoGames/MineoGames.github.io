@@ -27,15 +27,8 @@ label {
   padding: 1rem;
 }
 
-/* Newsletter form. The #mc-embedded-subscribe and strong rules were left over
-   from Mailchimp and matched nothing since the move to Brevo. */
-div.signup-form h2 {
-  color: var(--mg-color-brand);
-}
-
-div.signup-form label {
-  font-size: var(--mg-text-sm);
-}
+/* The newsletter form is styled as a component in brevo.css. The rules that used
+   to live here fought it: the brand-red h2 beat the component's own heading. */
 
 #carousel {
   overflow: auto;

@@ -695,9 +695,12 @@ body.tgo > footer {
   transform: rotate(225deg);
 }
 
-/* Layout and button shape now come from the base footer. Only the translucent
-   surfaces, which sit over the fixed background texture, are TGO-specific. */
+/* Layout, button shape and copyright type now come from the base footer. Only
+   the translucent surfaces, which sit over the fixed background texture, are
+   TGO-specific. Sections here already carry their own bottom padding, so the
+   base footer's top margin would double the gap. */
 .tgo footer {
+  margin-top: 0;
   border-top-color: rgba(229, 229, 229, 0.12);
   background: rgba(3, 5, 9, 0.92);
 }
@@ -716,18 +719,6 @@ body.tgo > footer {
   border-color: var(--mg-color-brand);
   background: var(--mg-color-brand);
   color: #fff;
-}
-
-.tgo footer .network-name {
-  margin-left: 0.4rem;
-}
-
-.tgo footer p {
-  margin-top: 2rem;
-  color: var(--mg-color-text-muted);
-  font-family: var(--mg-font-body);
-  font-size: var(--mg-text-xs);
-  line-height: 1.5;
 }
 
 /* Layout now comes from the base component; only the translucent surface and the

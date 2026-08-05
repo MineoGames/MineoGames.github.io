@@ -13,11 +13,13 @@
       <section class="text-justify">{{ page.content | markdownify }}</section>
       <br/>
       <a href="#" class="page-scroll" style="font-size: 5rem;">⬆️</a>
-      {% if page.lang == 'en' %}
-      <h2 class="mt-3"><a href="{{site.baseurl}}/blog/">⤴️See other posts</a></h2>
-      {% elsif page.lang == 'fr' %}
-      <h2 class="mt-3"><a href="{{site.baseurl}}/journal/">⤴️Voir les autres posts</a></h2>
-      {% endif %}
+      <p class="ds-button-row mt-3">
+        {% if page.lang == 'fr' %}
+        <a class="ds-button ds-button--secondary" href="{{site.baseurl}}/journal/">Voir les autres posts</a>
+        {% else %}
+        <a class="ds-button ds-button--secondary" href="{{site.baseurl}}/blog/">See other posts</a>
+        {% endif %}
+      </p>
     </section>
 
 

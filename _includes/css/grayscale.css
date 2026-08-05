@@ -553,13 +553,24 @@ ul.banner-social-buttons li {
     padding: 0;
 }
 
+/* The divider used to sit flush against the last section's closing line, which
+   read as a rule underlining that sentence. */
 footer {
+    margin-top: var(--mg-section-gap);
     padding: var(--mg-space-8) 0 3.5rem;
     border-top: 1px solid var(--mg-color-border);
 }
 
+/* Copyright treatment promoted from the TGO footer: fine print, not body copy. */
 footer p {
-    margin: 0;
+    margin: var(--mg-space-5) 0 0;
+    color: var(--mg-color-text-muted);
+    font-size: var(--mg-text-xs);
+    line-height: var(--mg-leading-body);
+}
+
+footer .network-name {
+    margin-left: 0.4rem;
 }
 
 ::-moz-selection {

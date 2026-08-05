@@ -160,9 +160,31 @@ html {
   color: #ffffff;
 }
 
+/* Outlined counterpart, for the secondary action next to a primary one. */
+.ds-button--secondary {
+  border-color: var(--mg-color-border);
+  background: transparent;
+  color: var(--mg-color-text);
+}
+
+.ds-button--secondary:hover,
+.ds-button--secondary:focus-visible {
+  border-color: var(--mg-color-action);
+  background: transparent;
+  color: var(--mg-color-action-hover);
+}
+
 .ds-button:focus-visible {
   outline: 3px solid var(--mg-color-focus);
   outline-offset: 3px;
+}
+
+.ds-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--mg-space-4);
+  margin: 0;
 }
 
 .ds-accordion__trigger:focus-visible {

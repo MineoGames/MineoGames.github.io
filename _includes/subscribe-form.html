@@ -36,6 +36,11 @@
 <div class="row signup-form">
   <div class="sib-form mg-newsletter">
     <div id="sib-form-container" class="sib-form-container">
+      {% comment %}
+      Brevo's runtime is what hides these panels and shows the relevant one after
+      a submission. Without it — on the 44 blog posts — both rendered permanently.
+      {% endcomment %}
+      {% if page.brevo_form %}
       <div id="error-message" class="sib-form-message-panel mg-newsletter__message mg-newsletter__message--error" role="alert">
         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
           <span class="sib-form-message-panel__inner-text">{{ error_message }}</span>
@@ -47,6 +52,7 @@
           <span class="sib-form-message-panel__inner-text">{{ success_message }}</span>
         </div>
       </div>
+      {% endif %}
 
       <div id="sib-container" class="sib-container--large sib-container--vertical mg-newsletter__panel">
         <form id="sib-form" method="post" action="{{ site.data.newsletter.action_url }}" data-type="subscription">
