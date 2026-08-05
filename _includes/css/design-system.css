@@ -23,14 +23,16 @@ html {
   --mg-color-action: #2f80ed;
   --mg-color-action-hover: #1768d7;
   --mg-color-focus: #ffffff;
+  /* Translucent surface for bars that float over content (navbar, cookie bar). */
+  --mg-surface-overlay: rgba(0, 0, 0, 0.9);
   /* Legacy palette. Source of truth: _config.yml > color. */
   --mg-color-link: {{ site.color.links }};
   --mg-color-link-hover: #11505d;
   /* Body is self-hosted Manrope. Headings and display are Good Pro, served from
      Adobe Fonts — set adobe_fonts_kit in _config.yml. Until the kit is set, the
      stacks fall through to the previous faces rather than to a system default. */
-  --mg-font-display: "good-pro", "Good Pro", "Staatliches", "Arial Narrow", sans-serif;
-  --mg-font-heading: "good-pro", "Good Pro", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mg-font-display: "ff-good-web-pro-extra-conden", "Staatliches", "Arial Narrow", sans-serif;
+  --mg-font-heading: "ff-good-web-pro-extra-conden", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mg-font-body: "Manrope", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Fluid type scale, bounds sized for 375px and 1440px viewports.
      16/18 match the Figma Text Regular / Text Medium variables. */

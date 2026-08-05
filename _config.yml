@@ -127,7 +127,7 @@ defaults:
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to Montserrat and Staatliches.
-adobe_fonts_kit: ""
+adobe_fonts_kit: "fnq2lgu"
 
 # Build settings
 markdown: kramdown

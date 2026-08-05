@@ -22,6 +22,9 @@ html {
     height: 100%;
 }
 
+/* Good Pro is an extra condensed face: it closes up and loses legibility in bold
+   at small sizes. Regular is the default; heavy weight is reserved for the large
+   display type below. */
 h1,
 h2,
 h3,
@@ -31,7 +34,7 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: var(--mg-font-heading);
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -66,16 +69,20 @@ a:focus {
     font-weight: 400;
 }
 
+/* Blurred translucent bar, promoted from TGO. The legacy pages still go
+   transparent at the top of the page and pick this up on scroll — see
+   .top-nav-collapse below. */
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid var(--mg-color-border);
+    border-bottom: 1px solid rgba(229, 229, 229, 0.12);
     text-transform: uppercase;
     font-family: var(--mg-font-heading);
-    background-color: var(--mg-color-canvas);
+    background-color: var(--mg-surface-overlay);
+    backdrop-filter: blur(1.4rem);
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -117,7 +124,8 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--mg-color-text);
 }
 
 @media(min-width:767px) {
@@ -133,7 +141,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: var(--mg-color-canvas);
+        background-color: var(--mg-surface-overlay);
     }
 
     .navbar-custom.top-nav-collapse {
