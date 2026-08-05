@@ -146,40 +146,25 @@
   opacity: 0;
 }
 
-.mg-newsletter .checkbox {
-  position: relative;
-  flex: 0 0 auto;
-  width: 2rem;
-  height: 2rem;
-  margin: 0;
-  border: 1px solid var(--mg-color-border);
-  border-radius: 0;
-  background: var(--mg-color-canvas);
-  background-image: none;
-  transition: background-color var(--mg-transition-fast), border-color var(--mg-transition-fast);
+/* The visual is .ds-check, the same marker as the TGO checklists. Brevo draws
+   its own white tick in .checkbox_tick_positive::before and leaves it on
+   whatever the input's state is, so every box read as ticked. */
+.mg-newsletter .checkbox_tick_positive::before {
+  content: none;
 }
 
-.mg-newsletter .input_replaced:checked + .checkbox {
+/* Three classes deep because Brevo paints the box from
+   .input_replaced:checked + .checkbox_tick_positive, in their own green. */
+.mg-newsletter .checkbox.ds-check {
+  border-color: var(--mg-color-border);
+  border-radius: 0;
+  background: transparent;
+  background-image: none;
+}
+
+.mg-newsletter .input_replaced:checked + .checkbox.ds-check {
   border-color: var(--mg-color-action);
   background: var(--mg-color-action);
-}
-
-/* Tick, drawn in CSS to match .ds-list. */
-.mg-newsletter .input_replaced:checked + .checkbox::after {
-  position: absolute;
-  top: 0.25rem;
-  left: 0.68rem;
-  width: 0.55rem;
-  height: 1rem;
-  border-right: 0.22rem solid var(--mg-color-canvas);
-  border-bottom: 0.22rem solid var(--mg-color-canvas);
-  content: "";
-  transform: rotate(42deg);
-}
-
-.mg-newsletter .input_replaced:focus-visible + .checkbox {
-  outline: 3px solid var(--mg-color-focus);
-  outline-offset: 2px;
 }
 
 .mg-newsletter__actions {

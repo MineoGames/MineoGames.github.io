@@ -556,7 +556,7 @@ ul.banner-social-buttons li {
 /* The divider used to sit flush against the last section's closing line, which
    read as a rule underlining that sentence. */
 footer {
-    margin-top: var(--mg-section-gap);
+    margin-top: var(--mg-space-6);
     padding: var(--mg-space-8) 0 3.5rem;
     border-top: 1px solid var(--mg-color-border);
 }

@@ -236,7 +236,10 @@ html {
   content: "";
 }
 
-.ds-list li::after {
+/* Check mark, drawn in CSS so it needs no icon font. The .ds-list marker and the
+   .ds-check control share this one definition. */
+.ds-list li::after,
+.ds-check::after {
   position: absolute;
   top: 0.35rem;
   left: 0.68rem;
@@ -246,6 +249,37 @@ html {
   border-bottom: 0.22rem solid var(--mg-color-canvas);
   content: "";
   transform: rotate(42deg);
+}
+
+/* Same marker as a control: empty until its input is checked. Sits next to an
+   input the markup keeps to the left, so :checked drives it. */
+.ds-check {
+  position: relative;
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  border: 1px solid var(--mg-color-border);
+  background: transparent;
+  transition: background-color var(--mg-transition-fast), border-color var(--mg-transition-fast);
+}
+
+.ds-check::after {
+  display: none;
+}
+
+:checked + .ds-check {
+  border-color: var(--mg-color-action);
+  background: var(--mg-color-action);
+}
+
+:checked + .ds-check::after {
+  display: block;
+}
+
+:focus-visible + .ds-check {
+  outline: 3px solid var(--mg-color-focus);
+  outline-offset: 2px;
 }
 
 /* Scroll affordance. Two CSS chevrons — no icon font, no border radius. */
