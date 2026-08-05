@@ -242,22 +242,18 @@ html {
   outline-offset: 3px;
 }
 
-.ds-scroll-hint__chevron {
+/* The double chevron from the art direction, inlined so currentColor drives it
+   and the hover keeps animating the colour. Ratio is the artwork's own 98:99. */
+.ds-scroll-hint__icon {
   display: block;
-  width: 2rem;
-  height: 2rem;
-  border-right: 0.3rem solid currentColor;
-  border-bottom: 0.3rem solid currentColor;
-  transform: rotate(45deg);
+  width: 4.8rem;
+  height: auto;
   transition: transform var(--mg-transition-base);
 }
 
-.ds-scroll-hint__chevron + .ds-scroll-hint__chevron {
-  margin-top: -1.2rem;
-}
-
-.ds-scroll-hint:hover .ds-scroll-hint__chevron {
-  transform: rotate(45deg) translate(0.3rem, 0.3rem);
+.ds-scroll-hint:hover .ds-scroll-hint__icon,
+.ds-scroll-hint:focus-visible .ds-scroll-hint__icon {
+  transform: translateY(0.4rem);
 }
 
 .ds-badge {
@@ -320,7 +316,7 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   .ds-button,
-  .ds-scroll-hint__chevron {
+  .ds-scroll-hint__icon {
     transition: none;
   }
 }
