@@ -158,7 +158,6 @@ th {
 
 .biglist li {
   list-style-type: none;
-  font-weight: bold;
   display: block;
   font-size: var(--mg-text-2xl);
   font-family: var(--mg-font-heading);

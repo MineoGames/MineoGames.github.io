@@ -22,10 +22,9 @@ t:
     download: Download
     scroll_to_games: See our games
 
-# Color settings (hex-codes without the leading hash-tag)
+# Page background. Link and accent colours live in the design system, not here.
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
 
 # Footer settings
 footer: Mineo Games

@@ -22,6 +22,9 @@ html {
     height: 100%;
 }
 
+/* Aligned on the TGO hero title, which is the reference treatment: condensed
+   display face, regular weight, no tracking, uppercase. The face carries the
+   presence through its width, so bold is not needed and closes it up. */
 h1,
 h2,
 h3,
@@ -31,8 +34,8 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: var(--mg-font-heading);
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 p {
@@ -79,7 +82,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .navbar-custom .navbar-brand:focus {

@@ -12,7 +12,7 @@
   padding: 0 15px;
   background: transparent;
   color: #171717;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: var(--mg-font-body);
   text-align: left;
 }
 
@@ -40,7 +40,7 @@
 .mg-newsletter__header h2 {
   margin: 0 0 12px;
   color: #171717;
-  font-family: Staatliches, Montserrat, Arial, sans-serif;
+  font-family: var(--mg-font-heading);
   font-size: 32px;
   font-weight: 400;
   line-height: 1.1;
@@ -91,7 +91,7 @@
   border: 0;
   border-radius: 3px;
   background: transparent;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: var(--mg-font-body);
   font-size: 16px;
   line-height: 1.4;
   outline: 0;
@@ -146,7 +146,7 @@
   border: 0;
   border-radius: 3px;
   background: #0788a8;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: var(--mg-font-body);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
@@ -172,7 +172,7 @@
   margin: 0 auto 12px;
   border: 1px solid;
   border-radius: 3px;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: var(--mg-font-body);
   font-size: 14px;
   line-height: 1.5;
 }
