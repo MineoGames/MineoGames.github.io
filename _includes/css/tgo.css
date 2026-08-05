@@ -91,17 +91,10 @@ body.tgo > footer {
   width: min(calc(100% - 2 * var(--mg-gutter)), var(--tgo-faq-width));
 }
 
-/* Surface and blur come from .navbar-custom now. The background is restated only
-   to outrank the legacy `background: 0 0` that makes the bar transparent at the
-   top of long pages — TGO wants it opaque from the start. */
+/* TGO uses the shared .navbar-custom component. Only these two are restated, to
+   outrank the legacy desktop rule that strips the border and makes the bar
+   transparent at the top of the page — TGO wants it opaque from the start. */
 .tgo .navbar {
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  min-height: 6.4rem;
-  margin: 0;
-  padding: 1.2rem 0;
-  border: 0;
   border-bottom: 1px solid rgba(229, 229, 229, 0.12);
   background: var(--mg-surface-overlay);
 }
@@ -132,14 +125,6 @@ body.tgo > footer {
 .tgo #nav-logo .tgo-nav-logo {
   width: auto;
   height: 4rem;
-}
-
-/* Nav typography, link sizing and hover now come from .navbar-custom. Only the
-   locale switcher's own box is left. */
-.tgo .navbar-locale {
-  height: 4rem;
-  padding: 1.2rem 1rem;
-  line-height: 1.6rem;
 }
 
 .tgo .navbar-locale a {

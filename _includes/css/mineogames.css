@@ -202,19 +202,27 @@ th {
   margin-inline: 0;
 }
 
+/* 4rem, matching the nav links, so the header row is 40px. Bootstrap's 50px
+   .navbar-brand height was stretching the row and leaving the links 5px above
+   centre. */
 #nav-logo {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   margin-left: 0;
   padding: 0 2rem 0 0;
 }
 
-/* The burger is 40px tall with 8px block margins, stretching the header to 56px
-   while the brand stays 50px and sits at the top. Even them out so both centre on
-   the same row. */
+.navbar-locale {
+  height: 4rem;
+  padding: 1.2rem 1rem;
+  line-height: 1.6rem;
+}
+
+/* The burger is 40px tall with 8px block margins, which would stretch the header
+   past the 40px row. Even them out. */
 .navbar-toggle {
-  margin-block: 5px;
+  margin-block: 0;
 }
 
 /* button */

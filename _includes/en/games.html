@@ -4,7 +4,7 @@
     {% if game.page[page.lang] %}
     <a class="game-banner-link" href="{{ site.baseurl }}{{ game.page[page.lang] }}">
     {% endif %}
-    <article class="game-banner">
+    <article class="game-banner game-banner--{{ game.slug }}">
         <img class="game-banner__image" src="{{ site.baseurl }}/img/{{ game.img }}" loading="lazy" decoding="async" alt="">
         <h2>{{ game.name }}</h2>
     </article>

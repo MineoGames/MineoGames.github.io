@@ -67,11 +67,15 @@ a:focus {
     font-weight: 400;
 }
 
-/* Blurred translucent bar, promoted from TGO. The legacy pages still go
-   transparent at the top of the page and pick this up on scroll — see
+/* Blurred translucent bar, geometry and all, promoted from TGO. Bootstrap's 50px
+   min-height against 40px links left them 5px above centre; 6.4rem with 1.2rem
+   padding gives a 40px row the links fill exactly. Legacy pages still go
+   transparent at the top and pick the surface up on scroll — see
    .top-nav-collapse below. */
 .navbar-custom {
+    min-height: 6.4rem;
     margin-bottom: 0;
+    padding: 1.2rem 0;
     border-bottom: 1px solid rgba(229, 229, 229, 0.12);
     text-transform: uppercase;
     font-family: var(--mg-font-body);
@@ -142,7 +146,6 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
         border-bottom: 0;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -151,7 +154,6 @@ a:focus {
     }
 
     .top-nav-collapse {
-        padding: 0;
         background-color: var(--mg-surface-overlay);
     }
 
@@ -250,10 +252,15 @@ a:focus {
 }
 
 #games .game-banner {
+    --game-accent: var(--mg-color-brand);
     position: relative;
     isolation: isolate;
     overflow: hidden;
     background: var(--mg-color-canvas);
+}
+
+#games .game-banner--shark-hunt {
+    --game-accent: var(--mg-color-action);
 }
 
 #games .game-banner::before {
@@ -288,15 +295,17 @@ a:focus {
     position: absolute;
     inset: 18px;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: inset 4px 0 0 var(--mg-color-brand);
+    box-shadow: inset 4px 0 0 var(--game-accent);
     content: "";
     pointer-events: none;
     transition: border-color var(--mg-transition-fast);
 }
 
-.game-banner-link:hover .game-banner::after,
-.game-banner-link:focus .game-banner::after {
-    border-color: var(--mg-color-brand);
+/* Must carry #games too: the base rule above is ID-scoped, so a class-only hover
+   selector loses the cascade and the colour never changed. */
+#games .game-banner-link:hover .game-banner::after,
+#games .game-banner-link:focus .game-banner::after {
+    border-color: var(--game-accent);
 }
 
 .game-banner-link:hover .game-banner__image,

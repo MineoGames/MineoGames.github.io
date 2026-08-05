@@ -68,11 +68,13 @@ pages_list:
 
 games:
   - name: Vermin Exterminator
+    slug: vermin-exterminator
     img: vermin-exterminator.png
     page:
       en: '/games/vermin-exterminator/'
       fr: '/games/vermin-exterminator-fr/'
   - name: Shark Hunt
+    slug: shark-hunt
     img: shark-hunt.png
     page:
       en: '/games/shark-hunt/'
