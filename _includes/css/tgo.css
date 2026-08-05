@@ -725,11 +725,10 @@ body.tgo > footer {
   transform: rotate(225deg);
 }
 
+/* Layout and button shape now come from the base footer. Only the translucent
+   surfaces, which sit over the fixed background texture, are TGO-specific. */
 .tgo footer {
-  position: relative;
-  z-index: 1;
-  padding: 6rem 0 3.5rem;
-  border-top: 1px solid rgba(229, 229, 229, 0.12);
+  border-top-color: rgba(229, 229, 229, 0.12);
   background: rgba(3, 5, 9, 0.92);
 }
 
@@ -737,30 +736,9 @@ body.tgo > footer {
   width: min(calc(100% - 4rem), 117rem);
 }
 
-.tgo footer .banner-social-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0;
-}
-
-.tgo footer .banner-social-buttons > li {
-  margin: 0;
-  padding: 0;
-}
-
 .tgo footer .btn-default {
-  min-height: 4.2rem;
-  padding: 1rem 1.4rem;
-  border: 1px solid rgba(229, 229, 229, 0.2);
-  border-radius: 0;
+  border-color: rgba(229, 229, 229, 0.2);
   background: rgba(12, 17, 24, 0.82);
-  color: var(--mg-color-text-muted);
-  font-family: var(--mg-font-body);
-  font-size: var(--mg-text-xs);
-  font-weight: 700;
-  letter-spacing: 0;
 }
 
 .tgo footer .btn-default:hover,

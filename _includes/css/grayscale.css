@@ -481,55 +481,51 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: var(--mg-font-heading);
+    font-family: var(--mg-font-body);
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: border-color var(--mg-transition-fast), background-color var(--mg-transition-fast), color var(--mg-transition-fast);
 }
 
+/* Promoted from the TGO footer, which was the only place these were compact,
+   square and filled with the brand colour on hover. */
 .btn-default {
-    border: 1px solid var(--mg-color-link);
-    color: var(--mg-color-link);
-    background-color: transparent;
+    min-height: 4.2rem;
+    padding: 1rem 1.4rem;
+    border: 1px solid var(--mg-color-border);
+    border-radius: 0;
+    background-color: var(--mg-color-surface);
+    color: var(--mg-color-text-muted);
+    font-size: var(--mg-text-xs);
+    font-weight: 700;
+    letter-spacing: 0;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid var(--mg-color-link);
     outline: 0;
-    color: var(--mg-color-canvas);
-    background-color: var(--mg-color-link);
+    border-color: var(--mg-color-brand);
+    background-color: var(--mg-color-brand);
+    color: #fff;
 }
 
+/* Flex wrapping replaces the old per-breakpoint margin and display juggling. */
 ul.banner-social-buttons {
-    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--mg-space-2);
+    margin: 0;
+    padding: 0;
 }
 
 ul.banner-social-buttons li {
-    margin-bottom: 15px;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
+    margin: 0;
+    padding: 0;
 }
 
 footer {
-    padding: 50px 0;
+    padding: var(--mg-space-8) 0 3.5rem;
+    border-top: 1px solid var(--mg-color-border);
 }
 
 footer p {
