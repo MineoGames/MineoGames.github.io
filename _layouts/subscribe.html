@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top">
+    {% include nav.html %}
+
+    <main id="subscribe" class="container content-section">
+      {% include subscribe-form.html locale=page.lang %}
+    </main>
+
+    {% include cookie-consent.html %}
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>

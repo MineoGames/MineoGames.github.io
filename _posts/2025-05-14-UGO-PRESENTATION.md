@@ -139,43 +139,54 @@ Let’s build better games — and finish them too.
 
 ## ❓ FAQ {#faq}
 
-### **What is UGO?**
+<div class="ds-accordion ds-accordion--flush">
 
-**UGO (Ultimate GameDev Organizer)** is a Notion-based productivity system designed specifically for game developers.  
+<details class="ds-accordion__item">
+<summary class="ds-accordion__trigger"><span>What is UGO?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
+<div class="ds-accordion__panel" markdown="1">
+**UGO (Ultimate GameDev Organizer)** is a Notion-based productivity system designed specifically for game developers.
 It helps manage scope, tasks, documentation, sprints, time tracking, and more — all in one place.
+</div>
+</details>
 
----
-
-### **Can UGO help me finish my game?**
-
-That’s exactly what it’s for.  
-UGO is built to move you from "endless prototyping" to actual release.  
+<details class="ds-accordion__item">
+<summary class="ds-accordion__trigger"><span>Can UGO help me finish my game?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
+<div class="ds-accordion__panel" markdown="1">
+That’s exactly what it’s for.
+UGO is built to move you from "endless prototyping" to actual release.
 By structuring your backlog, sprint planning, and time tracking, it keeps you grounded and focused through the full production cycle.
+</div>
+</details>
 
----
-
-### **I’m a solo developer. Isn’t this overkill?**
-
-Not at all. UGO is made for solo devs too.  
+<details class="ds-accordion__item">
+<summary class="ds-accordion__trigger"><span>I’m a solo developer. Isn’t this overkill?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
+<div class="ds-accordion__panel" markdown="1">
+Not at all. UGO is made for solo devs too.
 In fact, it was originally created by one. Everything is flexible and scalable — use only what you need, and hide the rest.
+</div>
+</details>
 
----
-
-### **What’s the difference between UGO and Tiny GameDev Organizer?**
-
-**Tiny GameDev Organizer (TGO)** is a free, simplified version of UGO — great for game jams, fast prototyping, or students starting out.  
+<details class="ds-accordion__item">
+<summary class="ds-accordion__trigger"><span>What’s the difference between UGO and Tiny GameDev Organizer?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
+<div class="ds-accordion__panel" markdown="1">
+**Tiny GameDev Organizer (TGO)** is a free, simplified version of UGO — great for game jams, fast prototyping, or students starting out.
 UGO is the full version, designed for longer or more complex projects with more structure.
 
 🆓 Try TGO here → [Get TGO on Gumroad](https://mineogames.gumroad.com/l/brhdg)
+</div>
+</details>
 
----
-
-### **Do you have a real example of UGO in action?**
-
-Yes — we used UGO to plan and ship our **Global Game Jam 2025** project, *Furotako*.  
+<details class="ds-accordion__item">
+<summary class="ds-accordion__trigger"><span>Do you have a real example of UGO in action?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
+<div class="ds-accordion__panel" markdown="1">
+Yes — we used UGO to plan and ship our **Global Game Jam 2025** project, *Furotako*.
 It helped us stay organized during tight deadlines, from task tracking to post-mortem review.
 
 🎮 Read the full story → [Furotako: Game Jam Post-Mortem](/2025/03/03/VLOG-GGJ2025-FUROTAKO/)
+</div>
+</details>
+
+</div>
 
 ---
 

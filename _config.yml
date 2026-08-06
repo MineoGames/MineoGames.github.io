@@ -17,10 +17,14 @@ t:
     description: 'Bienvenue sur le site officiel de Mineo Games. <br/> Studio de jeux vidéos en Réalité Virtuelle indépendant.'
     download: Téléchargement
     scroll_to_games: Voir nos jeux
+    back_to_top: Revenir en haut
+    subscribe_title: Newsletter Mineo Games
   en:
     description: 'Welcome to the official Mineo Games website. <br/> Indie Virtual Reality Studio.'
     download: Download
     scroll_to_games: See our games
+    back_to_top: Back to top
+    subscribe_title: Mineo Games Newsletter
 
 # Page background. Link and accent colours live in the design system, not here.
 color:
@@ -124,7 +128,7 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260806-7
+      asset_version: 20260807-2
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to Montserrat and Staatliches.

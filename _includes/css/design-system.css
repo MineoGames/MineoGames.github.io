@@ -357,6 +357,17 @@ html {
   transform: translateY(0.4rem);
 }
 
+/* Same affordance pointing back up. The nudge follows the rotation, so it still
+   travels in the direction the chevron points. */
+.ds-scroll-hint--up .ds-scroll-hint__icon {
+  transform: rotate(180deg);
+}
+
+.ds-scroll-hint--up:hover .ds-scroll-hint__icon,
+.ds-scroll-hint--up:focus-visible .ds-scroll-hint__icon {
+  transform: rotate(180deg) translateY(0.4rem);
+}
+
 .ds-badge {
   display: inline-flex;
   align-items: center;
@@ -407,6 +418,68 @@ html {
   color: var(--mg-color-text-muted);
 }
 
+/* Chevron, promoted from the TGO FAQ. Points down when the item is closed. */
+.ds-accordion__icon {
+  flex: 0 0 auto;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-top: 0.25rem solid var(--mg-color-text);
+  border-left: 0.25rem solid var(--mg-color-text);
+  transform: rotate(225deg);
+  transition: transform var(--mg-transition-fast);
+}
+
+/* Flush variant: rules between rows instead of a boxed surface, as on TGO.
+   Its items are native <details>, so the blog gets the accordion without JS —
+   the scripted version is only worth its weight where the page already ships a
+   script. State comes from [open] rather than aria-expanded. */
+.ds-accordion--flush {
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid var(--mg-color-border);
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.ds-accordion--flush .ds-accordion__item {
+  border-bottom: 1px solid var(--mg-color-border);
+}
+
+.ds-accordion--flush .ds-accordion__trigger {
+  padding: var(--mg-space-5) 0;
+  border-bottom: 0;
+  font-size: var(--mg-text-md);
+  list-style: none;
+}
+
+/* Both are needed: Safari still ships the legacy pseudo element. */
+.ds-accordion--flush .ds-accordion__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.ds-accordion--flush .ds-accordion__trigger::marker {
+  content: "";
+}
+
+.ds-accordion--flush .ds-accordion__item[open] .ds-accordion__icon {
+  transform: rotate(45deg);
+}
+
+.ds-accordion--flush .ds-accordion__panel {
+  padding: 0 5rem var(--mg-space-5) 0;
+  font-size: var(--mg-text-md);
+  line-height: 1.55;
+}
+
+.ds-accordion--flush .ds-accordion__panel > :first-child {
+  margin-top: 0;
+}
+
+.ds-accordion--flush .ds-accordion__panel > :last-child {
+  margin-bottom: 0;
+}
+
 /* Second display ramp segment: mobile and desktop slopes differ (41→83, then
    83→130), so a single interpolation would oversize the title around 800px. */
 @media (min-width: 60rem) {
@@ -417,7 +490,8 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   .ds-button,
-  .ds-scroll-hint__icon {
+  .ds-scroll-hint__icon,
+  .ds-accordion__icon {
     transition: none;
   }
 }

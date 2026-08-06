@@ -12,7 +12,10 @@
 
       <section class="text-justify">{{ page.content | markdownify }}</section>
       <br/>
-      <a href="#" class="page-scroll" style="font-size: 5rem;">⬆️</a>
+      <a href="#page-top" class="ds-scroll-hint ds-scroll-hint--up page-scroll">
+        {% include icon-chevrons.html class="ds-scroll-hint__icon" %}
+        <span class="sr-only">{{ site.t[page.lang].back_to_top }}</span>
+      </a>
       <p class="ds-button-row mt-3">
         {% if page.lang == 'fr' %}
         <a class="ds-button ds-button--secondary" href="{{site.baseurl}}/journal/">Voir les autres posts</a>

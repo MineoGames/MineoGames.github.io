@@ -675,17 +675,11 @@ body.tgo > footer {
   margin: 0;
 }
 
-.tgo-accordion__icon {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-top: 0.25rem solid var(--mg-color-text);
-  border-left: 0.25rem solid var(--mg-color-text);
+/* The chevron itself now comes from .ds-accordion__icon, which defaults to the
+   closed direction. Here the state is scripted, so it reads aria-expanded
+   rather than [open]. */
+.tgo .ds-accordion__trigger[aria-expanded="true"] .ds-accordion__icon {
   transform: rotate(45deg);
-  transition: transform 150ms ease;
-}
-
-.tgo .ds-accordion__trigger[aria-expanded="false"] .tgo-accordion__icon {
-  transform: rotate(225deg);
 }
 
 /* Layout, button shape and copyright type now come from the base footer. Only
@@ -1113,8 +1107,3 @@ body.tgo > footer {
 
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .tgo-accordion__icon {
-    transition: none;
-  }
-}
