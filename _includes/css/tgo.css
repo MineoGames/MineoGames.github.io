@@ -1,6 +1,6 @@
+/* Canvas and surface are no longer overridden: the design system adopted this
+   pair as its own. */
 body.tgo {
-  --mg-color-canvas: #030509;
-  --mg-color-surface: #0c1118;
   --mg-color-text: #eff2f3;
   --mg-color-text-muted: #b8c0c9;
   --mg-color-border: #252d39;
@@ -137,7 +137,7 @@ body.tgo {
   place-items: start center;
   /* Painted inside the hero box, so anything past it is hard-clipped. Radii are
      fixed rem, so a % position eventually falls outside: anchor from the edges. */
-  background-image: radial-gradient(ellipse 48rem 36rem at 94% 52%, rgba(47, 110, 229, 0.14) 0%, rgba(47, 72, 255, 0.06) 42%, rgba(47, 72, 255, 0) 74%), radial-gradient(ellipse 34rem 28rem at 4% calc(100% - 30rem), rgba(47, 110, 229, 0.08) 0%, rgba(47, 72, 255, 0.03) 44%, rgba(47, 72, 255, 0) 74%);
+  background-image: radial-gradient(ellipse 48rem 36rem at 94% 52%, rgba(47, 110, 229, 0.07) 0%, rgba(47, 72, 255, 0.03) 42%, rgba(47, 72, 255, 0) 74%), radial-gradient(ellipse 34rem 28rem at 4% calc(100% - 30rem), rgba(47, 110, 229, 0.04) 0%, rgba(47, 72, 255, 0.015) 44%, rgba(47, 72, 255, 0) 74%);
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -199,7 +199,7 @@ body.tgo {
 .tgo-hero__title {
   font-size: var(--mg-text-display);
   line-height: 0.88;
-  text-shadow: 0 -0.5rem 3.5rem rgba(21, 46, 255, 0.2);
+  text-shadow: 0 -0.5rem 3.5rem rgba(21, 46, 255, 0.1);
 }
 
 .tgo-hero__lead {
@@ -216,7 +216,7 @@ body.tgo {
   font-style: normal;
   font-synthesis: none;
   line-height: 0.92;
-  text-shadow: 0 0 5rem rgba(255, 56, 75, 0.25), 0 0 10rem rgba(47, 72, 255, 0.12);
+  text-shadow: 0 0 5rem rgba(255, 56, 75, 0.125), 0 0 10rem rgba(47, 72, 255, 0.06);
   transform: skewX(-4deg) scaleX(0.95) scaleY(1.08);
   transform-origin: center top;
 }
@@ -343,7 +343,7 @@ body.tgo {
   display: block;
   width: 100%;
   height: auto;
-  box-shadow: -1rem 0.8rem 2.4rem rgba(35, 92, 255, 0.18), 0.8rem -0.6rem 2rem rgba(255, 40, 78, 0.1), 0 0 4rem rgba(45, 68, 255, 0.1);
+  box-shadow: -1rem 0.8rem 2.4rem rgba(35, 92, 255, 0.09), 0.8rem -0.6rem 2rem rgba(255, 40, 78, 0.05), 0 0 4rem rgba(45, 68, 255, 0.05);
   transform: rotate(1.2deg);
   transform-origin: center;
 }
@@ -384,11 +384,11 @@ body.tgo {
 }
 
 .tgo-feature:first-child .tgo-feature__surface {
-  box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.28), -6rem 4rem 11rem -8rem rgba(255, 36, 66, 0.24);
+  box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.28), -6rem 4rem 11rem -8rem rgba(255, 36, 66, 0.12);
 }
 
 .tgo-feature:last-child .tgo-feature__surface {
-  box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.28), 6rem 5rem 11rem -8rem rgba(255, 36, 66, 0.18);
+  box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.28), 6rem 5rem 11rem -8rem rgba(255, 36, 66, 0.09);
 }
 
 /* Sized by height, not by a square box. The icons are 1.00, 1.07 and 1.19 in
@@ -402,7 +402,7 @@ body.tgo {
   display: block;
   width: auto;
   height: 13rem;
-  filter: drop-shadow(0 0 1.8rem rgba(255, 56, 75, 0.3)) drop-shadow(0 0 1.2rem rgba(47, 110, 229, 0.24));
+  filter: drop-shadow(0 0 1.8rem rgba(255, 56, 75, 0.15)) drop-shadow(0 0 1.2rem rgba(47, 110, 229, 0.12));
   transform: translateX(-50%);
 }
 
@@ -444,7 +444,7 @@ body.tgo {
   padding: 5rem 8rem 0;
   border: 0;
   background: transparent;
-  box-shadow: -7rem 1rem 12rem -11rem rgba(47, 72, 255, 0.2), 8rem 5rem 12rem -10rem rgba(255, 36, 66, 0.22);
+  box-shadow: -7rem 1rem 12rem -11rem rgba(47, 72, 255, 0.1), 8rem 5rem 12rem -10rem rgba(255, 36, 66, 0.11);
   clip-path: none;
 }
 
@@ -539,7 +539,7 @@ body.tgo {
   left: 50%;
   display: block;
   width: min(56.3rem, 60%);
-  filter: drop-shadow(-2rem 1rem 5rem rgba(47, 72, 255, 0.15)) drop-shadow(2rem 1rem 5rem rgba(255, 36, 66, 0.12));
+  filter: drop-shadow(-2rem 1rem 5rem rgba(47, 72, 255, 0.075)) drop-shadow(2rem 1rem 5rem rgba(255, 36, 66, 0.06));
   transform: translateX(-50%);
 }
 
@@ -610,7 +610,7 @@ body.tgo {
   max-width: 138rem;
   margin: 0 auto;
   padding: 7.5rem 5rem 6rem;
-  box-shadow: 8rem 6rem 10rem -7rem rgba(255, 36, 66, 0.34), -6rem -3rem 10rem -8rem rgba(47, 72, 255, 0.16);
+  box-shadow: 8rem 6rem 10rem -7rem rgba(255, 36, 66, 0.17), -6rem -3rem 10rem -8rem rgba(47, 72, 255, 0.08);
 }
 
 .tgo-faq__heading .tgo-section__title {

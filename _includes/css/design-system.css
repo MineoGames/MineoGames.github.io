@@ -14,8 +14,10 @@ html {
 }
 
 :root {
-  --mg-color-canvas: #0c1118;
-  --mg-color-surface: #171b24;
+  /* Near black. #0c1118 read as washed out next to the artwork; this is the
+     value TGO already used, now the single canvas for the site. */
+  --mg-color-canvas: #030509;
+  --mg-color-surface: #0c1118;
   --mg-color-text: #f5f7fa;
   --mg-color-text-muted: #b7bfca;
   --mg-color-border: #303846;
