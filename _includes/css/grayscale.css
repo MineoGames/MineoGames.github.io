@@ -228,9 +228,18 @@ a:focus {
     margin: 0;
 }
 
-/* page.category was only ever emitted into JSON-LD; surface it. */
+/* page.category was only ever emitted into JSON-LD; surface it. It sits in the
+   key art's bottom-right corner rather than under the title, so it reads as a
+   label on the image instead of a subtitle. */
+#game-detail .game-banner {
+    position: relative;
+}
+
 .game-banner__category {
-    margin: var(--mg-space-4) 0 0;
+    position: absolute;
+    right: var(--mg-space-5);
+    bottom: var(--mg-space-5);
+    margin: 0;
 }
 
 .game-banner-link {
