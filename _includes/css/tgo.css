@@ -614,7 +614,7 @@ body.tgo {
 }
 
 .tgo-faq__heading .tgo-section__title {
-  color: var(--mg-color-action);
+  color: var(--mg-color-action-text);
   font-size: var(--mg-text-3xl);
   text-align: left;
 }

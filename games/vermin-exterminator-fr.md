@@ -1,6 +1,7 @@
 ---
 layout: game
 title: Vermin Exterminator
+description: Vermin Exterminator est un jeu VR d'action et de simulation, finaliste du top 5 des meilleurs prototypes VR au Game Development World Championship 2021.
 category: Action Game, Simulation Game
 iframe: https://itch.io/embed/822005
 img: vermin-exterminator.png

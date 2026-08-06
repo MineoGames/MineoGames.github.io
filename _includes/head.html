@@ -4,10 +4,22 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta http-equiv="content-language" content="{{ page.lang }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% comment %}
+  38 of the 44 posts have no description of their own. Falling back to their own
+  opening lines gives each one something specific; the site-wide sentence was
+  being served as the description of 50 pages out of 60.
+  {% endcomment %}
+  {% if page.description %}
+    {% assign meta_description = page.description %}
+  {% elsif page.excerpt %}
+    {% assign meta_description = page.excerpt | strip_html | normalize_whitespace | truncate: 155 %}
+  {% else %}
+    {% assign meta_description = site.description %}
+  {% endif %}
+  <meta name="description" content="{{ meta_description | strip | escape }}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{{ meta_description | strip | escape }}">
   <meta property="og:type" content="website">
   {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
   <meta name="creator" content="{{ site.organization }}">
@@ -17,11 +29,11 @@
   default-src 'self' data:;
   img-src 'self' data: https://mineogames.github.io https://s3.amazonaws.com https://i.imgur.com https://imgur.com/ https://user-images.githubusercontent.com/ https://www.google.fr https://www.google.com https://www.gstatic.com https://stats.g.doubleclick.net https://digitalasset.intuit.com https://mcusercontent.com;
   font-src 'self' https://use.typekit.net https://p.typekit.net https://fonts.gstatic.com https://assets.brevo.com data:;
-  style-src 'self' 'unsafe-inline' https://use.typekit.net https://fonts.googleapis.com https://sibforms.com;
-  style-src-elem 'self' 'unsafe-inline' https://use.typekit.net https://fonts.googleapis.com https://sibforms.com;
+  style-src 'self' 'unsafe-inline' https://use.typekit.net https://p.typekit.net https://fonts.googleapis.com https://sibforms.com;
+  style-src-elem 'self' 'unsafe-inline' https://use.typekit.net https://p.typekit.net https://fonts.googleapis.com https://sibforms.com;
   script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.freeprivacypolicy.com https://sibforms.com https://www.google.com https://www.gstatic.com;
   script-src-elem 'self' 'unsafe-inline' https://www.freeprivacypolicy.com https://*.clarity.ms https://www.googletagmanager.com https://sibforms.com https://www.google.com https://www.gstatic.com;
-  connect-src 'self' https://stats.g.doubleclick.net https://*.clarity.ms https://*.sibforms.com https://www.google.com https://www.gstatic.com;
+  connect-src 'self' https://stats.g.doubleclick.net https://*.google-analytics.com https://*.analytics.google.com https://*.clarity.ms https://*.sibforms.com https://www.google.com https://www.gstatic.com;
   frame-src https://www.google.com https://recaptcha.google.com;
   form-action 'self' https://*.sibforms.com;
 ">
@@ -84,7 +96,7 @@
 
 
   <!-- CookieConsent (https) -->
-  <script type="text/javascript" defer src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" defer src="https://www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
 
   <!-- External JS initializers -->
   <script defer src="{{ '/js/cookieconsent-init.js' | prepend: site.baseurl }}"></script>

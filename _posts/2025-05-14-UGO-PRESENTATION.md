@@ -73,7 +73,7 @@ That project? UGO itself.😁
 
 Initially, I made it for me. But I realized others were struggling with the same things. So I turned it into a template anyone can use.
 
-<img src="https://i.imgur.com/SdsmPSe.png" class="medium"/>
+<img src="https://i.imgur.com/SdsmPSe.png" class="medium" alt="The Ultimate GameDev Organizer dashboard in Notion"/>
 ---
 
 ## ✅ What UGO Actually Does {#what-it-actually-does}

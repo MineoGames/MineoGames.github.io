@@ -9,9 +9,11 @@
    The canvas is no longer overridden: it was pure black, piped in from
    _config.yml > color.primary-dark, which was the last colour living outside the
    design system. It now inherits --mg-color-canvas from :root. */
+/* --mg-color-border is no longer overridden either: it was rgba(255,255,255,.3),
+   which composites to #4e4f52 on the canvas — lighter than both the design system
+   and TGO. It now inherits :root, like the canvas and surface before it. */
 body {
     --mg-color-text: #fff;
-    --mg-color-border: rgba(255, 255, 255, 0.3);
     width: 100%;
     height: 100%;
     font-family: var(--mg-font-body);

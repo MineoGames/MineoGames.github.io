@@ -15,6 +15,19 @@ h1 {
   font-size: var(--mg-text-4xl);
 }
 
+/* The home used to carry five h1 and no page-level one. Sections are h2 now; the
+   class keeps the display size they had. */
+.section-title {
+  font-family: var(--mg-font-display);
+  font-size: var(--mg-text-4xl);
+}
+
+/* The hero logo is the home's h1. It wraps an image, so it only needs the
+   heading rule's margin neutralised. */
+.brand-title {
+  margin: 0;
+}
+
 h2 {
   font-size: var(--mg-text-3xl);
 }
@@ -207,9 +220,21 @@ th {
 }
 
 .navbar-locale {
+  display: flex;
   height: 4rem;
-  padding: 1.2rem 1rem;
+  align-items: center;
+  padding: 0 0.6rem;
   line-height: 1.6rem;
+}
+
+/* The links themselves were 15x17, under the 24x24 minimum of WCAG 2.2 AA.
+   The padding grows the hit area without moving the text. */
+.navbar-locale a {
+  display: inline-flex;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* The burger is 40px tall with 8px block margins, which would stretch the header

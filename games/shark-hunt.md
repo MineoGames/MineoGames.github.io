@@ -1,6 +1,7 @@
 ---
 layout: game
 title: Shark Hunt
+description: Shark Hunt is a VR action game where you hunt sharks underwater. Play the prototype, free for Patreon members.
 category: Action Game
 img: shark-hunt.png
 lang: en

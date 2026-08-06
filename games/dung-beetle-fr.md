@@ -1,6 +1,7 @@
 ---
 layout: game
 title: Dung Beetle
+description: Dung Beetle est un jeu 3D né de la game jam Ludum Dare 38 : guidez un bousier qui ramene sa boule de bouse jusqu'a chez lui.
 iframe: https://widgets.gamejolt.com/package/v1?key=iaWzXaGs
 img: dungbeetle.png
 lang: fr

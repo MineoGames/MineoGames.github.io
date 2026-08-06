@@ -36,6 +36,10 @@ html {
      sat at 2.3:1, well under AA. */
   --mg-color-link: var(--mg-color-action);
   --mg-color-link-hover: #6ba5f2;
+  /* --mg-color-action is a button fill: as text on the dark canvas it only
+     reaches 4.1:1, under AA for normal-size text. This is the same hue lifted
+     to ~7:1, for headings and accents that are type rather than surface. */
+  --mg-color-action-text: #7aabf7;
 
   /* Body is self-hosted Manrope. Headings and display are Good Pro, served from
      Adobe Fonts — set adobe_fonts_kit in _config.yml. Until the kit is set, the
