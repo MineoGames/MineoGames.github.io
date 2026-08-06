@@ -128,7 +128,7 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260807-3
+      asset_version: 20260807-4
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to Montserrat and Staatliches.

@@ -81,6 +81,10 @@ html {
   --mg-transition-base: 300ms ease;
   --mg-transition-slow: 500ms ease;
 
+  /* Textured canvas. Path is relative to /style.css, served from root. */
+  --mg-canvas-texture: url("img/background-texture.jpg");
+  --mg-canvas-veil: rgba(3, 5, 9, 0.8);
+
   --mg-frame-background: var(--mg-color-surface);
   --mg-frame-border: var(--mg-color-border);
   --mg-frame-accent: var(--mg-color-brand);
@@ -96,6 +100,23 @@ html {
   --mg-check-box: var(--mg-color-action);
   --mg-check-tick-color: var(--mg-color-canvas);
   --mg-check-shape: polygon(43% 64%, 15% 36%, 8% 43%, 43% 78%, 92% 29%, 85% 22%);
+}
+
+/* Full-bleed textured canvas, for the pages that carry the studio's flagship
+   content: products and games. Fixed, so a long page keeps one continuous
+   backdrop rather than a scrolling tile. z-index -1 places it above the body
+   background and below every in-flow child, so no child needs a z-index of its
+   own — listing them is what makes this kind of backdrop brittle. */
+body.ds-textured::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background-image: linear-gradient(var(--mg-canvas-veil), var(--mg-canvas-veil)), var(--mg-canvas-texture);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  pointer-events: none;
 }
 
 .ds-container {
