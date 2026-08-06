@@ -170,8 +170,6 @@ Organisation, planification, rôle de chacun, jusqu’au post-mortem.
 
 </div>
 
----
-
 {% include fr/subscribe-form.html title="Reçois plus d'articles Game Dev comme celui-ci" %}
 
 ---

@@ -188,8 +188,6 @@ It helped us stay organized during tight deadlines, from task tracking to post-m
 
 </div>
 
----
-
 
 <script type="application/ld+json">
 {
