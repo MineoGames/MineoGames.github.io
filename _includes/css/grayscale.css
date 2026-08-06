@@ -5,9 +5,11 @@
  */
 
 /* Legacy theme. Overrides the design system defaults for every page except /tgo/,
-   which carries its own body.tgo block. Colours come from _config.yml > color. */
+   which carries its own body.tgo block.
+   The canvas is no longer overridden: it was pure black, piped in from
+   _config.yml > color.primary-dark, which was the last colour living outside the
+   design system. It now inherits --mg-color-canvas from :root. */
 body {
-    --mg-color-canvas: {{ site.color.primary-dark }};
     --mg-color-text: #fff;
     --mg-color-border: rgba(255, 255, 255, 0.3);
     width: 100%;
