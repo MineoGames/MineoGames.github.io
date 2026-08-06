@@ -11,7 +11,7 @@
 				aria-expanded="false"
 				aria-label="{% if page.lang == 'fr' %}Ouvrir le menu{% else %}Open navigation{% endif %}"
 			>
-				<i class="fa fa-bars" aria-hidden="true"></i>
+				{% include icon.html name="bars" %}
 			</button>
 			{% if page.section-type == "index" %}
 			<a

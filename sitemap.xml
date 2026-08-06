@@ -1,0 +1,21 @@
+---
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% comment %}
+Written in Liquid rather than pulled from jekyll-sitemap: the repo has no Gemfile,
+so a plugin dependency would only build where the gem happens to be installed.
+Only pretty URLs are listed, which excludes assets, style.css and /404.html.
+{% endcomment %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign documents = site.pages | concat: site.posts %}
+{% for document in documents %}
+{% assign last_character = document.url | slice: -1 %}
+{% if last_character == "/" and document.sitemap != false %}
+  <url>
+    <loc>{{ document.url | prepend: site.baseurl | prepend: site.url }}</loc>
+    {% if document.date %}<lastmod>{{ document.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
+{% endif %}
+{% endfor %}
+</urlset>

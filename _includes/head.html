@@ -29,6 +29,24 @@
 
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% comment %}
+  Every translated page already declares the same `ref` as its twin; this is what
+  turns that pairing into something search engines can read. Without it the eight
+  EN/FR pairs compete as duplicates. x-default points at English.
+  {% endcomment %}
+  {% if page.ref %}
+  {% assign translations = site.pages | concat: site.posts | where: "ref", page.ref | sort: "lang" %}
+  {% if translations.size > 1 %}
+  {% for translation in translations %}
+  <link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% endfor %}
+  {% assign fallback = translations | where: "lang", "en" | first %}
+  {% if fallback %}
+  <link rel="alternate" hreflang="x-default" href="{{ fallback.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+  {% endif %}
+  {% endif %}
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="apple-touch-icon" href="{{ site.baseurl}}/apple-touch-icon.png">
 
@@ -39,7 +57,12 @@
   {% if page.stylesheet %}<link rel="stylesheet" href="{{ page.stylesheet | relative_url }}{% if page.asset_version %}?v={{ page.asset_version }}{% endif %}">{% endif %}
 
   <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet.-->
-  {% unless page.disable_default_preload %}<link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">{% endunless %}
+  {% comment %}
+  Opt-in, not opt-out. .intro is painted by _layouts/default.html alone, so 56 of
+  the 60 pages were preloading a 220 KB image at high priority and never showing
+  it — competing with their own LCP.
+  {% endcomment %}
+  {% if page.section-type == "index" %}<link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">{% endif %}
   <link rel="preload" href="{{ page.preload_font | default: '/resources/font/Manrope-VariableFont_wght.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
 
   <!-- Fonts. Body is self-hosted Manrope. Headings and display want Good Pro, served
@@ -55,11 +78,9 @@
   {% endunless %}
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
-  <!-- Font Awesome-->
-  {% unless page.minimal_icons %}
-  <link rel="stylesheet" href="{{ "/resources/font-awesome/css/all.min.css" | prepend: site.baseurl }}">
-  <script data-cookie-consent="strictly-necessary" defer src="{{ "/resources/font-awesome/js/all.min.js" | prepend: site.baseurl }}"></script>
-  {% endunless %}
+  <!-- Icons are inlined per use — see _includes/icon.html. Font Awesome used to be
+       pulled in whole here: 104 KB of CSS plus 1.5 MB of JS, on every page, for
+       eight glyphs. -->
 
 
   <!-- CookieConsent (https) -->

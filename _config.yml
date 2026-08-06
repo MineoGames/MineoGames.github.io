@@ -124,7 +124,7 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260807-6
+      asset_version: 20260807-7
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to Montserrat and Staatliches.
@@ -134,8 +134,9 @@ adobe_fonts_kit: "fnq2lgu"
 markdown: kramdown
 permalink: pretty
 
-gems:
-  - jekyll-sitemap
+# No plugins. sitemap.xml and robots.txt are rendered in Liquid — the previous
+# `gems:` key was the Jekyll 2 spelling and the gem was never installed, so the
+# site shipped without either file.
 
 exclude:
   - AGENTS.md
@@ -144,3 +145,5 @@ exclude:
   - img/Adobe Premiere Pro Auto-Save
   - img/GifSizeMaker_1.prproj
   - src
+  # 72 MB of vendored library, unreferenced since the icons were inlined.
+  - resources/font-awesome
