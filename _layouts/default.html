@@ -2,10 +2,15 @@
 <html lang="{{ page.lang | default: 'en' }}">
   {% include head.html %}
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {% include nav.html %} {% include header.html %} {% for p in
-    site.pages_list[page.lang].pages %} {% assign path = page.lang | append: '/'
-    | append: p[1] | append: '.html' %} {% include {{ path }} %} {% endfor %} {%
-    include cookie-consent.html %} {% include footer.html %} {% include js.html
+    {% include nav.html %}
+    <main>
+      {% include header.html %}
+      {% for p in site.pages_list[page.lang].pages %}
+      {% assign path = page.lang | append: '/' | append: p[1] | append: '.html' %}
+      {% include {{ path }} %}
+      {% endfor %}
+    </main>
+    {% include cookie-consent.html %} {% include footer.html %} {% include js.html
     %}
     <script type="application/ld+json">
       {

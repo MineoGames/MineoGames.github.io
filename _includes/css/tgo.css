@@ -1,12 +1,10 @@
-/* Canvas and surface are no longer overridden: the design system adopted this
-   pair as its own. */
+/* Canvas, surface and the action blues are no longer overridden: the design
+   system adopted TGO's values as its own. */
 body.tgo {
   --mg-color-text: #eff2f3;
   --mg-color-text-muted: #b8c0c9;
   --mg-color-border: #252d39;
   --mg-color-brand: #ff384b;
-  --mg-color-action: #2f6ee5;
-  --mg-color-action-hover: #1f57c6;
   --mg-surface-overlay: rgba(3, 5, 9, 0.9);
   --mg-font-heading: var(--mg-font-body);
   --mg-frame-background: rgba(12, 17, 24, 0.82);
@@ -314,7 +312,7 @@ body.tgo {
 
 .tgo-copy-card__accent {
   display: block;
-  color: var(--mg-color-action);
+  color: var(--mg-color-action-text);
 }
 
 .tgo-copy-card > p {
@@ -490,7 +488,7 @@ body.tgo {
 }
 
 .tgo-profile__card h3 span {
-  color: var(--mg-color-action);
+  color: var(--mg-color-action-text);
 }
 
 .tgo-profile__card p {

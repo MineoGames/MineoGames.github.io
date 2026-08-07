@@ -48,5 +48,43 @@
   var AUTOHIDE = Boolean(0);
 </script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-<script defer src="https://www.google.com/recaptcha/api.js?render={{ site.data.newsletter.recaptcha_site_key }}&amp;hl={{ page.lang | default: 'en' }}"></script>
+{% comment %}
+reCAPTCHA is 332 KB, the heaviest single resource on the home page, loaded up
+front for a form that sits below the fold. It now loads when the form comes
+within 400px of the viewport, or on first focus — either way well before a
+submit, since every field is required. Brevo's own script stays eager: it is
+what hides the status panels, and loading it late would flash them.
+{% endcomment %}
+<script>
+  (function () {
+    var form = document.getElementById("sib-form");
+    if (!form) return;
+
+    var requested = false;
+    function loadRecaptcha() {
+      if (requested) return;
+      requested = true;
+      var script = document.createElement("script");
+      script.src = "https://www.google.com/recaptcha/api.js?render={{ site.data.newsletter.recaptcha_site_key }}&hl={{ page.lang | default: 'en' }}";
+      document.head.appendChild(script);
+    }
+
+    form.addEventListener("focusin", loadRecaptcha, { once: true });
+
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            loadRecaptcha();
+            observer.disconnect();
+            return;
+          }
+        }
+      }, { rootMargin: "400px" });
+      observer.observe(form);
+    } else {
+      loadRecaptcha();
+    }
+  })();
+</script>
 {% endif %}

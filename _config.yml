@@ -70,12 +70,16 @@ games:
   - name: Vermin Exterminator
     slug: vermin-exterminator
     img: vermin-exterminator.png
+    img_width: 1850
+    img_height: 200
     page:
       en: '/games/vermin-exterminator/'
       fr: '/games/vermin-exterminator-fr/'
   - name: Shark Hunt
     slug: shark-hunt
     img: shark-hunt.png
+    img_width: 1850
+    img_height: 200
     page:
       en: '/games/shark-hunt/'
       fr: '/games/shark-hunt-fr/'
@@ -124,10 +128,10 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260807-8
+      asset_version: 20260807-10
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
-# font stacks fall back to Montserrat and Staatliches.
+# font stacks fall back to system faces.
 adobe_fonts_kit: "fnq2lgu"
 
 # Build settings
