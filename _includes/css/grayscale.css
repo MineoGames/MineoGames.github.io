@@ -211,8 +211,12 @@ a:focus {
 }
 
 @media(min-width:767px) {
+    /* Viewport units, not height:100%. The percentage resolved up the chain
+       html > body > .intro; wrapping the sections in <main> for the landmark
+       broke that chain and collapsed the hero to its content height. svh also
+       spares mobile browsers the jump when the address bar retracts. */
     .intro {
-        height: 100%;
+        height: 100svh;
         padding: 0;
     }
 
