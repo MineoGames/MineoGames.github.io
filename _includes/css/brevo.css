@@ -231,7 +231,9 @@
 }
 
 @media (max-width: 37.5rem) {
-  .mg-newsletter__panel {
+  /* Same ID as the base rule: without it this loses to #sib-container and the
+     panel keeps its 32px desktop padding on a 375px screen. */
+  #sib-container.mg-newsletter__panel {
     padding: var(--mg-space-5) var(--mg-space-4);
   }
 
