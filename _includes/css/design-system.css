@@ -35,10 +35,12 @@ html {
 
   /* --mg-color-action is a button fill. As type on the dark canvas it only
      reaches 4.25:1, so anything that is text rather than surface — headings,
-     accents, links — uses this lighter cut of the same hue instead (~8.5:1). */
-  --mg-color-action-text: #7aabf7;
+     accents, links — uses this brighter cut of the same hue instead.
+     It clears AA at 5.15:1 without washing out: a first attempt at 8.5:1 was
+     accessible and looked bleached. Contrast is a floor, not a target. */
+  --mg-color-action-text: #2f80ed;
   --mg-color-link: var(--mg-color-action-text);
-  --mg-color-link-hover: #a8c8fa;
+  --mg-color-link-hover: #5b9cf5;
 
   /* Body is self-hosted Manrope. Headings and display are Good Pro, served from
      Adobe Fonts — set adobe_fonts_kit in _config.yml. Until the kit is set, the

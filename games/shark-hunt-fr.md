@@ -3,7 +3,7 @@ layout: game
 title: Shark Hunt
 description: Shark Hunt est un jeu d'action en réalité virtuelle où vous chassez les requins. Prototype jouable, offert aux membres Patreon.
 category: Action Game
-img: shark-hunt.png
+img: shark-hunt-1850.webp
 lang: fr
 ref: shark-hunt
 brevo_form: true

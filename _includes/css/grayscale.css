@@ -173,12 +173,28 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: var(--mg-color-text);
-    background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
+    /* WebP, in three widths. A CSS background cannot use srcset, so the choice is
+       made here and mirrored by the preload links in head.html — they must stay
+       in step or the browser fetches two files. 216 KB JPEG became 17/53/91 KB. */
+    background: url(/img/intro-bg-1920.webp) no-repeat bottom center scroll;
     background-color: var(--mg-color-canvas);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+/* Mirrors the preload media queries in head.html. */
+@media (max-width: 640px) {
+    .intro {
+        background-image: url(/img/intro-bg-640.webp);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1280px) {
+    .intro {
+        background-image: url(/img/intro-bg-1280.webp);
+    }
 }
 
 .intro .intro-body {

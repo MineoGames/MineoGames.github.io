@@ -69,7 +69,7 @@ pages_list:
 games:
   - name: Vermin Exterminator
     slug: vermin-exterminator
-    img: vermin-exterminator.png
+    img: vermin-exterminator
     img_width: 1850
     img_height: 200
     page:
@@ -77,7 +77,7 @@ games:
       fr: '/games/vermin-exterminator-fr/'
   - name: Shark Hunt
     slug: shark-hunt
-    img: shark-hunt.png
+    img: shark-hunt
     img_width: 1850
     img_height: 200
     page:
@@ -87,7 +87,7 @@ games:
 products:
   - name: Tiny GameDev Organizer
     slug: tgo
-    img: products/tgo-home-banner-v2.webp
+    img: products/tgo-home-banner-v2
     img_width: 2172
     img_height: 724
     eyebrow:
@@ -104,7 +104,7 @@ products:
       fr: '/products/tgo-fr/'
   - name: Ultimate GameDev Organizer
     slug: ugo
-    img: products/ugo-home-banner-v2.webp
+    img: products/ugo-home-banner-v2
     img_width: 2172
     img_height: 724
     eyebrow:
@@ -128,7 +128,7 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260807-11
+      asset_version: 20260807-13
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to system faces.

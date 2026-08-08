@@ -74,7 +74,11 @@
   the 60 pages were preloading a 220 KB image at high priority and never showing
   it — competing with their own LCP.
   {% endcomment %}
-  {% if page.section-type == "index" %}<link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg.jpg" type="image/jpeg">{% endif %}
+  {% if page.section-type == "index" %}
+  <link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg-640.webp" type="image/webp" media="(max-width: 640px)">
+  <link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg-1280.webp" type="image/webp" media="(min-width: 641px) and (max-width: 1280px)">
+  <link rel="preload" fetchpriority="high" as="image" href="{{ site.baseurl }}/img/intro-bg-1920.webp" type="image/webp" media="(min-width: 1281px)">
+  {% endif %}
   <link rel="preload" href="{{ page.preload_font | default: '/resources/font/Manrope-VariableFont_wght.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
 
   <!-- Fonts. Body is self-hosted Manrope, headings and display are Good Pro from

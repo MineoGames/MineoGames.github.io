@@ -3,7 +3,7 @@ layout: game
 title: Nest Guard
 description: "Nest Guard est un jeu VR de sentinelle préhistorique : incarnez un dinosaure qui défend ses œufs contre tous les prédateurs."
 iframe: https://itch.io/embed/620539
-img: nestguard.png
+img: nestguard-1850.webp
 lang: fr
 ref: nest-guard
 contentfile: fr/nest-guard-content.md

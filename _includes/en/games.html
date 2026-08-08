@@ -5,7 +5,11 @@
     <a class="game-banner-link" href="{{ site.baseurl }}{{ game.page[page.lang] }}">
     {% endif %}
     <article class="game-banner game-banner--{{ game.slug }}">
-        <img class="game-banner__image" src="{{ site.baseurl }}/img/{{ game.img }}" width="{{ game.img_width }}" height="{{ game.img_height }}" loading="lazy" decoding="async" alt="">
+        <img class="game-banner__image"
+            src="{{ site.baseurl }}/img/{{ game.img }}-1280.webp"
+            srcset="{{ site.baseurl }}/img/{{ game.img }}-640.webp 640w, {{ site.baseurl }}/img/{{ game.img }}-1280.webp 1280w, {{ site.baseurl }}/img/{{ game.img }}-1850.webp 1850w"
+            sizes="(min-width: 1320px) 1265px, 100vw"
+            width="{{ game.img_width }}" height="{{ game.img_height }}" loading="lazy" decoding="async" alt="">
         <h2>{{ game.name }}</h2>
     </article>
     {% if game.page[page.lang] %}

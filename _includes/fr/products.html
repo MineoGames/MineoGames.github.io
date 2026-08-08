@@ -6,7 +6,11 @@
     <a class="product-banner-link" href="{{ site.baseurl }}{{ product.page[page.lang] }}">
         {% endif %}
         <article class="product-banner product-banner--{{ product.slug }}">
-            <img class="product-banner__image" src="{{ site.baseurl }}/img/{{ product.img }}{% if page.asset_version %}?v={{ page.asset_version }}{% endif %}" width="{{ product.img_width }}" height="{{ product.img_height }}" loading="lazy" decoding="async" alt="">
+            <img class="product-banner__image"
+                src="{{ site.baseurl }}/img/{{ product.img }}-1280.webp"
+                srcset="{{ site.baseurl }}/img/{{ product.img }}-640.webp 640w, {{ site.baseurl }}/img/{{ product.img }}-1280.webp 1280w, {{ site.baseurl }}/img/{{ product.img }}.webp 2172w"
+                sizes="(min-width: 1320px) 1265px, 100vw"
+                width="{{ product.img_width }}" height="{{ product.img_height }}" loading="lazy" decoding="async" alt="">
             <div class="product-banner__content">
                 <p class="product-banner__eyebrow">{{ product.eyebrow[page.lang] }}</p>
                 <h2>{{ product.name }}</h2>
