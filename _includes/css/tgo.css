@@ -797,6 +797,14 @@ body.tgo {
 }
 
 @media (max-width: 48rem) {
+  /* The character callouts stack under the artwork on mobile, so the conversion
+     section ends flush with the FAQ frame — and that frame's corner bracket
+     overhangs upward, landing on the last callout. Desktop does not hit this:
+     the callouts sit beside the character, well above the section edge. */
+  .tgo .tgo-section--conversion {
+    padding-bottom: calc(var(--mg-section-gap) * 1.2);
+  }
+
   .tgo .navbar {
     min-height: 5.6rem;
     padding: 0.8rem 0;

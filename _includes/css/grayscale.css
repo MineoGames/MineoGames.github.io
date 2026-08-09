@@ -234,6 +234,15 @@ a:focus {
     padding-top: calc(var(--mg-section-gap) * 1.8);
 }
 
+/* Bootstrap's container gives 15px, which is tight against 18px body copy on a
+   375px screen. Only the text sections: #games and #products are not containers
+   because their banners are meant to run full bleed. */
+@media (max-width: 767px) {
+    .container.content-section {
+        padding-inline: var(--mg-space-5);
+    }
+}
+
 .game-banner,
 .product-banner {
     width: 100%;

@@ -81,6 +81,18 @@
   transition: border-color var(--mg-transition-fast);
 }
 
+/* Hover lifts the border without committing the accent, which stays the signal
+   for focus. Pointer devices only: on touch, :hover sticks after a tap. */
+@media (hover: hover) {
+  .mg-newsletter .entry__field:hover {
+    border-color: var(--mg-color-text-muted);
+  }
+
+  .mg-newsletter .checkbox__label:hover .ds-check {
+    border-color: var(--mg-color-text-muted);
+  }
+}
+
 .mg-newsletter .entry__field:focus-within {
   border-color: var(--mg-color-action);
   box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.28);
@@ -223,6 +235,20 @@
   border-color: #3ddc97;
   background: rgba(61, 220, 151, 0.12);
   color: var(--mg-color-text);
+}
+
+/* Brevo hides this spinner and reveals it on submit. Their stylesheet only loads
+   on pages that set brevo_form, so on the 44 blog posts the 512-unit viewBox had
+   nothing constraining it and filled the button: 311x199 instead of 287x48. */
+.mg-newsletter .sib-hide-loader-icon {
+  display: none;
+}
+
+.mg-newsletter .sib-form-block__button svg {
+  width: 1em;
+  height: 1em;
+  margin-right: var(--mg-space-2);
+  fill: currentColor;
 }
 
 .mg-newsletter .g-recaptcha-v3,
