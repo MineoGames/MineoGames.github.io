@@ -88,8 +88,17 @@
     border-color: var(--mg-color-text-muted);
   }
 
-  .mg-newsletter .checkbox__label:hover .ds-check {
+  /* Split by state. A single rule outranked :checked + .ds-check and painted a
+     grey border onto the blue fill, which read as the box changing state. An
+     unchecked box lifts its border; a checked one deepens its fill, the same
+     direction the buttons take. */
+  .mg-newsletter .checkbox__label:hover .input_replaced:not(:checked) + .ds-check {
     border-color: var(--mg-color-text-muted);
+  }
+
+  .mg-newsletter .checkbox__label:hover .input_replaced:checked + .ds-check {
+    border-color: var(--mg-color-action-hover);
+    background: var(--mg-color-action-hover);
   }
 }
 
