@@ -229,6 +229,48 @@ a:focus {
     }
 }
 
+/* 404. Fills the viewport under the fixed navbar so the page reads as a full
+   stop rather than a short paragraph floating above a footer. */
+.error-page {
+    display: grid;
+    min-height: 100svh;
+    align-items: center;
+    padding-block: var(--mg-section-gap);
+}
+
+.error-page__inner {
+    text-align: center;
+}
+
+/* The number is the artwork. Same display ramp as the hero title, in the brand
+   colour, with the glow the art direction uses on its accent type. */
+.error-page__code {
+    margin: 0;
+    color: var(--mg-color-brand);
+    font-family: var(--mg-font-display);
+    font-size: var(--mg-text-display);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 0.85;
+    text-shadow: 0 0 5rem rgba(255, 56, 75, 0.125), 0 0 10rem rgba(47, 72, 255, 0.06);
+}
+
+.error-page__title {
+    margin: var(--mg-space-5) 0 0;
+    font-size: var(--mg-text-4xl);
+}
+
+.error-page__text {
+    max-width: 52rem;
+    margin: var(--mg-space-4) auto 0;
+    color: var(--mg-color-text-muted);
+    font-size: var(--mg-text-lg);
+}
+
+.error-page__actions {
+    margin-top: var(--mg-space-7);
+}
+
 /* Was a hard 100px/200px step at 767px; now scales with the section rhythm. */
 .content-section {
     padding-top: calc(var(--mg-section-gap) * 1.8);

@@ -4,10 +4,45 @@ section-type: error
 lang: en
 ref: 404
 permalink: 404.html
+title: "Page not found — Mineo Games"
+description: "That page does not exist. Head back to the studio, or pick up a devlog on the blog."
+sitemap: false
 ---
 
-404
-===
-Not found ! The page you requested does not exist 😿 ...
+<div class="ds-container error-page__inner">
+  <p class="error-page__code" aria-hidden="true">404</p>
 
-[Click here to return to the homepage](/)
+  <h1 class="error-page__title" data-en="Page not found" data-fr="Page introuvable">Page not found</h1>
+
+  <p class="error-page__text"
+     data-en="This one got away. The link may be old, or the page may have moved."
+     data-fr="Celle-ci nous a échappé. Le lien est peut-être ancien, ou la page a changé d'adresse.">
+    This one got away. The link may be old, or the page may have moved.
+  </p>
+
+  <p class="ds-button-row error-page__actions">
+    <a class="ds-button ds-button--primary" href="{{ '/' | prepend: site.baseurl }}"
+       data-fr="Retour au studio" data-fr-href="{{ '/accueil/' | prepend: site.baseurl }}">Back to the studio</a>
+    <a class="ds-button ds-button--secondary" href="{{ '/blog/' | prepend: site.baseurl }}"
+       data-fr="Lire le journal" data-fr-href="{{ '/journal/' | prepend: site.baseurl }}">Read the blog</a>
+  </p>
+</div>
+
+{% comment %}
+One 404 is served for every path, both languages included, so the copy carries
+both and picks at runtime. English is what sits in the markup, so it is also
+what shows without JavaScript.
+{% endcomment %}
+<script>
+  (function () {
+    var path = location.pathname;
+    if (!/^\/(accueil|journal)\b/.test(path) && !/-fr\/?$/.test(path)) return;
+    document.documentElement.lang = "fr";
+    var nodes = document.querySelectorAll("[data-fr]");
+    for (var i = 0; i < nodes.length; i++) {
+      nodes[i].textContent = nodes[i].getAttribute("data-fr");
+      var href = nodes[i].getAttribute("data-fr-href");
+      if (href) nodes[i].setAttribute("href", href);
+    }
+  })();
+</script>
