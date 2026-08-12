@@ -4,6 +4,7 @@ title: DUNG BEETLE S-3
 lang: en
 ref: dungbeetle_s-3
 topic: games
+image: /img/blog/default-cover-games-consoles.webp
 description: "Three weeks before Dung Beetle's release: animations entirely remade, and the last round of polish."
 ---
 W-3 before the official release of Dung Beetle!

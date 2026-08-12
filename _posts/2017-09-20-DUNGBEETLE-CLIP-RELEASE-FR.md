@@ -4,6 +4,7 @@ title: DUNG BEETLE CLIP MUSICAL
 lang: fr
 ref: dungbeetle_clip_release
 topic: games
+image: /img/blog/default-cover-sound-design.webp
 description: "Le clip musical de Dung Beetle est sorti, et le jeu est jouable au prix que vous voulez, gratuit compris."
 ---
 BREAKING NEWS ! Le clip de notre jeu vidéo DUNG BEETLE est sorti !

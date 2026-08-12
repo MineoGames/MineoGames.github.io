@@ -3,7 +3,7 @@ layout: post
 title: UNBOXING OCULUS START
 lang: en
 ref: oculus_start_unboxing
-image: https://i.imgur.com/5a6QUsl.png
+image: https://i.imgur.com/MttT0Tj.png
 topic: studio
 description: "Mineo Games joins the Oculus Start program as a partner developer. Unboxing the package Oculus sent over."
 ---
@@ -11,7 +11,7 @@ Mineo Games is now part of the Oculus Start Program, as a partner developer! Dis
 
 Be sure to subscribe to the youtube channel to dont miss the next videos.
 
-[![UNBOXING OCULUS START](https://i.imgur.com/5a6QUsl.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
+[![UNBOXING OCULUS START](https://i.imgur.com/MttT0Tj.png)](https://www.youtube.com/watch?v=xyXFVuc5TRo "UNBOXING OCULUS START")
 
 **Subscribe to the newsletter to receive news like this directly in your inbox. 💌**
 
