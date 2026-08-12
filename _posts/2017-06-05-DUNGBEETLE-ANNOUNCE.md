@@ -3,6 +3,7 @@ layout: post
 title: Meet our first game Dung Beetle
 lang: en
 ref: dungbeetle_announce
+image: /img/dungbeetle/post_img1.png
 topic: game-jams
 description: "Dung Beetle, our first released game, built in 72 hours for the Ludum Dare 38 game jam and ranked 413th out of 1840."
 ---

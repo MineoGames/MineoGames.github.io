@@ -3,6 +3,7 @@ layout: post
 title: Découvrez Nest Guard
 lang: fr
 ref: nestguard_announce
+image: /img/nestguard/screen1.png
 topic: games
 description: "Annonce de Nest Guard, un jeu d'action VR où vous incarnez un dinosaure qui défend ses œufs contre tous les prédateurs."
 ---

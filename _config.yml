@@ -120,6 +120,25 @@ products:
       en: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
       fr: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
 
+# Blog topics. The key is what posts carry in `topic:` — deliberately not
+# `category:`, which Jekyll folds into the post permalink.
+topics:
+  games:
+    en: Our games
+    fr: Nos jeux
+  game-jams:
+    en: Game jams
+    fr: Game jams
+  studio:
+    en: Studio life
+    fr: Vie du studio
+  tech:
+    en: Tech
+    fr: Technique
+  productivity:
+    en: Productivity
+    fr: Organisation
+
 last_post_words: 100
 
 # Cache-busting suffix on style.css and images. Bump this one value on every
@@ -128,7 +147,7 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260807-19
+      asset_version: 20260808-1
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to system faces.

@@ -3,6 +3,7 @@ layout: post
 title: "Mineo Games présent dans le recap 2021 Atlangames"
 lang: fr
 ref: atlangames_recap_2021
+image: https://i.imgur.com/DzP2Dmy.png
 topic: studio
 description: "Shark Hunt apparaît dans la vidéo récap 2021 d'Atlangames, aux côtés des autres studios du cluster."
 ---

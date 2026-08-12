@@ -1,0 +1,33 @@
+{% comment %}
+Up to three further posts at the end of an article. Same language always; same
+topic first, then the most recent of any topic to fill the row — a post in a
+thin topic still gets a full set rather than a lonely single card.
+{% endcomment %}
+{% assign related_lang = page.lang | default: 'en' %}
+{% assign same_lang = site.posts | where: "lang", related_lang %}
+{% assign same_topic = same_lang | where: "topic", page.topic %}
+
+{% assign related = "" | split: "" %}
+{% for candidate in same_topic %}
+  {% if candidate.url != page.url and related.size < 3 %}
+    {% assign related = related | push: candidate %}
+  {% endif %}
+{% endfor %}
+{% for candidate in same_lang %}
+  {% unless related contains candidate or candidate.url == page.url %}
+    {% if related.size < 3 %}{% assign related = related | push: candidate %}{% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% if related.size > 0 %}
+<aside class="related-posts" aria-labelledby="related-posts-title">
+  <h2 class="section-title" id="related-posts-title">
+    {% if related_lang == 'fr' %}Ça pourrait vous intéresser{% else %}You might also like{% endif %}
+  </h2>
+  <div class="post-grid post-grid--related">
+    {% for related_post in related %}
+      {% include post-card.html card_post=related_post %}
+    {% endfor %}
+  </div>
+</aside>
+{% endif %}

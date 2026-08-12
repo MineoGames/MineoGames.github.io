@@ -1,0 +1,129 @@
+/*
+ * Blog listing and post cards.
+ */
+.post-grid {
+  display: grid;
+  gap: var(--mg-space-5);
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.post-card {
+  --post-card-accent: var(--mg-color-action);
+  display: flex;
+  border: 1px solid var(--mg-color-border);
+  background: var(--mg-color-surface);
+}
+
+.post-card--game-jams {
+  --post-card-accent: var(--mg-color-brand);
+}
+
+.post-card__link {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+  /* The whole card is one link, so the edge is the focus target. */
+  transition: border-color var(--mg-transition-fast);
+}
+
+.post-card__link:hover,
+.post-card__link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-card__link:focus-visible {
+  outline: 3px solid var(--mg-color-focus);
+  outline-offset: -3px;
+}
+
+/* The accent edge is the hover signal, matching the game banners. */
+.post-card:hover,
+.post-card:focus-within {
+  border-color: var(--post-card-accent);
+}
+
+.post-card__media {
+  display: block;
+  overflow: hidden;
+  /* Reserves the box before the image lands, so the grid does not reflow. */
+  aspect-ratio: 16 / 9;
+  background: var(--mg-color-canvas);
+}
+
+.post-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--mg-transition-base);
+}
+
+.post-card:hover .post-card__media img {
+  transform: scale(1.04);
+}
+
+.post-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--mg-space-3);
+  padding: var(--mg-space-5);
+}
+
+.post-card__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--mg-space-3);
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-xs);
+}
+
+.post-card__title {
+  display: block;
+  color: var(--mg-color-text);
+  font-family: var(--mg-font-display);
+  font-size: var(--mg-text-2xl);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: var(--mg-leading-tight);
+  text-transform: uppercase;
+  transition: color var(--mg-transition-fast);
+}
+
+.post-card:hover .post-card__title {
+  color: var(--post-card-accent);
+}
+
+.post-card__excerpt {
+  display: block;
+  margin-top: auto;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-md);
+  line-height: var(--mg-leading-body);
+}
+
+/* End-of-article block. Separated by a rule rather than a box, so it reads as a
+   coda to the article instead of a second article. */
+.related-posts {
+  margin-top: var(--mg-section-gap);
+  padding-top: var(--mg-space-7);
+  border-top: 1px solid var(--mg-color-border);
+  text-align: left;
+}
+
+.related-posts .section-title {
+  margin-bottom: var(--mg-space-6);
+}
+
+@media (max-width: 37.5rem) {
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+}

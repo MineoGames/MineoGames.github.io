@@ -3,6 +3,7 @@ layout: post
 title: "Mineo Games featured in Atlangames yearly recap 2021"
 lang: fr
 ref: gdwc-2021-finalist
+image: https://i.imgur.com/faxQOS5.png
 topic: studio
 description: "Vermin Exterminator a atteint le top 5 de la catégorie Best VR Prototype du Game Development World Championship, sur une centaine de participants."
 ---

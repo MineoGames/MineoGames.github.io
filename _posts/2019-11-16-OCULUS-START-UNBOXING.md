@@ -3,6 +3,7 @@ layout: post
 title: UNBOXING OCULUS START
 lang: en
 ref: oculus_start_unboxing
+image: https://i.imgur.com/5a6QUsl.png
 topic: studio
 description: "Mineo Games joins the Oculus Start program as a partner developer. Unboxing the package Oculus sent over."
 ---

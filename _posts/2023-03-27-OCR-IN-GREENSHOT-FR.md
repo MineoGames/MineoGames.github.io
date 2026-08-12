@@ -3,6 +3,7 @@ layout: post
 title: "Augmentez votre productivité en ajoutant l'OCR à Greenshot"
 lang: fr
 ref: ocr-greenshot
+image: https://i.imgur.com/kMBDTLo.png
 topic: productivity
 description: "Ajoutez la reconnaissance de caractères à Greenshot, et extrayez le texte de n'importe quelle capture, document ou vidéo."
 ---

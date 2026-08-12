@@ -3,6 +3,7 @@ layout: post
 title: Announcing Nest Guard
 lang: en
 ref: nestguard_announce
+image: /img/nestguard/screen1.png
 topic: games
 description: "Announcing Nest Guard, a VR action game where you play a dinosaur defending its eggs against every predator around."
 ---

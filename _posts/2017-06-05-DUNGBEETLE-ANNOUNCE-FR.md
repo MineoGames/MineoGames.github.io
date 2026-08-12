@@ -3,6 +3,7 @@ layout: post
 title: Découvrez notre jeu Dung Beetle
 lang: fr
 ref: dungbeetle_announce
+image: /img/dungbeetle/post_img1.png
 topic: game-jams
 description: "Dung Beetle, notre premier jeu publié, réalisé en 72 heures pour la game jam Ludum Dare 38 et classé 413e sur 1840."
 ---
