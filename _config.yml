@@ -133,23 +133,23 @@ topics:
   games:
     en: Our games
     fr: Nos jeux
-    image:
+    image: /img/blog/default-cover-games.webp
   game-jams:
     en: Game jams
     fr: Game jams
-    image:
+    image: /img/blog/default-cover-game-jam.webp
   studio:
     en: Studio life
     fr: Vie du studio
-    image:
+    image: /img/blog/default-cover-studio-life.webp
   tech:
     en: Tech
     fr: Technique
-    image:
+    image: /img/blog/default-cover-tech.webp
   productivity:
     en: Productivity
     fr: Organisation
-    image:
+    image: /img/blog/default-cover-productivity.webp
 
 default_image: /img/blog/default-cover-blog.webp
 
