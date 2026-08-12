@@ -1,25 +1,34 @@
-{% comment %}
-One entry in a post listing. Pass the post as `card_post`; inside an include it
-is reachable as include.card_post, not as a bare variable. The media slot is
-optional: posts without an `image:` render as a text card rather than a hole.
-{% endcomment %}
-{% assign card = include.card_post %}
-{% assign card_lang = card.lang | default: 'en' %}
-<article class="post-card{% if card.topic %} post-card--{{ card.topic }}{% endif %}{% if card.image %} post-card--has-media{% endif %}">
-  <a class="post-card__link" href="{{ card.url | prepend: site.baseurl }}">
-    {% if card.image %}
-    <span class="post-card__media">
-      <img src="{{ card.image }}" alt="" loading="lazy" decoding="async">
-    </span>
-    {% endif %}
-    <span class="post-card__body">
-      <span class="post-card__meta">
-        {% if card.topic %}<span class="ds-badge">{{ site.topics[card.topic][card_lang] }}</span>{% endif %}
-        <time datetime="{{ card.date | date_to_xmlschema }}">{% if card_lang == 'fr' %}{{ card.date | date: "%d/%m/%Y" }}{% else %}{{ card.date | date: "%b %-d, %Y" }}{% endif %}</time>
-      </span>
-      <span class="post-card__title">{{ card.title }}</span>
-      {% assign card_summary = card.description | default: card.excerpt %}
-      <span class="post-card__excerpt">{{ card_summary | strip_html | normalize_whitespace | truncate: 165 }}</span>
-    </span>
-  </a>
+{% comment %} One entry in a post listing. Pass the post as `card_post`; inside
+an include it is reachable as include.card_post, not as a bare variable. The
+media slot is optional: posts without an `image:` render as a text card rather
+than a hole. {% endcomment %} {% assign card = include.card_post %} {% assign
+card_image = card.image | default: site.topics[card.topic].image | default:
+site.default_image %} {% assign card_lang = card.lang | default: 'en' %}
+<article
+	class="post-card{% if card.topic %} post-card--{{ card.topic }}{% endif %}{% if card_image %} post-card--has-media{% endif %}"
+>
+	<a class="post-card__link" href="{{ card.url | prepend: site.baseurl }}">
+		{% if card_image %}
+		<span class="post-card__media">
+			<img src="{{ card_image }}" alt="" loading="lazy" decoding="async" />
+		</span>
+		{% endif %}
+		<span class="post-card__body">
+			<span class="post-card__meta">
+				{% if card.topic %}<span class="ds-badge"
+					>{{ site.topics[card.topic][card_lang] }}</span
+				>{% endif %}
+				<time datetime="{{ card.date | date_to_xmlschema }}"
+					>{% if card_lang == 'fr' %}{{ card.date | date: "%d/%m/%Y" }}{% else
+					%}{{ card.date | date: "%b %-d, %Y" }}{% endif %}</time
+				>
+			</span>
+			<span class="post-card__title">{{ card.title }}</span>
+			{% assign card_summary = card.description | default: card.excerpt %}
+			<span class="post-card__excerpt"
+				>{{ card_summary | strip_html | normalize_whitespace | truncate: 165
+				}}</span
+			>
+		</span>
+	</a>
 </article>

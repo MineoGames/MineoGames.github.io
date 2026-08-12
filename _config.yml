@@ -122,22 +122,36 @@ products:
 
 # Blog topics. The key is what posts carry in `topic:` — deliberately not
 # `category:`, which Jekyll folds into the post permalink.
+#
+# A card picks its cover in this order:
+#   1. `image:` in the post's own front matter
+#   2. `image:` on its topic below
+#   3. a cover drawn in CSS, so a card is never blank and never a broken file
+# Set a topic image only when the art is generic enough for every post in it —
+# a game banner would be wrong on a post about a different game.
 topics:
   games:
     en: Our games
     fr: Nos jeux
+    image:
   game-jams:
     en: Game jams
     fr: Game jams
+    image:
   studio:
     en: Studio life
     fr: Vie du studio
+    image:
   tech:
     en: Tech
     fr: Technique
+    image:
   productivity:
     en: Productivity
     fr: Organisation
+    image:
+
+default_image: /img/blog/default-cover-blog.webp
 
 last_post_words: 100
 
