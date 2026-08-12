@@ -17,6 +17,19 @@ jump to the rest of that topic.
   {% assign filter_label = 'Filter by topic' %}
 {% endif %}
 
+{% comment %}
+`only_active` renders just the current topic. An article already sits inside one
+topic; the full bar there was six choices where one label is the useful signal.
+{% endcomment %}
+{% if include.only_active %}
+  {% assign single = include.active %}
+  {% if single %}
+  <nav class="topic-filter topic-filter--single" aria-label="{{ filter_label }}">
+    <a class="topic-filter__tag topic-filter__tag--{{ single }}"
+       href="{{ filter_root | append: single | append: '/' | prepend: site.baseurl }}">{{ site.topics[single][filter_lang] }}</a>
+  </nav>
+  {% endif %}
+{% else %}
 <nav class="topic-filter" aria-label="{{ filter_label }}">
   <a class="topic-filter__tag{% unless include.active %} is-active{% endunless %}"
      href="{{ filter_root | prepend: site.baseurl }}"
@@ -27,3 +40,4 @@ jump to the rest of that topic.
      {% if include.active == topic[0] %}aria-current="page"{% endif %}>{{ topic[1][filter_lang] }}</a>
   {% endfor %}
 </nav>
+{% endif %}

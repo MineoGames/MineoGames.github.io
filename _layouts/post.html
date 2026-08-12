@@ -6,11 +6,11 @@
 
     <main>
     <section id="post" class="container content-section text-center">
-      {% include topic-filter.html active=page.topic %}
+      {% include topic-filter.html active=page.topic only_active=true %}
 
       <h1><strong>{{ page.title }}</strong></h1>
       <h2>
-        <strong>📅{{ page.date | date: "%m/%d/%Y" }}</strong>
+        <strong>{% include icon.html name="calendar" %} {% if page.lang == 'fr' %}{{ page.date | date: "%d/%m/%Y" }}{% else %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</strong>
       </h2>
 
       <section class="text-justify">{{ page.content | markdownify }}</section>

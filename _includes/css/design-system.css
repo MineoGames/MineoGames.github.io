@@ -407,6 +407,19 @@ body.ds-textured::before {
   vertical-align: -0.125em;
 }
 
+/* Editorial icons are line art on a 24-unit grid. Square caps and joins, and a
+   stroke that does not scale with the box, so they stay flat and angular like
+   the corner brackets rather than picking up the softness of an icon font. */
+.mg-icon--line {
+  width: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  vector-effect: non-scaling-stroke;
+}
+
 .ds-badge {
   display: inline-flex;
   align-items: center;
