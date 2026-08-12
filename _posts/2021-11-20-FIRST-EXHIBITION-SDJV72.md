@@ -3,8 +3,9 @@ layout: post
 title: "Mineo Games first exhibition - SDJV72 2021"
 lang: en
 ref: first-exhibition-sdjv72
+topic: studio
+description: "Mineo Games' first exhibition, at the Salon du Jeu Video de La Fleche, held in the town's cinema."
 ---
-
 Mineo Games was invited to participate in the **Salon de La Flèche 2021** exhibition.
 
 <a href="https://www.sdjv72.fr/"> <img src="https://imgur.com/mpOGWIh.png" alt="Mineo Games is at SDJV72" style="width: 45%" class="center" /> </a>

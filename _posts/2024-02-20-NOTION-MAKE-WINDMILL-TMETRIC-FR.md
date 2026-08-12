@@ -5,8 +5,8 @@ description: "Voyons comment TOUT gérer dans Notion gratuitement, grâce à l'a
 keywords: "notion,asana,trello,clickup,harvest,monday,jira,hive,tmetric,make,integromat,windmill,windmill.dev,automation,productivity,projet,management,gestion de projet,google calendar,home,agenda,software,logiciel,centralisé,centraliser,centralisation,programme,tool,app,hack,meilleur outil,meilleur site,ultime,free,cheap,migrate,migration,comment,lequel,choisie,facile,gratuit,zéro,euro,pas cher,trop cher,optimisation,scénario,flow,mineo games,workflow,flux de travail,organiser,collaboration d'équipe,team,travail,work,gantt,kanban,agile,customisable,smartsheet,free-trial,per-month,sync,streamline,échéance,prioriser,cloud,mobile apps,facilement,tracer,trace,tracabilité,time-tracking,tableau de bord,dashboard,workflows,dates,meeting,réunion,wrike,zapier,spreasheet,database,table, base de données,tableau,notion vs clickup,vs,harvest vs tmetric,top,compare,comparatif,graphique,zoho,automatiser,collaborer,intuitif,compétiteur,compétition"
 lang: fr
 ref: notion-make-windmill-tmetric
+topic: productivity
 ---
-
 <!-- table-des-matieres -->
 
 ## Table des matières

@@ -3,8 +3,9 @@ layout: post
 title: DUNG BEETLE S-3
 lang: en
 ref: dungbeetle_s-3
+topic: games
+description: "Three weeks before Dung Beetle's release: animations entirely remade, and the last round of polish."
 ---
-
 W-3 before the official release of Dung Beetle!
 
 One of the news features : completely remade animations.

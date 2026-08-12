@@ -5,6 +5,7 @@ description: "After years of unfinished projects, I built a Notion system to org
 keywords: "game dev productivity, notion template game dev, agile game development, finish your indie game, game scope management, game project organization, UGO, Ultimate GameDev Organizer, agile for solo developers, game planning system, gamedev time tracking, game jam, gamedev workflow, project management for games, Notion for developers, agile Notion template, game development tools, productivity in game dev, gamedev burnout, indie game completion, game sprint planning"
 lang: en
 ref: ugo-presentation
+topic: productivity
 ---
 **We all love starting games. But finishing them?** That’s where the real challenge begins.
 

@@ -3,6 +3,8 @@ layout: post
 title: "[TECH] Versioning d'un jeu vidéo avec GIT LFS"
 lang: fr
 ref: versioning_git_lfs
+topic: tech
+description: "Git supporte mal les gros fichiers binaires d'un jeu. Comment nous avons mis en place Git LFS pour versionner les sources d'un jeu vidéo."
 ---
 # Le besoin initial
 

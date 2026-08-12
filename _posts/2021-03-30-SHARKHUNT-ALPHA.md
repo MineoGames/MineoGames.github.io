@@ -3,8 +3,9 @@ layout: post
 title: "SHARK HUNT ALPHA"
 lang: en
 ref: sh_alpha_launch
+topic: games
+description: "The Shark Hunt alpha opens. Dive, hunt for pearls, and face the shark."
 ---
-
 <b>We are pleased to announce the launch of the Alpha of our upcoming game SHARK HUNT.</b>
 
 <a href="/games/shark-hunt/"> <img src="https://imgur.com/oMJ8FcB.png" alt="Join the Alpha" /> </a>

@@ -3,8 +3,9 @@ layout: post
 title: UNBOXING OCULUS START
 lang: en
 ref: oculus_start_unboxing
+topic: studio
+description: "Mineo Games joins the Oculus Start program as a partner developer. Unboxing the package Oculus sent over."
 ---
-
 Mineo Games is now part of the Oculus Start Program, as a partner developer! Discover the unboxing of the gift package sent by Oculus :)
 
 Be sure to subscribe to the youtube channel to dont miss the next videos.

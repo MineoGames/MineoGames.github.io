@@ -3,8 +3,9 @@ layout: post
 title: "VERMIN EXTERMINATOR MAINTENANT COMPATIBLE AVEC STEAMVR"
 lang: fr
 ref: ve_steamvr_compat
+topic: games
+description: "Vermin Exterminator fonctionne désormais sur tous les casques SteamVR, avec des commandes personnalisables depuis le menu contrôleur de SteamVR."
 ---
-
 <b>Nous sommes heureux d'annoncer que le jeu VERMIN EXTERMINATOR est désormais compatible avec STEAM VR!</b>
 
 Dorénavant, tous les casques compatibles SteamVR peuvent être utilisés! Il est même possible de voir et customiser ses touches via le menu controller de SteamVR.

@@ -3,8 +3,9 @@ layout: post
 title: DUNG BEETLE S-3
 lang: fr
 ref: dungbeetle_s-3
+topic: games
+description: "Trois semaines avant la sortie de Dung Beetle : animations entièrement refaites, et derniers réglages."
 ---
-
 S-3 avant la sortie officielle de Dung Beetle!
 
 Parmis les nouveautés : refonte de l'animation.

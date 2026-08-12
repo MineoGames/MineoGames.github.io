@@ -3,8 +3,9 @@ layout: post
 title: "SHARK HUNT ALPHA"
 lang: fr
 ref: sh_alpha_launch
+topic: games
+description: "L'alpha de Shark Hunt ouvre. Plongez, cherchez les perles, et affrontez le requin."
 ---
-
 <b>Nous avons le plaisir d'annoncer le lancement de la version Alpha de notre prochain jeu SHARK HUNT.</b>
 
 <a href="/games/shark-hunt-fr/"> <img src="https://imgur.com/oMJ8FcB.png" alt="Rejoins l'Alpha" /> </a>

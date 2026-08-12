@@ -3,8 +3,9 @@ layout: post
 title: "Mineo Games featured in Atlangames yearly recap 2021"
 lang: fr
 ref: gdwc-2021-finalist
+topic: studio
+description: "Vermin Exterminator a atteint le top 5 de la catégorie Best VR Prototype du Game Development World Championship, sur une centaine de participants."
 ---
-
 Mineo Games a participé au **Game Development World Championship** pour la première fois en 2021. Ce concours en ligne vise à mettre de la lumière sur le travail des développeurs indépendants dans le monde entier.
 
 <a href="https://thegdwc.com/awards/"> <img src="https://i.imgur.com/faxQOS5.png" alt="GDWC 2021" /> </a>

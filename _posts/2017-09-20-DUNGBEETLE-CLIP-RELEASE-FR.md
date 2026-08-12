@@ -3,8 +3,9 @@ layout: post
 title: DUNG BEETLE CLIP MUSICAL
 lang: fr
 ref: dungbeetle_clip_release
+topic: games
+description: "Le clip musical de Dung Beetle est sorti, et le jeu est jouable au prix que vous voulez, gratuit compris."
 ---
-
 BREAKING NEWS ! Le clip de notre jeu vidéo DUNG BEETLE est sorti !
 
 Jouez à DUNG BEETLE ici au prix que vous voulez, (même gratuit 😉) <a href="https://gamejolt.com/games/DungBeetle/251581" target="_blank"> Cliquez pour accéder à la page Gamejolt</a>

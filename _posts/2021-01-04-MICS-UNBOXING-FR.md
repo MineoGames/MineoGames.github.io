@@ -3,8 +3,9 @@ layout: post
 title: UNBOXING NOUVEAUX MICROPHONES
 lang: fr
 ref: mics_unboxing
+topic: studio
+description: "Le sound design commence par le micro. Déballage d'un setup vlog et voix, les types de micros, et ce qu'ils valent à l'écoute."
 ---
-
 La première étape de la conception sonore est de disposer d'un bon outil pour capturer le son. J'ai nommé : le microphone. 
 
 Aujourd'hui, je vais faire un unboxing de mes nouveaux setup pour le vlog et l'enregistrement de voix/son. Nous parlerons des différents types de microphones et de leur utilisation. 

@@ -5,6 +5,7 @@ description: "Après des années de projets non terminés, j’ai construit un s
 keywords: "productivité game dev, template Notion game dev, développement agile jeu vidéo, terminer son jeu indé, gestion de projet jeu vidéo, UGO, Ultimate GameDev Organizer, notion pour développeurs, backlog agile game dev, game jam organisation, game jam outils, template notion développement, outils pour finir un jeu vidéo"
 lang: fr
 ref: ugo-presentation
+topic: productivity
 ---
 **On adore tous commencer le dévelopment un jeu. Mais le finir ?** C’est là que tout se complique.
 

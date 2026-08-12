@@ -3,8 +3,9 @@ layout: post
 title: DUNG BEETLE OFFICIAL RELEASE
 lang: en
 ref: dungbeetle_official_release
+topic: games
+description: "Dung Beetle is out. Discover the beauty of nature and the stormy life of a dung beetle."
 ---
-
 We are proud to announce the official release of Dung Beetle!
 
 Discover the beauty of the nature and the stormy life of the Dung Beetle.

@@ -3,8 +3,9 @@ layout: post
 title: NOV20 CHALLENGE - FIRST GAME - VERMIN EXTERMINATOR
 lang: en
 ref: nov_challenge_game_1
+topic: game-jams
+description: "Vermin Exterminator, the first game out of the November VR challenge, and the best the studio had made so far."
 ---
-
 [![VERMIN EXTERMINATOR](/img/vermin-exterminator/screen1.png)](/games/vermin-exterminator/ "Access game page") 
 
 ## Discover VERMIN EXTERMINATOR, the game released during the VR November Challenge.

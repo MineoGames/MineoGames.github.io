@@ -3,8 +3,9 @@ layout: post
 title: "[TECH] QUEST - Première comparaison entre Vulkan et OpenGL ES3.1"
 lang: fr
 ref: quick_vulkan_opengl_comparison
+topic: tech
+description: "Sur Oculus Quest, la performance est le nerf de la guerre. Première comparaison concrète des deux API graphiques du casque : Vulkan et OpenGL ES 3.1."
 ---
-
 <i>Introduction d'un nouveau type de blog : le blog technique (avec le préfixe de titre [TECH]). Dans ces posts, nous partageons des études techniques ou nous détaillons certaines pratiques spécifiques de développement de jeux que nous avons utilisées.</i>
 
 Lorsque l'on développe sur l'Oculus Quest, la performance est le principal enjeu. Comme le Quest est un casque autonome, nous nous appuyons sur son chipset Snapdragon 835 (Samsung Galaxy S8) pour rendre un environnement en VR.

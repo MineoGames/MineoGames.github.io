@@ -3,6 +3,8 @@ layout: post
 title: "[TECH] Versioning game sources with GIT LFS"
 lang: en
 ref: versioning_git_lfs
+topic: tech
+description: "Git handles the large binary assets a game carries badly. How we set up Git LFS to version a video game's sources."
 ---
 # The initial need
 

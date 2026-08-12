@@ -3,8 +3,9 @@ layout: post
 title: DUNG BEETLE SORTIE OFFICIELLE
 lang: fr
 ref: dungbeetle_official_release
+topic: games
+description: "Dung Beetle est disponible. Découvrez la beauté de la nature et la vie mouvementée d'un bousier."
 ---
-
 Nous sommes fiers d'annoncer la sortie officielle du jeu Dung Beetle !
 
 Découvrez la beauté de la nature et la vie trépidante du scarabé bousier.

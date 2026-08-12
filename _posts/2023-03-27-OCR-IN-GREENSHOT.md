@@ -3,8 +3,9 @@ layout: post
 title: "Boost your productivity by adding OCR to Greenshot"
 lang: en
 ref: ocr-greenshot
+topic: productivity
+description: "Add optical character recognition to Greenshot, and lift text out of any screenshot, document or video."
 ---
-
 # The Power of OCR for Productivity
 
 ## Introduction

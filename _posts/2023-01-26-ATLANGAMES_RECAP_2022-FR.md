@@ -3,8 +3,9 @@ layout: post
 title: "Mineo Games présent dans le recap 2022 Atlangames"
 lang: fr
 ref: atlangames_recap_2022
+topic: studio
+description: "Vermin Exterminator apparaît dans la vidéo récap 2022 d'Atlangames, qui met en avant les studios indés du cluster."
 ---
-
 L'industrie du jeu vidéo est l'une des plus cool, et c'est formidable de voir des associations comme <b>Atlangames</b> promouvoir les studios indépendants. 
 
 En tant que membre du cluster de studios de jeux vidéo <b>Atlangames</b>, nous sommes ravis que notre jeu, <b>Vermin Exterminator</b>, ait été présenté dans la <b>vidéo récap de 2022</b> (à 4:34 🎥). 
