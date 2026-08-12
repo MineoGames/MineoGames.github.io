@@ -10,12 +10,27 @@
         <div class="col-md-10 col-md-offset-1">
             {{ page.content | markdownify }}
 
+            {% include topic-filter.html active=page.topic %}
+
+            {% comment %}
+            page.topic set means this is a topic view; unset means the full index.
+            {% endcomment %}
+            {% assign posts = site.posts | where: "lang", page.lang %}
+            {% if page.topic %}
+              {% assign posts = posts | where: "topic", page.topic %}
+            {% endif %}
+
+            {% if posts.size > 0 %}
             <div class="post-grid">
-                {% assign posts = site.posts | where: "lang", page.lang %}
                 {% for post in posts %}
                   {% include post-card.html card_post=post %}
                 {% endfor %}
             </div>
+            {% else %}
+            <p class="ds-muted">
+              {% if page.lang == 'fr' %}Aucun article dans ce thème pour l'instant.{% else %}No posts in this topic yet.{% endif %}
+            </p>
+            {% endif %}
         </div>
     </div>
 </section>

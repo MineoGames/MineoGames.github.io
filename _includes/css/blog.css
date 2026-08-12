@@ -1,6 +1,50 @@
 /*
  * Blog listing and post cards.
  */
+
+/* Topic tags. Each is a link to a real filtered page, so they behave like
+   navigation rather than a control — hence the nav element and aria-current. */
+.topic-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--mg-space-2);
+  margin-bottom: var(--mg-space-6);
+  text-align: left;
+}
+
+.topic-filter__tag {
+  display: inline-flex;
+  min-height: 3.2rem;
+  align-items: center;
+  padding: 0 var(--mg-space-4);
+  border: 1px solid var(--mg-color-border);
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color var(--mg-transition-fast), color var(--mg-transition-fast), background-color var(--mg-transition-fast);
+}
+
+.topic-filter__tag:hover,
+.topic-filter__tag:focus {
+  border-color: var(--mg-color-action);
+  color: var(--mg-color-text);
+  text-decoration: none;
+}
+
+.topic-filter__tag:focus-visible {
+  outline: 3px solid var(--mg-color-focus);
+  outline-offset: 2px;
+}
+
+.topic-filter__tag.is-active {
+  border-color: var(--mg-color-action);
+  background: var(--mg-color-action);
+  color: #fff;
+}
+
 .post-grid {
   display: grid;
   gap: var(--mg-space-5);

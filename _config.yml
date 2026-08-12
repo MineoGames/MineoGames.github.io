@@ -57,6 +57,8 @@ pages_list:
       Blog: 'last-blog-post'
       About: 'about'
       Contact: 'contact'
+    nav_urls:
+      Blog: '/blog/'
   fr:
     link: '/accueil'
     pages:
@@ -65,6 +67,8 @@ pages_list:
       Blog: 'last-blog-post'
       A propos: 'about'
       Contact: 'contact'
+    nav_urls:
+      Blog: '/journal/'
 
 games:
   - name: Vermin Exterminator
@@ -126,9 +130,9 @@ products:
 # A card picks its cover in this order:
 #   1. `image:` in the post's own front matter
 #   2. `image:` on its topic below
-#   3. a cover drawn in CSS, so a card is never blank and never a broken file
-# Set a topic image only when the art is generic enough for every post in it —
-# a game banner would be wrong on a post about a different game.
+#   3. `default_image` further down
+# So a card is never blank, and a post only needs its own image when the topic
+# cover would not do it justice.
 topics:
   games:
     en: Our games
@@ -161,7 +165,7 @@ defaults:
   - scope:
       path: ""
     values:
-      asset_version: 20260808-1
+      asset_version: 20260808-2
 
 # Adobe Fonts kit id serving Good Pro (headings and display). Leave empty and the
 # font stacks fall back to system faces.

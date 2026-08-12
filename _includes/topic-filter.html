@@ -1,0 +1,29 @@
+{% comment %}
+Topic tags. Each one is a real URL — /blog/<topic>/ — not a query string or a
+JS filter, so the filtered view is crawlable and can rank on its own.
+
+`filter_active` is the topic key of the current view, or blank on the full
+index. Post pages pass their own topic so the reader can see where they are and
+jump to the rest of that topic.
+{% endcomment %}
+{% assign filter_lang = page.lang | default: 'en' %}
+{% if filter_lang == 'fr' %}
+  {% assign filter_root = '/journal/' %}
+  {% assign filter_all = 'Tout' %}
+  {% assign filter_label = 'Filtrer par thème' %}
+{% else %}
+  {% assign filter_root = '/blog/' %}
+  {% assign filter_all = 'All' %}
+  {% assign filter_label = 'Filter by topic' %}
+{% endif %}
+
+<nav class="topic-filter" aria-label="{{ filter_label }}">
+  <a class="topic-filter__tag{% unless include.active %} is-active{% endunless %}"
+     href="{{ filter_root | prepend: site.baseurl }}"
+     {% unless include.active %}aria-current="page"{% endunless %}>{{ filter_all }}</a>
+  {% for topic in site.topics %}
+  <a class="topic-filter__tag topic-filter__tag--{{ topic[0] }}{% if include.active == topic[0] %} is-active{% endif %}"
+     href="{{ filter_root | append: topic[0] | append: '/' | prepend: site.baseurl }}"
+     {% if include.active == topic[0] %}aria-current="page"{% endif %}>{{ topic[1][filter_lang] }}</a>
+  {% endfor %}
+</nav>
