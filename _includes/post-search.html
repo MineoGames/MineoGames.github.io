@@ -1,0 +1,27 @@
+{% comment %}
+Filters the cards already rendered on the page — no index to build, no library,
+nothing to keep in sync. It searches what the card shows: title, summary, topic.
+
+Rendered hidden and revealed by the script, so a reader without JavaScript never
+meets a dead input. Wording travels as data attributes to keep the script free
+of language.
+{% endcomment %}
+{% assign search_lang = page.lang | default: 'en' %}
+<form class="post-search" role="search" hidden data-post-search
+  {% if search_lang == 'fr' %}
+  data-label="Rechercher un article"
+  data-placeholder="Rechercher un article…"
+  data-count-one="{n} article"
+  data-count-many="{n} articles"
+  data-empty="Aucun article ne correspond."
+  {% else %}
+  data-label="Search the posts"
+  data-placeholder="Search the posts…"
+  data-count-one="{n} post"
+  data-count-many="{n} posts"
+  data-empty="No post matches."
+  {% endif %}>
+  <label class="sr-only" for="post-search-input" data-search-label></label>
+  <input class="post-search__input" id="post-search-input" type="search" autocomplete="off" spellcheck="false">
+  <p class="post-search__count" data-search-count aria-live="polite"></p>
+</form>

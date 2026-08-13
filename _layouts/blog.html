@@ -10,6 +10,7 @@
         <div class="col-md-10 col-md-offset-1">
             {{ page.content | markdownify }}
 
+            {% include post-search.html %}
             {% include topic-filter.html active=page.topic %}
 
             {% comment %}
@@ -38,6 +39,7 @@
 
 {% include footer.html %}
 {% include js.html %}
+<script defer src="{{ '/js/blog-search.js' | prepend: site.baseurl }}?v={{ page.asset_version }}"></script>
 
 </body>
 </html>

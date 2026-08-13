@@ -2,6 +2,55 @@
  * Blog listing and post cards.
  */
 
+/* Search. Rendered hidden and revealed by its script, so it never shows as a
+   control that does nothing. */
+.post-search {
+  margin-bottom: var(--mg-space-4);
+}
+
+.post-search[hidden] {
+  display: none;
+}
+
+.post-search__input {
+  width: 100%;
+  max-width: 42rem;
+  min-height: var(--mg-control-height);
+  padding: var(--mg-space-3) var(--mg-space-4);
+  border: 1px solid var(--mg-color-border);
+  border-radius: 0;
+  background: var(--mg-color-canvas);
+  color: var(--mg-color-text);
+  font-family: var(--mg-font-body);
+  font-size: var(--mg-text-md);
+  transition: border-color var(--mg-transition-fast);
+}
+
+@media (hover: hover) {
+  .post-search__input:hover {
+    border-color: var(--mg-color-text-muted);
+  }
+}
+
+.post-search__input:focus {
+  border-color: var(--mg-color-action);
+  box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.28);
+  outline: 0;
+}
+
+.post-search__count {
+  margin: var(--mg-space-2) 0 0;
+  min-height: 1.5em;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-sm);
+}
+
+/* Filtered out rather than removed: the card keeps its place in the document,
+   so nothing has to be rebuilt when the query is cleared. */
+.post-card.is-filtered-out {
+  display: none;
+}
+
 /* Topic tags. Each is a link to a real filtered page, so they behave like
    navigation rather than a control — hence the nav element and aria-current. */
 .topic-filter {
