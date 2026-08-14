@@ -65,6 +65,7 @@
   }
 
   function apply() {
+    loadIndex(); // covers paste and autofill, which reach input without a focus
     var terms = fold(input.value).split(/\s+/).filter(Boolean);
 
     if (!terms.length) {
@@ -91,6 +92,50 @@
     report(shown);
   }
 
+  /*
+   * Full text lives in a separate index, fetched the first time the field is
+   * touched. Putting it in the page would have doubled the weight of the blog
+   * index for every visitor, most of whom never search; this way it costs
+   * nothing until someone does. Until it lands, the card text above already
+   * answers — the index only widens the match.
+   */
+  var indexUrl = form.getAttribute("data-index");
+  var indexState = "idle";
+
+  function absorb(entries) {
+    var byUrl = {};
+    for (var i = 0; i < entries.length; i++) {
+      byUrl[entries[i].u] = entries[i].t;
+    }
+    for (var j = 0; j < cards.length; j++) {
+      var link = cards[j].querySelector(".post-card__link");
+      var body = link && byUrl[link.getAttribute("href")];
+      if (body) haystack[j] += " " + fold(body);
+    }
+  }
+
+  function loadIndex() {
+    if (indexState !== "idle" || !indexUrl || !window.fetch) return;
+    indexState = "loading";
+    fetch(indexUrl)
+      .then(function (response) {
+        return response.ok ? response.json() : null;
+      })
+      .then(function (entries) {
+        if (!entries) {
+          indexState = "failed";
+          return;
+        }
+        absorb(entries);
+        indexState = "ready";
+        apply(); // re-run whatever is typed, now against the full text
+      })
+      .catch(function () {
+        indexState = "failed";
+      });
+  }
+
+  input.addEventListener("focus", loadIndex);
   input.addEventListener("input", apply);
 
   // Escape clears, which is what a search field is expected to do.

@@ -7,7 +7,9 @@ meets a dead input. Wording travels as data attributes to keep the script free
 of language.
 {% endcomment %}
 {% assign search_lang = page.lang | default: 'en' %}
+{% if search_lang == 'fr' %}{% assign search_index = '/journal/search-index.json' %}{% else %}{% assign search_index = '/blog/search-index.json' %}{% endif %}
 <form class="post-search" role="search" hidden data-post-search
+  data-index="{{ search_index | prepend: site.baseurl }}"
   {% if search_lang == 'fr' %}
   data-label="Rechercher un article"
   data-placeholder="Rechercher un article…"

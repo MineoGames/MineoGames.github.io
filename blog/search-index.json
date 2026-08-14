@@ -1,0 +1,6 @@
+---
+permalink: /blog/search-index.json
+sitemap: false
+---
+{% assign indexed = site.posts | where: "lang", "en" -%}
+[{% for post in indexed %}{% unless forloop.first %},{% endunless %}{"u":{{ post.url | prepend: site.baseurl | jsonify }},"t":{{ post.content | strip_html | normalize_whitespace | downcase | jsonify }}}{% endfor %}]
