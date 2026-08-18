@@ -1,0 +1,24 @@
+{% comment %}
+A product block for the body of an article. Usage:
+
+  {% include product-callout.html slug="ugo" %}
+
+Reads _config.yml > products, so the name, pitch and link stay in one place.
+`note` overrides the pitch when the article wants to say why *this* product
+answers *this* article — a generic pitch dropped mid-read is an advert; a
+sentence that follows the argument is a next step.
+{% endcomment %}
+{% assign callout_lang = page.lang | default: 'en' %}
+{% assign callout = site.products | where: "slug", include.slug | first %}
+{% if callout %}
+<aside class="product-callout product-callout--{{ callout.slug }}">
+  <span class="product-callout__eyebrow">{{ callout.eyebrow[callout_lang] }}</span>
+  <p class="product-callout__name">{{ callout.name }}</p>
+  <p class="product-callout__text">{{ include.note | default: callout.description[callout_lang] }}</p>
+  <a class="ds-button ds-button--primary product-callout__action"
+     href="{{ callout.page[callout_lang] }}"
+     {% if callout.page[callout_lang] contains '://' %}target="_blank" rel="noopener"{% endif %}>
+    {{ callout.cta[callout_lang] }}
+  </a>
+</aside>
+{% endif %}

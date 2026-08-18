@@ -202,6 +202,48 @@
   line-height: var(--mg-leading-body);
 }
 
+/* Product block inside an article. Boxed and edged in the accent, so it reads as
+   an aside the reader can skip — unlike the related posts below, which are a
+   continuation of the reading. */
+.product-callout {
+  margin: var(--mg-section-gap) 0;
+  padding: var(--mg-space-6);
+  border: 1px solid var(--mg-color-border);
+  border-left: 3px solid var(--mg-color-action);
+  background: var(--mg-color-surface);
+  text-align: left;
+}
+
+.product-callout__eyebrow {
+  display: block;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.product-callout__name {
+  margin: var(--mg-space-2) 0 0;
+  color: var(--mg-color-text);
+  font-family: var(--mg-font-display);
+  font-size: var(--mg-text-2xl);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.product-callout__text {
+  margin: var(--mg-space-3) 0 var(--mg-space-5);
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-md);
+  line-height: var(--mg-leading-body);
+}
+
+.product-callout__action {
+  margin: 0;
+}
+
 /* End-of-article block. Separated by a rule rather than a box, so it reads as a
    coda to the article instead of a second article. */
 .related-posts {
