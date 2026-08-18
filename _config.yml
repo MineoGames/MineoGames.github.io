@@ -158,6 +158,11 @@ topics:
     en: Visibility
     fr: Visibilité
     image: /img/blog/default-cover-marketing.webp
+  immersive-learning:
+    en: Immersive learning
+    fr: Formation immersive
+    # TODO: wants its own cover; borrowing the tech one meanwhile.
+    image: /img/blog/default-cover-tech.webp
 
 default_image: /img/blog/default-cover-blog.webp
 
