@@ -23,7 +23,7 @@ Our game was called **Universital**.
 * <a href="#the-game" class="page-scroll">What Universital actually is</a>
 * <a href="#the-mechanic" class="page-scroll">The best mechanic came from the researcher</a>
 * <a href="#coop" class="page-scroll">Why it had to be cooperative</a>
-* <a href="#48h" class="page-scroll">What 48 hours forces you to cut</a>
+* <a href="#cutting" class="page-scroll">What 48 hours forces you to cut</a>
 * <a href="#reception" class="page-scroll">What the public reaction told us</a>
 * <a href="#advice" class="page-scroll">If you're doing one of these</a>
 * <a href="#faq" class="page-scroll">FAQ</a>
@@ -79,7 +79,7 @@ That's a small decision with big consequences over 48 hours — co-op means shar
 
 ---
 
-## What 48 hours forces you to cut {#48h}
+## What 48 hours forces you to cut {#cutting}
 
 Everything that isn't the tension.
 

@@ -23,7 +23,7 @@ Notre jeu s'appelait **Universital**.
 * <a href="#le-jeu" class="page-scroll">Ce qu'est vraiment Universital</a>
 * <a href="#la-mecanique" class="page-scroll">La meilleure mécanique venait de la recherche</a>
 * <a href="#coop" class="page-scroll">Pourquoi il fallait que ce soit coopératif</a>
-* <a href="#48h" class="page-scroll">Ce que 48 heures obligent à couper</a>
+* <a href="#cutting" class="page-scroll">Ce que 48 heures obligent à couper</a>
 * <a href="#reception" class="page-scroll">Ce que la réaction du public nous a dit</a>
 * <a href="#conseils" class="page-scroll">Si vous en faites une</a>
 * <a href="#faq" class="page-scroll">FAQ</a>
@@ -79,7 +79,7 @@ C'est une petite décision aux grosses conséquences sur 48 heures — le coop i
 
 ---
 
-## Ce que 48 heures obligent à couper {#48h}
+## Ce que 48 heures obligent à couper {#cutting}
 
 Tout ce qui n'est pas la tension.
 
