@@ -114,9 +114,9 @@ Le GDD traditionnel est une description de cent pages d'un jeu fini, écrite ava
 
 Ce qui marche mieux, c'est un **canvas** : une seule page structurée qui porte les décisions définissant le jeu — les piliers, la boucle, le public, les contraintes — assez courte pour que la tenir à jour soit réaliste. Elle répond à « c'est quoi ce jeu » en un écran, et tout le reste vit dans les systèmes vers lesquels elle pointe.
 
-C'est la forme qu'on a fini par livrer dans notre template gratuit, avec une archive pour les pages qui ont cessé d'être d'actualité sans qu'il faille les supprimer.
+C'est la forme qu'on a fini par livrer dans TGO, notre petit template, avec une archive pour les pages qui ont cessé d'être d'actualité sans qu'il faille les supprimer.
 
-{% include product-callout.html slug="tgo" note="TGO est la version courte de notre système : un canvas de Game Design Document, une archive pour ce qui n'est plus d'actualité, et des automatisations Notion natives qui fonctionnent sur le plan gratuit. Pensé pour un développeur solo ou une petite équipe sur un seul projet." %}
+{% include product-callout.html slug="tgo" note="TGO est la version courte de notre système : un canvas de Game Design Document, une archive pour ce qui n'est plus d'actualité, et des automatisations qui bloquent une tâche tant que ses dépendances ne sont pas finies. Pensé pour un développeur solo ou une petite équipe sur un seul projet." %}
 
 ---
 
