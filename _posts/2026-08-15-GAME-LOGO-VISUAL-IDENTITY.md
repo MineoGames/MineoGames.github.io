@@ -52,7 +52,7 @@ Before a single logo sketch, we built a mood board. It felt like a delay. It was
 
 The mood board's value isn't inspiration. It's that it **turns taste into a decision that can be argued about.** "I don't like it" is unanswerable. "That's outside the palette we agreed" is a conversation with an end.
 
-It also survives the logo. Everything downstream — the store page, the trailer, the merch, the [thumbnails]({{ '/2026/08/17/SOLO-VIDEO-STACK/' | relative_url }}) — refers back to it. You do the thinking once.
+It also survives the logo. Everything downstream — the store page, the trailer, the merch, the [thumbnails]({{ '/2026/07/28/SOLO-VIDEO-STACK/' | relative_url }}) — refers back to it. You do the thinking once.
 
 ---
 
@@ -87,7 +87,7 @@ That's the test I'd apply to any game logo: **does it contain an action, or just
 
 The first pass was fine and slightly wrong, in a way that took an outside eye to name: the rat wasn't threatening enough, and the gauntlet didn't read as advanced technology.
 
-The final version — drawn by Pauline, who also did the UI work on our [immersive learning module]({{ '/2026/08/09/VR-TRAINING-DESIGN/' | relative_url }}) — pushed both: **a more menacing creature, and a visibly high-tech gauntlet.**
+The final version — drawn by Pauline, who also did the UI work on our [immersive learning module]({{ '/2026/07/07/VR-TRAINING-DESIGN/' | relative_url }}) — pushed both: **a more menacing creature, and a visibly high-tech gauntlet.**
 
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/d84d4d31-7aa9-d7c4-96bd-00008aa01151.png" alt="The final Vermin Exterminator logo" class="medium"/>
 

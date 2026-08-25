@@ -80,7 +80,7 @@ Le format que j'aurais le plus sous-estimé au départ. Une soirée, une présen
 
 Une de ces soirées portait sur le moteur Phaser, avec une présentation où le code s'exécutait directement dans les slides — le genre de détail qu'on retient parce qu'il est bien fait. Mais ce n'est pas pour ça qu'il faut y aller.
 
-**On y va pour la récurrence.** Les mêmes visages reviennent, et au bout de quelques mois vous connaissez réellement des gens plutôt que d'avoir échangé des cartes. C'est de ces soirées que sont sorties la plupart des collaborations qui comptent aujourd'hui — y compris les [office hours mensuelles]({{ '/2026/08/15/OFFICE-HOURS-FOUNDERS-FR/' | relative_url }}) qui restent mon meilleur investissement en temps.
+**On y va pour la récurrence.** Les mêmes visages reviennent, et au bout de quelques mois vous connaissez réellement des gens plutôt que d'avoir échangé des cartes. C'est de ces soirées que sont sorties la plupart des collaborations qui comptent aujourd'hui — y compris les [office hours mensuelles]({{ '/2026/07/13/OFFICE-HOURS-FOUNDERS-FR/' | relative_url }}) qui restent mon meilleur investissement en temps.
 
 Un grand salon vous donne cent contacts. Un afterwork local vous en donne trois, et vous les reverrez.
 
@@ -92,7 +92,7 @@ Un grand salon vous donne cent contacts. Un afterwork local vous en donne trois,
 
 Deux choses que j'ai apprises :
 
-**Préparer une présentation vous oblige à savoir ce que vous pensez.** Le même effet que [monter un dossier de subvention]({{ '/2026/08/10/CNC-GRANT-INDIE-STUDIO-FR/' | relative_url }}) — l'exercice de formulation vaut indépendamment de l'auditoire.
+**Préparer une présentation vous oblige à savoir ce que vous pensez.** Le même effet que [monter un dossier de subvention]({{ '/2026/07/01/CNC-GRANT-INDIE-STUDIO-FR/' | relative_url }}) — l'exercice de formulation vaut indépendamment de l'auditoire.
 
 **Les questions sont le livrable.** Ce que les gens demandent après vous dit ce qu'ils ne comprennent pas dans ce que vous faites, ce qui est exactement l'information que le reste de votre communication n'arrive pas à obtenir.
 

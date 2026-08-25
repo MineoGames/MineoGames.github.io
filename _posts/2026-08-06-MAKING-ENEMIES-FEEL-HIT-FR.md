@@ -64,7 +64,7 @@ Il est facile de traiter les effets de particules comme une garniture. Ils n'en 
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/68297cc3-00bc-1ba3-af8e-4fe7d0490666.gif" alt="Effets de jet servant de retour à l'impact" class="small"/>
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/17bd2f89-c713-2c02-b60f-57997e9f676f.gif" alt="Effets de feu à l'impact" class="small"/>
 
-La règle à laquelle j'ai abouti : **si vous retiriez le son et l'haptique, le joueur pourrait-il encore comprendre ce qui s'est passé rien qu'avec le visuel ?** Sinon, l'effet décore au lieu de rapporter. C'est exactement pour ça qu'on a fini par paramétrer les effets correctement plutôt que de les créer un par un — c'est raconté dans [l'article Niagara]({{ '/2026/08/14/NIAGARA-VR-VFX-FR/' | relative_url }}).
+La règle à laquelle j'ai abouti : **si vous retiriez le son et l'haptique, le joueur pourrait-il encore comprendre ce qui s'est passé rien qu'avec le visuel ?** Sinon, l'effet décore au lieu de rapporter. C'est exactement pour ça qu'on a fini par paramétrer les effets correctement plutôt que de les créer un par un — c'est raconté dans [l'article Niagara]({{ '/2026/07/10/NIAGARA-VR-VFX-FR/' | relative_url }}).
 
 ---
 

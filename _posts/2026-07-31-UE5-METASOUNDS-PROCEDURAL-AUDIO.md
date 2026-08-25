@@ -59,7 +59,7 @@ Instead of "play `impact_metal_03.wav`", you get a system where the impact's cha
 
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/413c9f4c-677c-7169-d365-12fac4ce616e.gif" alt="Procedural audio reacting to player movement and gameplay state" class="medium"/>
 
-This is the same principle that runs through everything else we build: **turn a lookup into a system.** It's what we did with the [weapon architecture]({{ '/2026/08/11/VR-WEAPON-SYSTEM/' | relative_url }}) and what parameterised [Niagara effects]({{ '/2026/08/14/NIAGARA-VR-VFX/' | relative_url }}) do for visuals. Audio was the last part of our feedback stack still working from a list.
+This is the same principle that runs through everything else we build: **turn a lookup into a system.** It's what we did with the [weapon architecture]({{ '/2026/06/28/VR-WEAPON-SYSTEM/' | relative_url }}) and what parameterised [Niagara effects]({{ '/2026/07/10/NIAGARA-VR-VFX/' | relative_url }}) do for visuals. Audio was the last part of our feedback stack still working from a list.
 
 And it composes with the rest. If a weapon's heat drives its VFX colour and its haptic intensity, having it also drive the sound's timbre means all three channels report the same state — which is how a player learns a system without being told.
 

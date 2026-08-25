@@ -64,7 +64,7 @@ It's easy to treat particle effects as garnish. They aren't — in a fast exchan
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/68297cc3-00bc-1ba3-af8e-4fe7d0490666.gif" alt="Spray effects providing hit feedback" class="small"/>
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/17bd2f89-c713-2c02-b60f-57997e9f676f.gif" alt="Fire effects on impact" class="small"/>
 
-The rule I ended up with: **if you removed the sound and the haptics, could the player still tell what happened from the visuals alone?** If not, the effect is decorating rather than reporting. This is exactly why we ended up parameterising effects properly rather than authoring them one at a time — that story is in the [Niagara post]({{ '/2026/08/14/NIAGARA-VR-VFX/' | relative_url }}).
+The rule I ended up with: **if you removed the sound and the haptics, could the player still tell what happened from the visuals alone?** If not, the effect is decorating rather than reporting. This is exactly why we ended up parameterising effects properly rather than authoring them one at a time — that story is in the [Niagara post]({{ '/2026/07/10/NIAGARA-VR-VFX/' | relative_url }}).
 
 ---
 

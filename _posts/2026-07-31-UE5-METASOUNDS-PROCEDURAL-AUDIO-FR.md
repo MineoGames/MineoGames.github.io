@@ -59,7 +59,7 @@ Au lieu de « joue `impact_metal_03.wav` », vous obtenez un système où le car
 
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/413c9f4c-677c-7169-d365-12fac4ce616e.gif" alt="Audio procédural réagissant au déplacement du joueur et à l'état du jeu" class="medium"/>
 
-C'est le même principe qui traverse tout ce qu'on construit : **transformer une table de correspondance en système.** C'est ce qu'on a fait avec [l'architecture des armes]({{ '/2026/08/11/VR-WEAPON-SYSTEM-FR/' | relative_url }}) et ce que font les [effets Niagara paramétrés]({{ '/2026/08/14/NIAGARA-VR-VFX-FR/' | relative_url }}) côté visuel. L'audio était la dernière partie de notre chaîne de retour à fonctionner encore avec une liste.
+C'est le même principe qui traverse tout ce qu'on construit : **transformer une table de correspondance en système.** C'est ce qu'on a fait avec [l'architecture des armes]({{ '/2026/06/28/VR-WEAPON-SYSTEM-FR/' | relative_url }}) et ce que font les [effets Niagara paramétrés]({{ '/2026/07/10/NIAGARA-VR-VFX-FR/' | relative_url }}) côté visuel. L'audio était la dernière partie de notre chaîne de retour à fonctionner encore avec une liste.
 
 Et ça se compose avec le reste. Si la chaleur d'une arme pilote la couleur de ses VFX et l'intensité de son haptique, la faire piloter aussi le timbre du son fait que les trois canaux racontent le même état — c'est comme ça qu'un joueur apprend un système sans qu'on le lui explique.
 

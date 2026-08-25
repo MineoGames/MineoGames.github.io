@@ -37,7 +37,7 @@ Chaque document a un lecteur implicite et un moment implicite. Nommez les deux, 
 
 - *« Moi, dans six mois, quand je reviendrai sur ce système »* — écrivez-le.
 - *« Un prestataire, à son premier jour »* — écrivez-le.
-- *« Une commission, en mars »* — écrivez-le, et ce sera [un tout autre document]({{ '/2026/08/10/CNC-GRANT-INDIE-STUDIO-FR/' | relative_url }}).
+- *« Une commission, en mars »* — écrivez-le, et ce sera [un tout autre document]({{ '/2026/07/01/CNC-GRANT-INDIE-STUDIO-FR/' | relative_url }}).
 - *« Personne, mais un vrai studio en aurait un »* — ne l'écrivez pas.
 
 Ce dernier cas représente l'essentiel de la documentation qui n'est jamais rouverte. Elle existe parce qu'elle est censée exister.
@@ -141,7 +141,7 @@ Surtout en en écrivant moins. Un petit document est bon marché à mettre à jo
 <details class="ds-accordion__item">
 <summary class="ds-accordion__trigger"><span>Où doit-elle vivre ?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
 <div class="ds-accordion__panel" markdown="1">
-Là où vit déjà la planification, pour qu'une tâche puisse pointer vers le document qui l'explique. Séparer les docs et les tâches entre deux outils garantit que l'un des deux ne sera pas lu. Les nôtres sont à côté du tableau de sprint, décrit dans [l'article sur les sprints]({{ '/2026/08/12/NOTION-SPRINTS-SOLO-DEV-FR/' | relative_url }}).
+Là où vit déjà la planification, pour qu'une tâche puisse pointer vers le document qui l'explique. Séparer les docs et les tâches entre deux outils garantit que l'un des deux ne sera pas lu. Les nôtres sont à côté du tableau de sprint, décrit dans [l'article sur les sprints]({{ '/2026/07/04/NOTION-SPRINTS-SOLO-DEV-FR/' | relative_url }}).
 </div>
 </details>
 

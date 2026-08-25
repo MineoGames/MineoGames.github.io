@@ -53,7 +53,7 @@ The difference from a chat window is worth being precise about:
 <img src="https://img.mailinblue.com/9272083/images/content_library/original/69a4094f0e9e4d63b3c23351.gif" alt="Instructions page defining an agent mode in Notion" class="small"/>
 <img src="https://img.mailinblue.com/9272083/images/content_library/original/69a40a68833e9f4b8b7cfedd.gif" alt="A research-oriented agent mode working in the workspace" class="small"/>
 
-That's the whole trick, and it's less about AI than about **where you keep your project.** The reason this works is that the [documentation and planning already live there]({{ '/2026/08/20/WHAT-TO-DOCUMENT-GAME-PROJECT/' | relative_url }}). Consolidating AI into a workspace with no context in it would achieve nothing.
+That's the whole trick, and it's less about AI than about **where you keep your project.** The reason this works is that the [documentation and planning already live there]({{ '/2026/07/25/WHAT-TO-DOCUMENT-GAME-PROJECT/' | relative_url }}). Consolidating AI into a workspace with no context in it would achieve nothing.
 
 ---
 

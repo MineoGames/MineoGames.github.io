@@ -83,7 +83,7 @@ La deuxième chose à apprendre tôt : **piloter la couleur et la taille dynamiq
 
 Une étincelle qui part blanche, refroidit vers l'orange et rétrécit en mourant fait de la physique que le joueur connaît déjà. Elle se lit correctement sans explication. Une étincelle orange à taille constante pendant toute sa vie se lit comme un point qui se déplace.
 
-C'est aussi là que les VFX deviennent discrètement du retour d'information. Dans notre système d'armes, la couleur des effets porte l'état — chaleur, type de munition, impact enregistré ou non. **Un joueur qui peut lire l'état de son arme à sa bouche n'a pas besoin de HUD**, ce qui en VR change tout. C'est détaillé dans [l'article sur le système d'armes]({{ '/2026/08/11/VR-WEAPON-SYSTEM-FR/' | relative_url }}).
+C'est aussi là que les VFX deviennent discrètement du retour d'information. Dans notre système d'armes, la couleur des effets porte l'état — chaleur, type de munition, impact enregistré ou non. **Un joueur qui peut lire l'état de son arme à sa bouche n'a pas besoin de HUD**, ce qui en VR change tout. C'est détaillé dans [l'article sur le système d'armes]({{ '/2026/06/28/VR-WEAPON-SYSTEM-FR/' | relative_url }}).
 
 ---
 

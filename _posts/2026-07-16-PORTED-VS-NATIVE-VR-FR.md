@@ -61,7 +61,7 @@ Les deux se résolvent trivialement au clavier-souris parce que les deux consist
 
 Un saut qu'il faut réussir exactement demande au joueur de contrôler la position d'un personnage avec un système de locomotion conçu pour être confortable, pas exact. Le confort et la précision s'opposent souvent frontalement, et chaque décision de locomotion en VR dépense l'un pour acheter l'autre.
 
-C'est exactement ce que j'ai rencontré en construisant notre propre système d'armes, par l'autre bout : une main n'est jamais immobile, et des données de tracking non filtrées se lisent comme une erreur du joueur. J'ai raconté ce que ça a demandé dans [l'article sur le système d'armes]({{ '/2026/08/11/VR-WEAPON-SYSTEM-FR/' | relative_url }}). Un portage n'a pas l'occasion de faire ce correctif — il hérite de mécaniques qui supposent une précision que le médium n'offre pas.
+C'est exactement ce que j'ai rencontré en construisant notre propre système d'armes, par l'autre bout : une main n'est jamais immobile, et des données de tracking non filtrées se lisent comme une erreur du joueur. J'ai raconté ce que ça a demandé dans [l'article sur le système d'armes]({{ '/2026/06/28/VR-WEAPON-SYSTEM-FR/' | relative_url }}). Un portage n'a pas l'occasion de faire ce correctif — il hérite de mécaniques qui supposent une précision que le médium n'offre pas.
 
 ---
 

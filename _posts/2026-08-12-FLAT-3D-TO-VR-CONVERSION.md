@@ -105,7 +105,7 @@ It suits a converted jam project unusually well, because those levels are small,
 
 Honest answer: as a way to ship a VR game, usually not. As a way to learn, absolutely.
 
-Playing someone else's VR port taught me what conversions break from the outside — difficulty tuned for a mouse, precision the medium can't deliver, which I wrote up in the [ported versus native post]({{ '/2026/08/13/PORTED-VS-NATIVE-VR/' | relative_url }}). Doing one myself taught the other half: **what it costs to make the frames, and in what order.**
+Playing someone else's VR port taught me what conversions break from the outside — difficulty tuned for a mouse, precision the medium can't deliver, which I wrote up in the [ported versus native post]({{ '/2026/07/16/PORTED-VS-NATIVE-VR/' | relative_url }}). Doing one myself taught the other half: **what it costs to make the frames, and in what order.**
 
 That knowledge transfers directly to native work. Every VR project eventually has the conversation about where its frames are going, and having had it once on a small project is much cheaper than having it late on a large one.
 

@@ -61,7 +61,7 @@ Both are trivially solvable with a mouse and keyboard because both are, at botto
 
 A jump you have to land exactly asks the player to control a character's position with a locomotion scheme that was designed to feel comfortable, not exact. Comfort and precision are frequently in direct opposition, and every VR locomotion decision spends one to buy the other.
 
-This is the same thing I ran into building our own weapon system, from the other side: a hand is never still, and unfiltered tracking data reads as player error. I wrote about what that took to fix in [the weapon system post]({{ '/2026/08/11/VR-WEAPON-SYSTEM/' | relative_url }}). A port has no opportunity to make that fix — it inherits mechanics that assume a precision the medium doesn't offer.
+This is the same thing I ran into building our own weapon system, from the other side: a hand is never still, and unfiltered tracking data reads as player error. I wrote about what that took to fix in [the weapon system post]({{ '/2026/06/28/VR-WEAPON-SYSTEM/' | relative_url }}). A port has no opportunity to make that fix — it inherits mechanics that assume a precision the medium doesn't offer.
 
 ---
 

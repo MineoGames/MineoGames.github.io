@@ -111,7 +111,7 @@ Things that work:
 
 The reason to pay all this is that a fully interactive room stops being a backdrop and becomes **equipment**.
 
-That's exactly what happened with our combat: because objects can be picked up and thrown, the environment is a weapon rack. That connection wasn't planned — it fell out of building both systems honestly, and it's covered in the [weapon system post]({{ '/2026/08/11/VR-WEAPON-SYSTEM/' | relative_url }}).
+That's exactly what happened with our combat: because objects can be picked up and thrown, the environment is a weapon rack. That connection wasn't planned — it fell out of building both systems honestly, and it's covered in the [weapon system post]({{ '/2026/06/28/VR-WEAPON-SYSTEM/' | relative_url }}).
 
 **Interactivity you commit to fully starts generating gameplay you didn't design.** Interactivity you commit to halfway just generates complaints.
 

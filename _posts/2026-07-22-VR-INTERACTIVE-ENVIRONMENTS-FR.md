@@ -111,7 +111,7 @@ Ce qui fonctionne :
 
 La raison de payer tout ça, c'est qu'une pièce entièrement interactive cesse d'être un décor et devient **de l'équipement.**
 
-C'est exactement ce qui s'est passé avec notre combat : parce que les objets peuvent être ramassés et lancés, l'environnement est un râtelier d'armes. Cette connexion n'était pas prévue — elle est tombée du fait d'avoir construit les deux systèmes honnêtement, et c'est raconté dans [l'article sur le système d'armes]({{ '/2026/08/11/VR-WEAPON-SYSTEM-FR/' | relative_url }}).
+C'est exactement ce qui s'est passé avec notre combat : parce que les objets peuvent être ramassés et lancés, l'environnement est un râtelier d'armes. Cette connexion n'était pas prévue — elle est tombée du fait d'avoir construit les deux systèmes honnêtement, et c'est raconté dans [l'article sur le système d'armes]({{ '/2026/06/28/VR-WEAPON-SYSTEM-FR/' | relative_url }}).
 
 **Une interactivité assumée jusqu'au bout génère du gameplay que vous n'avez pas conçu.** Une interactivité assumée à moitié ne génère que des reproches.
 

@@ -83,7 +83,7 @@ The second thing worth learning early: **drive colour and size dynamically inste
 
 A spark that starts white-hot, cools to orange, and shrinks as it dies is doing physics the player already knows. It reads correctly without anyone explaining it. A spark that is orange at a fixed size for its whole life reads as a moving dot.
 
-This is also where VFX quietly becomes game feedback. In our weapon system, effect colour carries state — heat, ammunition type, whether a hit registered. **A player who can read the weapon's condition from its muzzle doesn't need a HUD**, which in VR is the whole ballgame. That's covered in more detail in [the weapon system post]({{ '/2026/08/11/VR-WEAPON-SYSTEM/' | relative_url }}).
+This is also where VFX quietly becomes game feedback. In our weapon system, effect colour carries state — heat, ammunition type, whether a hit registered. **A player who can read the weapon's condition from its muzzle doesn't need a HUD**, which in VR is the whole ballgame. That's covered in more detail in [the weapon system post]({{ '/2026/06/28/VR-WEAPON-SYSTEM/' | relative_url }}).
 
 ---
 

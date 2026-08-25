@@ -73,7 +73,7 @@ This is the job I underestimated most.
 
 The raw recording of anything technical is slow, because the person recording it knows the subject and is being careful. **Editing is the act of removing the carefulness.** Dynamic cuts, no dead air, and sound design carrying the transitions — that's the difference between a video someone finishes and one they abandon at ninety seconds.
 
-Sound design in particular does disproportionate work. A cut with a small sound on it reads as intentional; the same cut silent reads as a mistake. It's the same principle as game feel — the [haptics and audio on our weapon system]({{ '/2026/08/11/VR-WEAPON-SYSTEM/' | relative_url }}) do exactly this job for exactly the same reason.
+Sound design in particular does disproportionate work. A cut with a small sound on it reads as intentional; the same cut silent reads as a mistake. It's the same principle as game feel — the [haptics and audio on our weapon system]({{ '/2026/06/28/VR-WEAPON-SYSTEM/' | relative_url }}) do exactly this job for exactly the same reason.
 
 ---
 

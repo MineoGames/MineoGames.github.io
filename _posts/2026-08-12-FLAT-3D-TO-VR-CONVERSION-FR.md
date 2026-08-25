@@ -105,7 +105,7 @@ L'idée est simple. Pour un niveau qui ne change pas, on peut déterminer à l'a
 
 Réponse honnête : comme moyen de sortir un jeu VR, en général non. Comme moyen d'apprendre, absolument.
 
-Jouer au portage VR de quelqu'un d'autre m'a appris ce que les conversions cassent vu de l'extérieur — une difficulté réglée pour une souris, une précision que le médium ne peut pas fournir, ce que j'ai raconté dans [l'article portage contre natif]({{ '/2026/08/13/PORTED-VS-NATIVE-VR-FR/' | relative_url }}). En faire une moi-même m'a appris l'autre moitié : **ce que coûte la fabrication des images, et dans quel ordre.**
+Jouer au portage VR de quelqu'un d'autre m'a appris ce que les conversions cassent vu de l'extérieur — une difficulté réglée pour une souris, une précision que le médium ne peut pas fournir, ce que j'ai raconté dans [l'article portage contre natif]({{ '/2026/07/16/PORTED-VS-NATIVE-VR-FR/' | relative_url }}). En faire une moi-même m'a appris l'autre moitié : **ce que coûte la fabrication des images, et dans quel ordre.**
 
 Ce savoir se transfère directement au travail natif. Tout projet VR finit par avoir la conversation sur l'endroit où partent ses images, et l'avoir eue une fois sur un petit projet coûte beaucoup moins cher que de l'avoir tard sur un gros.
 

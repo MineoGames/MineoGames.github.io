@@ -80,7 +80,7 @@ The format I most underestimated at the start. An evening, a technical talk, and
 
 One of those evenings covered the Phaser engine, with a presentation where the code executed directly inside the slides — the kind of detail you remember because it's well made. But that isn't the reason to go.
 
-**You go for the recurrence.** The same faces come back, and after a few months you actually know people rather than having exchanged cards. Most of the collaborations that matter to me now came out of those evenings — including the [monthly office hours]({{ '/2026/08/15/OFFICE-HOURS-FOUNDERS/' | relative_url }}) that remain my best return on time.
+**You go for the recurrence.** The same faces come back, and after a few months you actually know people rather than having exchanged cards. Most of the collaborations that matter to me now came out of those evenings — including the [monthly office hours]({{ '/2026/07/13/OFFICE-HOURS-FOUNDERS/' | relative_url }}) that remain my best return on time.
 
 A big show gives you a hundred contacts. A local meetup gives you three, and you'll see them again.
 
@@ -92,7 +92,7 @@ At some point I was asked to speak about organisation in front of a developer co
 
 Two things I learned:
 
-**Preparing a talk forces you to know what you think.** Same effect as [assembling a grant application]({{ '/2026/08/10/CNC-GRANT-INDIE-STUDIO/' | relative_url }}) — the formulation exercise is worth it independently of the audience.
+**Preparing a talk forces you to know what you think.** Same effect as [assembling a grant application]({{ '/2026/07/01/CNC-GRANT-INDIE-STUDIO/' | relative_url }}) — the formulation exercise is worth it independently of the audience.
 
 **The questions are the deliverable.** What people ask afterwards tells you what they don't understand about what you do, which is exactly the information the rest of your communication can never get at.
 

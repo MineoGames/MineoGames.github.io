@@ -73,7 +73,7 @@ C'est le métier que j'ai le plus sous-estimé.
 
 Le rush brut de n'importe quoi de technique est lent, parce que la personne qui enregistre connaît le sujet et fait attention. **Monter, c'est retirer l'attention.** Des coupes dynamiques, pas de temps mort, et un sound design qui porte les transitions — c'est ce qui sépare une vidéo qu'on termine d'une vidéo qu'on abandonne à quatre-vingt-dix secondes.
 
-Le sound design en particulier travaille beaucoup plus qu'il n'y paraît. Une coupe avec un petit son dessus se lit comme intentionnelle ; la même coupe en silence se lit comme une erreur. C'est le même principe que le game feel — [l'haptique et le son de notre système d'armes]({{ '/2026/08/11/VR-WEAPON-SYSTEM-FR/' | relative_url }}) font exactement ce travail-là, pour exactement la même raison.
+Le sound design en particulier travaille beaucoup plus qu'il n'y paraît. Une coupe avec un petit son dessus se lit comme intentionnelle ; la même coupe en silence se lit comme une erreur. C'est le même principe que le game feel — [l'haptique et le son de notre système d'armes]({{ '/2026/06/28/VR-WEAPON-SYSTEM-FR/' | relative_url }}) font exactement ce travail-là, pour exactement la même raison.
 
 ---
 

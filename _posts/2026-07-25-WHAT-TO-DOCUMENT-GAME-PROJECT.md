@@ -37,7 +37,7 @@ Every document has an implied reader and an implied moment. Name both, and the d
 
 - *"Me, in six months, when I come back to this system"* — write it.
 - *"A contractor, on their first day"* — write it.
-- *"A funding body, in March"* — write it, and it will be [a different document entirely]({{ '/2026/08/10/CNC-GRANT-INDIE-STUDIO/' | relative_url }}).
+- *"A funding body, in March"* — write it, and it will be [a different document entirely]({{ '/2026/07/01/CNC-GRANT-INDIE-STUDIO/' | relative_url }}).
 - *"Nobody, but a real studio would have one"* — don't write it.
 
 That last case is most of the documentation that never gets reopened. It exists because it's supposed to exist.
@@ -141,7 +141,7 @@ Mostly by writing less of it. A small document is cheap to update and therefore 
 <details class="ds-accordion__item">
 <summary class="ds-accordion__trigger"><span>Where should it live?</span><span class="ds-accordion__icon" aria-hidden="true"></span></summary>
 <div class="ds-accordion__panel" markdown="1">
-Wherever the planning already lives, so a task can link to the document explaining it. Splitting docs and tasks across two tools guarantees one of them goes unread. Ours sits next to the sprint board, which is covered in the [sprints post]({{ '/2026/08/12/NOTION-SPRINTS-SOLO-DEV/' | relative_url }}).
+Wherever the planning already lives, so a task can link to the document explaining it. Splitting docs and tasks across two tools guarantees one of them goes unread. Ours sits next to the sprint board, which is covered in the [sprints post]({{ '/2026/07/04/NOTION-SPRINTS-SOLO-DEV/' | relative_url }}).
 </div>
 </details>
 

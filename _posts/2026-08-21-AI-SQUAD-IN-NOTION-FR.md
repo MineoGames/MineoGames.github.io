@@ -53,7 +53,7 @@ La différence avec une fenêtre de chat mérite d'être précisée :
 <img src="https://img.mailinblue.com/9272083/images/content_library/original/69a4094f0e9e4d63b3c23351.gif" alt="Page d'instructions définissant un mode agent dans Notion" class="small"/>
 <img src="https://img.mailinblue.com/9272083/images/content_library/original/69a40a68833e9f4b8b7cfedd.gif" alt="Un mode agent orienté recherche travaillant dans l'espace" class="small"/>
 
-C'est toute l'astuce, et elle porte moins sur l'IA que sur **l'endroit où vous rangez votre projet.** Si ça fonctionne, c'est parce que [la documentation et la planification y vivent déjà]({{ '/2026/08/20/WHAT-TO-DOCUMENT-GAME-PROJECT-FR/' | relative_url }}). Regrouper l'IA dans un espace de travail sans contenu n'apporterait rien.
+C'est toute l'astuce, et elle porte moins sur l'IA que sur **l'endroit où vous rangez votre projet.** Si ça fonctionne, c'est parce que [la documentation et la planification y vivent déjà]({{ '/2026/07/25/WHAT-TO-DOCUMENT-GAME-PROJECT-FR/' | relative_url }}). Regrouper l'IA dans un espace de travail sans contenu n'apporterait rien.
 
 ---
 

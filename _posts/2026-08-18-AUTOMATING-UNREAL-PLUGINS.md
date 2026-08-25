@@ -35,7 +35,7 @@ Tooling loses every scheduling argument, and the reason is structural: **it has 
 
 A feature can be shown. A level can be walked through. A plugin that renames assets correctly produces a project that looks exactly like the project you already had, except that the next hundred imports don't go wrong.
 
-So it gets postponed, and the manual version quietly taxes every week. It's the same problem as the [polish pass that adds no features]({{ '/2026/08/20/MAKING-ENEMIES-FEEL-HIT/' | relative_url }}) — work that's clearly worth doing and structurally hard to justify at the moment you'd have to do it.
+So it gets postponed, and the manual version quietly taxes every week. It's the same problem as the [polish pass that adds no features]({{ '/2026/08/06/MAKING-ENEMIES-FEEL-HIT/' | relative_url }}) — work that's clearly worth doing and structurally hard to justify at the moment you'd have to do it.
 
 The fix is the same too: **schedule it deliberately, or it won't happen.**
 
@@ -88,7 +88,7 @@ The better move is two steps:
 
 The difference matters enormously later. With the settings parametrised, **changing how destruction behaves across the whole game is editing one asset**, not re-running a script. You've automated the repetition *and* removed the duplication, which are two different wins and only one of them is obvious at the start.
 
-It's the same shape as [parameterising VFX instead of authoring each effect]({{ '/2026/08/14/NIAGARA-VR-VFX/' | relative_url }}), and as the [weapon architecture rewrite]({{ '/2026/08/11/VR-WEAPON-SYSTEM/' | relative_url }}). On a small team, the thing worth optimising is never the asset — it's the cost of the next one.
+It's the same shape as [parameterising VFX instead of authoring each effect]({{ '/2026/07/10/NIAGARA-VR-VFX/' | relative_url }}), and as the [weapon architecture rewrite]({{ '/2026/06/28/VR-WEAPON-SYSTEM/' | relative_url }}). On a small team, the thing worth optimising is never the asset — it's the cost of the next one.
 
 ---
 

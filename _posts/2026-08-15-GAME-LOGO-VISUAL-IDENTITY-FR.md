@@ -52,7 +52,7 @@ Avant la moindre esquisse de logo, on a construit une planche d'ambiance. Ça re
 
 Sa valeur n'est pas l'inspiration. C'est qu'elle **transforme le goût en une décision dont on peut débattre.** « Je n'aime pas » est sans réponse possible. « C'est en dehors de la palette qu'on a décidée » est une conversation qui a une fin.
 
-Elle survit aussi au logo. Tout ce qui vient après — la page boutique, le trailer, le merch, les [miniatures]({{ '/2026/08/17/SOLO-VIDEO-STACK-FR/' | relative_url }}) — y revient. La réflexion se fait une fois.
+Elle survit aussi au logo. Tout ce qui vient après — la page boutique, le trailer, le merch, les [miniatures]({{ '/2026/07/28/SOLO-VIDEO-STACK-FR/' | relative_url }}) — y revient. La réflexion se fait une fois.
 
 ---
 
@@ -87,7 +87,7 @@ C'est le test que j'appliquerais à n'importe quel logo de jeu : **contient-il u
 
 La première passe était correcte et légèrement fausse, d'une manière qu'il a fallu un œil extérieur pour nommer : le rat n'était pas assez menaçant, et le gantelet ne se lisait pas comme de la technologie avancée.
 
-La version finale — dessinée par Pauline, qui a aussi fait l'UI de notre [module de formation immersive]({{ '/2026/08/09/VR-TRAINING-DESIGN-FR/' | relative_url }}) — a poussé les deux : **une créature plus menaçante, et un gantelet visiblement high-tech.**
+La version finale — dessinée par Pauline, qui a aussi fait l'UI de notre [module de formation immersive]({{ '/2026/07/07/VR-TRAINING-DESIGN-FR/' | relative_url }}) — a poussé les deux : **une créature plus menaçante, et un gantelet visiblement high-tech.**
 
 <img src="https://mcusercontent.com/ba845a58e9756f53027feeec5/images/d84d4d31-7aa9-d7c4-96bd-00008aa01151.png" alt="Le logo final de Vermin Exterminator" class="medium"/>
 

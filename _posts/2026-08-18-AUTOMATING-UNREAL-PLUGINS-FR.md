@@ -35,7 +35,7 @@ L'outillage perd tous les arbitrages de planning, et la raison est structurelle 
 
 Une fonctionnalité se montre. Un niveau se parcourt. Un plugin qui renomme correctement les assets produit un projet qui ressemble exactement au projet que vous aviez déjà, sauf que les cent imports suivants ne partiront pas de travers.
 
-Alors on le repousse, et la version manuelle taxe discrètement chaque semaine. C'est le même problème que la [passe de finition qui n'ajoute aucune fonctionnalité]({{ '/2026/08/20/MAKING-ENEMIES-FEEL-HIT-FR/' | relative_url }}) — un travail manifestement utile et structurellement difficile à justifier au moment où il faudrait le faire.
+Alors on le repousse, et la version manuelle taxe discrètement chaque semaine. C'est le même problème que la [passe de finition qui n'ajoute aucune fonctionnalité]({{ '/2026/08/06/MAKING-ENEMIES-FEEL-HIT-FR/' | relative_url }}) — un travail manifestement utile et structurellement difficile à justifier au moment où il faudrait le faire.
 
 Le remède est le même aussi : **le planifier délibérément, ou il n'arrivera pas.**
 
@@ -88,7 +88,7 @@ Le meilleur mouvement se fait en deux temps :
 
 La différence compte énormément plus tard. Avec les réglages paramétrés, **changer le comportement de la destruction sur tout le jeu revient à éditer un asset**, pas à relancer un script. Vous avez automatisé la répétition *et* supprimé la duplication, ce sont deux gains distincts et un seul des deux est évident au départ.
 
-C'est la même forme que [paramétrer les VFX au lieu de créer chaque effet]({{ '/2026/08/14/NIAGARA-VR-VFX-FR/' | relative_url }}), et que la [réécriture de l'architecture des armes]({{ '/2026/08/11/VR-WEAPON-SYSTEM-FR/' | relative_url }}). Dans une petite équipe, ce qu'il faut optimiser n'est jamais l'asset — c'est le coût du suivant.
+C'est la même forme que [paramétrer les VFX au lieu de créer chaque effet]({{ '/2026/07/10/NIAGARA-VR-VFX-FR/' | relative_url }}), et que la [réécriture de l'architecture des armes]({{ '/2026/06/28/VR-WEAPON-SYSTEM-FR/' | relative_url }}). Dans une petite équipe, ce qu'il faut optimiser n'est jamais l'asset — c'est le coût du suivant.
 
 ---
 
