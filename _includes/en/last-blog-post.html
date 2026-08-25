@@ -1,26 +1,39 @@
-<!-- Latest Post Preview Start -->
+{% comment %}
+Three most recent posts in the page language, as cards.
+
+This used to markdownify the newest post and truncate it to 100 words. That
+leaked the article's own Table of Contents onto the home page — heading and
+all, with in-page anchors pointing at nothing here — and truncating rendered
+HTML left tags unclosed. Cards carry the post's own description instead.
+
+The section id stays `last-blog-post`: pages_list and the scrollspy target it.
+{% endcomment %}
+<!-- Latest Posts Start -->
 
 <section id="last-blog-post" class="container content-section text-center">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2 class="section-title">Last Blog Post</h2>
-            {% assign post = site.posts | where:"lang", page.lang %}
-            {% assign post = post.first %}
-            <h2><strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-                <strong> - {{ post.date | date: "%m/%d/%Y" }} </strong>
-            </h2>
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="section-title">Latest posts</h2>
 
-            <section class="text-justify">
-                {{ post.content | markdownify | truncatewords: site.last_post_words }}
-            </section>
-			
+            {% comment %}
+            `limit` is a parameter of the for tag, not a filter. Piping it onto
+            the assign is silently ignored and renders every post.
+            {% endcomment %}
+            {% assign home_posts = site.posts | where: "lang", page.lang %}
+            {% if home_posts.size > 0 %}
+            <div class="post-grid post-grid--home">
+                {% for home_post in home_posts limit: 3 %}
+                  {% include post-card.html card_post=home_post %}
+                {% endfor %}
+            </div>
+            {% endif %}
+
             <p class="ds-button-row mt-3">
-                <a class="ds-button ds-button--primary" href="{{site.baseurl}}{{post.url}}">See full post</a>
-                <a class="ds-button ds-button--secondary" href="{{site.baseurl}}/blog/">See other posts</a>
+                <a class="ds-button ds-button--primary" href="{{ site.baseurl }}/blog/">See all posts</a>
             </p>
 
         </div>
     </div>
 </section>
 
-<!-- Latest Post Preview End -->
+<!-- Latest Posts End -->
