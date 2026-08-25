@@ -103,6 +103,25 @@
   text-align: left;
 }
 
+/* The home row wants exactly three across. Its column is narrower than the
+   blog index, so the auto-fill track above would settle on two: 3 x 30rem plus
+   two gaps needs 94.8rem and the column offers ~92rem. Fixed tracks instead. */
+.post-grid--home {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 46rem) {
+  .post-grid--home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 62rem) {
+  .post-grid--home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .post-card {
   --post-card-accent: var(--mg-color-action);
   display: flex;
