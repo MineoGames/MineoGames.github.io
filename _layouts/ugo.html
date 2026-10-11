@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+  {% include head.html %}
+
+  {% assign lang = page.lang | default: 'en' %}
+  {% assign t = site.data.ugo[lang] %}
+
+  <body id="page-top" class="ugo ds-textured">
+    {% include nav.html %}
+
+    <header class="ugo-hero">
+      <div class="ds-container ugo-hero__content">
+        <p class="ds-eyebrow">{{ site.data.ugo.name }}</p>
+        {% include ugo/proof.html %}
+        <h1 class="ugo-hero__title">
+          <span class="ugo-hero__lead">{{ t.hero_lead }}</span>
+          <span class="ugo-hero__accent">{{ t.hero_accent }}</span>
+        </h1>
+        <p class="ugo-hero__subtitle">
+          <strong>{{ t.hero_subtitle_strong }}</strong>
+          <span>{{ t.hero_subtitle_text }}</span>
+          <em>{{ t.hero_subtitle_em }}</em>
+        </p>
+        {% include ugo/cta.html %}
+      </div>
+    </header>
+
+    <main>
+      <section class="ds-section ugo-section--overview">
+        <div class="ds-container ds-frame ugo-split">
+          <div class="ugo-copy-card">
+            <h2>{{ t.overview_title }} <span class="ugo-copy-card__accent">{{ t.overview_title_accent }}</span></h2>
+            <p>{{ t.overview_lead }}</p>
+            <p class="ugo-copy-card__intro">{{ t.overview_intro }}</p>
+            <ul class="ds-list ugo-list">
+              {% for point in t.overview_points %}
+              <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <figure class="ugo-media">
+            <img src="{{ '/img/ugo/dashboard.png' | relative_url }}?v={{ page.asset_version }}" width="940" height="1140" loading="lazy" decoding="async" alt="{{ t.dashboard_alt }}">
+          </figure>
+        </div>
+      </section>
+
+      <section class="ds-section ugo-section--features">
+        <div class="ds-container">
+          <h2 class="ugo-section__title">{{ t.features_title }}</h2>
+          <div class="ugo-features">
+            {% for feature in t.features %}
+            <article class="ugo-feature">
+              <img class="ugo-feature__icon" src="{{ feature.icon | relative_url }}?v={{ page.asset_version }}" width="{{ feature.width }}" height="{{ feature.height }}" loading="lazy" decoding="async" alt="">
+              <div class="ds-card ds-card--angular ugo-feature__surface">
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.text }}</p>
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+
+          <h3 class="ugo-section__title ugo-modules__title">{{ t.modules_title }}</h3>
+          <p class="ugo-section__intro ds-muted">{{ t.modules_intro }}</p>
+          <ul class="ugo-modules">
+            {% for module in t.modules %}
+            <li class="ds-card ugo-module">
+              <h4>
+                {{ module.title }}
+                {% if module.badge %}<span class="ds-badge ugo-module__badge">{{ module.badge }}</span>{% endif %}
+              </h4>
+              <p>{{ module.text }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <section class="ds-section ugo-section--whatsnew">
+        <div class="ds-container ds-frame ugo-split ugo-split--reverse">
+          <div class="ugo-copy-card">
+            <p class="ds-eyebrow ugo-copy-card__eyebrow">{{ t.whatsnew_eyebrow }}</p>
+            <h2>{{ t.whatsnew_title }}</h2>
+            <p>{{ t.whatsnew_lead }}</p>
+            <ul class="ds-list ugo-list">
+              {% for point in t.whatsnew_points %}
+              <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+            <p class="ugo-copy-card__note">{{ t.whatsnew_note }}</p>
+          </div>
+          <figure class="ugo-media">
+            <img src="{{ '/img/ugo/crm-pipeline.png' | relative_url }}?v={{ page.asset_version }}" width="940" height="720" loading="lazy" decoding="async" alt="{{ t.crm_alt }}">
+          </figure>
+        </div>
+      </section>
+
+      <section class="ds-section ugo-section--profile">
+        <div class="ds-container">
+          <h2 class="ugo-section__title ugo-profile__title">{{ t.profile_title }}</h2>
+          <div class="ds-frame ugo-profile">
+            <div class="ugo-profile__surface" aria-hidden="true"></div>
+            <div class="ugo-profile__image">
+              <img src="{{ '/img/ugo/portrait-cutout.png' | relative_url }}?v={{ page.asset_version }}" width="1536" height="2048" loading="lazy" decoding="async" alt="{{ t.profile_alt }}">
+            </div>
+            <div class="ugo-profile__card">
+              <h3>{{ t.profile_name }}<br><span>{{ t.profile_role }}</span></h3>
+              {% for paragraph in t.profile_paragraphs %}
+              <p>{{ paragraph }}</p>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section ugo-section--included">
+        <div class="ds-container ugo-included">
+          <h2 class="ugo-section__title">{{ t.included_title }}</h2>
+          <ul class="ds-list ugo-included__list">
+            {% for point in t.included_points %}
+            <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <section class="ds-section ugo-section--conversion">
+        <div class="ds-container">
+          <a class="ds-scroll-hint ugo-chevrons" href="#ugo-cta-final" aria-label="{{ t.cta_label }}">
+            {% include icon-chevrons.html %}
+          </a>
+          <div id="ugo-cta-final">
+            {% include ugo/cta.html %}
+          </div>
+          {% include ugo/proof.html modifier="ugo-proof--conversion" %}
+          <div class="ugo-character">
+            <img src="{{ '/img/ugo/character.png' | relative_url }}?v={{ page.asset_version }}" width="563" height="979" loading="lazy" decoding="async" alt="">
+            {% for callout in t.callouts %}
+            <div class="ugo-character__callout ugo-character__callout--{{ callout.position }}">
+              <img src="{{ callout.avatar | relative_url }}?v={{ page.asset_version }}" width="168" height="168" loading="lazy" decoding="async" alt="">
+              <p>&ldquo;{{ callout.text }}&rdquo;</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section ugo-section--faq">
+        <div class="ds-container">
+          <div class="ds-frame ugo-faq">
+            <div class="ugo-faq__heading">
+              <h2 class="ugo-section__title">{{ t.faq_title }}</h2>
+              <p class="ugo-section__intro ds-muted">{{ t.faq_intro }}</p>
+            </div>
+            <div class="ds-accordion ugo-faq__accordion" data-accordion>
+              {% for item in t.faq %}
+              <h3 class="ds-accordion__heading">
+                <button class="ds-accordion__trigger" id="ugo-faq-trigger-{{ forloop.index }}" type="button" aria-expanded="false" aria-controls="ugo-faq-{{ forloop.index }}">
+                  <span>{{ item.question }}</span>
+                  <span class="ds-accordion__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="ds-accordion__panel" id="ugo-faq-{{ forloop.index }}" role="region" aria-labelledby="ugo-faq-trigger-{{ forloop.index }}" hidden>
+                <p>{{ item.answer }}</p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include cookie-consent.html %}
+    {% include footer.html %}
+    {% include js.html %}
+    <script src="{{ '/js/ugo.js' | relative_url }}?v={{ page.asset_version }}"></script>
+  </body>
+</html>

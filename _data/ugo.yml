@@ -1,0 +1,282 @@
+# Copy for the /products/ugo/ landing page, keyed by locale.
+# The layout reads site.data.ugo[page.lang]; anything outside those two blocks is
+# shared. Keep HTML to inline tags only (strong, span, br) — block structure lives
+# in _layouts/ugo.html.
+
+name: Ultimate GameDev Organizer
+purchase_url: https://www.notion.com/templates/ultimate-gamedev-organizer
+
+en:
+  cta_label: Get UGO
+  social_proof_label: UGO social proof
+  # Price is set in dollars because the Notion Marketplace charges in dollars.
+  # Keep this string, the Marketplace field and the launch emails identical.
+  purchase_note: $279 - one-time payment - lifetime updates
+
+  hero_lead: Still losing hours trying
+  hero_accent: to manage your<br>game project?
+  hero_subtitle_strong: UGO is the complete Notion operating system for solo developers and studios.
+  hero_subtitle_text: Scope, plan, sprint, track time, document, and ship from one command center.
+  hero_subtitle_em: Set it up in one hour.
+
+  # The rating comes from the Notion Marketplace listing and is currently based on
+  # two reviews. A "used by N devs" badge is only worth adding once N is a number
+  # that can be sourced — see the launch task.
+  social_proof:
+    - text: Built for ambitious solo devs and studios
+    - text: 5.0 rating on Notion Marketplace
+      rating: true
+
+  overview_title: Run your entire production
+  overview_title_accent: from one command center
+  overview_lead: <strong>Complex projects don't fail from lack of ambition.</strong> They fail when scope, tasks, documentation, and time live in different places.
+  overview_intro: "UGO connects your complete game production system inside Notion:"
+  overview_points:
+    - "<strong>Scope with confidence:</strong> connect goals, milestones, user stories, and tasks."
+    - "<strong>Run focused sprints:</strong> manage backlog, priorities, workload, and deadlines."
+    - "<strong>Keep the team aligned:</strong> centralize decisions, ownership, assets, and documentation."
+    - "<strong>Track real production cost:</strong> compare estimated and actual development time."
+    - "<strong>Ship with a roadmap:</strong> coordinate marketing, release tasks, and project archives."
+  dashboard_alt: Ultimate GameDev Organizer dashboard in Notion, showing the production, editorial and CRM workspaces side by side
+
+  features_title: Inside the UGO production system
+  features:
+    - icon: /img/ugo/feature-roadmap.png
+      width: 540
+      height: 540
+      title: From a blank page to a release date
+      text: The guided <strong>GDD</strong>, <strong>milestones</strong> and <strong>sprints</strong> are one connected system. Change the scope and the date moves, in front of you.
+    - icon: /img/ugo/feature-knowledge.png
+      width: 440
+      height: 410
+      title: Still one place, six months later
+      text: <strong>PARA</strong> plus a real <strong>archive system</strong>. Finished work steps aside without being deleted, and nothing you wrote down disappears.
+    - icon: /img/ugo/feature-business.png
+      width: 393
+      height: 331
+      title: The half nobody prepares you for
+      text: <strong>Publishers, partners and clients</strong>, and the results of everything you publish, tracked with the same rigor as your build.
+
+  modules_title: Eleven modules, connected
+  modules_intro: Start with three. Switch the rest on when the project asks for them.
+  modules:
+    - title: Game Design Document
+      text: A guided GDD you fill in, not a blank page.
+    - title: Projects & Milestones
+      text: Start from the release date and work backwards.
+    - title: Sprints & Backlog
+      text: Agile execution without the studio overhead.
+    - title: Tasks & Sub-tasks
+      text: Estimation, blocking, and an inbox that catches everything.
+    - title: PARA knowledge base
+      text: Areas, resources, archives. Nothing gets lost.
+    - title: Daily Log
+      text: The two minutes a day that keep momentum.
+    - title: Editorial Calendar
+      text: Devlogs, trailers and launch posts, planned in the same place.
+    - title: CRM & Sales Pipeline
+      text: Publishers, partners and clients, from first contact to signature.
+      badge: New
+    - title: Content Performance
+      text: What you published, and what it actually did.
+      badge: New
+    - title: Granular Permissions
+      text: Share one project, not your whole workspace.
+      badge: New
+    - title: Time Tracking & Estimation
+      text: Optional, for when you want to plan more accurately.
+
+  whatsnew_eyebrow: New in 1.13
+  whatsnew_title: Then a publisher answers your email.
+  whatsnew_lead: At some point the most important thing you own is no longer in the build. It is who said what, and what you promised to send back. UGO now holds that half of the job too.
+  whatsnew_points:
+    - "<strong>A real pipeline.</strong> Lead to Won, with estimated amount, decision deadline and source. Every call, message and proposal logged as an interaction."
+    - "<strong>A weekly report.</strong> Positive reply rate, booking rate, proposal rate. Computed, not guessed."
+    - "<strong>A next action that never gets lost.</strong> Every opportunity is driven by a dated task, in the same task system as your production."
+    - "<strong>Granular permissions.</strong> A contractor sees one project, and nothing else."
+    - "<strong>Content performance.</strong> Classify what you publish by format, theme and intent, then measure what it actually did."
+  whatsnew_note: Already own UGO? This is included. Lifetime updates, as promised on day one.
+  crm_alt: The UGO sales pipeline in Notion, with opportunities moving from Lead to Won
+
+  profile_title: Built in production,<br>for real game production
+  profile_alt: Guillaume, creator of the Ultimate GameDev Organizer
+  profile_name: Hey, I'm Guillaume,
+  profile_role: indie dev &amp; IT engineer
+  profile_paragraphs:
+    - "I built UGO because I was tired of finishing nothing. Not for lack of work: for lack of a system that survived past the exciting part."
+    - Then I used UGO to build and ship UGO. And I ran the launch of version 1.13 through the CRM that shipped with it, follow-ups included.
+    - Every hour spent looking for a decision you already made is one less hour building the actual game.
+    - This is the system I wish I had when I started. It is the one I run my studio on today.
+
+  included_title: What you get for $279
+  included_points:
+    - "<strong>One-time payment.</strong> No subscription, ever."
+    - "<strong>One license per workspace.</strong> Same price whatever the size of your team."
+    - "<strong>Lifetime updates.</strong> Version 1.13 is included, and so is everything after it."
+    - "<strong>Private Discord.</strong> Ask questions, see how other studios set it up."
+    - "<strong>14-day money-back guarantee.</strong> No questions asked."
+
+  callouts:
+    - text: Scope, milestones, and tasks finally agree.
+      avatar: /img/ugo/avatar-1.png
+      position: left-top
+    - text: From first concept to release day.
+      avatar: /img/ugo/avatar-2.png
+      position: left-bottom
+    - text: One source of truth for the whole studio.
+      avatar: /img/ugo/avatar-3.png
+      position: right-top
+    - text: Estimated vs. actual time, without guesswork.
+      avatar: /img/ugo/avatar-4.png
+      position: right-bottom
+
+  faq_title: FAQs
+  faq_intro: Everything you need to know before running your production with UGO.
+  faq:
+    - question: What is UGO?
+      answer: UGO is a complete Notion operating system for game production. It connects scope, milestones, sprints, tasks, time tracking, assets, documentation, marketing, sales and release planning in one workspace.
+    - question: What's the difference between UGO and TGO?
+      answer: TGO is a focused organizer for smaller projects and quick starts. UGO is the full production system for ambitious solo projects and studios that need deeper planning, collaboration, time tracking, and release workflows.
+    - question: $279 for a Notion template. Why?
+      answer: Because it replaces the two weeks you would spend building it and the six months you would spend discovering what it was missing. One payment, no subscription, lifetime updates, and a 14-day refund if it is not for you.
+    - question: Is UGO too much for a solo developer?
+      answer: No. UGO was originally built by a solo developer. Start with the views you need, hide the rest, and let the system grow with your project.
+    - question: Can my team collaborate in UGO?
+      answer: Yes. Invite collaborators to share the same production source of truth, assign ownership, follow sprint progress, and keep documentation linked to the work. Since version 1.13 you can also share a single project, milestone, area or resource instead of the whole workspace.
+    - question: Does UGO work with Notion's free plan?
+      answer: The core system works with Notion's free plan. Some native Notion automations and advanced workspace capabilities may require a paid Notion plan.
+
+fr:
+  cta_label: Obtenir UGO
+  social_proof_label: Preuves sociales UGO
+  purchase_note: 279 $ - paiement unique - mises à jour à vie
+
+  hero_lead: Vous perdez encore des heures à
+  hero_accent: gérer votre<br>projet de jeu ?
+  hero_subtitle_strong: UGO est le système d'exploitation Notion complet des développeurs solo et des studios.
+  hero_subtitle_text: Cadrez, planifiez, sprintez, suivez votre temps, documentez et sortez votre jeu depuis un seul poste de commande.
+  hero_subtitle_em: Opérationnel en une heure.
+
+  social_proof:
+    - text: Conçu pour les devs solo ambitieux et les studios
+    - text: 5,0 sur le Notion Marketplace
+      rating: true
+
+  overview_title: Pilotez toute votre production
+  overview_title_accent: depuis un seul poste de commande
+  overview_lead: <strong>Les projets complexes n'échouent pas par manque d'ambition.</strong> Ils échouent quand le périmètre, les tâches, la documentation et le temps vivent à des endroits différents.
+  overview_intro: "UGO relie tout votre système de production dans Notion :"
+  overview_points:
+    - "<strong>Cadrez sereinement :</strong> objectifs, jalons, user stories et tâches, tous reliés."
+    - "<strong>Menez des sprints nets :</strong> backlog, priorités, charge de travail et échéances."
+    - "<strong>Gardez l'équipe alignée :</strong> décisions, responsabilités, assets et documentation au même endroit."
+    - "<strong>Mesurez le vrai coût de production :</strong> comparez le temps estimé et le temps réel."
+    - "<strong>Sortez avec une roadmap :</strong> marketing, tâches de sortie et archives de projet coordonnés."
+  dashboard_alt: Dashboard Ultimate GameDev Organizer dans Notion, montrant les espaces production, éditorial et CRM côte à côte
+
+  features_title: Dans le système de production UGO
+  features:
+    - icon: /img/ugo/feature-roadmap.png
+      width: 540
+      height: 540
+      title: De la page blanche à une date de sortie
+      text: Le <strong>GDD guidé</strong>, les <strong>jalons</strong> et les <strong>sprints</strong> forment un seul système. Le périmètre bouge, la date bouge, sous vos yeux.
+    - icon: /img/ugo/feature-knowledge.png
+      width: 440
+      height: 410
+      title: Toujours un seul endroit, six mois plus tard
+      text: <strong>PARA</strong> et un vrai <strong>système d'archives</strong>. Ce qui est terminé s'efface sans être supprimé, et rien de ce que vous avez écrit ne disparaît.
+    - icon: /img/ugo/feature-business.png
+      width: 393
+      height: 331
+      title: La moitié à laquelle personne ne vous prépare
+      text: <strong>Éditeurs, partenaires et clients</strong>, et les résultats de tout ce que vous publiez, suivis avec la même rigueur que votre build.
+
+  modules_title: Onze modules, reliés entre eux
+  modules_intro: Commencez par trois. Activez les autres quand le projet le réclame.
+  modules:
+    - title: Game Design Document
+      text: Un GDD guidé à remplir, pas une page blanche.
+    - title: Projets & jalons
+      text: Partez de la date de sortie et remontez le fil.
+    - title: Sprints & backlog
+      text: De l'agile sans la lourdeur d'un studio.
+    - title: Tâches & sous-tâches
+      text: Estimation, blocages, et une inbox qui rattrape tout.
+    - title: Base de connaissances PARA
+      text: Domaines, ressources, archives. Rien ne se perd.
+    - title: Journal quotidien
+      text: Les deux minutes par jour qui entretiennent l'élan.
+    - title: Calendrier éditorial
+      text: Devlogs, trailers et posts de sortie, planifiés au même endroit.
+    - title: CRM & pipeline de vente
+      text: Éditeurs, partenaires et clients, du premier contact à la signature.
+      badge: Nouveau
+    - title: Performance des contenus
+      text: Ce que vous avez publié, et ce que ça a réellement produit.
+      badge: Nouveau
+    - title: Permissions granulaires
+      text: Partagez un projet, pas tout votre espace de travail.
+      badge: Nouveau
+    - title: Suivi du temps & estimation
+      text: Optionnel, pour le jour où vous voudrez planifier plus juste.
+
+  whatsnew_eyebrow: Nouveau en 1.13
+  whatsnew_title: Puis un éditeur répond à votre mail.
+  whatsnew_lead: À un moment, l'information la plus importante que vous possédez n'est plus dans le build. C'est qui a dit quoi, et ce que vous avez promis de renvoyer. UGO gère maintenant cette moitié du travail aussi.
+  whatsnew_points:
+    - "<strong>Un vrai pipeline.</strong> De Lead à Won, avec montant estimé, date de décision et source. Chaque appel, message et proposition enregistré."
+    - "<strong>Un rapport hebdomadaire.</strong> Taux de réponse positive, de rendez-vous, de proposition. Calculés, pas devinés."
+    - "<strong>Une prochaine action qui ne se perd jamais.</strong> Chaque opportunité est portée par une tâche datée, dans le même système que votre production."
+    - "<strong>Permissions granulaires.</strong> Un prestataire voit un projet, et rien d'autre."
+    - "<strong>Performance des contenus.</strong> Classez par format, thème et intention, puis mesurez ce que ça a produit."
+  whatsnew_note: Vous avez déjà UGO ? C'est inclus. Mises à jour à vie, comme promis dès le premier jour.
+  crm_alt: Le pipeline de vente UGO dans Notion, avec les opportunités de Lead à Won
+
+  profile_title: Construit en production,<br>pour de la vraie production
+  profile_alt: Guillaume, créateur de l'Ultimate GameDev Organizer
+  profile_name: Bonjour, moi c'est Guillaume,
+  profile_role: dev indé &amp; ingénieur informatique
+  profile_paragraphs:
+    - "J'ai construit UGO parce que j'en avais assez de ne rien terminer. Pas faute de travail : faute d'un système qui survive à la partie excitante."
+    - Puis j'ai utilisé UGO pour construire et sortir UGO. Et j'ai mené le lancement de la 1.13 avec le CRM livré dedans, relances comprises.
+    - Chaque heure passée à rechercher une décision déjà prise est une heure de moins à construire le jeu.
+    - "C'est le système que j'aurais aimé avoir à mes débuts. C'est celui sur lequel tourne mon studio aujourd'hui."
+
+  included_title: Ce que vous obtenez pour 279 $
+  included_points:
+    - "<strong>Paiement unique.</strong> Aucun abonnement, jamais."
+    - "<strong>Une licence par espace de travail.</strong> Même prix quelle que soit la taille de l'équipe."
+    - "<strong>Mises à jour à vie.</strong> La 1.13 est incluse, et tout ce qui viendra après."
+    - "<strong>Discord privé.</strong> Posez vos questions, voyez comment d'autres studios s'organisent."
+    - "<strong>Garantie 14 jours, satisfait ou remboursé.</strong> Sans justification à fournir."
+
+  callouts:
+    - text: Le périmètre, les jalons et les tâches sont enfin d'accord.
+      avatar: /img/ugo/avatar-1.png
+      position: left-top
+    - text: Du premier concept au jour de la sortie.
+      avatar: /img/ugo/avatar-2.png
+      position: left-bottom
+    - text: Une seule source de vérité pour tout le studio.
+      avatar: /img/ugo/avatar-3.png
+      position: right-top
+    - text: Temps estimé contre temps réel, sans deviner.
+      avatar: /img/ugo/avatar-4.png
+      position: right-bottom
+
+  faq_title: FAQ
+  faq_intro: Tout ce qu'il faut savoir avant de piloter votre production avec UGO.
+  faq:
+    - question: Qu'est-ce qu'UGO ?
+      answer: UGO est un système d'exploitation Notion complet pour la production de jeux. Il relie le périmètre, les jalons, les sprints, les tâches, le suivi du temps, les assets, la documentation, le marketing, les ventes et la planification de sortie dans un seul espace de travail.
+    - question: Quelle différence avec TGO ?
+      answer: TGO est un organiseur ciblé pour les petits projets et les démarrages rapides. UGO est le système de production complet pour les projets solo ambitieux et les studios qui ont besoin de planification approfondie, de collaboration, de suivi du temps et de workflows de sortie.
+    - question: 279 $ pour un template Notion, pourquoi ?
+      answer: Parce qu'il remplace les deux semaines que vous passeriez à le construire et les six mois que vous passeriez à découvrir ce qui lui manquait. Paiement unique, sans abonnement, mises à jour à vie, et remboursement sous 14 jours si ce n'est pas pour vous.
+    - question: UGO est-il trop lourd pour un développeur solo ?
+      answer: Non. UGO a été conçu au départ par un développeur solo. Commencez par les vues dont vous avez besoin, masquez le reste, et laissez le système grandir avec votre projet.
+    - question: Mon équipe peut-elle collaborer dans UGO ?
+      answer: Oui. Invitez vos collaborateurs à partager la même source de vérité, attribuez les responsabilités, suivez l'avancement des sprints et gardez la documentation reliée au travail. Depuis la 1.13, vous pouvez aussi partager un seul projet, jalon, domaine ou ressource plutôt que tout l'espace.
+    - question: UGO fonctionne-t-il avec le plan gratuit de Notion ?
+      answer: Le cœur du système fonctionne avec le plan gratuit de Notion. Certaines automatisations natives et fonctions avancées peuvent nécessiter un plan Notion payant.

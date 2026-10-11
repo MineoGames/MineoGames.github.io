@@ -1,0 +1,904 @@
+/* UGO landing page.
+
+   Everything visual — canvas, surfaces, brand red, action blue, the display
+   face, the type scale, the square controls — already lives in
+   design-system.css. This file carries page layout only: the two split grids,
+   the feature and module grids, the portrait block, the character callouts and
+   the FAQ panel.
+
+   Rule of thumb for edits: no literal colour, spacing or font size below. If a
+   value is missing from the tokens, add the token — do not hard-code it here.
+   The two exceptions are declared as page-scoped tokens in body.ugo. */
+
+body.ugo {
+  /* The eyebrow is gold in the design file and the system has no gold token.
+     Scoped here rather than added to design-system.css, because nothing else on
+     the site uses it yet. */
+  --ugo-color-eyebrow: #f0c470;
+  /* Larger cut than the system default, to match the design file's frames. */
+  --mg-frame-cut: 4.6rem;
+  /* Corner brackets overhang the frame by this much. A section whose frame
+     touches the <main> edge must reserve it as padding, or main{overflow:hidden}
+     clips the bracket. */
+  --ugo-frame-overhang: 0.3rem;
+  --ugo-faq-width: 138rem;
+
+  position: relative;
+  isolation: isolate;
+  min-height: 100%;
+  margin: 0;
+  background-color: var(--mg-color-canvas);
+  color: var(--mg-color-text);
+  font-family: var(--mg-font-body);
+  overflow-x: hidden;
+}
+
+.ugo main {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* The navbar is the shared component. Restated so it stays opaque from the top
+   of the page, like on the other product page. */
+.ugo .navbar {
+  border-bottom: 1px solid var(--mg-color-border);
+  background: var(--mg-surface-overlay);
+}
+
+/* ---------------------------------------------------------------- hero ---- */
+
+.ugo-hero {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  padding: 18rem 0 var(--mg-section-gap);
+  place-items: start center;
+  text-align: center;
+}
+
+.ugo-hero__content {
+  max-width: 98rem;
+}
+
+.ugo .ds-eyebrow {
+  margin-bottom: var(--mg-space-5);
+  color: var(--ugo-color-eyebrow);
+  font-size: var(--mg-text-2xl);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.ugo-proof {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--mg-space-4);
+  margin: 0 0 var(--mg-space-8);
+}
+
+.ugo .ds-badge {
+  min-height: 4.8rem;
+  padding-inline: var(--mg-space-5);
+  font-size: var(--mg-text-md);
+  font-weight: 500;
+}
+
+.ugo-proof__stars {
+  margin-right: var(--mg-space-2);
+  color: var(--ugo-color-eyebrow);
+}
+
+.ugo-hero__title {
+  margin: 0;
+  color: var(--mg-color-text);
+  font-family: var(--mg-font-display);
+  font-size: var(--mg-text-display);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.ugo-hero__lead {
+  display: block;
+  margin-bottom: 0.1em;
+  font-size: 0.57em;
+  line-height: 1;
+}
+
+.ugo-hero__accent {
+  display: block;
+  color: var(--mg-color-brand);
+  font-size: 1.31em;
+  font-style: italic;
+  font-synthesis: none;
+  line-height: 0.92;
+}
+
+.ugo-hero__subtitle {
+  max-width: var(--mg-measure);
+  margin: var(--mg-space-7) auto 0;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-lg);
+  line-height: var(--mg-leading-body);
+}
+
+.ugo-hero__subtitle strong,
+.ugo-hero__subtitle span,
+.ugo-hero__subtitle em {
+  display: block;
+}
+
+.ugo-hero__subtitle strong {
+  color: var(--mg-color-text);
+}
+
+.ugo-hero__subtitle em {
+  margin-top: var(--mg-space-3);
+  color: var(--mg-color-text);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------------------- cta ---- */
+
+.ugo-cta {
+  margin-top: var(--mg-space-8);
+  text-align: center;
+}
+
+/* Only the generous footprint is page-specific; shape and colour come from the
+   base component. */
+.ugo .ds-button {
+  min-width: 39rem;
+  min-height: 7.2rem;
+  padding-inline: var(--mg-space-6);
+}
+
+.ugo-cta__hint {
+  margin: var(--mg-space-4) 0 0;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-sm);
+}
+
+.ugo-cta__hint::before {
+  margin-right: var(--mg-space-3);
+  content: "\21B3";
+}
+
+/* -------------------------------------------------------------- splits ---- */
+
+/* First section in <main>: its frame touches the edge, so it reserves the
+   bracket overhang. */
+.ugo .ugo-section--overview {
+  padding-block: var(--ugo-frame-overhang) calc(var(--mg-section-gap) * 0.8);
+}
+
+.ugo .ugo-section--whatsnew {
+  padding-block: calc(var(--mg-section-gap) * 0.4);
+}
+
+.ugo-split {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 47rem);
+  gap: var(--mg-space-8);
+  padding: var(--mg-space-8);
+}
+
+/* The 1.13 block mirrors the overview so the two never read as the same slide. */
+.ugo-split--reverse {
+  grid-template-columns: minmax(0, 47rem) minmax(0, 1fr);
+}
+
+.ugo-split--reverse .ugo-copy-card {
+  order: 2;
+}
+
+.ugo-split--reverse .ugo-media {
+  order: 1;
+  justify-self: start;
+}
+
+.ugo-copy-card h2 {
+  margin: 0;
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-4xl);
+  font-weight: 750;
+  line-height: 1.12;
+}
+
+.ugo-copy-card__accent {
+  display: block;
+  color: var(--mg-color-action-text);
+}
+
+.ugo-copy-card__eyebrow.ds-eyebrow {
+  margin-bottom: var(--mg-space-3);
+  font-size: var(--mg-text-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ugo-copy-card > p {
+  margin: var(--mg-space-5) 0 0;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-md);
+  line-height: 1.55;
+}
+
+.ugo-copy-card > p strong {
+  color: var(--mg-color-text);
+}
+
+.ugo-copy-card > .ugo-copy-card__intro {
+  margin-top: var(--mg-space-7);
+}
+
+.ugo-copy-card__note {
+  margin-top: var(--mg-space-6);
+  padding-top: var(--mg-space-5);
+  border-top: 1px solid var(--mg-color-border);
+  color: var(--mg-color-action-text);
+  font-weight: 700;
+}
+
+.ugo-list {
+  margin: var(--mg-space-6) 0 0;
+}
+
+.ugo-media {
+  width: min(100%, 47rem);
+  margin: 0;
+  justify-self: end;
+}
+
+.ugo-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--mg-color-border);
+  box-shadow: var(--mg-shadow-card);
+}
+
+/* ------------------------------------------------------------ sections ---- */
+
+.ugo-section__title {
+  margin: 0;
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-4xl);
+  font-weight: 750;
+  letter-spacing: 0;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.ugo-section__intro {
+  max-width: 52rem;
+  margin: var(--mg-space-4) auto 0;
+  font-size: var(--mg-text-md);
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------ features ---- */
+
+.ugo .ugo-section--features {
+  padding-block: calc(var(--mg-section-gap) * 0.9);
+}
+
+.ugo-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--mg-space-5);
+  margin-top: var(--mg-space-8);
+}
+
+.ugo-feature {
+  position: relative;
+  min-height: 33rem;
+  text-align: left;
+}
+
+.ugo-feature__surface {
+  height: 100%;
+  padding: 8.5rem var(--mg-space-5) var(--mg-space-6);
+}
+
+/* Sized by height rather than a square box, so icons of different ratios read
+   as the same size. */
+.ugo-feature__icon {
+  position: absolute;
+  z-index: 2;
+  top: -6.5rem;
+  left: 50%;
+  display: block;
+  width: auto;
+  height: 13rem;
+  transform: translateX(-50%);
+}
+
+.ugo-feature h3 {
+  min-height: 5.4rem;
+  margin: 0;
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-xl);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.ugo-feature p,
+.ugo-module p {
+  margin: var(--mg-space-4) 0 0;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-md);
+  line-height: 1.55;
+}
+
+.ugo-feature p strong,
+.ugo-module p strong {
+  color: var(--mg-color-text);
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------- modules ---- */
+
+/* The inventory that justifies the price. Text only by design: eleven
+   illustrations would cost more than they add, and the three cards above
+   already carry the visual weight. */
+
+.ugo-modules__title {
+  margin-top: calc(var(--mg-section-gap) * 0.9);
+  font-size: var(--mg-text-3xl);
+}
+
+.ugo-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: var(--mg-space-4);
+  margin: var(--mg-space-7) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ugo-module {
+  padding: var(--mg-space-5);
+}
+
+.ugo-module h4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--mg-space-3);
+  margin: 0;
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-md);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.ugo .ugo-module__badge {
+  min-height: 2.2rem;
+  padding-inline: var(--mg-space-2);
+  border-color: var(--mg-color-action);
+  color: var(--mg-color-action-text);
+  font-size: var(--mg-text-xs);
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------- profile ---- */
+
+.ugo .ugo-section--profile {
+  padding-block: calc(var(--mg-section-gap) * 0.6);
+}
+
+.ugo-profile__title {
+  margin-bottom: var(--mg-space-8);
+}
+
+/* The portrait is a cut-out that deliberately overflows the frame, so the frame
+   nulls its own clip-path and paints the surface in a dedicated child — the
+   escape hatch documented on .ds-frame. */
+.ugo .ugo-profile {
+  position: relative;
+  display: block;
+  min-height: 52rem;
+  padding: var(--mg-space-7) var(--mg-space-8) 0;
+  border: 0;
+  background: transparent;
+  clip-path: none;
+  isolation: isolate;
+  overflow: visible;
+}
+
+.ugo-profile__surface {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: 1px solid var(--mg-frame-border);
+  background: var(--mg-frame-background);
+  clip-path: polygon(0 0, calc(100% - var(--mg-frame-cut)) 0, 100% var(--mg-frame-cut), 100% 100%, var(--mg-frame-cut) 100%, 0 calc(100% - var(--mg-frame-cut)));
+  pointer-events: none;
+}
+
+.ugo-profile__image {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: var(--mg-space-8);
+  width: 42rem;
+  margin: 0;
+  overflow: visible;
+}
+
+.ugo-profile__image img {
+  display: block;
+  width: 100%;
+  max-height: 62rem;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.ugo-profile__card {
+  position: relative;
+  z-index: 1;
+  max-width: 57rem;
+  margin-left: 50rem;
+  padding: var(--mg-space-7) 0 var(--mg-space-8);
+}
+
+.ugo-profile__card h3 {
+  margin: 0 0 var(--mg-space-5);
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-2xl);
+  letter-spacing: 0;
+}
+
+.ugo-profile__card h3 span {
+  color: var(--mg-color-action-text);
+}
+
+.ugo-profile__card p {
+  max-width: 55rem;
+  margin: var(--mg-space-4) 0;
+  color: var(--mg-color-text-muted);
+  font-size: var(--mg-text-md);
+  line-height: 1.75;
+}
+
+/* ------------------------------------------------------------ included ---- */
+
+/* Risk reversal, placed immediately before the final call to action: at this
+   price the reader needs the guarantee in front of the button, not buried in
+   the FAQ. */
+
+.ugo .ugo-section--included {
+  padding-block: calc(var(--mg-section-gap) * 0.5) 0;
+}
+
+.ugo-included {
+  text-align: center;
+}
+
+.ugo-included__list {
+  max-width: var(--mg-measure);
+  margin: var(--mg-space-7) auto 0;
+  text-align: left;
+}
+
+/* ---------------------------------------------------------- conversion ---- */
+
+.ugo .ugo-section--conversion {
+  padding-block: calc(var(--mg-section-gap) * 0.55) 0;
+  text-align: center;
+}
+
+.ugo-chevrons {
+  display: block;
+  width: 9.8rem;
+  margin: 0 auto var(--mg-space-8);
+  padding: 0;
+}
+
+.ugo-chevrons .ds-scroll-hint__icon {
+  width: 100%;
+}
+
+.ugo-section--conversion .ugo-cta {
+  margin-top: 0;
+}
+
+.ugo-proof--conversion {
+  margin: calc(var(--mg-section-gap) * 0.9) 0 0;
+}
+
+/* The artwork stays in flow and gives the block its exact height at any width,
+   so the callouts can be placed as percentages without the section needing a
+   magic min-height that the image then overflows. */
+.ugo-character {
+  position: relative;
+  width: min(100%, 110rem);
+  margin: var(--mg-space-7) auto 0;
+}
+
+.ugo-character > img {
+  display: block;
+  width: min(56.3rem, 60%);
+  height: auto;
+  margin-inline: auto;
+}
+
+.ugo-character__callout {
+  position: absolute;
+  display: flex;
+  width: 28rem;
+  align-items: center;
+  gap: var(--mg-space-3);
+  margin: 0;
+  padding: var(--mg-space-4) var(--mg-space-4);
+  border: 1px solid var(--mg-color-border);
+  background: var(--mg-color-surface);
+  color: var(--mg-color-text);
+  font-size: var(--mg-text-md);
+  line-height: 1.4;
+  text-align: left;
+}
+
+.ugo-character__callout img {
+  position: absolute;
+  top: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+  object-fit: contain;
+  transform: translateY(-50%);
+}
+
+.ugo-character__callout p {
+  margin: 0;
+}
+
+.ugo-character__callout--left-top {
+  top: 25%;
+  left: 2%;
+  transform: rotate(6deg);
+}
+
+.ugo-character__callout--left-bottom {
+  top: 44%;
+  left: 0;
+  transform: rotate(-7deg);
+}
+
+.ugo-character__callout--right-top {
+  top: 27%;
+  right: 1%;
+  transform: rotate(-4deg);
+}
+
+.ugo-character__callout--right-bottom {
+  top: 47%;
+  right: 0;
+  transform: rotate(9deg);
+}
+
+.ugo-character__callout--left-top img,
+.ugo-character__callout--left-bottom img {
+  right: calc(100% - var(--mg-space-3));
+}
+
+.ugo-character__callout--right-top img,
+.ugo-character__callout--right-bottom img {
+  left: calc(100% - var(--mg-space-3));
+}
+
+/* ----------------------------------------------------------------- faq ---- */
+
+.ugo .ugo-section--faq {
+  padding-block: 0 calc(var(--mg-section-gap) * 0.55);
+}
+
+.ugo .ugo-section--faq > .ds-container {
+  width: min(calc(100% - 2 * var(--mg-gutter)), var(--ugo-faq-width));
+}
+
+.ugo-faq {
+  margin: 0 auto;
+  padding: var(--mg-space-8) var(--mg-space-7) var(--mg-space-7);
+}
+
+.ugo-faq__heading .ugo-section__title {
+  color: var(--mg-color-action-text);
+  font-size: var(--mg-text-3xl);
+  text-align: left;
+}
+
+.ugo-faq__heading .ugo-section__intro {
+  max-width: 83.2rem;
+  margin-inline: 0;
+  text-align: left;
+}
+
+.ugo-faq__accordion {
+  overflow: visible;
+  margin-top: var(--mg-space-8);
+  border: 0;
+  border-top: 1px solid var(--mg-color-border);
+  background: transparent;
+}
+
+.ugo .ds-accordion__trigger {
+  padding: var(--mg-space-5) 0;
+  border-bottom: 0;
+  font-size: var(--mg-text-md);
+}
+
+.ugo .ds-accordion__trigger[aria-expanded="false"] {
+  border-bottom: 1px solid var(--mg-color-border);
+}
+
+.ugo .ds-accordion__panel {
+  padding: 0 var(--mg-space-7) var(--mg-space-5) 0;
+  border-bottom: 1px solid var(--mg-color-border);
+  font-size: var(--mg-text-md);
+  line-height: 1.55;
+}
+
+.ugo .ds-accordion__panel p {
+  max-width: var(--mg-measure);
+  margin: 0;
+}
+
+/* State is scripted here, so the chevron reads aria-expanded rather than
+   [open]. */
+.ugo .ds-accordion__trigger[aria-expanded="true"] .ds-accordion__icon {
+  transform: rotate(45deg);
+}
+
+/* -------------------------------------------------------------- footer ---- */
+
+/* Sections already carry their own bottom padding, so the base footer's top
+   margin would double the gap. */
+.ugo footer {
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------ responsive -- */
+
+@media (max-width: 72rem) {
+  .ugo-hero {
+    padding-top: 14rem;
+  }
+
+  .ugo-split,
+  .ugo-split--reverse {
+    grid-template-columns: 1fr;
+    gap: var(--mg-space-7);
+    padding: var(--mg-space-7);
+  }
+
+  .ugo-split--reverse .ugo-copy-card,
+  .ugo-split--reverse .ugo-media {
+    order: 0;
+  }
+
+  .ugo-media,
+  .ugo-split--reverse .ugo-media {
+    width: min(100%, 48rem);
+    justify-self: center;
+  }
+
+  .ugo-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 10rem;
+  }
+
+  .ugo-feature:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - var(--mg-space-3));
+    justify-self: center;
+  }
+
+  .ugo .ugo-profile {
+    padding-inline: var(--mg-space-7);
+  }
+
+  .ugo-profile__image {
+    left: var(--mg-space-7);
+    width: 34rem;
+  }
+
+  .ugo-profile__card {
+    margin-left: 36rem;
+    padding-right: 0;
+  }
+
+  .ugo-character {
+    width: min(100%, 96rem);
+  }
+
+  .ugo-character__callout {
+    width: 27rem;
+  }
+
+  .ugo-character__callout--left-top,
+  .ugo-character__callout--left-bottom {
+    left: var(--mg-space-7);
+  }
+
+  .ugo-character__callout--right-top,
+  .ugo-character__callout--right-bottom {
+    right: var(--mg-space-7);
+  }
+}
+
+@media (max-width: 48rem) {
+  /* The callouts stack under the artwork here, so the conversion section ends
+     flush with the FAQ frame — whose corner bracket overhangs upward onto the
+     last callout. Desktop does not hit this: the callouts sit beside the
+     character, well above the section edge. */
+  .ugo .ugo-section--conversion {
+    padding-bottom: calc(var(--mg-section-gap) * 1.2);
+  }
+
+  .ugo-hero {
+    padding: 9rem 0 var(--mg-space-8);
+  }
+
+  .ugo-hero__title {
+    line-height: 0.9;
+  }
+
+  .ugo-proof {
+    gap: var(--mg-space-2);
+    margin-bottom: var(--mg-space-6);
+  }
+
+  .ugo .ds-badge {
+    min-height: 3rem;
+    padding-inline: var(--mg-space-3);
+    font-size: var(--mg-text-xs);
+  }
+
+  .ugo-hero__subtitle {
+    margin-top: var(--mg-space-5);
+    font-size: var(--mg-text-md);
+  }
+
+  .ugo-cta {
+    margin-top: var(--mg-space-7);
+  }
+
+  .ugo .ds-button {
+    width: min(100%, 35rem);
+    min-width: 0;
+    min-height: 5rem;
+    padding-inline: var(--mg-space-4);
+    font-size: var(--mg-text-md);
+  }
+
+  .ugo-split,
+  .ugo-split--reverse {
+    padding: var(--mg-space-6) var(--mg-space-5);
+  }
+
+  .ugo-features {
+    grid-template-columns: 1fr;
+    gap: 9rem;
+  }
+
+  .ugo-feature,
+  .ugo-feature:last-child {
+    grid-column: auto;
+    width: 100%;
+    min-height: 24rem;
+  }
+
+  .ugo-feature__surface {
+    padding: 8rem var(--mg-space-5) var(--mg-space-5);
+  }
+
+  .ugo-feature h3 {
+    min-height: 0;
+  }
+
+  .ugo-feature__icon {
+    top: -5rem;
+    height: 10rem;
+  }
+
+  .ugo-modules {
+    grid-template-columns: 1fr;
+  }
+
+  .ugo-profile__title {
+    margin-bottom: var(--mg-space-7);
+  }
+
+  .ugo .ugo-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: var(--mg-space-6) var(--mg-space-5) 0;
+  }
+
+  .ugo-profile__image {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: min(100%, 25rem);
+    margin: 0 auto;
+  }
+
+  .ugo-profile__card {
+    grid-row: 1;
+    margin-left: 0;
+    padding: var(--mg-space-3) 0 var(--mg-space-7);
+  }
+
+  .ugo-chevrons {
+    width: 6rem;
+    margin-bottom: var(--mg-space-6);
+  }
+
+  .ugo-proof--conversion {
+    margin-top: 9rem;
+  }
+
+  .ugo-character {
+    display: flex;
+    min-height: 0;
+    margin-top: var(--mg-space-7);
+    flex-direction: column;
+    gap: var(--mg-space-3);
+  }
+
+  .ugo-character > img {
+    width: min(100%, 32rem);
+  }
+
+  .ugo-character__callout {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: calc(100% - var(--mg-space-7));
+    margin-inline: auto;
+    transform: none;
+    text-align: center;
+  }
+
+  .ugo-character__callout img {
+    top: 50%;
+    right: auto;
+    left: -2.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .ugo-faq {
+    padding: var(--mg-space-7) var(--mg-space-5);
+  }
+
+  .ugo-faq__accordion {
+    margin-top: var(--mg-space-6);
+  }
+}
+
+@media (max-width: 30rem) {
+  body.ugo {
+    --mg-frame-cut: 2rem;
+  }
+
+  .ugo-hero__lead {
+    font-size: 0.5em;
+  }
+
+  .ugo-proof {
+    align-items: center;
+    flex-direction: column;
+  }
+}
