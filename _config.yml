@@ -121,8 +121,8 @@ products:
       en: Discover UGO
       fr: Découvrir UGO
     page:
-      en: '/products/ugo/'
-      fr: '/products/ugo-fr/'
+      en: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
+      fr: 'https://www.notion.com/templates/ultimate-gamedev-organizer'
 
 # Blog topics. The key is what posts carry in `topic:` — deliberately not
 # `category:`, which Jekyll folds into the post permalink.
