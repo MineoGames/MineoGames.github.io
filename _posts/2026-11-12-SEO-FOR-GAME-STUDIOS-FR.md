@@ -52,7 +52,7 @@ Le fonctionnement paraît plus abordable de cette manière : essayer, suivre et 
 
 Pendant cet apprentissage, j’ai documenté mon travail dans Notion. J’ai ensuite partagé ces connaissances dans UGO pour aider d’autres studios à faire découvrir leurs jeux.
 
-Je les ai découpé en huit guides :
+Je les ai découpés en huit guides :
 
 - SEO Guide
 - SEA Guide
@@ -65,7 +65,7 @@ Je les ai découpé en huit guides :
 
 ![Les guides et leurs couvertures dans UGO, présentés dans MG News d’octobre 2025.](/img/blog/ugo-guides-newsletter.png){: .post-image--half }
 
-Tu souhaites y accéder? Elles sont inclus dans mon template Notion:  [UGO](https://www.notion.com/templates/ultimate-gamedev-organizer).
+Tu souhaites y accéder ? Ils sont inclus dans mon template Notion : [UGO](https://www.notion.com/templates/ultimate-gamedev-organizer).
 
 Je t’encourage à documenter toi-même les leçons que tu auras apprises et les processus qui en découlent.
 
@@ -83,7 +83,7 @@ Pour Google, les bonnes pratiques SEO restent pertinentes pour AI Overviews et A
 
 Cela donne un cadre pour Google. Les autres outils d’IA peuvent fonctionner différemment. Le GEO prolonge donc la réflexion sur la découverte de ton jeu, sans donner de recette universelle.
 
-## Prêt à attirer plus de joueurs?
+## Prêt à attirer plus de joueurs ?
 
 Sur la page de ton jeu, qu’est-ce qui pourrait aider un joueur à comprendre l’expérience et à poursuivre sa découverte ?
 

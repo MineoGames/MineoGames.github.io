@@ -9,11 +9,11 @@
       {% include topic-filter.html active=page.topic only_active=true %}
 
       <h1><strong>{{ page.title }}</strong></h1>
-      <h2 class="text-left">
-        <strong>{% include icon.html name="calendar" %} {% if page.lang == 'fr' %}{{ page.date | date: "%d/%m/%Y" }}{% else %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</strong>
-      </h2>
+      <p class="post-date text-left">
+        <strong>{% include icon.html name="calendar" %} <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% if page.lang == 'fr' %}{{ page.date | date: "%d/%m/%Y" }}{% else %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</time></strong>
+      </p>
 
-      <section class="text-justify">{{ page.content | markdownify }}</section>
+      <section class="post-content text-justify">{{ page.content | markdownify }}</section>
       {% include author-bio.html %}
       <a href="#page-top" class="ds-scroll-hint ds-scroll-hint--up page-scroll">
         {% include icon-chevrons.html class="ds-scroll-hint__icon" %}
