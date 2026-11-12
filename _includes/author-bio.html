@@ -1,0 +1,34 @@
+{% assign author_bio_lang = page.lang | default: 'en' %}
+{% assign author_bio_text = site.data.author_bio.default[author_bio_lang] %}
+{% assign tagged_author_bio = nil %}
+{% for author_tag in page.tags %}
+  {% assign tag_bio = site.data.author_bio.tags[author_tag] %}
+  {% if tag_bio[author_bio_lang] %}
+    {% assign tagged_author_bio = tag_bio[author_bio_lang] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if tagged_author_bio %}
+  {% assign author_bio_text = tagged_author_bio %}
+{% elsif page.topic %}
+  {% assign topic_bio = site.data.author_bio.topics[page.topic] %}
+  {% if topic_bio and topic_bio[author_bio_lang] %}
+    {% assign author_bio_text = topic_bio[author_bio_lang] %}
+  {% endif %}
+{% endif %}
+{% if page.author_bio and page.author_bio[author_bio_lang] %}
+  {% assign author_bio_text = page.author_bio[author_bio_lang] %}
+{% endif %}
+
+<section class="author-bio" aria-labelledby="author-bio-title">
+  <img class="author-bio__image" src="{{ '/img/about/guillaume-escarieux-cutout.png' | relative_url }}" width="512" height="683" loading="lazy" decoding="async" {% if page.lang == 'fr' %}alt="Portrait de Guillaume Escarieux"{% else %}alt="Portrait of Guillaume Escarieux"{% endif %}>
+  <div class="author-bio__content">
+    {% if page.lang == 'fr' %}
+    <h2 id="author-bio-title">À propos de l’auteur</h2>
+    <p>{{ author_bio_text | escape | replace_first: 'Guillaume Escarieux', '<strong>Guillaume Escarieux</strong>' }}</p>
+    {% else %}
+    <h2 id="author-bio-title">About the author</h2>
+    <p>{{ author_bio_text | escape | replace_first: 'Guillaume Escarieux', '<strong>Guillaume Escarieux</strong>' }}</p>
+    {% endif %}
+  </div>
+</section>

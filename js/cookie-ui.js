@@ -18,6 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } catch (e) {
     // fail silently if DOM structure differs
-    console.error(e);
   }
 });

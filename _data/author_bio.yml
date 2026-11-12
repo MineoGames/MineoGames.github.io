@@ -1,0 +1,18 @@
+# The default is used unless a matching tag, topic, or page override is set.
+default:
+  fr: >-
+    Guillaume Escarieux est développeur de jeux vidéo indépendant et fondateur de Mineo Games, un studio spécialisé dans les expériences en réalité virtuelle. Il écrit sur la conception, la production et la vie d’un studio indépendant, à partir de son expérience de terrain.
+  en: >-
+    Guillaume Escarieux is an independent game developer and founder of Mineo Games, a studio focused on virtual reality experiences. He writes about game design, production, and running an independent studio, drawing on firsthand experience.
+
+# Optional overrides keyed by Jekyll `tags:` values in post front matter.
+# Add a `fr` and/or `en` value under any tag.
+tags: {}
+
+# Optional overrides keyed by the site's existing `topic:` value.
+topics: {}
+
+# To override one article, add this to its front matter:
+# author_bio:
+#   fr: "Texte complet de la biographie en français."
+#   en: "Full custom biography text in English."
