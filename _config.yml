@@ -150,6 +150,10 @@ topics:
     en: Tech
     fr: Technique
     image: /img/blog/default-cover-tech.webp
+  marketing:
+    en: Visibility
+    fr: Visibilité
+    image: /img/blog/default-cover-marketing.webp
   productivity:
     en: Productivity
     fr: Organisation

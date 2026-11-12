@@ -63,7 +63,7 @@ I organised it into eight guides:
 - Google Analytics Guide
 - Storytelling Guide
 
-![The guides and their covers in UGO, featured in the October 2025 edition of MG News.](https://img.mailinblue.com/9272083/images/content_library/original/68de9e22cd39823f4f65f7a9.png){: .post-image--half }
+![The guides and their covers in UGO, featured in the October 2025 edition of MG News.](/img/blog/ugo-guides-newsletter.png){: .post-image--half }
 
 ![An excerpt from the SEO guide shared in UGO.](/img/blog/ugo-guide-seo.png){: .post-image--half }
 
@@ -77,9 +77,9 @@ With AI-generated answers, is all this SEO work still useful?
 
 Around that time, I attended the IAgitative event organised by COPYLOT. One of the talks covered GEO, or visibility in AI-generated answers. I also spoke with the speakers after the presentations and it was encouraging.
 
-![A presentation during the IAgitative event organised by COPYLOT.](https://img.mailinblue.com/9272083/images/content_library/original/68de7369f25dcb08645df154.jpg){: .post-image--half }
+![A presentation during the IAgitative event organised by COPYLOT.](/img/blog/iagitative-presentation.jpg){: .post-image--half }
 
-![A conversation at IAgitative, shared in the October 2025 edition of MG News.](https://img.mailinblue.com/9272083/images/content_library/original/68de74228cfb3a7855212edc.jpg){: .post-image--half }
+![A conversation at IAgitative, shared in the October 2025 edition of MG News.](/img/blog/iagitative-rencontre.jpg){: .post-image--half }
 
 According to Google, SEO best practices still apply to AI Overviews and AI Mode. Its [documentation](https://developers.google.com/search/docs/appearance/ai-features) says no additional special optimisation is required, and appearing is not guaranteed.
 

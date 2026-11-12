@@ -63,7 +63,7 @@ Je les ai découpé en huit guides :
 - Google Analytics Guide
 - Storytelling Guide
 
-![Les guides et leurs couvertures dans UGO, présentés dans MG News d’octobre 2025.](https://img.mailinblue.com/9272083/images/content_library/original/68de9e22cd39823f4f65f7a9.png){: .post-image--half }
+![Les guides et leurs couvertures dans UGO, présentés dans MG News d’octobre 2025.](/img/blog/ugo-guides-newsletter.png){: .post-image--half }
 
 Tu souhaites y accéder? Elles sont inclus dans mon template Notion:  [UGO](https://www.notion.com/templates/ultimate-gamedev-organizer).
 
@@ -75,9 +75,9 @@ Avec les réponses générées par l’IA, est-ce que tout ce travail de référ
 
 À cette période, j’ai assisté à la matinée IAgitative organisée par *COPYLOT*. Le GEO, la visibilité dans les réponses générées par l’IA, était le sujet d’une des interventions. J’ai aussi échangé avec les intervenants après les présentations et c’était plutôt encourageant.
 
-![Une présentation pendant la matinée IAgitative organisée par COPYLOT.](https://img.mailinblue.com/9272083/images/content_library/original/68de7369f25dcb08645df154.jpg){: .post-image--half }
+![Une présentation pendant la matinée IAgitative organisée par COPYLOT.](/img/blog/iagitative-presentation.jpg){: .post-image--half }
 
-![Un moment d’échange lors de la rencontre IAgitative, partagé dans MG News d’octobre 2025.](https://img.mailinblue.com/9272083/images/content_library/original/68de74228cfb3a7855212edc.jpg){: .post-image--half }
+![Un moment d’échange lors de la rencontre IAgitative, partagé dans MG News d’octobre 2025.](/img/blog/iagitative-rencontre.jpg){: .post-image--half }
 
 Pour Google, les bonnes pratiques SEO restent pertinentes pour AI Overviews et AI Mode. Sa [documentation](https://developers.google.com/search/docs/appearance/ai-features) indique qu’aucune optimisation spéciale supplémentaire n’est nécessaire, et que l’affichage n’est pas garanti.
 
